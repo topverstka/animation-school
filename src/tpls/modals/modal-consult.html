@@ -1,0 +1,29 @@
+<div id="modal-consult" class="b_modal">
+  <button class="b_modal-close"></button>
+  <h3 class="b_modal__title">
+    Консультация по&nbsp;обучению
+  </h3>
+  <p class="modal__desc">
+    Наши менеджеры получат заявку и&nbrp;передадут преподавателям. <br>
+    Мы&nbsp;напишем вам&nbsp;в&nbsp;течение нескольких часов.
+  </p>
+  <form action="table" id="form-consult" class="form">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <fieldset class="form__fieldset">
+      @@include('../inputs/name.html')
+      @@include('../inputs/email.html')
+      @@include('../inputs/tel.html')
+      @@include('../inputs/privacy.html')
+    </fieldset>
+    <button class="button-primary form__button">
+      <svg class="button__icon">
+        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+      </svg>
+      <span class="button__text">Отправить</span>
+    </button>
+  </form>
+</div>

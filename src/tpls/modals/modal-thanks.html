@@ -1,0 +1,27 @@
+<div id="modal-thanks" class="b_modal">
+  <button class="b_modal-close"></button>
+  <svg class="modal__icon">
+    <use xlink:href="./img/common/status-ok.svg#ok" />
+  </svg>
+  <h3 class="b_modal__title">
+    Заявка на&nbsp;консультацию отправлена!
+  </h3>
+  <p class="modal__desc">
+    Отзыв на сайте покажется после предварительной модерации.
+  </p>
+  <form action="table" id="form-consult" class="form">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <fieldset class="form__fieldset">
+      @@include('../inputs/name.html')
+      @@include('../inputs/email.html')
+      @@include('../inputs/tel.html')
+      @@include('../inputs/privacy.html')
+    </fieldset>
+    <button class="button-primary form__button">
+      <span class="button__text">Закрыть</span>
+    </button>
+  </form>

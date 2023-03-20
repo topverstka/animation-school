@@ -12,8 +12,9 @@
 @include font('Inter', normal, 700, '../resources/fonts/inter/inter-bold');
 
 
-@include font('Craftwork', normal, 700, '../resources/fonts/craftworkgrotesk/craftworkgrotesk-bold');
+@include font('Craftwork', normal, 400, '../resources/fonts/craftworkgrotesk/craftworkgrotesk-regular');
 @include font('Craftwork', normal, 500, '../resources/fonts/craftworkgrotesk/craftworkgrotesk-medium');
+@include font('Craftwork', normal, 700, '../resources/fonts/craftworkgrotesk/craftworkgrotesk-bold');
 
 @include font('Gilroy', normal, 500, '../resources/fonts/gilroy/gilroy-medium');
 // @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap');
