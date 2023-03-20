@@ -1,0 +1,59 @@
+.input--dropdown {
+  --border-color: transparent;
+  --color: var(--c-text-on);
+  --background: var(--bg-dropdown);
+  --background-list: var(--bg-dropdown-list);
+  --triangle-color: var(--c-accent);
+  --option-hover-color: var(--c-accent);
+  position: relative;
+  font-size: 15px;
+  color: var(--color);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+}
+.input--dropdown::after {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: block;
+  width: 7px;
+  height: 4px;
+  content: "";
+  border: 5px solid transparent;
+  border-top: 6px solid var(--triangle-color);
+  transform: translateY(-50%);
+}
+
+.input--dropdown .custom-select-opener {
+  padding-top: 21px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  font-weight: 600;
+  background: var(--background);
+}
+
+.input--dropdown .custom-select-option {
+  padding-top: 21px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  cursor: pointer;
+  background-color: var(--background-list);
+}
+
+.input--dropdown .custom-select-option.is-selected {
+  font-weight: 600;
+  background-color: var(--c-accent-light);
+}
+
+.input--dropdown .custom-select-option.has-focus {
+  background-color: var(--c-accent-light);
+}
+
+.input--dropdown .custom-select-option.is-selected::before {
+}
+
+.input--dropdown .custom-select-container.is-open .custom-select-panel {
+  max-height: 20.7em;
+}

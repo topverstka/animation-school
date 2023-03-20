@@ -1,0 +1,63 @@
+/*
+  Секции
+ */
+.section {
+  padding-top: 7.5rem; //120
+  padding-bottom: 7.5rem; //120
+  @media (max-width: $desktop-m) {
+    padding-top: 6rem; //120
+    padding-bottom: 6rem; //120
+  }
+  @media (max-width: $tablet) {
+    padding-top: 4.285714285714286rem; //60
+    padding-bottom: 4.285714285714286rem; //60
+  }
+}
+.section .vertical-strings {
+  z-index: 0;
+}
+.section--bg-grey {
+  background-color: #F6F6F6;
+}
+.section--bg-grey:first-child {
+  margin-top: -120px;
+  border-top: 120px solid #f6f6f6;
+}
+.section--bg-grey:first-child .vertical-strings {
+  top: -120px;
+  height: #{'calc(100% + 120px)'};
+}
+.section-title {
+  font-weight: 600;
+  font-size: 2rem;//rem(32);
+  margin-bottom: 3.75rem;//rem(60);
+  @media (max-width: $desktop-s) {
+    margin-bottom: 2.75rem;
+  }
+  @media (max-width: $tablet) {
+    font-size: 1.2857142857142858rem;
+    margin-bottom: 2.142857142857143rem;
+  }
+  @media (max-width: $mobile-l) {
+    margin-bottom: 5.142857142857143rem;
+  }
+}
+.section-desc {
+}
+.section-text--color {
+  color: var(--c-accent);
+}
+.section-text--em {
+  font-style: italic;
+}
+.section-text--bold {
+  font-weight: 600;
+}
+
+.section-text--center {
+  text-align: center;
+}
+.section-text--right {
+  text-align: right;
+}
+

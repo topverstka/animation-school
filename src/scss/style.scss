@@ -1,0 +1,94 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
+@use "sass:math";
+
+@import "./variables/variables";
+@import "./variables/colors";
+@import "./mixins";
+@import "./components";
+
+// Шрифты
+@include font('Inter', normal, 400, '../resources/fonts/inter/inter-regular');
+@include font('Inter', normal, 500, '../resources/fonts/inter/inter-medium');
+@include font('Inter', normal, 700, '../resources/fonts/inter/inter-bold');
+
+
+@include font('Craftwork', normal, 700, '../resources/fonts/craftworkgrotesk/craftworkgrotesk-bold');
+@include font('Craftwork', normal, 500, '../resources/fonts/craftworkgrotesk/craftworkgrotesk-medium');
+
+@include font('Gilroy', normal, 500, '../resources/fonts/gilroy/gilroy-medium');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap');
+
+// Сброс CSS
+@import "./reset";
+@import "./normalize";
+
+body {
+  font-weight: 400;
+  line-height: 1.2;
+}
+body._lock {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.wrapper > .content {
+  position: relative;
+  z-index: 1;
+  flex: 1 0 auto;
+}
+
+/*
+(i) Стили будут применяться ко
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+*/
+// [class*="__container"] {
+//   @if ($max-width-container > 0) {
+//     box-sizing: content-box;
+//     max-width: $max-width-container;
+//     margin: 0 auto;
+//   }
+//   @if ($container-padding > 0) {
+//     padding: 0 var(--container-padding);
+//   }
+
+//   @media (max-width: $tablet) {
+//     --container-padding: 30px;
+//   }
+
+//   @media (max-width: $mobile-l) {
+//     --container-padding: 20px;
+//   }
+
+//   @media (max-width: $mobile-m) {
+//     --container-padding: 16px;
+//   }
+// }
+
+// Библиотеки
+// @import "./libs/swiper";
+// @import "./libs/lightgallery";
+// @import "./libs/rangeslider";
+
+// Базовые стили, шаблоны, заготовки
+
+// Общие стили проекта
+// @import "./sections";
+
+// Карточки
+// @import "./components/cards/";
+
+// Модальные окна
+// @import "./components/modals/";
+
+
+// Стили для отдельных страниц
+// @import "./pages/";

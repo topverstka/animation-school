@@ -1,0 +1,116 @@
+.comparer__title {
+  @media (max-width: $tablet) {
+    margin-bottom: 2.2857142857142856rem;//32px;
+  }
+}
+
+.slider-container .slider-wrap {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.before-after-slider {
+  height: 45.5625rem;
+  @media (max-width: $tablet) {
+    height: 23.5rem;//189px;
+  }
+  @media (max-width: $mobile-l) {
+    height: 13.5rem;//189px;
+  }
+}
+.before-after-slider .slider-container .before-img img {
+  object-fit: cover;
+  object-position: left;
+  border-radius: 20px 0 0 20px;
+}
+.before-after-slider .slider-container > img {
+  object-fit: cover;
+  object-position: right;
+  border-radius: 20px;
+}
+.before-after-slider .slider-container .slider-wrap .slider-btn {
+  background: var(--c-text-on);
+}
+.before-after-slider .slider-container .slider-wrap .slider-btn::after {
+  content: "";
+  border-radius: 0;
+  box-shadow: none;
+  background: url("../img/compare/compare-desktop.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 2.375rem;
+  height: 11.1875rem;
+  @media (max-width: $tablet) {
+    width: 4.5rem;
+    height: 4.5rem;
+    background: url("../img/compare/compare-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+  }
+}
+.before-after-slider .slider-container .slider-wrap .slider-btn:hover::after{
+  width: 2.375rem;
+  height: 11.1875rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @media (max-width: $tablet) {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.comparer-carousel-button-prev,
+.comparer-carousel-button-next {
+	width: 2.375rem;
+	height: 2.375rem;
+	border-radius: 50%;
+	background: var(--bg-element);
+}
+.comparer-carousel-button-prev {
+	left: -13px;
+}
+.comparer-carousel-button-next {
+	right: -13px;
+}
+
+.comparer-carousel-button-prev .swiper-button__icon {
+	width: 60%;
+	margin-right: auto;
+	margin-left: 0;
+	left: unset;
+	right: 10%;
+}
+.comparer-carousel-button-next .swiper-button__icon {
+	width: 60%;
+	margin-right: 0;
+	margin-left: auto;
+	left: 10%;
+	right: unset;
+}
+
+.comparer-carousel-button-prev:after,
+.comparer-carousel-button-next:after {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #fff;
+}
+.comparer-carousel-button-prev:after {
+	left: 0;
+}
+.comparer-carousel-button-next:after {
+	right: 0;
+}
+
+.slider-container .slider-wrap img {
+  object-fit: cover;
+}

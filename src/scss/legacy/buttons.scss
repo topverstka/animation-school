@@ -1,0 +1,34 @@
+// Основной шаблон кнопки
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  padding: 0 50px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  user-select: none;
+  border-radius: 50px;
+  transition: $tr;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background: #000;
+    }
+  }
+}
+
+.link {
+  transition: $tr;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &:active {
+    color: brig-color($accent, active);
+  }
+}

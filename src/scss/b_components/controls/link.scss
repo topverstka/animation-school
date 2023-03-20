@@ -1,0 +1,40 @@
+.link {
+  --link-color: var(--c-text-regular);
+  --link-icon: var(--icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--link-color);
+  font-size: inherit;
+}
+.link:hover {
+  @media (any-hover:hover) {
+    --link-color: var(--c-text-secondary)
+  }
+}
+.link::before {
+  display: block;
+  width: 0.75em;
+  height: 0.75em;
+  margin-right: 0.75em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--link-icon);
+}
+.link--geo::before {
+  content: "";
+  @include getmask("../img/common/geo-icon.svg");
+}
+.link--email::before {
+  content: "";
+  @include getmask("../img/common/email-icon.svg");
+}
+.link--tel::before {
+  content: "";
+  @include getmask("../img/common/phone-icon.svg");
+}
+
+.link--underlined .link__text {
+  border-bottom: 1px dashed #959DA7;
+}

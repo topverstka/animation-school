@@ -1,0 +1,64 @@
+//accordion.scss
+:root {
+	--accordion-border-color: #DDE0E3;
+}
+
+.accordion {
+	border-top: 1px solid var(--accordion-border-color);
+	--icon-size: 3rem;//40px;
+	--icon-mr: 1rem;
+}
+.accordion:last-of-type {
+	border-bottom: 1px solid var(--accordion-border-color);
+}
+.accordion__head {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	// padding: 1rem 1.5rem; //16-24
+	padding: 0.7rem 0.4rem; //16-24
+	padding-right: 0;
+}
+.accordion__icon {
+	--size: var(--icon-size);
+	min-width: var(--size);
+	max-width: var(--size);
+	width: var(--size);
+	height: var(--size);
+	display: block;
+	margin-right: var(--icon-mr);
+}
+.accordion__title {
+	font-size: 1.125rem;
+}
+
+.accordion__body {
+	padding: 0.1875rem 1.5rem 1.5rem; //16-24
+}
+
+
+.accordion .bayan__toggler {
+	--width: 12px;
+	--height: 14px;
+	width: var(--width);
+	min-width: var(--width);
+	max-width: var(--width);
+	height: var(--height);
+	display: block;
+	margin-left: auto;
+	background-image: url('../img/common/angle-down.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	transition: all 0.3s ease;
+}
+
+/**
+ * States
+ */
+.accordion.bayan--opened .accordion__head{
+}
+
+.accordion--has-icon .accordion__body {
+	padding-left: calc(1.5rem + var(--icon-size) + var(--icon-mr));
+}

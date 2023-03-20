@@ -1,0 +1,79 @@
+.snacky {
+	position: absolute;
+	left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+	background-color: var(--bg-element);
+	color: var(--c-accent);
+	border-radius: 0.625rem;
+	border: 1px solid var(--c-text-regular);
+	max-width: 22.9375rem;
+	width: 100%;
+	z-index: 20;
+	padding: 2.5rem 2rem;
+  transition: var(--tr-regular);
+  opacity: 0;
+}
+.snacky--visible {
+  opacity: 1;
+}
+.snacky__message {
+	font-size: 1.125rem;
+}
+.snacky__closer {
+
+}
+.snacky__closer {
+  color: transparent;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 0;
+  font-size: 0.875rem;//20px;
+  background: transparent;
+  transition: all 0.3s ease;
+  --closer-color: var(--c-accent);
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+.snacky__closer::before,
+.snacky__closer::after {
+  --closer-color: var(--c-accent);
+  position: absolute;
+  top: 48%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 20%;
+  content: "";
+  background-color: var(--closer-color);
+  border-radius: 1em;
+  transition: all 0.3s ease;
+}
+.snacky__closer::before {
+  transform: rotate(35deg);
+}
+.snacky__closer::after {
+  transform: rotate(-35deg);
+}
+.snacky__closer:hover::before,
+.snacky__closer:hover::after {
+  background-color: var(--c-poppa-closer-hover);
+}
+
+
+.snacky__closer::before,
+.snacky__closer::after {
+  top: 44%;
+  right: 0;
+  width: 65%;
+  height: 7%;
+  margin-right: auto;
+  margin-left: auto;
+}

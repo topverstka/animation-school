@@ -1,0 +1,32 @@
+.vertical-strings {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  max-width: rem(1558);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  @media (max-width: 1600px) {
+    max-width: 84.375rem;
+  }
+  @media (max-width: $desktop-s) {
+    max-width: 64.375rem;
+  }
+  @media (max-width: $w-mobile) {
+    display: none;
+  }
+}
+.vertical-strings .section {
+  z-index: 0;
+}
+.vertical-strings__item {
+  width: 1px;
+  background-color: #E4E4E4;
+  height: 100%;
+}

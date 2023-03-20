@@ -1,0 +1,35 @@
+$laptop-l: 1500px;
+$laptop: 1100px;
+$tablet: 992px;
+
+$desktop-l: 1800px;
+$desktop-m: 1500px;
+$desktop-s: 1100px;
+
+$mobile-l: 450px;
+$mobile-m: 390px;
+$mobile-s: 330px;
+
+$w-burger: $tablet;
+
+:root {
+  --base-size: #{"calc(1vw + 1vh)"};
+  --tr: 0.3s;
+  --tr-regular: all var(--tr) ease;
+
+  // Fonts
+  --ff-regular: "Inter", sans-serif;
+  --ff-em: "TexGyreChorus", serif;
+
+  // Widths
+  --w-container: 1440px;
+  @media (max-width: $desktop-m) {
+    --w-container: 1260px;
+  }
+  @media (max-width: $desktop-s) {
+    --w-container: 892px;
+  }
+  @media (max-width: 768px) {
+    --w-container: 100%;
+  }
+}

@@ -1,0 +1,138 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+}
+
+.nav-page {
+  padding: 0.625em 0.66em;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.76rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  margin-right: 0.33em;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  @media (max-width: 768px) and (min-width: 601px) {
+    // font-size: 24px;
+    // margin-right: 10px;
+    border-radius: 16px;
+    // padding: 16px 15px;
+  }
+}
+.nav-page:not(.nav__gap):hover {
+  @media (any-hover:hover) {
+    color: var(--c-text-on);
+    background-color: var(--c-accent);
+  }
+}
+.nav-page:last-child {
+  margin-right: 0;
+}
+
+.nav-arrow {
+  padding: 0.625em 0.66em;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.76rem;
+  line-height: 1.16;
+  text-align: center;
+  color: #000000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  @media (min-width: 602px) and (max-width: 768px) {
+    // font-size: 24px;
+    // padding: 15px 16px;
+    border-radius: 16px;
+  }
+}
+.nav-arrow:hover {
+  color: var(--c-text-on);
+  background-color: var(--c-accent);
+}
+.nav-arrow.disabled {
+  display: none;
+}
+.nav-prev {
+  margin-right: 1.25rem;
+  @media (max-width: 768px) {
+    margin-top: 16px;
+    order: 100;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-right: 40px;
+    margin-top: 32px
+  }
+}
+.nav-prev::before {
+  content: "";
+  display: block;
+  width: 1rem;//16px;
+  height: 1rem;
+  margin-right: 0.5rem;//8px;
+  @include getmask("../img/common/arrow-circle.svg");
+  background-color: #000;
+  margin-bottom: -2px;
+  transform: rotate(-90deg);
+  transition: all 0.3s ease;
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-right: 16px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: -4px;
+  }
+}
+.nav-prev:hover::before {
+  @media (any-hover:hover) {
+    background-color: #fff;
+  }
+}
+.nav-next {
+  margin-left: 1.25rem;//20px;
+  @media (max-width: 768px) {
+    margin-top: 16px;
+    order: 101;
+  }
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-top: 32px;
+  }
+}
+.nav-next::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+  @include getmask("../img/common/arrow-circle.svg");
+  background-color: #000;
+  margin-bottom: -2px;
+  transform: rotate(90deg);
+  @media (min-width: 602px) and (max-width: 768px) {
+    width: 32px;
+    height: 32px;
+    margin-left: 16px;
+    margin-bottom: -4px;
+  }
+}
+.nav-next:hover::after {
+  @media (any-hover:hover) {
+    background-color: #fff;
+  }
+}

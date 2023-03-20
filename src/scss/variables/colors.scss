@@ -1,0 +1,35 @@
+:root {
+  --index: #{"calc(1vw + 1vh)"};
+  --tr: 0.3s;
+  --tr-regular: all var(--tr) ease;
+
+  // Colors
+  --c-accent: #FF9151;
+  --c-wa: #20B038;
+
+  --c-text-regular: #4E3D33;
+  --c-text-bold: #000;
+  --c-text-on: #fff;
+
+  --fancybox-accent-color: var(--c-accent);
+
+  // BGs
+  --bg-element: #fff;
+  --bg-app: #fff;
+
+  // Fonts
+  --ff-regular: "Inter", sans-serif;
+  --ff-em: "TexGyreChorus", serif;
+
+  // Widths
+  --w-container: 1440px;
+  @media (max-width: $desktop-m) {
+    --w-container: 1260px;
+  }
+  @media (max-width: $desktop-s) {
+    --w-container: 892px;
+  }
+  @media (max-width: 768px) {
+    --w-container: 100%;
+  }
+}

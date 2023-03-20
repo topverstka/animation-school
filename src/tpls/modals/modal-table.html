@@ -1,0 +1,20 @@
+<div id="callback-table" class="b_modal">
+  <h3 class="b_modal__title">
+    Laissez vos coordonnées <br />
+    ou appeler au numéro <br />
+    <a class="link b_modal__title-link" href="tel:0558709154">05 58 70 91 54</a>
+  </h3>
+  <form action="table" id="form-table" class="form form--table">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <div class="form__inner">
+      @@include('../inputs/name.html') @@include('../inputs/tel.html')
+      <button type="submit" class="button button--primary b_modal__button" data-success="Message envoyé">
+        <span class="button__text">Envoyer le message</span>
+      </button>
+    </div>
+  </form>
+</div>

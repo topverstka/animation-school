@@ -1,0 +1,88 @@
+.snack {
+  position: fixed;
+  bottom: 1.875rem;
+  right: 1.875rem;
+  z-index: 101;
+  padding: 1.0625rem 1.25rem;
+  color: var(--c-text-regular);
+  background: #f6f6f6;
+  // backdrop-filter: blur(14px);
+  opacity: 0;
+  transition: var(--tr-regular);
+  pointer-events: none;
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  background: #F6F6F6;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  @media (max-width: $tablet) {
+    left: 0;
+    right: 0;
+    padding:  0.5rem 2.7857142857142856rem 0.5rem 2.2142857142857144rem;
+  }
+}
+.snack--visible {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.snack__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: $tablet) {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.snack__content {
+  margin-right: 5.3125rem;
+  max-width: 31.25rem;
+  font-size: 0.875rem;
+  @media (max-width: $tablet) {
+    font-size: 0.86rem;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+.snack__hl {
+  color: var(--c-accent);
+  font-style: italic;
+}
+
+.snack__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: $tablet) {
+    max-width: 100%;
+    // padding-top: 0.9rem;
+  }
+}
+.snack__button {
+  border: 1px solid;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.375rem 1.5rem;
+  border-radius: 0.3125rem;
+  font-size: 16px;
+  color: var(--c-accent);
+  @media (max-width: $tablet) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.snack__close {
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  top: -0.2rem;
+  right: -1.6rem;
+}

@@ -1,0 +1,21 @@
+:root {
+	--accordion-border-color: #DDE0E3;
+}
+.accordions {
+	border: 1px solid var(--accordion-border-color);
+	border-radius: 4px;
+}
+.accordions .accordion:last-of-type {
+	border-bottom: none;
+}
+
+.accordions__header {
+	padding: 1.5rem;
+}
+.accordions__title {
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #77828F;
+	font-size: 0.875rem;
+	line-height: 1;
+}

@@ -1,0 +1,37 @@
+.socials {
+    display: flex;
+    align-items: center;
+}
+.socials__link {
+    --size: 24px;
+    --icon-color: var(--c-text-grey-2);
+    display: block;
+    width: var(--size);
+    min-width: var(--size);
+    max-width: var(--size);
+    height: var(--size);
+    min-height: var(--size);
+    max-height: var(--size);
+    margin-right: 12px;
+    fill: var(--icon-color);
+    @media (max-width: 575px) {
+        --size: 32px;
+        margin-right: 9px;
+    }
+}
+.socials__link--has-stroke {
+    // margin-left: 7px;
+    stroke: var(--icon-color);
+}
+
+.socials__link:last-of-type {
+    margin-right: 0;
+}
+
+.socials__link:hover {
+    @media (min-width: $minHover) {
+        --icon-color: var(--c-accent);
+        // fill: var(--c-accent);
+        // stroke: var(--icon-color);
+    }
+}

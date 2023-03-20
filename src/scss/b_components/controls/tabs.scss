@@ -1,0 +1,33 @@
+.tabs__toggler-container {
+  margin-bottom: 22px;
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-bottom: 44px;
+  }
+}
+.tabs__toggler {
+  font-weight: 700;
+  font-size: 0.75rem;//12px;
+  line-height: 1.166;
+  text-transform: uppercase;
+  color: #A1AEB3;
+  margin-right: 1em;
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-right: 24px;
+    font-size: 24px; 
+  }
+}
+.tabs__toggler.tab--active {
+  color: #fff;
+}
+
+.tabs__page {
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: none;
+}
+.tabs__page.tab--active {
+  opacity: 1;
+  overflow: initial;
+  display: unset;
+}

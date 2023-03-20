@@ -1,0 +1,150 @@
+.timepicker {
+  --height: #{'calc(var(--index) * 21)'};//310px;
+  max-width: 18.819444444444443vw;//271px;
+  max-height: var(--height);
+  height: var(--height);
+  width: 100%;
+  border-radius: var(--brad-half);
+  background: #F0F3F5;
+  padding-right: 0.8125rem;//13px;
+  padding-bottom: 0.1875rem;//3px;
+  padding-left: 1.125rem;//18px;
+  padding-top: 0.1875rem;//14px;
+  @media (min-width: 602px) and (max-width: 768px) {
+    --height: 420px;
+    padding-right: 26px;
+    padding-bottom: 6px;
+    padding-left: 36px;
+    padding-top: 28px;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+  @media (max-width: 601px) {
+    --height: 330px;
+  }
+}
+
+.timepicker__list.timepicker__list--single {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  appearance: none;
+  pointer-events: none;
+}
+
+.timepicker__list.timepicker__list--dropdown {
+  overflow: auto;
+  height: calc(var(--height) - 0.625rem);//10px
+  // margin-top: -0.875rem;//-14px;
+  @include macscrollbarHasMine(4px, 4px, #000, #D3DCDF);
+  @media (min-width: 602px) and (max-width: 768px) {
+    height: calc(var(--height) - 36px);
+    // margin-top: -7px;
+  }
+}
+
+.timepicker__item::before {
+
+}
+
+.timepicker__item {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0.625rem;//10px;
+  color: var(--time-color, #000);
+  font-size: 1rem;
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+.timepicker__item:last-of-type {
+  margin-bottom: 0;
+}
+.timepicker__item::after {
+  content: "";
+  position: absolute;
+  left: 0.6875rem;//11px;
+  top: 0.6875rem;//11px;
+  display: block;
+  margin: auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: transparent;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  @media (min-width: 602px) and (max-width: 768px) {
+    width: 16px;
+    height: 16px;
+    left: 22px;
+    top: 22px;
+  }
+}
+.timepicker__item::before {
+  content: "";
+  display: block;
+  width: 1.875rem;//30px;
+  height: 1.875rem;//30px;
+  border: 1px solid #D3DCDF;
+  border-radius: 100%;
+  position: static;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  @media (min-width: 601px) and (max-width: 768px) {
+    font-size: 32px;
+    margin-right: 16px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.timepicker__item.is-selected {
+
+}
+.timepicker__item.is-selected::before {
+  background-color: var(--c-accent);
+}
+.timepicker__item.is-selected::after {
+  background-color: #fff;
+}
+
+.timepicker__outer {
+  height: 100%;
+}
+
+.timepicker__list--dropdown .timepicker__list::before {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: calc(100% - 0.875rem);//14
+  height: 0.875rem;//30px;
+  margin-bottom: 0;//-0.625rem;//-10px;
+  pointer-events: none;
+  content: "";
+  background: linear-gradient(180deg, #f0f3f5 24.79%, rgba(255, 255, 255, 0) 100%);
+  // opacity: 0; //Просто отключил по просьбе зака «Сверху градиентное высветление бессмысленно, если отображается верхний пункт списка»
+}
+
+.timepicker__list--dropdown .timepicker__list::after {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 0.875rem;//30px;
+  margin-bottom: -1.875rem;//30px;
+  pointer-events: none;
+  content: "";
+  background: linear-gradient(0deg, #f0f3f5 24.79%, rgba(255, 255, 255, 0) 100%);
+}

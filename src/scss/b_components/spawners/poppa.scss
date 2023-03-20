@@ -1,0 +1,229 @@
+:root {
+  // --tr-enter-jolly: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  // --tr-enter-jolly: all 0.5s cubic-bezier(0.4, 0, 0, 1);
+  --bg-poppa-overlay: rgba(0, 0, 0, 0.8);
+  // --c-poppa-closer-hover: #ff3b30;
+  --c-poppa-closer-hover: var(--c-accent);
+  --z-poppa: 1234567890;
+  // opacity 0.5s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.poppa__storage {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // z-index: var(--z-poppa);
+  z-index: 1;
+  display: block;
+  width: 100%;
+  // height: #{'calc(100 * 1vh)'};
+  height: 100%;
+  // max-height: 1000px;
+  pointer-events: none;
+}
+.poppa__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // height: calc(100 * 1vh);
+  height: 100%;
+  max-height: 100%;
+  pointer-events: none;
+  background-color: var(--bg-poppa-overlay);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.poppa__overlay._show {
+  pointer-events: initial;
+  opacity: 1;
+}
+
+.poppa__aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.poppa--scrollable .poppa__aligner{
+  align-items: flex-start;
+}
+
+.poppa {
+  max-width: 900px;
+  padding: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  // background-color: #fff;
+  border-radius: 2em;
+  transition: all 0.3s ease;
+  transform: scale(0.86);
+}
+._show .poppa {
+  transform: scale(1);
+}
+
+.poppa__closer {
+  position: absolute;
+  top: 1.4em;
+  right: 0.9em;
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 0;
+  background: transparent;
+  transition: all 0.3s ease;
+  --closer-color: #fff;
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+.poppa__closer::before,
+.poppa__closer::after {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 20%;
+  content: "";
+  background-color: var(--closer-color);
+  border-radius: 1em;
+  transition: all 0.3s ease;
+}
+.poppa__closer::before {
+  transform: rotate(40deg);
+}
+.poppa__closer::after {
+  transform: rotate(-40deg);
+}
+.poppa__closer:hover::before,
+.poppa__closer:hover::after {
+  background-color: var(--c-poppa-closer-hover);
+}
+
+
+.poppa__closer {
+  --closer-color: #fff;
+  font-size: 1.2rem;//20px;
+  color: transparent;
+}
+.poppa__closer::before,
+.poppa__closer::after {
+  top: 44%;
+  right: 0;
+  width: 65%;
+  height: 7%;
+  margin-right: auto;
+  margin-left: auto;
+  // @media (max-width: 768px) {
+  //   top: 46%;
+  //   width: 70%;
+  // }
+}
+
+/*
+
+  Animations
+
+    transition: opacity .5s cubic-bezier(.4,0,0,1),-webkit-transform .5s cubic-bezier(.4,0,0,1)!important;
+    transition: transform .5s cubic-bezier(.4,0,0,1),opacity .5s cubic-bezier(.4,0,0,1)!important;
+
+    transition: transform .5s cubic-bezier(.4,0,0,1),opacity .5s cubic-bezier(.4,0,0,1),-webkit-transform .5s cubic-bezier(.4,0,0,1)!important;
+
+    transform: scale(.86);
+    opacity: 0;
+*/
+
+// transition: opacity .5s cubic-bezier(.5,0,.5,1)
+
+// transition: opacity .7s cubic-bezier(.5,0,.5,1)!important;
+.poppa__overlay._enter--jolly {
+  // transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1),
+  // opacity 0.5s cubic-bezier(0.4, 0, 0, 1);
+}
+
+/*
+
+  poppa theme
+
+
+*/
+
+.poppa {
+  width: 100%;
+  max-width: 300px;
+  padding-top: 24px;
+  padding-right: 18px;
+  padding-bottom: 37px;
+  padding-left: 18px;
+  color: var(--c-text-on);
+  // background: var(--bg-poppa);
+  border-radius: 0;
+
+  @media (min-width: 1100px) {
+    max-width: 500px;
+  }
+}
+.poppa--wide {
+  max-width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.poppa--overlay {
+  background: var(--bg-poppa-overlay);
+}
+
+.poppa__title {
+  margin-bottom: 20px;
+  font-family: var(--ff-title);
+  font-size: 18px;
+  line-height: 126%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.poppa__title-link {
+  color: inherit;
+}
+.poppa__title-link:hover {
+  @media (any-hover:hover) {
+    color: var(--c-accent);
+  }
+}
+
+.poppa__button {
+  display: block;
+  width: 100%;
+  @media (max-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
+}
+
+body:not(.os-linux):not(.os-macos) .poppa__closer {
+  @media (min-width: 769px) {
+    right: 33px;
+  }
+}
+
+
+.poppa__overlay {
+  @media (max-width: $w-mobile) {
+    padding-top: 1.78rem;
+  }
+}
+.poppa--scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 7.14rem;
+}
+.poppa--scrollable .poppa {
+  margin-bottom: 7.14rem;
+}

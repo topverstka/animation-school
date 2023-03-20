@@ -1,0 +1,105 @@
+/**
+ * 
+  label.radio>input:radio.radio__input+span.radio__check+span.radio__title
+ */
+.radio {
+  display: flex;
+  justify-content: flex-start;
+  // align-items: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  @media (min-width: 602px) and (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+.radio:last-of-type {
+  margin-bottom: 0;
+}
+.radio__input {
+  appearance: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+
+.radio__check {
+  position: relative;
+  --size: 1.75rem;//28px;
+  width: var(--size);
+  min-width: var(--size);
+  height: var(--size);
+  border-radius: var(--size);
+  border: 1px solid #F0F3F5;
+  margin-right: 1rem;//16px;
+  transition: all 0.3s ease;
+  @media (min-width: 602px) and (max-width: 768px) {
+    --size: 56px;
+  }
+}
+.radio__check::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: calc(100% - 1.125rem); //18
+  height: calc(100% - 1.125rem);
+  background-color: #fff;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  @media (min-width: 602px) and (max-width: 768px) {
+    width: calc(100% - 36px);
+    height: calc(100% - 36px);
+  }
+}
+.radio__check::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-color: #5f6c75;
+  transition: all 0.3s ease;
+}
+.radio__input:checked ~ .radio__check {
+  border-color: var(--c-accent);
+}
+.radio__input:checked ~ .radio__check::before {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.radio__title {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  display: block;
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+}
+.radio__title:only-child {
+  margin-bottom: 0.2rem;
+}
+.radio__desc {
+  display: block;
+  font-family: 'RF Dewi', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.76rem;
+  line-height: 1.16;
+  color: #000000;
+  @media (min-width: 602px) and (max-width: 768px) {
+    font-size: 24px;
+  }
+}

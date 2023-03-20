@@ -1,0 +1,39 @@
+.services {
+	padding-top: 9rem;
+	@media (max-width: $w-mobile) {
+		padding-top: 3.386rem;
+		// padding-bottom: 2.5rem;
+	}
+}
+.services .stages__title {
+	@media (max-width: $w-mobile) {
+		// font-size: 1.03rem;
+		margin-bottom: 2.643rem;
+	}
+}
+
+.services .stages__gallery {
+	column-gap: 1.875rem;
+	row-gap: 1.825rem;
+	@media (max-width: $w-mobile) {
+		margin-left: -0.743rem;
+		margin-right: -0.743rem;
+		row-gap: 2.025rem;
+	}
+}
+.services .stages-card {
+	padding: 1.875rem 2.125rem 0.338rem;
+	min-height: 8.625rem;//138
+	@media (max-width: $w-mobile) {
+		min-height: 7.928571428571429rem;
+		padding: 2.357142857142857rem 1.125rem 0.943rem;
+	}
+}
+.services .stages-card__title {
+	font-size: 1.125rem;
+	margin-bottom: 1.4rem;
+	@media (max-width: $w-mobile) {
+		font-size: 1.025rem;
+		margin-bottom: 0.7rem;
+	}
+}

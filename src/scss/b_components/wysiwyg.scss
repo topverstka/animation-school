@@ -1,0 +1,31 @@
+.wysiwyg {
+	color: #000;
+	h1 {
+		font-size: 2rem;
+		font-weight: 600;
+		font-style: italic;
+		margin-bottom: 3.75rem;
+		color: var(--c-accent);
+		@media (max-width: $w-mobile) {
+			margin-bottom: 2.857142857142857rem;
+		}
+	}
+	h4 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		margin-bottom: 1.5em;
+	}
+	p {
+		font-size: 1.125rem;
+		line-height: initial;
+		margin-bottom: 1.5em;
+	}
+	p + h4 {
+		margin-top: 3em;
+	}
+
+	@media (max-width: $w-mobile) {
+		padding-left: 2.142857142857143rem;
+		padding-right: 2.142857142857143rem;
+	}
+}

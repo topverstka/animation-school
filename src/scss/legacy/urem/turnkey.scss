@@ -1,0 +1,195 @@
+.turnkey {
+	padding-bottom: 6.5rem;
+	@media (max-width: $desktop-m) {
+		padding-bottom: 4.5rem;
+	}
+	@media (max-width: $desktop-s) {
+		padding-top: 6rem;
+	}
+	@media (max-width: $w-mobile) {
+		padding-bottom: 4.285714285714286rem;
+	}
+}
+.turnkey__container {
+	position: relative;
+}
+.turnkey__gallery {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.turnkey-card {
+	--color: var(--c-text-on);
+	position: relative;
+	z-index: 1;
+	padding: rem(20);
+	margin-bottom: rem(20);
+	color: var(--color);
+	max-width: 32.142007%;
+	width: 100%;
+	@media (max-width: $tablet) {
+		max-width: 100%;
+		padding-top: 1.315rem;
+		padding-bottom: 1.928rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+.turnkey-card:last-of-type {
+	@media (max-width: $w-mobile) {
+		margin-bottom: 0;
+	}
+}
+
+.turnkey-card__shield {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	padding: rem(10) rem(25) rem(10) 0.7625rem;
+	margin-left: 0.8rem;//rem(20);
+	color: var(--c-text-regular);
+	font-size: 0.75rem;//rem(12);
+	font-weight: 600;
+	font-style: italic;
+	margin-bottom: 9.6875rem;//rem(155);
+	@media (max-width: $tablet) {
+		margin-left: 0;
+		font-size: 0.857rem;//rem(12);
+		padding-right: 0.9285714285714286rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		padding-left: 0.51rem;
+		margin-bottom: 12.571428571428571rem;//176
+	}
+}
+.turnkey-card__shield::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -1rem;
+	display: block;
+	height: 100%;
+	width: rem(30);
+	padding-left: 10px;
+	background-image: url(../img/common/price-bullet.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	@media (max-width: $tablet) {
+		left: -1.2rem;
+	}
+}
+.turnkey-card__shield::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--bg-element);
+	border-radius: 0 rem(5) rem(5) 0;
+	z-index: -1;
+	@media (max-width: $w-mobile) {
+		border-radius: 0 0.714rem 0.714rem 0;
+	}
+}
+
+.turnkey-card__pic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+	border-radius: rem(10);
+}
+.turnkey-card__pic::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: rem(10);
+	background-color: rgba(0,0,0,0.3);
+}
+.turnkey-card__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: rem(10);
+	object-fit: cover;
+	transition: var(--tr-regular);
+}
+
+.turnkey-card:hover .turnkey-card__img {
+	@media (any-hover:hover) {
+		transform: scale(1.2);
+	}
+}
+
+.turnkey-card__more {
+	--color: var(--c-text-on);
+	display: block;
+	cursor: pointer;
+	font-family: var(--ff-em);
+	font-size: rem(18);
+	margin-bottom: rem(20);
+	color: var(--color);
+	border-bottom: 1px solid var(--color);
+	transition: var(--tr-regular);
+	@media (max-width: $w-mobile) {
+		font-size: 1.142rem;
+		margin-bottom: 0.857rem;
+		line-height: initial;
+	}
+}
+
+.turnkey-card__title {
+	font-size: 1.375rem;//rem(22);
+	@media (max-width: $w-mobile) {
+		font-size: 1rem;
+	}
+}
+.turnkey-card__link {
+	--color: var(--c-text-on);
+	color: var(--color);
+	font-size: inherit;
+	font-weight: 600;
+	line-height: initial;
+	transition: var(--tr-regular);
+	text-align: left;
+}
+.turnkey-card__more:hover,
+.turnkey-card__link:hover {
+	@media (any-hover:hover) {
+		--color: var(--c-accent);
+	}
+}
+
+.turnkey__gallery > .turnkey-card:nth-child(1),
+.turnkey__gallery > .turnkey-card:nth-child(2) {
+}
+.turnkey__gallery > .turnkey-card:nth-child(1) .turnkey-card__shield,
+.turnkey__gallery > .turnkey-card:nth-child(2) .turnkey-card__shield {
+	margin-bottom: rem(255);
+	@media (max-width: $tablet) {
+		margin-bottom: 14.642857142857142rem;//205
+	}
+}
+.turnkey__gallery > .turnkey-card:nth-child(1) {
+	@media (min-width: ($tablet + 1)) {
+		max-width: 59.628252788104085%;
+
+	}
+}
+.turnkey__gallery > .turnkey-card:nth-child(2) {
+	@media (min-width: ($tablet + 1)) {
+		max-width: 38.876952%;
+	}
+}
+.turnkey__gallery > .turnkey-card:nth-child(5) {
+}
