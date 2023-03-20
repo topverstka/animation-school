@@ -18,9 +18,9 @@
 }
 
 
-:focus,
-:active,
-:focus-visible {
+*:focus,
+*:active,
+*:focus-visible {
   // outline: none;
 }
 
@@ -30,7 +30,6 @@
 html,
 body {
   width: 100%;
-  min-width: $min-width;
   height: 100%;
 }
 /*
