@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница ошибки</title>
+    <link rel="stylesheet" href="./css/style.css?_v=20230322005214" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container header__container">
+    <a href="#" class="header__logo logo">
+      <img src="./img/common/logo.svg" alt="" class="logo__img" />
+    </a>
+    <div class="header__menu">
+      <nav class="nav header__nav">
+        <ul class="header__nav-links">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Курсы</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Профессии</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Преподаватели</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Работы студентов</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Блог</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__buttons">
+        <div class="header__socials socials">
+          <a href="#" class="socials__link" aria-label="Наш youtube">
+            <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+          </a>
+          <a href="#" class="socials__link" aria-label="Наш VK">
+            <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+          </a>
+          <a href="#" class="socials__link" aria-label="Наш Телеграм">
+            <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+          </a>
+          <a href="#" class="socials__link" aria-label="Наш Discrod">
+            <img src="./img/common/discord-icon.svg#discord" alt="" class="socials__icon">
+          </a>
+        </div>
+        <a href="tel:+7 (999) 333-15-03" class="button-primary header__button-phone">
+          <svg class="button__icon">
+            <use xlink:href="./img/common/phone-icon.svg#phone" />
+          </svg>
+          <span class="button__text">+7 (999) 333-15-03</span>
+        </a>
+        <button class="button-primary header__button-consult" type="button">Проконсультироваться</button>
+      </div>
+    </div>
+
+    <button class="burger header__burger"></button>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="section-error">
+          <div class="container section-error__container">
+            <h2 class="section-title section-error__status">404</h2>
+            <p class="section-desc section-error__desc">
+              Попробуйте вернуться на главную страницу
+            </p>
+            <a href="#" class="button button-primary">Вернуться на главную</a>
+          </div>
+        </section>
+      </main>
+
+
+      <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__branding">
+      <a href="#" class="footer__logo logo">
+        <img src="./img/common/logo.svg" alt="" class="logo__img" />
+      </a>
+      <p class="footer__desc">
+        Школа анимации 2023 <br>
+        Все права защищены
+      </p>
+    </div>
+
+    <div class="footer__about">
+      <nav class="footer__nav">
+        <ul class="footer__nav-links">
+          <li class="footer__nav-item">
+            <a href="#courses" class="footer__nav-link">Курсы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#professions" class="footer__nav-link">Профессии</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#teachers" class="footer__nav-link">Преподаватели</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#students-works" class="footer__nav-link">Работы студентов</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="blog" class="footer__nav-link">Блог</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#contacts" class="footer__nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__legal">
+        <p class="footer__desc"> Лицензия №Л035-01298-77/00634957 от 30.12.2022</p>
+        <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
+        <a href="#" class="footer__legal-link">Договор оферты</a>
+        <a href="#" class="footer__legal-link">Программа</a>
+      </div>
+
+      <svg class="footer__icon">
+        <use xlink:href="./img/common/hearth.svg#hearth" />
+      </svg>
+    </div>
+
+    <div class="footer__contact">
+      <a href="tel:+7 (999) 333-15-03" class="button-primary footer__button-phone">
+        <svg class="button__icon">
+          <use xlink:href="./img/common/phone-icon.svg#phone" />
+        </svg>
+        <span class="button__text">+7 (999) 333-15-03</span>
+      </a>
+      <p class="footer__desc">Круглосуточно, <br>звонок бесплатный</p>
+    </div>
+
+    <p class="footer__designer">
+      Дизайнил
+      <a href="#" class="link">Даниил Постнов</a>
+    </p>
+
+    <p class="footer__coder">
+      Закодил
+      <a href="#" class="link">Даниил Бортвин</a>
+    </p>
+
+  </div>
+</footer>
+
+<div id="modal-consult" class="b_modal">
+  <button class="b_modal-close"></button>
+  <h3 class="b_modal__title">
+    Консультация по&nbsp;обучению
+  </h3>
+  <p class="modal__desc">
+    Наши менеджеры получат заявку и&nbrp;передадут преподавателям. <br>
+    Мы&nbsp;напишем вам&nbsp;в&nbsp;течение нескольких часов.
+  </p>
+  <form action="table" id="form-consult" class="form">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <fieldset class="form__fieldset">
+      <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <label class="input input--email">
+  <input
+    class="input__field"
+    name="user_email"
+    type="email"
+    placeholder="E-mail"
+    autocorrect="off"
+    autocomplete="email"
+    data-value-missing="Напишите имейл"
+    data-value-invalid="Проверьте корректность имейла"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-email.svg#email"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <span class="input-privacy">
+	<label for="" class="input-privacy__label">
+		<input type="checkbox" class="input-privacy__check">
+		<span class="input-privacy__checkbox"></span>
+	</label>
+	<p class="input-privacy__desc">
+		Нажимая на кнопку, вы даете 
+		<a href="https://animationschool.ru/files/animationschool.ru_personal_data_policy.pdf" class="input-privacy__link">согласие на обработку своих персональных данных</a>
+	</p>
+</span>
+    </fieldset>
+    <button class="button-primary form__button">
+      <svg class="button__icon">
+        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+      </svg>
+      <span class="button__text">Отправить</span>
+    </button>
+  </form>
+</div>
+
+<div id="modal-thanks" class="b_modal">
+  <button class="b_modal-close"></button>
+  <svg class="modal__icon">
+    <use xlink:href="./img/common/status-ok.svg#ok" />
+  </svg>
+  <h3 class="b_modal__title">
+    Заявка на&nbsp;консультацию отправлена!
+  </h3>
+  <p class="modal__desc">
+    Отзыв на сайте покажется после предварительной модерации.
+  </p>
+  <form action="table" id="form-consult" class="form">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <fieldset class="form__fieldset">
+      <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <label class="input input--email">
+  <input
+    class="input__field"
+    name="user_email"
+    type="email"
+    placeholder="E-mail"
+    autocorrect="off"
+    autocomplete="email"
+    data-value-missing="Напишите имейл"
+    data-value-invalid="Проверьте корректность имейла"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-email.svg#email"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <span class="input-privacy">
+	<label for="" class="input-privacy__label">
+		<input type="checkbox" class="input-privacy__check">
+		<span class="input-privacy__checkbox"></span>
+	</label>
+	<p class="input-privacy__desc">
+		Нажимая на кнопку, вы даете 
+		<a href="https://animationschool.ru/files/animationschool.ru_personal_data_policy.pdf" class="input-privacy__link">согласие на обработку своих персональных данных</a>
+	</p>
+</span>
+    </fieldset>
+    <button class="button-primary form__button">
+      <span class="button__text">Закрыть</span>
+    </button>
+  </form>
+ 
+
+
+    </div>
+
+    <div id="modal-consult" class="b_modal">
+  <button class="b_modal-close"></button>
+  <h3 class="b_modal__title">
+    Консультация по&nbsp;обучению
+  </h3>
+  <p class="modal__desc">
+    Наши менеджеры получат заявку и&nbrp;передадут преподавателям. <br>
+    Мы&nbsp;напишем вам&nbsp;в&nbsp;течение нескольких часов.
+  </p>
+  <form action="table" id="form-consult" class="form">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <fieldset class="form__fieldset">
+      <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <label class="input input--email">
+  <input
+    class="input__field"
+    name="user_email"
+    type="email"
+    placeholder="E-mail"
+    autocorrect="off"
+    autocomplete="email"
+    data-value-missing="Напишите имейл"
+    data-value-invalid="Проверьте корректность имейла"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-email.svg#email"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <span class="input-privacy">
+	<label for="" class="input-privacy__label">
+		<input type="checkbox" class="input-privacy__check">
+		<span class="input-privacy__checkbox"></span>
+	</label>
+	<p class="input-privacy__desc">
+		Нажимая на кнопку, вы даете 
+		<a href="https://animationschool.ru/files/animationschool.ru_personal_data_policy.pdf" class="input-privacy__link">согласие на обработку своих персональных данных</a>
+	</p>
+</span>
+    </fieldset>
+    <button class="button-primary form__button">
+      <svg class="button__icon">
+        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+      </svg>
+      <span class="button__text">Отправить</span>
+    </button>
+  </form>
+</div>
+
+<div id="modal-thanks" class="b_modal">
+  <button class="b_modal-close"></button>
+  <svg class="modal__icon">
+    <use xlink:href="./img/common/status-ok.svg#ok" />
+  </svg>
+  <h3 class="b_modal__title">
+    Заявка на&nbsp;консультацию отправлена!
+  </h3>
+  <p class="modal__desc">
+    Отзыв на сайте покажется после предварительной модерации.
+  </p>
+  <form action="table" id="form-consult" class="form">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <fieldset class="form__fieldset">
+      <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <label class="input input--email">
+  <input
+    class="input__field"
+    name="user_email"
+    type="email"
+    placeholder="E-mail"
+    autocorrect="off"
+    autocomplete="email"
+    data-value-missing="Напишите имейл"
+    data-value-invalid="Проверьте корректность имейла"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-email.svg#email"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <span class="input-privacy">
+	<label for="" class="input-privacy__label">
+		<input type="checkbox" class="input-privacy__check">
+		<span class="input-privacy__checkbox"></span>
+	</label>
+	<p class="input-privacy__desc">
+		Нажимая на кнопку, вы даете 
+		<a href="https://animationschool.ru/files/animationschool.ru_personal_data_policy.pdf" class="input-privacy__link">согласие на обработку своих персональных данных</a>
+	</p>
+</span>
+    </fieldset>
+    <button class="button-primary form__button">
+      <span class="button__text">Закрыть</span>
+    </button>
+  </form>
+ 
+
+    <script src="./js/bundle.min.js?_v=20230322005214"></script>
+  </body>
+</html>
