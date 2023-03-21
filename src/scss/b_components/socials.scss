@@ -4,7 +4,7 @@
 }
 
 .socials__link {
-  --size: 2.5rem; //40
+  --size: 3.7rem;
   display: block;
   width: var(--size);
   min-width: var(--size);
@@ -13,10 +13,10 @@
   min-height: var(--size);
   max-height: var(--size);
   transition: var(--tr);
-  margin-right: 1.25rem;
+  margin-right: 1rem;
   transition: var(--tr-regular);
   border-radius: 50%;
-  @media (max-width: $w-mobile) {
+  @media (max-width: $mobile-l) {
     --size: 2.142rem;
     margin-right: 1.0714rem;
   }
@@ -31,7 +31,7 @@
 }
 
 .socials__icon {
-  border-radius: 50%;
+  border-radius: 9999px;
 }
 .socials__icon--whatsapp {
   background: linear-gradient(0deg, #20B038 0%, #60D66A 100%);

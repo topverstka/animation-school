@@ -1,0 +1,51 @@
+.doubt {
+	padding-top: 12.1rem;
+	background-color: var(--c-text-regular);
+	color: var(--c-text-on);
+	overflow: hidden;
+}
+.doubt__container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.doubt__title {
+	margin-bottom: 7.4rem;
+}
+.doubt__title-question {
+	display: block;
+	margin-bottom: 2.6rem;
+}
+.doubt__button {
+	max-width: 47rem;
+	width: 100%;
+	padding-left: 5.6rem;
+	padding-right: 5.6rem;
+	font-size: 2rem;
+}
+
+.doubt__media {
+	position: relative;
+  margin-right: -9rem;
+  margin-top: -9rem;
+  margin-left: -3rem;
+  margin-bottom: -39rem;
+}
+.doubt__link {
+  position: absolute;
+  top: 60%;
+  right: 24.2%;
+  z-index: 2;
+  color: var(--c-text-on);
+}
+
+.doubt--bottom .doubt__media {
+  margin-left: -4rem;
+  margin-right: -17rem;
+  margin-top: -12rem;
+  margin-bottom: -43.5rem;
+}
+.doubt--bottom .doubt__link {
+	top: 57%;
+  right: 21.2%;
+}

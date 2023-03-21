@@ -118,3 +118,9 @@ beforeAfterSliders.forEach((slider, index) => {
   makeBeforeAfterSlider(slider, index);
 })
 */
+
+const reviewsCards = [...document.querySelectorAll('.reviews-card')];
+reviewsCards.forEach((card, index, cards) => {
+  if (index < (cards.length / 2)) return
+  card.classList.add('reviews-card--second-half')
+}) 

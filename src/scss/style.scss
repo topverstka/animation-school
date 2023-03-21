@@ -23,9 +23,22 @@
 @import "./reset";
 @import "./normalize";
 
+html {
+  font-size: calc(0.342466 * var(--base-size)); //10px for 1920×1000 
+  // @media (max-width: 1600px) {
+  //   font-size: calc(0.343466 * var(--base-size)); //10px for 1600×900 
+  // }
+  // @media (max-width: 1440px) {
+  //   font-size: calc(0.44643 * var(--base-size)); //10px for 1440×800
+  // }
+}
 body {
+  color: var(--c-text-regular);
   font-weight: 400;
+  font-family: var(--ff-regular);
+  font-size: 1.6rem;
   line-height: 1.2;
+  letter-spacing: -0.03em;
 }
 body._lock {
   overflow: hidden;
@@ -38,41 +51,18 @@ body._lock {
   flex-direction: column;
   width: 100%;
   min-height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
 }
 .wrapper > .content {
   position: relative;
   z-index: 1;
   flex: 1 0 auto;
 }
-
-/*
-(i) Стили будут применяться ко
-всем классам содержащим *__container
-Например header__container, main__container и т.д.
-*/
-// [class*="__container"] {
-//   @if ($max-width-container > 0) {
-//     box-sizing: content-box;
-//     max-width: $max-width-container;
-//     margin: 0 auto;
-//   }
-//   @if ($container-padding > 0) {
-//     padding: 0 var(--container-padding);
-//   }
-
-//   @media (max-width: $tablet) {
-//     --container-padding: 30px;
-//   }
-
-//   @media (max-width: $mobile-l) {
-//     --container-padding: 20px;
-//   }
-
-//   @media (max-width: $mobile-m) {
-//     --container-padding: 16px;
-//   }
-// }
+.container {
+  max-width: 159rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 // Библиотеки
 // @import "./libs/swiper";
@@ -82,7 +72,7 @@ body._lock {
 // Базовые стили, шаблоны, заготовки
 
 // Общие стили проекта
-// @import "./sections";
+@import "./sections";
 
 // Карточки
 // @import "./components/cards/";

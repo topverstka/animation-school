@@ -4,18 +4,21 @@
   --tr-regular: all var(--tr) ease;
 
   // Colors
-  --c-accent: #FF9151;
-  --c-wa: #20B038;
+  --c-accent: #E7AE44;
+  --c-accent-active: #F8B12D;
+  --c-accent-disabled: #E0C187;
 
-  --c-text-regular: #4E3D33;
+  --c-text-regular: #373737;
   --c-text-bold: #000;
   --c-text-on: #fff;
+  --c-text-button: #222222;
 
   --fancybox-accent-color: var(--c-accent);
 
   // BGs
-  --bg-element: #fff;
+  --bg-element: #F4F5F6;
   --bg-app: #fff;
+  --bg-dark: #222222;
 
   // Fonts
   --ff-regular: "Inter", sans-serif;

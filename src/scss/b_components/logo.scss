@@ -1,8 +1,7 @@
 .logo {
-  --size: 48px;
   display: block;
-  width: var(--size);
-  height: var(--size);
+  max-width: 23.5rem;
+  width: 100%;
 }
 .logo__img {
   display: block;

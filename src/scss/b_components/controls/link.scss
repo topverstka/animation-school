@@ -1,40 +1,27 @@
 .link {
   --link-color: var(--c-text-regular);
+  --link-color-hover:  var(--c-accent);
+  --link-underline-color: rgba(255,255,255,0.2);
+  --link-underline-color-hover: var(--c-accent-disabled);
+
   --link-icon: var(--icon-color);
   display: flex;
   align-items: center;
   justify-content: flex-start;
   color: var(--link-color);
-  font-size: inherit;
+  font-size: 1.8rem;
+  font-family: var(--ff-controls);
+  transition: var(--tr-regular);
 }
 .link:hover {
   @media (any-hover:hover) {
-    --link-color: var(--c-text-secondary)
+    color: var(--link-color-hover);
+    --link-underline-color: var(--link-underline-color-hover);
   }
 }
-.link::before {
-  display: block;
-  width: 0.75em;
-  height: 0.75em;
-  margin-right: 0.75em;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--link-icon);
-}
-.link--geo::before {
-  content: "";
-  @include getmask("../img/common/geo-icon.svg");
-}
-.link--email::before {
-  content: "";
-  @include getmask("../img/common/email-icon.svg");
-}
-.link--tel::before {
-  content: "";
-  @include getmask("../img/common/phone-icon.svg");
-}
-
-.link--underlined .link__text {
-  border-bottom: 1px dashed #959DA7;
+.link__text {
+  color: inherit;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid var(--link-underline-color);
+  transition: var(--tr-regular);
 }

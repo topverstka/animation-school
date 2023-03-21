@@ -3,39 +3,43 @@
 */
 
 :root {
-  --fz-button: 1rem;
+  --fz-button: 1.8rem;
   --fw-button: 500;
-  --lh-button: auto;
+  --lh-button: 1;
 
   --button-bg: var(--c-accent);
-  --button-bg-hover: var(--bg-element);
-  --button-color: var(--c-text-on);
-  --button-color-hover: var(--c-accent);
+  --button-bg-hover: var(--c-accent-active);
+  --button-color: var(--c-text-button);
+  --button-color-hover: var(--button-color);
 }
 
 .button-primary {
-  display: inline-flex;
+  --icon-size: 2.4rem;
+  --icon-gap: 0.4rem;
+  --icon-color: var(--button-color);
+  --icon-order: 1;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  column-gap: var(--icon-gap);
   align-items: center;
   justify-content: center;
-  padding: rem(21.5) rem(31.5);
+  padding: 1.8rem 2.6rem;
 
-  border: 1px solid var(--c-accent); //1
-
+  font-family: var(--ff-controls);
   font-size: var(--fz-button);
   font-weight: var(--fw-button);
   line-height: var(--lh-button);
-
+  letter-spacing: -0.02em;
   text-align: center;
   cursor: pointer;
 
-  border-radius: rem(10);
+  border-radius: 9999px;
   color: var(--button-color);
-  --icon-color: var(--button-color);
   background: var(--button-bg, transparent);
 
   transition: all 0.3s ease;
 
-  @media (max-width: $w-mobile) {
+  @media (max-width: $mobile-l) {
     padding: 1.678rem;  
   }
 }
@@ -45,9 +49,27 @@
     color: var(--button-color-hover)
   }
 }
+
+.button-primary--invert {
+  --button-bg: var(--c-text-regular);
+  --button-bg-hover: var(--c-accent);
+  --button-color: var(--c-text-on);
+  --button-color-hover: var(--button-color);
+}
+
 .button--wait {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.button__icon {
+  --size: var(--icon-size);
+  max-width: var(--size);
+  min-width: var(--size);
+  width: var(--size);
+  height: var(--size);
+  margin-right: var(--icon-gap);
+  order: var(--icon-order);
 }
 
 
@@ -177,3 +199,19 @@
   }
 }
 */
+
+.button-play {
+  background-color: #fff;
+  border-radius: 99999px;
+  width: 19rem;
+  height: 19rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--tr-regular);
+}
+.button-play:hover {
+  @media (any-hover:hover) {
+    background-color: var(--bg-element);
+  }
+}

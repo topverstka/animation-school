@@ -1,0 +1,81 @@
+.teachers {
+
+}
+
+.teachers__gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 3rem;
+	row-gap: 2.3rem;
+	margin-bottom: 5.3rem;
+}
+
+.teachers-card {
+	background-color: var(--bg-element);
+	display: grid;
+	grid-template-columns: 30.3rem auto;
+	column-gap: 4rem;
+}
+.teachers-card__media {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.teachers-card__img {
+	border-radius: 0 3.4rem 3.4rem 0;
+}
+
+.teachers-card__socials {
+	position: absolute;
+	bottom: 2rem;
+	background-color: var(--bg-app);
+	padding: 1rem 2rem;
+	border-radius: 1.5rem;
+}
+.teachers-card__socials .socials__link {
+	--size: 3rem;
+}
+
+
+.teachers-card__info {
+	padding-top: 2.1rem;
+	padding-right: 6rem;
+	padding-bottom: 2.8rem;
+}
+.teachers-card__name {
+	font-size: var(--ff-title);
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	color: #000;
+	line-height: 1.2;
+	letter-spacing: 0;
+}
+.teachers-card__desc {
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 130%;
+	color: #000000;
+	margin-bottom: 1.5rem;
+}
+
+.teachers-card__bullets {
+	padding-left: 2.3rem;
+	margin-bottom: 3.5rem;
+}
+.teachers-card__bullet {
+	position: relative;
+	font-size: 1.8rem;
+	line-height: 120%;
+	color: #000000;
+}
+.teachers-card__bullet:before {
+	content: "→";
+	color: var(--c-accent);
+	position: absolute;
+	left: -2.3rem;
+}
+
+.teachers__button {
+  max-width: 50rem;
+  width: 100%;
+}

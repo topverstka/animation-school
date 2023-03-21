@@ -1,0 +1,69 @@
+.header {
+	position: absolute;
+	// position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	padding-top: 4rem;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header__container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 2.1rem 3rem 2.2rem;
+	background-color: var(--bg-app);
+	border-radius: 3rem;
+}
+
+.header__logo {
+	margin-right: 6rem;
+}
+
+.header__menu {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.header__nav {
+	margin-right: auto;
+}
+.header__nav-links {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 1.8rem;
+	letter-spacing: -0.02em;
+	line-height: 1;
+}
+.header__nav-link {
+	display: block;
+}
+.header__nav-item:not(:last-child) {
+	margin-right: 2rem;
+}
+
+.header__buttons {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.header__socials {
+	margin-right: 6rem;
+}
+.header__button-phone {
+	--icon-size: 1.6rem;
+	--icon-order: 0;
+  --fz-button: 1.6rem;
+	font-family: var(--ff-regular);
+  padding: 1rem 1.6rem;
+}
+.header__button-consult {
+	@media (min-width: $mobile-l + 1) {
+		display: none;
+	}
+}
