@@ -33,19 +33,22 @@
 }
 .doubt__link {
   position: absolute;
-  top: 58%;
-  right: 16.9%;
+  top: 50rem;
+  right: 13rem;
   z-index: 2;
   color: var(--c-text-on);
 }
 
 .doubt--bottom .doubt__media {
   margin-bottom: -33.8rem;
+  @media (max-width: $desktop-m) {
+  	margin-bottom: -26.8rem;
+  }
 }
 .doubt--bottom .doubt__pic {
 	    transform: scale(1.25) translate(5.1rem, -1rem);
   }
 .doubt--bottom .doubt__link {
-	top: 58%;
-  right: 6%;
+	top: 48rem;
+  right: 5rem;
 }
