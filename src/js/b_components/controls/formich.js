@@ -221,3 +221,21 @@ function initInputs(inputs) {
 initInputs(inputs);
 
 // #endregion input-labels
+
+
+/*
+
+     window.addEventListener('load', function(){
+        return;
+        let loc = document.getElementById("855929640f27f2de67f");
+        loc.value = window.location.href;
+        let ref = document.getElementById("855929640f27f2de67fref");
+        ref.value = document.referrer;
+
+        let statUrl = "https://academychiptuning.by/stat/counter?ref=" + encodeURIComponent(document.referrer)
+            + "&loc=" + encodeURIComponent(document.location.href);
+        document.getElementById('gccounterImgContainer').innerHTML
+            = "<img width=1 height=1 style='display:none' id='gccounterImg' src='" + statUrl + "'/>";
+    });
+
+*/

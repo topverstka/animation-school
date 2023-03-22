@@ -45,13 +45,14 @@
   padding: 1em;
 }
 
-.b_modal {
-  max-width: 900px;
-  padding: 1em;
+.b_modal__content {
+  position: relative;
+  // max-width: 900px;
+  // padding: 1em;
   margin-right: auto;
   margin-left: auto;
-  background-color: #fff;
-  border-radius: 2em;
+  // background-color: #fff;
+  // border-radius: 2em;
   transition: all 0.3s ease;
   transform: scale(0.86);
 }
@@ -61,8 +62,8 @@
 
 .b_modal__closer {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 4rem;
+  right: 4rem;
   display: block;
   width: 2.5em;
   height: 2.5em;
@@ -95,90 +96,14 @@
   background-color: var(--c-b_modal-closer-hover);
 }
 
-/*
-
-  Animations
-
-    transition: opacity .5s cubic-bezier(.4,0,0,1),-webkit-transform .5s cubic-bezier(.4,0,0,1)!important;
-    transition: transform .5s cubic-bezier(.4,0,0,1),opacity .5s cubic-bezier(.4,0,0,1)!important;
-
-    transition: transform .5s cubic-bezier(.4,0,0,1),opacity .5s cubic-bezier(.4,0,0,1),-webkit-transform .5s cubic-bezier(.4,0,0,1)!important;
-
-    transform: scale(.86);
-    opacity: 0;
-*/
-
-// transition: opacity .5s cubic-bezier(.5,0,.5,1)
-
-// transition: opacity .7s cubic-bezier(.5,0,.5,1)!important;
-.b_modal__overlay._enter--jolly {
-  // transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1),
-  // opacity 0.5s cubic-bezier(0.4, 0, 0, 1);
-}
-
-/*
-
-  b_modal theme
-
-
-*/
-
-.b_modal {
-  width: 100%;
-  max-width: 300px;
-  padding-top: 24px;
-  padding-right: 18px;
-  padding-bottom: 37px;
-  padding-left: 18px;
-  color: var(--c-text-on);
-  background: var(--bg-b_modal);
-  border-radius: var(--radius-b_modal);
-  @media (min-width: 1100px) {
-    max-width: 500px;
-  }
-}
-.b_modal--overlay {
-  background: var(--bg-b_modal-overlay);
-}
 
 .b_modal__closer {
-  --closer-color: #707070;
-  font-size: 20px;
+  --closer-color: var(--c-text-regular);
+  font-size: 1rem;
   color: transparent;
   background-color: var(--bg-b_modal);
   border-radius: var(--radius-b_modal);
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
 }
-
-.b_modal__title {
-  margin-bottom: 20px;
-  font-family: var(--ff-title);
-  font-size: 18px;
-  line-height: 126%;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-.b_modal__title-link {
-  color: inherit;
-}
-.b_modal__title-link:hover {
-  @media (min-width: $minHover) {
-    color: var(--c-accent);
-  }
-}
-
-.b_modal__button {
-  display: block;
-  width: 100%;
-  @media (max-width: 768px) {
-    padding-top: 15px;
-    padding-bottom: 16px;
-  }
-}
-
 .b_modal__closer::before,
 .b_modal__closer::after {
   top: 44%;

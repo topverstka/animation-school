@@ -1,107 +1,22 @@
 .input {
-  --text-color: var(--c-text-regular);
+  --text-color: #87909E;
   --label-color: var(--bg-element);
   --border-color: var(--c-text-regular);
-  --input-bg: var(--bg-element);
-  --fz: 0.875rem;
+  --input-bg: #f8f8f8;
+  --fz: 1.6rem;
   --lh: 1;
-  border-radius: rem(10);
-  padding: rem(20) rem(32) rem(20) rem(20);
+
+  padding: 1.4rem 2rem;
   position: relative;
   display: block;
   width: 100%;
   font-family: var(--ff-regular);
-  font-weight: 600;
   background-color: var(--input-bg);
-  border: 1px solid var(--border-color);
   cursor: text;
+  border-radius: 0.5rem;
   z-index: 1;
-  @media (max-width: $w-mobile) {
-    --lh: initial;
-    --fz: 0.857rem;
-    padding: 1.3rem 1rem 1.57rem;
-    border-radius: 0.714rem;
+  @media (max-width: $mobile-l) {
   }
-}
-.input-tel {
-  padding-left: 0;
-}
-.input-tel .iti {
-  width: 100%;
-  position: static;
-  color: #BABABA;
-}
-.input-tel .iti__selected-flag {
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  height: calc(100% - 2px);
-  background-color: transparent;
-  padding-left: rem(14);
-  border-radius: rem(6);
-  transition: var(--tr-regular);
-}
-.input-tel .iti .iti__selected-flag:hover {
-  background-color: #F6F6F6;
-}
-.input-tel .iti__selected-dial-code {
-  order: 3;
-}
-.input-tel .iti__flag {
-  transform: scale(1.2, 1.3);
-  transform-origin: left center;
-  margin-right: rem(10);
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  @media (max-width: $desktop-s) {
-    transform: scale(1, 1.1);
-  }
-}
-.input-tel .iti__arrow {
-  border: none;
-  width: rem(11);
-  height: rem(11);
-  background-image: url("../img/common/angle-dropdown.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  @media (max-width: $desktop-s) {
-    margin-left: 0;
-  }
-}
-.input-tel .iti .input__field {
-  padding-left: rem(70);
-  @media (max-width: $desktop-s) {
-    margin-left: 1px;
-  }
-}
-.input-tel .iti__country-list  {
-  display: block;
-  top: 105%;
-  border-radius: rem(10);
-  padding-top: rem(14);
-  transform-origin: top;
-  transition: var(--tr-regular);
-  opacity: 1;
-  transform: scale(1, 1);
-  pointer-events: initial;
-}
-.input-tel .iti__country-list.iti__hide {
-  opacity: 0;
-  transform: scale(1, 0.3);
-  pointer-events: none;
-}
-.input-tel .iti__country {
-  padding-left: rem(14);
-  padding-top: rem(8);
-  padding-bottom: rem(8);
-}
-.input-tel .iti__flag-box {
-  margin-right: 1rem;
-}
-.input-tel .iti__divider {
-  margin-top: rem(10);
-  margin-bottom: rem(10);
 }
 
 .input__field {
@@ -111,11 +26,11 @@
   font-size: var(--fz);
   line-height: var(--lh);
   transition: all 0.3s ease;
+  background: transparent;
 
   color: var(--text-color);
 }
 .input__field::placeholder {
-  color: #BABABA;
 }
 
 

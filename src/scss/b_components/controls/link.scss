@@ -1,11 +1,11 @@
 .link {
-  --link-color: var(--c-text-regular);
-  --link-color-hover:  var(--c-accent);
-  --link-underline-color: rgba(255,255,255,0.2);
-  --link-underline-color-hover: var(--c-accent-disabled);
+  --link-color: var(--c-accent);
+  --link-color-hover:  var(--c-accent-active);
+  --link-underline-color: var(--link-color);//rgba(255,255,255,0.2);
+  --link-underline-color-hover: var(--link-color-hover);//var(--c-accent-disabled);
 
   --link-icon: var(--icon-color);
-  display: flex;
+  display: inline;
   align-items: center;
   justify-content: flex-start;
   color: var(--link-color);
@@ -20,6 +20,7 @@
   }
 }
 .link__text {
+  display: inline;
   color: inherit;
   padding-bottom: 0.2rem;
   border-bottom: 0.1rem solid var(--link-underline-color);

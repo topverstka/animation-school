@@ -55,13 +55,6 @@
 .header__socials {
 	margin-right: 6rem;
 }
-.header__button-phone {
-	--icon-size: 1.6rem;
-	--icon-order: 0;
-  --fz-button: 1.6rem;
-	font-family: var(--ff-regular);
-  padding: 1rem 1.6rem;
-}
 .header__button-consult {
 	@media (min-width: $mobile-l + 1) {
 		display: none;

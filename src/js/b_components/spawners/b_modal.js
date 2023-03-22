@@ -144,9 +144,20 @@ class b_modal {
     document.querySelector(".b_modal__storage").append(overlay);
     aligner.append(b_modal);
     overlay.append(aligner);
-    overlay.append(closer);
+
+    if (this.detectCloserType(b_modal) == 'inner') {
+      b_modal.append(closer);
+    } else {
+      overlay.append(closer);
+    }
 
     this.instances.push(overlay);
+  }
+
+  detectCloserType(modal) {
+    if (!modal.dataset.closerType) return false;
+
+    return modal.dataset.closerType;
   }
 
   initButtons() {

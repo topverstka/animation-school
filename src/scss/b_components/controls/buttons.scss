@@ -56,6 +56,16 @@
   --button-color: var(--c-text-on);
   --button-color-hover: var(--button-color);
 }
+.button-primary--small {
+  --icon-size: 1.6rem;
+  --icon-order: 0;
+  --fz-button: 1.6rem;
+  font-family: var(--ff-regular);
+  padding: 1rem 1.6rem;
+}
+.button-primary--icon-left {
+  --icon-order: 0;
+}
 
 .button--wait {
   opacity: 0.5;
@@ -68,7 +78,6 @@
   min-width: var(--size);
   width: var(--size);
   height: var(--size);
-  margin-right: var(--icon-gap);
   order: var(--icon-order);
 }
 

@@ -26,26 +26,26 @@
 
 .doubt__media {
 	position: relative;
-  margin-right: -9rem;
-  margin-top: -9rem;
-  margin-left: -3rem;
-  margin-bottom: -39rem;
+  margin-bottom: -35.1rem;
+}
+.doubt__pic {
+    transform: scale(1.15) translate(2.6rem, -2rem);
 }
 .doubt__link {
   position: absolute;
-  top: 60%;
-  right: 24.2%;
+  top: 58%;
+  right: 16.9%;
   z-index: 2;
   color: var(--c-text-on);
 }
 
 .doubt--bottom .doubt__media {
-  margin-left: -4rem;
-  margin-right: -17rem;
-  margin-top: -12rem;
-  margin-bottom: -43.5rem;
+  margin-bottom: -33.8rem;
 }
+.doubt--bottom .doubt__pic {
+	    transform: scale(1.25) translate(5.1rem, -1rem);
+  }
 .doubt--bottom .doubt__link {
-	top: 57%;
-  right: 21.2%;
+	top: 58%;
+  right: 6%;
 }

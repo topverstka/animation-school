@@ -10,7 +10,7 @@
 /**
  * b_modal
  */
-// import "./b_modal.js";
+import "./b_components/spawners/b_modal.js";
 
 /**
  * Timer
