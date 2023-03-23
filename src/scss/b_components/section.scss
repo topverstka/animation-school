@@ -4,13 +4,15 @@
 .section {
   padding-top: 10rem;
   padding-bottom: 10rem;
+
   @media (max-width: $desktop-m) {
     padding-top: 6rem; //120
     padding-bottom: 6rem; //120
   }
+
   @media (max-width: $tablet) {
-    padding-top: 4.285714285714286rem; //60
-    padding-bottom: 4.285714285714286rem; //60
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }
 
@@ -25,15 +27,32 @@
   margin-bottom: 8.7rem;
   letter-spacing: -0.025em;
   line-height: 1;
+
+  @media (max-width: $tablet) {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom:  3rem;
+    // margin-bottom:  2.5rem;
+    text-align: center; 
+  }
 }
 
 .section-desc {
   font-size: 2.5rem;
   line-height: initial;
   margin-bottom: 8rem;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 3rem;  
+  }
 }
 .section-title + .section-desc {
   margin-top: -5.7rem;
+
+  @media (max-width: $tablet) {
+    margin-top:   -1rem;
+    
+  }
 }
 
 .section-text--color {

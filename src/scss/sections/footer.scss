@@ -2,10 +2,16 @@
 	background-color: #151515;
 	color: var(--c-text-on);
 	padding-top: 5rem;
-	padding-bottom: 3.2rem;
+	padding-bottom: 3.6rem;
 	font-size: 1.8rem;
 	line-height: 1.2;
 	letter-spacing: -0.02em;
+
+	@media (max-width: $tablet) {
+		font-size: 	1.4rem;
+		padding-top: 	3.5rem;
+		padding-bottom: 	3.5rem;
+	}
 }
 
 .footer__container {
@@ -13,11 +19,26 @@
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-areas: "branding about about about contact"
 											 "designer about about about coder";
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+		grid-template-areas: 	"branding"
+													"contact"
+													"about"
+													"designer"
+													"coder";
+		row-gap: 3rem;
+	}
 }
 
 .footer__logo {
 	max-width: 15.7rem;
 	margin-bottom: 2.8rem;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 	2.3rem;
+		max-width: 16.1rem;
+	}
 }
 
 .footer__nav-links {
@@ -26,20 +47,36 @@
 	align-items: center;
 	margin-bottom: 3.4rem;
 	padding-top: 1rem;
+
+	@media (max-width: $tablet) {
+		padding-top: 	0.4rem;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
 }
 .footer__nav-item {
 	display: block;
 	margin-right: 2rem;
 	font-size: 2rem;
 	transition: var(--tr-regular);
+
+	@media (max-width: $tablet) {
+		margin-right: 0;	
+		margin-bottom: 	2rem;
+		font-size: 1.6rem;	
+	}
+}
+.footer__nav-item:last-child {
+	margin-right: 0;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 	0;
+	}
 }
 .footer__nav-item:hover {
 	@media (any-hover:hover) {
 		color: var(--c-accent);
 	}
-}
-.footer__nav-item:last-child {
-	margin-right: 0;
 }
 .footer__nav-link {
 	transition: inherit;
@@ -50,6 +87,11 @@
 	margin-bottom: 5.6rem;
 	font-size: 1.6rem;
 	letter-spacing: initial;
+
+	@media (max-width: $tablet) {
+		line-height: 	1.82;
+		margin-bottom: 	4.4rem;
+	}
 }
 .footer__legal-link {
 	display: block;
@@ -66,6 +108,10 @@
 }
 .footer__legal-desc {
 	margin-bottom: 1rem;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 0;	
+	}
 }
 .footer__icon {
 	width: 3rem;
@@ -76,6 +122,14 @@
 
 .footer__branding {
 	grid-area: branding;
+
+	@media (max-width: $tablet) {
+		display: flex;	
+		flex-direction: 	column;
+		justify-content: center;	
+		align-items: center;	
+		text-align: center;	
+	}
 }
 .footer__about {
 	grid-area: about;
@@ -86,6 +140,18 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-end;
+
+	@media (max-width: $tablet) {
+		justify-content: center;	
+		align-items: center;	
+	}
+}
+.footer__worktime {
+	text-align: right;	
+
+	@media (max-width: $tablet) {
+		text-align: center;	
+	}
 }
 .footer__designer {
 	grid-area: designer;
@@ -93,12 +159,21 @@
 	align-items: flex-end;
 	letter-spacing: -0.02em;
 	color: #8a8a8a;
+
+	@media (max-width: $tablet) {
+		justify-content: center;	
+		margin-bottom: 	-1rem;
+	}
 }
 .footer__coder .link,
 .footer__designer .link {
 	margin-left: 1ch;
 	font-family: var(--ff-regular);
-	--link-color: inherit;
+	--link-color: ;
+
+	@media (max-width: $tablet) {
+		font-size: 	1.4rem;
+	}
 }
 .footer__coder {
 	grid-area: coder;
@@ -107,6 +182,10 @@
 	align-items: flex-end;
 	letter-spacing: -0.02em;
 	color: #8a8a8a;
+
+	@media (max-width: $tablet) {
+		justify-content: center;	
+	}
 }
 
 .footer__button-phone {

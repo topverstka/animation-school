@@ -3,6 +3,10 @@
 	background-color: var(--c-text-regular);
 	color: var(--c-text-on);
 	overflow: hidden;
+
+	@media (max-width: $tablet) {
+		padding-top: 3.5rem;	
+	}
 }
 .doubt__container {
 	display: grid;
@@ -27,6 +31,9 @@
 .doubt__media {
 	position: relative;
   margin-bottom: -35.1rem;
+  @media (max-width: $desktop-m) {
+	  margin-bottom: -29.1rem;
+  }
 }
 .doubt__pic {
     transform: scale(1.15) translate(2.6rem, -2rem);
@@ -37,6 +44,10 @@
   right: 13rem;
   z-index: 2;
   color: var(--c-text-on);
+  @media (max-width: $desktop-l) {
+	  top: 46rem;
+	  right: 10rem;
+  }
 }
 
 .doubt--bottom .doubt__media {

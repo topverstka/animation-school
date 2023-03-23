@@ -5,6 +5,11 @@
 	background-color: var(--bg-dark);
 	color: var(--c-text-on);
 	overflow: hidden;
+	@media (max-width: $tablet) {
+		padding-top: 18.7rem;	
+		padding-bottom: 13.4rem;
+		// padding-bottom: 12.7rem;
+	}
 }
 .hero__container {
 	position: relative;
@@ -18,16 +23,37 @@
 	font-weight: 700;
 	line-height: 1;
 	letter-spacing: -0.03em;
+	@media (max-width: $tablet) {
+		text-align: center;	
+		font-size: 3.2rem;	
+		margin-bottom: 	4.1rem;
+		line-height: 1.2;
+	}
 }
+
+.hero__title .section-text--curvy::after {
+	@media (max-width: $tablet) {
+		display: none;
+	}
+}
+
 .hero__buttons {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+	@media (max-width: $tablet) {
+		justify-content: center;	
+		flex-direction: column;
+	}
 }
 .hero__button {
 	max-width: 29.5rem;
 	width: 100%;
 	margin-right: 2.6rem;
+	@media (max-width: $tablet) {
+		margin-right: unset;
+		margin-bottom: 	2.6rem;
+	}
 }
 .hero__bg {
 	position: absolute;
@@ -39,15 +65,22 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
+	@media (max-width: $tablet) {
+		display: none;	
+	}
 }
 .hero__bg-media {
 	position: absolute;
 	width: 94.1rem;
-	border-radius: 99999px;
 	height: 61.7rem;
+	border-radius: 99999px;
 	object-fit: cover;
 	transition: var(--tr-regular);
 	transform: rotate(7.21deg) translate(8rem, 9.5rem);
+	@media (max-width: $desktop-s) {
+		width: 84.1rem;
+    height: 55.7rem;
+	}
 }
 
 .hero__bg--active .hero__bg-media {
@@ -60,4 +93,5 @@
 
 .hero__link {
 	--link-color: var(--c-text-on);
+	font-size: 	1.6rem;
 }

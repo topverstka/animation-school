@@ -2,12 +2,25 @@
 
 }
 
+.teachers__title {
+	@media (max-width: $tablet) {
+		text-align: 	left;
+	}
+}
+
 .teachers__gallery {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 3rem;
 	row-gap: 2.3rem;
 	margin-bottom: 5.3rem;
+
+	@media (max-width: $tablet) {
+		// display: block;	
+		grid-template-columns: 100%;
+		grid-row-gap: 	3.5rem;
+		margin-bottom: 	3rem;
+	}
 }
 
 .teachers-card {
@@ -15,14 +28,30 @@
 	display: grid;
 	grid-template-columns: 30.3rem auto;
 	column-gap: 4rem;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+		background-color: var(--bg-app);
+	}
 }
 .teachers-card__media {
 	position: relative;
 	display: flex;
 	justify-content: center;
+
+	@media (max-width: $tablet) {
+		height: 	29rem;
+	}
+}
+.teachers-card__pic {
+	height: 100%;	
+	width: 100%;	
 }
 .teachers-card__img {
+	height: 100%;	
+	width: 100%;	
 	border-radius: 0 3.4rem 3.4rem 0;
+	object-fit: cover;
 }
 
 .teachers-card__socials {
@@ -41,6 +70,12 @@
 	padding-top: 2.1rem;
 	padding-right: 6rem;
 	padding-bottom: 2.8rem;
+
+	@media (max-width: $tablet) {
+		// padding-left: 2rem;
+		padding-right: 	0;
+		padding-bottom: 2rem;	
+	}
 }
 .teachers-card__name {
 	font-size: var(--ff-title);
@@ -49,6 +84,10 @@
 	color: #000;
 	line-height: 1.2;
 	letter-spacing: 0;
+
+	@media (max-width: $tablet) {
+		font-size: 	2.5rem;
+	}
 }
 .teachers-card__desc {
 	font-weight: 400;
@@ -56,6 +95,7 @@
 	line-height: 130%;
 	color: #000000;
 	margin-bottom: 1.5rem;
+
 }
 
 .teachers-card__bullets {
@@ -67,6 +107,13 @@
 	font-size: 1.8rem;
 	line-height: 120%;
 	color: #000000;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 	0.5rem;
+	}
+}
+.teachers-card__bullet:last-child {
+	margin-bottom: 0;	
 }
 .teachers-card__bullet:before {
 	content: "→";
@@ -78,6 +125,10 @@
 	--icon-square-color: #fff;
 	--icon-arrow-color-hover: #fff;
 	--icon-square-color-hover: #000;
+
+	@media (max-width: $tablet) {
+		width: 	100%;
+	}
 }
 
 .teachers__button {

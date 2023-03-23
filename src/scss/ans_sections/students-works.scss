@@ -1,6 +1,14 @@
 .students-works {
 	background-color: var(--c-accent);
+	padding-top: 10rem;	
+	padding-bottom: 10rem;	
+
+	@media (max-width: $tablet) {
+		padding-top: 3.5rem;	
+		padding-bottom: 3.5rem;	
+	}
 }
+
 .students-works__gallery {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -15,18 +23,51 @@
 											 "w5 w5 w5 w5 w6 w6 w6 w6 w7 w7 w7 w7"
 											 "w5 w5 w5 w5 w6 w6 w6 w6 w7 w7 w7 w7"
 											 ;
-	 column-gap: 3rem;
-	 row-gap: 3rem;
+	column-gap: 3rem;
+	row-gap: 3rem;
+	margin-bottom: 3.6rem;
+
+	 @media (max-width: $tablet) {
+	 	// grid-template-columns: 100%;
+	 	// grid-template-areas: 	initial;
+	 	display: flex;	
+	 	flex-direction: 	column;
+	 	column-gap: 0;
+	 	row-gap: 0;
+	 	margin-bottom: 	2.5rem;
+	 }
 }
 .students-works__heading {
 	grid-area: h;
 	padding-top: 6rem;
   padding-left: 3rem;
   padding-bottom: 1.7rem;
+
+  @media (max-width: $tablet) {
+  	order: -1;
+  	padding-left: 	0;
+  	padding-top: 0;	
+  	padding-bottom: 0;	
+  }
+}
+.students-works__heading-button {
+	@media (max-width: $tablet) {
+		display: none;	
+	}
 }
 
 .stutents-works-card {
 	position: relative;
+
+	@media (max-width: $tablet) {
+		height: 20rem;	
+		margin-bottom: 	1.5rem;
+	}
+}
+.stutents-works-card:last-child {
+	@media (max-width: $tablet) {
+		margin-bottom: 0;	
+	}
 }
 
 .stutents-works-card:nth-of-type(1) {
@@ -39,9 +80,14 @@
 	grid-area: w3;
 }
 .stutents-works-card:nth-of-type(4) {
-	margin-top: 1.8rem;
-	margin-bottom: 1.8rem;
 	grid-area: w4;
+	@media (min-width: $tablet + 1) {
+		margin-top: 1.8rem;
+		margin-bottom: 1.8rem;
+	}
+	@media (max-width: $tablet) {
+		height: 27rem;
+	}
 }
 .stutents-works-card:nth-of-type(5) {
 	grid-area: w5;
@@ -51,6 +97,20 @@
 }
 .stutents-works-card:nth-of-type(7) {
 	grid-area: w7;
+}
+
+.students-works-card__media {
+	width: 100%;	
+	height: 100%;	
+}
+.students-works-card__pic {
+	width: 100%;	
+	height: 100%;	
+}
+.students-works-card__img {
+	width: 100%;	
+	height: 100%;	
+	object-fit: cover;
 }
 
 .students-works-card__zoom {
@@ -72,9 +132,6 @@
   transform: scale(1.3);
 }
 
-.students-works__gallery {
-	margin-bottom: 3.6rem;
-}
 .students-works__button-more {
 	max-width: 50rem;
 	width: 100%;

@@ -25,6 +25,12 @@
 
 html {
   font-size: calc(0.342466 * var(--base-size)); //10px for 1920×1000 
+  @media (max-width: $tablet) {
+      font-size: calc(1.0582 * var(--base-size));
+  }
+  @media (max-width: $mobile-l) {
+    font-size:  calc(0.980397 * var(--base-size)); // 10px for 320×700
+  }
   // @media (max-width: 1600px) {
   //   font-size: calc(0.343466 * var(--base-size)); //10px for 1600×900 
   // }
@@ -62,12 +68,21 @@ body._lock {
   max-width: 159rem;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: $desktop-s) and (min-width: $tablet + 1) {
+    padding-left: 4.5rem; 
+    padding-right: 4.5rem; 
+  }
+  @media (max-width: $tablet) {
+    padding-left: 1.8rem; 
+    padding-right: 1.8rem; 
+  }
 }
 
 // Библиотеки
 // @import "./libs/swiper";
 // @import "./libs/lightgallery";
 // @import "./libs/rangeslider";
+@import "./libs/fancybox";
 
 // Базовые стили, шаблоны, заготовки
 

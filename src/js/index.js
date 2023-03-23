@@ -89,15 +89,17 @@ let lazyLoadInstance = new LazyLoad();
 // }
 
 // import { Fancybox, Carousel } from "@fancyapps/ui";
-// import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
-
-// Fancybox.bind('[data-fancybox]', {
-//   Toolbar: {
-//     display: [
-//       "close",
-//     ],
-//   },
-// });
+/*
+  https://www.npmjs.com/package/@fancyapps/ui/v/4.0.16
+ */
+import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
+Fancybox.bind('[data-fancybox]', {
+  Toolbar: {
+    display: [
+      "close",
+    ],
+  },
+});
 
 /*
 import SliderBar from 'before-after-slider'; // import

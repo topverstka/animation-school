@@ -43,8 +43,8 @@
 
   transition: all 0.3s ease;
 
-  @media (max-width: $mobile-l) {
-    padding: 1.678rem;  
+  @media (max-width: $tablet) {
+    padding: 1.7rem 2.6rem;
   }
 }
 .button-primary:hover {
@@ -235,6 +235,11 @@
   justify-content: center;
   align-items: center;
   transition: var(--tr-regular);
+
+  @media (max-width: $tablet) {
+    width: 5rem;  
+    height: 5rem; 
+  }
 }
 .button-play:hover {
   @media (any-hover:hover) {

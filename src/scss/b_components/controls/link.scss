@@ -12,6 +12,10 @@
   font-size: 1.8rem;
   font-family: var(--ff-controls);
   transition: var(--tr-regular);
+
+  @media (max-width: $tablet) {
+    font-size:  1.6rem;
+  }
 }
 .link:hover {
   @media (any-hover:hover) {

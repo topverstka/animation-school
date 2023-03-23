@@ -1,5 +1,11 @@
 .bestseller {
 	background-color: var(--c-accent);
+	// padding-top: 	10rem;
+	// padding-bottom: 10rem;
+	@media (max-width: $tablet) {
+		// padding-top: 3.5rem;	
+		// padding-bottom: 3.5rem;	
+	}
 }
 
 .bestseller__gallery {
@@ -7,6 +13,11 @@
 	grid-template-columns: 1fr;
 	grid-gap: 3rem;
 	margin-bottom: 6.2rem;
+
+	@media (max-width: $tablet) {
+		grid-gap: 	2rem;
+		margin-bottom: 3rem;	
+	}
 }
 
 .bestseller-card {
@@ -17,6 +28,15 @@
 	border-radius: 3rem;
 	overflow: hidden;
 	position: relative;
+
+	@media (max-width: $tablet) {
+		display: block;		
+		padding-top: 0;	
+		padding-left: 	2.9rem;
+		padding-right: 	2.9rem;
+		padding-bottom: 	2rem;
+		border-radius: 2rem;
+	}
 }
 .bestseller-card__media {
 	order: 1;
@@ -24,6 +44,17 @@
 	top: 0;
 	right: 0;
 	height: 100%;
+
+	@media (max-width: $tablet) {
+		position: relative;	
+		top: 	unset;
+		right: 	unset;
+		order: 	initial;
+		height: initial;
+		margin-left: -2.9rem;	
+		margin-right: -2.9rem;	
+		margin-bottom: 	2.4rem;
+	}
 }
 .bestseller-card__media:after {
 	content: "";
@@ -36,6 +67,11 @@
 	height: 170%;
 	border-radius: 47%;
 	background-color: var(--c-text-regular);
+
+	@media (max-width: $tablet) {
+		width: 100%;	
+		height: 100%;	
+	}
 }
 
 .bestseller-card__pic {
@@ -56,6 +92,12 @@
 	font-family: var(--ff-title);
 	margin-bottom: 1.4rem;
 	color: #000;
+
+	@media (max-width: $tablet) {
+		font-size: 	2.4rem;
+		line-height: initial;
+		margin-bottom: 1.5rem;	
+	}
 }
 .bestseller-card__desc {
 	font-size: 2rem;
@@ -63,16 +105,36 @@
 	letter-spacing: -0.01em;
 	color: #000;
 	margin-bottom: 3rem;
+
+	@media (max-width: $tablet) {
+		font-size: 	1.6rem;
+		line-height: 1.38;	
+		margin-bottom: 2rem;	
+	}
 }
 .bestseller__bottom {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
+
+	@media (max-width: $tablet) {
+		flex-direction: column-reverse;
+	}
 }
 .bestseller-card__button {
 	margin-right: 9rem;
 	max-width: 24.9rem;
 	width: 100%;
+
+	@media (max-width: $tablet) {
+		margin-right: 	0;
+		display: flex;
+	}
+}
+.bestseller-card__button .button__icon {
+	@media (max-width: $tablet) {
+		display: none;	
+	}
 }
 
 .bestseller-card__stats {
@@ -81,9 +143,24 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 	padding-top: 0.8rem;
+
+	@media (max-width: $tablet) {
+		margin-top: 0;	
+		display: grid;	
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1.5rem;
+		row-gap: 1.5rem;
+		margin-bottom: 3rem;	
+		width: 100%;	
+		padding-top: 0;
+	}
 }
 .bestseller-card__stat {
 	margin-right: 5rem;
+
+	@media (max-width: $tablet) {
+		margin-right: 0;	
+	}
 }
 .bestseller-card__stat-title {
 	font-weight: 400;
@@ -91,6 +168,10 @@
 	line-height: 145%;
 	letter-spacing: -0.01em;
 	color: #000000;
+
+	@media (max-width: $tablet) {
+		font-size: 1.6rem;
+	}
 }
 .bestseller-card__stat-value {
 	font-family: var(--ff-title);
@@ -99,9 +180,20 @@
 	line-height: 145%;
 	letter-spacing: -0.01em;
 	color: #000000;
+
+	@media (max-width: $tablet) {
+		font-size: 	2rem;
+	}
 }
 
 .bestseller__button {
 	max-width: 50rem;
 	width: 100%;
+
+  @media (max-width: $tablet) {
+    padding-left:   2.25rem;
+    padding-right:  2.25rem;
+    justify-content: space-between; 
+  }
 }
+
