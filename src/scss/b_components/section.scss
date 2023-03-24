@@ -44,13 +44,20 @@
 
   @media (max-width: $tablet) {
     margin-bottom: 3rem;  
+    font-size: 1.8rem;
+    letter-spacing: initial;
+  }
+}
+.section-desc br {
+  @media (max-width: $tablet) {
+    display: none;
   }
 }
 .section-title + .section-desc {
   margin-top: -5.7rem;
 
   @media (max-width: $tablet) {
-    margin-top:   -1rem;
+    margin-top:   -0.3rem;
     
   }
 }

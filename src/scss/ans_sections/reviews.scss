@@ -1,5 +1,5 @@
 .reviews {
-	padding-bottom: 2.5rem;
+	padding-bottom: 11.5rem;
 
 	@media (max-width: $tablet) {
 		padding-bottom: 3.5rem;	
@@ -11,7 +11,8 @@
 }
 .reviews__top {
 	width: #{'calc(100% + 2rem)'};
-	max-height: 195rem;
+	max-height: 202.5rem;
+	// max-height: 195rem;
 	@media (max-width: $tablet) {
 		width: 100%;	
 		max-height: 225rem;
@@ -37,8 +38,8 @@
 	max-width: 80.2rem;
 	min-height: 53.9rem;
 	padding-top: 12rem;
-	margin-top: -8rem;
-	margin-bottom: 17.3rem;
+	margin-top: -3rem;
+	margin-bottom: 15.3rem;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -349,17 +350,11 @@
 
 .reviews__bottom {
   position: relative;
-  margin-top: -52rem;
+  margin-top: -61rem;
 	padding-top: 40rem;
 	background: linear-gradient(360deg, #FFFFFF 19.92%, rgba(255, 255, 255, 0) 100%);
 }
-.reviews__buttons {
-	transform: translateY(-4.7rem);
 
-	@media (max-width: $tablet) {
-		transform: translateY(0);
-	}
-}
 .reviews__button-more {
 	margin-bottom: 1.8rem;
 	max-width: 50rem;
