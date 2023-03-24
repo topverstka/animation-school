@@ -25,6 +25,8 @@ import "./b_components/spawners/b_modal.js";
 import "./libs/lazyload.min.js";
 let lazyLoadInstance = new LazyLoad();
 
+import "./ans_components/reivews.js";
+
 /**
  * Dropdown Select
  */
@@ -123,8 +125,3 @@ beforeAfterSliders.forEach((slider, index) => {
 })
 */
 
-const reviewsCards = [...document.querySelectorAll('.reviews-card')];
-reviewsCards.forEach((card, index, cards) => {
-  if (index < (cards.length / 2)) return
-  card.classList.add('reviews-card--second-half')
-}) 
