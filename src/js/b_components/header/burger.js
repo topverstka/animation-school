@@ -1,5 +1,5 @@
-import {bodyLock} from '../utils/helpers.js'
-// import { bodyLock, bodyUnlock } from "../utils/functions.js";
+import {bodyLock} from '../../b_helpers/action-helpers.js'
+
 const burger = document.querySelector(".burger");
 const header = document.querySelector(".header");
 const HEADER_OPENED_CLASS = "header--opened";

@@ -1,10 +1,17 @@
 .socials {
   display: flex;
   align-items: center;
+  --icons-size: 3.7rem;
+  --icons-gap: 1rem;
+
+  @media (max-width: $tablet) {
+    --icons-size: 2.142rem;
+    --icons-gap: 1.0714rem;
+  }
 }
 
 .socials__link {
-  --size: 3.7rem;
+  --size: var(--icons-size);
   display: block;
   width: var(--size);
   min-width: var(--size);
@@ -13,12 +20,10 @@
   min-height: var(--size);
   max-height: var(--size);
   transition: var(--tr);
-  margin-right: 1rem;
+  margin-right: var(--icons-gap);
   transition: var(--tr-regular);
   border-radius: 50%;
   @media (max-width: $mobile-l) {
-    --size: 2.142rem;
-    margin-right: 1.0714rem;
   }
 }
 .socials__link:last-child {

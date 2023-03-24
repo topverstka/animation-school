@@ -11,10 +11,10 @@
   --button-bg-hover: var(--c-accent-active);
   --button-color: var(--c-text-button);
   --button-color-hover: var(--button-color);
-  --icon-arrow-color: #fff;
-  --icon-square-color: #000;
-  --icon-arrow-color-hover: #fff;
-  --icon-square-color-hover: #000;
+  --button-icon-color: #fff;
+  --button-icon-bg-color: #000;
+  --button-icon-color-hover: #fff;
+  --button-icon-bg-color-hover: #000;
 }
 
 .button-primary {
@@ -59,10 +59,10 @@
   --button-bg-hover: var(--c-accent);
   --button-color: var(--c-text-on);
   --button-color-hover: var(--button-color);
-  --icon-arrow-color: #000;
-  --icon-square-color: var(--c-accent);
-  --icon-arrow-color-hover: #fff;
-  --icon-square-color-hover: #000;
+  --icon-color: #000;
+  --icon-bg-color: var(--c-accent);
+  --icon-color-hover: #fff;
+  --icon-bg-color-hover: #000;
 }
 .button-primary--small {
   --icon-size: 1.6rem;
@@ -87,14 +87,14 @@
   width: var(--size);
   height: var(--size);
   order: var(--icon-order);
-  --arrow-color: var(--icon-arrow-color, #fff);
-  --square-color: var(--icon-square-color, #000);
+  --icon-color: var(--button-icon-color, #fff);
+  --icon-bg-color: var(--button-icon-bg-color, #000);
   transition: var(--tr-regular);
 }
 .button-primary:hover .button__icon{
   @media (any-hover:hover) {
-    --arrow-color: var(--icon-arrow-color-hover, #fff);
-    --square-color: var(--icon-square-color-hover, #000);
+    --icon-color: var(--button-icon-color-hover, #fff);
+    --icon-bg-color: var(--button-icon-bg-color-hover, #000);
   }
 }
 

@@ -1,29 +1,5 @@
 "use strict";
-
-/**
- * Фиксирует скрол у body
- *  */
-function bodyLock(con) {
-  let scrollFix = window.innerWidth - document.body.clientWidth;
-  const DEFAULT_SCROLLBAR_WIDTH = 17;
-  if (con === true) {
-    // scrollFix предотвращает скачки верстки в строну при блокировке скролла
-    scrollFix =
-      scrollFix > DEFAULT_SCROLLBAR_WIDTH ? DEFAULT_SCROLLBAR_WIDTH : scrollFix;
-    document.body.style.paddingRight = `${scrollFix}px`;
-    document.body.classList.add("_lock");
-  } else if (con === false) {
-    document.body.classList.remove("_lock");
-  } else if (con === undefined) {
-    if (!document.body.classList.contains("_lock")) {
-      document.body.classList.add("_lock");
-    } else {
-      document.body.classList.remove("_lock");
-    }
-  } else {
-    console.error("Неопределенный аргумент у функции bodyLock()");
-  }
-}
+import {bodyLock} from "../../b_helpers/action-helpers.js"
 
 // Закрытие модального окна при клике по заднему фону
 function closeWhenClickingOnBg(itemArray, itemParent, classShow = "_show") {

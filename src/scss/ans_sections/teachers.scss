@@ -122,9 +122,9 @@
 	left: -2.3rem;
 }
 .teachers-card__button {
-	--icon-square-color: #fff;
-	--icon-arrow-color-hover: #fff;
-	--icon-square-color-hover: #000;
+	--icon-bg-color: #fff;
+	--icon-color-hover: #fff;
+	--icon-bg-color-hover: #000;
 
 	@media (max-width: $tablet) {
 		width: 	100%;

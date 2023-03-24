@@ -7,6 +7,8 @@
 // import Swiper, { Navigation, Autoplay } from "swiper";
 // import "./unstable/burger.js";
 
+import "./b_components/header/burger.js";
+
 /**
  * b_modal
  */
