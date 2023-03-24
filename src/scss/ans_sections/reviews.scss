@@ -301,7 +301,9 @@
 	justify-content: flex-end;
 }
 .reviews-card__socials .socials__link {
-	--size: 2.1rem;
+	@media (max-width: $tablet) {
+		--icons-size: 2.1rem;
+	}
 }
 
 
@@ -362,4 +364,11 @@
 }
 .reviews__pop-link {
 	color: #222;
+}
+
+.review-modal {
+	max-width: 90rem;
+}
+.review-modal .reviews-card__profile {
+	margin-bottom: 4rem;
 }

@@ -28,8 +28,6 @@
 	margin-bottom: 3.6rem;
 
 	 @media (max-width: $tablet) {
-	 	// grid-template-columns: 100%;
-	 	// grid-template-areas: 	initial;
 	 	display: flex;	
 	 	flex-direction: 	column;
 	 	column-gap: 0;
@@ -60,7 +58,8 @@
 	position: relative;
 
 	@media (max-width: $tablet) {
-		height: 20rem;	
+		// height: 20rem;	
+		padding-bottom: 80%;
 		margin-bottom: 	1.5rem;
 	}
 }
@@ -86,7 +85,8 @@
 		margin-bottom: 1.8rem;
 	}
 	@media (max-width: $tablet) {
-		height: 27rem;
+		// height: 27rem;
+		padding-bottom: 100%;
 	}
 }
 .stutents-works-card:nth-of-type(5) {
@@ -102,6 +102,12 @@
 .students-works-card__media {
 	width: 100%;	
 	height: 100%;	
+
+	@media (max-width: $tablet) {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
 }
 .students-works-card__pic {
 	width: 100%;	
