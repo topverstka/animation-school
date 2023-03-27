@@ -94,10 +94,15 @@
 	width: var(--size);
 	height: 3rem;
 	margin-left: 1rem;
-	margin-top: -0.2rem;
+  margin-top: -2rem;
+  margin-right: -0.6rem;
 	color: var(--color);
+	font-size: 4rem;
 
 	@media (max-width: $tablet) {
 		--size: 1rem;
+		font-size: 2rem;
+		margin-top: -0.2rem;
+		margin-right: unset;
 	}
 }
