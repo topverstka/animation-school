@@ -125,6 +125,10 @@
 	column-gap: 2rem;
 	row-gap: 2rem;
 	margin-top: auto;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
 }
 .courses-card__bullet-title {
 	display: block;

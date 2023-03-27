@@ -1251,6 +1251,11 @@
   row-gap: 2rem;
   margin-top: auto;
 }
+@media (max-width: 992px) {
+  .courses-card__bullets {
+    grid-template-columns: 100%;
+  }
+}
 
 .courses-card__bullet-title {
   display: block;
@@ -3182,6 +3187,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3rem;
   row-gap: 3rem;
+}
+@media (max-width: 992px) {
+  .courses__gallery {
+    grid-template-columns: 100%;
+  }
 }
 
 .ways {

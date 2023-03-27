@@ -8,5 +8,9 @@
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 3rem;
 	row-gap: 3rem;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
 }
 
