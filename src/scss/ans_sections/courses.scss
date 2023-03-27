@@ -1,6 +1,11 @@
 .courses {
 	padding-top: 6rem;
 	padding-bottom: 5rem;
+
+	@media (max-width: $tablet) {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
 }
 
 .courses__gallery {
@@ -11,6 +16,7 @@
 
 	@media (max-width: $tablet) {
 		grid-template-columns: 100%;
+		row-gap: 2rem;
 	}
 }
 

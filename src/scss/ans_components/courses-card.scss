@@ -18,9 +18,8 @@
 
 	@media (max-width: $tablet) {
 		--image-height: 22rem;
-		--padding-horizontal: 3.2rem;
-		margin-bottom: 2rem;
-		padding-bottom: 3.5rem;	
+		--padding-horizontal: 2rem;
+		padding-bottom: 2rem;	
 	}
 }
 .courses-card:last-child {
@@ -41,7 +40,7 @@
 	margin-bottom: 4rem;
 	height: var(--image-height);
 	@media (max-width: $tablet) {
-		margin-bottom: 	2.1rem;
+		margin-bottom: 	1.9rem;
 	}
 }
 .courses-card__pic {
@@ -83,7 +82,7 @@
 	}
 	@media (max-width: $tablet) {
 		font-size: 	2.4rem;
-		margin-bottom: 	1rem;
+		margin-bottom: 	1.5rem;
 	}
 
 	@media (max-width: $tablet) {
@@ -97,10 +96,12 @@
 	color: #222222;
 	margin-bottom: 1.1rem;
 	@media (max-width: $desktop-s) {
-		font-size: 	2rem
+		font-size: 	2rem;
 	}
 	@media (max-width: $tablet) {
-		font-size: 	1.6rem
+		font-size: 	1.6rem;
+    letter-spacing: -0.005em;
+    margin-bottom: 2rem;
 	}
 }
 .courses-card__link {
@@ -128,6 +129,8 @@
 
 	@media (max-width: $tablet) {
 		grid-template-columns: 100%;
+		row-gap: 1.3rem;
+		margin-bottom: 4.2rem;
 	}
 }
 .courses-card__bullet-title {
@@ -157,4 +160,17 @@
 .courses-card__button {
 	position: relative;
 	z-index: 3;
+
+	@media (max-width: $tablet) {
+    --fz-button: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+	}
+}
+
+.courses-card__button .button__icon {
+	@media (max-width: $tablet) {
+		display: none;
+	}
 }

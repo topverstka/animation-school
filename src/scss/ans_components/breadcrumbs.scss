@@ -1,0 +1,31 @@
+.breadcrumbs {
+	color: #646464;
+	margin-bottom: 1.6rem;
+	font-size: 1.8rem;
+	line-height: 120%;
+
+	@media (max-width: $tablet) {
+		font-size: 1.4rem;
+	}
+}
+.breadcrumbs__list {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.breadcrumbs__link {
+	color: #fff;
+	transition: var(--tr-regular);
+}
+.breadcrumbs__link:hover {
+	@media (any-hover:hover) {
+		color: var(--c-accent);
+	}
+}
+.breadcrumbs__link:after {
+	content: "—";
+	margin-left: 0.9rem;
+	margin-right: 0.9rem;
+	color: #646464;
+}

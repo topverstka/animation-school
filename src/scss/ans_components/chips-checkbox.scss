@@ -6,13 +6,17 @@
 	--brad: 9999px;
 	position: relative;
 	display: inline-flex;
-	font-size: 1.8rem;
+	--fz: 1.8rem;
 	line-height: 120%;
 	color: var(--c-text);
 	border: 1px solid var(--c-text);
 	border-radius: var(--brad);
 	margin-right: 1rem;
 	margin-bottom: 1.5rem;
+
+	@media (max-width: $tablet) {
+		--fz: 1.4rem;
+	}
 }
 .chips-checkbox__input {
 	position: absolute;
@@ -27,6 +31,11 @@
 	display: block;
 	transition: var(--tr-regular);
 	cursor: pointer;
+	font-size: var(--fz);
+
+	@media (max-width: $tablet) {
+		line-height: initial;
+	}
 }
 .chips-checkbox__input:checked ~ .chips-checkbox__box {
 	background-color: var(--bg-active);

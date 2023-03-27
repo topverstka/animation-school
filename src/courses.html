@@ -21,21 +21,21 @@
       <main class="main page-courses">
         <section class="hero">
           <div class="container hero__container">
-            <h1 class="section-title hero__title">
-              Готовим кадры в&nbsp;<span class="section-text--color section-text--curvy">анимационную</span> —&nbsp;индустрию
-            </h1>
-            <div class="hero__buttons">
-              <a class="button-primary hero__button" href="#">
-                <svg class="button__icon">
-                  <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
-                </svg>
-                <span class="button__text">Выбрать курс</span>
-              </a>
-              <a href="#" class="button-link link hero__link"><span class="link__text">Работы студентов</span></a>
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                  <li class="breadcrumbs__item">Курсы</li>
+                </ul>
+              </div>
+              <h1 class="section-title hero__title">Курсы</h1>
             </div>
-          </div>
-          <div class="hero__bg">
-            <img class="hero__bg-media" src="./img/hero/hero-image.jpg" alt="">
+            <div class="hero__content-media">
+              <picture class="hero__content-pic">
+                <img src="./img/courses/header-knight.png" alt="" class="hero__content-pic">
+              </picture>
+              <a href="#" class="hero__contnet-link link"><span class="link__text">работа <br>Даниила <br>Постнова</span></a>
+            </div>
           </div>
         </section>
 
@@ -44,26 +44,31 @@
           <div class="container courses__container">
             <div class="search">
               <form action="" class="search__form">
-                <label class="search__input">
-                  <svg class="search__input-icon">
-                    <use xlink:href="./img/common/search-icon.svg#search" />
-                  </svg>
-                  <input type="text" name="s" class="search__field" placeholder="Название, тег, преподаватель">
-                </label>
-                <fieldset class="search__filters">
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро стат'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггинг'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': '2д-анимация'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Режессура анимации'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': '3д-анимация'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Рисование'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Прикладные направления'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': '3д-анимация'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Режессура анимации'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': '2д-анимация'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггинг'})
-                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро старт'})
-                </fieldset>
+                <div class="search__row">
+                  <label class="search__input">
+                    <svg class="search__input-icon">
+                      <use xlink:href="./img/common/search-icon.svg#search" />
+                    </svg>
+                    <input type="text" name="s" class="search__field" placeholder="Введите курс">
+                  </label>
+                  <button class="search__button-reset">×</button>
+                </div>
+                <div class="search__scroller">
+                  <fieldset class="search__filters">
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро стат'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггинг'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '2д-анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Режессура анимации'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '3д-анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Рисование'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Прикладные направления'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '3д-анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Режессура анимации'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '2д-анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггинг'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро старт'})
+                  </fieldset>
+                </div>
               </form>
             </div>
             <div class="courses__gallery">

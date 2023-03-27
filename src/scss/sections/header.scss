@@ -124,7 +124,7 @@
 .header__button-consult {
 	flex-grow: 1;
 	margin-top: 1.4rem;
-	@media (min-width: $mobile-l + 1) {
+	@media (min-width: $tablet+ 1) {
 		display: none;
 	}
 }
