@@ -2,3 +2,11 @@
 	padding-top: 6rem;
 	padding-bottom: 5rem;
 }
+
+.courses__gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 3rem;
+	row-gap: 3rem;
+}
+
