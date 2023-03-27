@@ -117,3 +117,13 @@
     width: 70%;
   }
 }
+
+
+.b_modal--scrollable {
+  padding-bottom: 0;
+}
+.b_modal--scrollable .b_modal__aligner  {
+  align-items: flex-start;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

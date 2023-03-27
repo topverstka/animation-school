@@ -89,6 +89,7 @@ export function removeAllClasses(items, itemClass) {
  *  */
 export function bodyLock(con) {
   let scrollFix = window.innerWidth - document.body.clientWidth;
+  console.log(scrollFix)
   const DEFAULT_SCROLLBAR_WIDTH = 17;
   if (con === true) {
     // scrollFix предотвращает скачки верстки в строну при блокировке скролла

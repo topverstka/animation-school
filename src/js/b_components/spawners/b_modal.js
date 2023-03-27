@@ -127,6 +127,10 @@ class b_modal {
       overlay.append(closer);
     }
 
+    if (b_modal.getBoundingClientRect().height > window.innerHeight) {
+      overlay.classList.add('b_modal--scrollable')
+    }
+
     this.instances.push(overlay);
   }
 
@@ -171,6 +175,8 @@ class b_modal {
     const event = new Event("b_modal-open");
     pop.dispatchEvent(event);
     pop.querySelector(".b_modal").dispatchEvent(event);
+
+    bodyLock(true);
   }
 
   handleClose(button) {
@@ -192,6 +198,7 @@ class b_modal {
     const event = new Event("b_modal-close");
     pop.dispatchEvent(event);
     pop.querySelector(".b_modal").dispatchEvent(event);
+    bodyLock(false);
   }
 
   makeInfoPop(text, removeAfter = 6000) {
