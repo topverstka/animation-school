@@ -5,6 +5,10 @@
   width: var(--burger-width, 40px);
   height: var(--burger-height, 40px);
   transition: var(--tr);
+
+  @media (min-width: $tablet + 1) {
+    display: none;
+  }
 }
 
 .burger span {

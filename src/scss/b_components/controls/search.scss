@@ -39,7 +39,7 @@
     height: 18px;
   }
 }
-.search__input {
+.search__field {
   display: block;
   width: 100%;
   padding-top: 0.5rem;
@@ -66,7 +66,7 @@
     padding-left: 1.0625rem;//17px;
   }
 }
-.search__input::placeholder {
+.search__field::placeholder {
   color: #a1aeb3;
 }
 .search__button {

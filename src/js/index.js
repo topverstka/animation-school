@@ -26,6 +26,7 @@ import "./libs/lazyload.min.js";
 let lazyLoadInstance = new LazyLoad();
 
 import "./ans_components/reivews.js";
+import "./ans_components/search.js";
 
 /**
  * Dropdown Select

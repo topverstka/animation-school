@@ -716,6 +716,11 @@
   height: var(--burger-height, 40px);
   transition: var(--tr);
 }
+@media (min-width: 993px) {
+  .burger {
+    display: none;
+  }
+}
 
 .burger span {
   position: absolute;
@@ -1007,6 +1012,99 @@
   display: none;
   appearance: none;
   visibility: hidden;
+}
+
+.chips-checkbox {
+  --c-text: #222;
+  --c-text-active: #fff;
+  --bg: transparent;
+  --bg-active: #222;
+  --brad: 9999px;
+  position: relative;
+  display: inline-flex;
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: var(--c-text);
+  border: 1px solid var(--c-text);
+  border-radius: var(--brad);
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.chips-checkbox__input {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  appearance: none;
+}
+
+.chips-checkbox__box {
+  border-radius: 9999px;
+  background-color: var(--brad);
+  padding: 0.7rem 1.5rem;
+  display: block;
+  transition: var(--tr-regular);
+  cursor: pointer;
+}
+
+.chips-checkbox__input:checked ~ .chips-checkbox__box {
+  background-color: var(--bg-active);
+  color: var(--c-text-active);
+}
+
+.chips-checkbox__count {
+  color: #a7a7a7;
+}
+
+.search {
+  padding: 2rem;
+  padding-bottom: 0.5rem;
+  border-radius: 3rem;
+  --search-color:#ccc;
+  background-color: #fff;
+  margin-bottom: 4rem;
+}
+
+.search--active {
+  --search-color:#222;
+}
+
+.search__input {
+  --color: var(--search-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid var(--color);
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+  cursor: text;
+  transition: var(--tr-regular);
+}
+
+.search__input-icon {
+  --size: 5.4rem;
+  max-width: var(--size);
+  min-width: var(--size);
+  width: var(--size);
+  height: var(--size);
+  margin-right: 0.5rem;
+  --icon-stroke-color: var(--color);
+  transition: var(--tr-regular);
+}
+
+.search__field {
+  color: var(--color);
+  font-size: 3.5rem;
+  line-height: 1.2;
+  transition: var(--tr-regular);
+}
+
+.search__field::placeholder {
+  color: var(--color);
+}
+
+.search__filters {
+  padding: 0;
 }
 
 @font-face {
@@ -2897,6 +2995,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
 }
 
+.courses {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
 .ways {
   padding-bottom: 8.3rem;
 }
@@ -4216,5 +4319,9 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .review-modal .reviews-card__profile {
   margin-bottom: 4rem;
+}
+
+.page-courses {
+  background-color: #f4f5f6;
 }
 /*# sourceMappingURL=../maps/style.css.map */

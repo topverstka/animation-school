@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main page-courses">
+        <section class="hero">
+          <div class="container hero__container">
+            <h1 class="section-title hero__title">
+              Готовим кадры в&nbsp;<span class="section-text--color section-text--curvy">анимационную</span> —&nbsp;индустрию
+            </h1>
+            <div class="hero__buttons">
+              <a class="button-primary hero__button" href="#">
+                <svg class="button__icon">
+                  <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+                </svg>
+                <span class="button__text">Выбрать курс</span>
+              </a>
+              <a href="#" class="button-link link hero__link"><span class="link__text">Работы студентов</span></a>
+            </div>
+          </div>
+          <div class="hero__bg">
+            <img class="hero__bg-media" src="./img/hero/hero-image.jpg" alt="">
+          </div>
+        </section>
+
+
+        <section class="courses">
+          <div class="container courses__container">
+            <div class="search">
+              <form action="" class="search__form">
+                <label class="search__input">
+                  <svg class="search__input-icon">
+                    <use xlink:href="./img/common/search-icon.svg#search" />
+                  </svg>
+                  <input type="text" name="s" class="search__field" placeholder="Название, тег, преподаватель">
+                </label>
+                <fieldset class="search__filters">
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро стат'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггинг'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': '2д-анимация'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Режессура анимации'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': '3д-анимация'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Рисование'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Прикладные направления'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': '3д-анимация'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Режессура анимации'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': '2д-анимация'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггинг'})
+                  @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро старт'})
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        @@include('tpls/sections/doubt-bottom.html',{})
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
