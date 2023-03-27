@@ -1,13 +1,46 @@
+@keyframes explode {
+    0% {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
 .reviews {
 	padding-bottom: 11.5rem;
+	padding-top: 0;
 
 	@media (max-width: $tablet) {
+		padding-top: 0;
 		padding-bottom: 3.5rem;	
 	}
 }
 
 .reviews__container {
 	overflow: hidden;
+	padding-top: 10rem;
+
+	@media (max-width: $tablet) {
+		padding-top: 3.5rem;
+	}
 }
 .reviews__top {
 	width: #{'calc(100% + 2rem)'};
@@ -77,6 +110,8 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+  animation: explode 2s infinite;
+
 
 	@media (max-width: $tablet) {
 		--size: 6.1rem;
@@ -102,6 +137,8 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+  animation: explode 4s infinite;
+
 	@media (max-width: $tablet) {
 		--size: 6.7rem;
 		max-width: var(--size);
@@ -142,6 +179,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+  animation: pulse 3s infinite;
 
 	@media (max-width: $tablet) {
 		position: static;	

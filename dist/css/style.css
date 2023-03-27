@@ -3692,17 +3692,50 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   width: 100%;
 }
 
+@keyframes explode {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .reviews {
   padding-bottom: 11.5rem;
+  padding-top: 0;
 }
 @media (max-width: 992px) {
   .reviews {
+    padding-top: 0;
     padding-bottom: 3.5rem;
   }
 }
 
 .reviews__container {
   overflow: hidden;
+  padding-top: 10rem;
+}
+@media (max-width: 992px) {
+  .reviews__container {
+    padding-top: 3.5rem;
+  }
 }
 
 .reviews__top {
@@ -3782,6 +3815,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  animation: explode 2s infinite;
 }
 @media (max-width: 992px) {
   .reviews__hearth:before {
@@ -3809,6 +3843,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  animation: explode 4s infinite;
 }
 @media (max-width: 992px) {
   .reviews__hearth:after {
@@ -3854,6 +3889,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  animation: pulse 3s infinite;
 }
 @media (max-width: 992px) {
   .reviews__title:before {

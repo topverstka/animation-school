@@ -5,8 +5,7 @@ reivewsGalleries.forEach((gallery) => {
 	
 	reviewsCards.forEach((card, index, cards) => {
 	  if (index < (cards.length / 2)) return
-		console.log(card)
-	  card.classList.add('reviews-card--second-half')
+	  card.classList.add('reviews-card--second-half');
 	}) 
 })
 
