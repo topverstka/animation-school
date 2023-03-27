@@ -18,14 +18,21 @@
     <div class="wrapper">
       @@include('tpls/header.html',{})
 
-      <main class="main">
+      <main class="main page-error">
         <section class="section-error">
           <div class="container section-error__container">
-            <h2 class="section-title section-error__status">404</h2>
-            <p class="section-desc section-error__desc">
-              Попробуйте вернуться на главную страницу
-            </p>
-            <a href="#" class="button button-primary">Вернуться на главную</a>
+            <div class="section-error__media">
+              <picture class="section-error__pic"><img src="./img/common/404-hero.png" alt="" class="secion-error__img"></picture>
+            </div>
+            <div class="section-error__content">
+              <h1 class="section-title section-error__status">Босс, мы&nbsp;все обыскали, но&nbsp;у&nbsp;нас такого&nbsp;нет</h1>
+              <a href="#" class="button-primary button-primary--invert section-error__button">
+                <svg class="button__icon">
+                  <use xlink:href="./img/common/hearth.svg#hearth" />
+                </svg>
+                <span class="button__text">Лааадно, прощаю</span>
+              </a>
+            </div>
           </div>
         </section>
       </main>

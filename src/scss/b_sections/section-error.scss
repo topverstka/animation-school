@@ -1,23 +1,71 @@
+.page-error {
+  padding-top: 30rem;
+  padding-bottom: 10rem;
+}
+
+.section-error {
+  padding-top: 3rem;
+  margin-bottom: 10rem;
+
+  @media (max-width: $tablet) {
+    padding-top: 1rem;
+    margin-bottom: 2.2rem;
+  }
+}
 .section-error__container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  max-width: 600px;
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;    
+  }
 }
 .section-error__status {
-  margin-bottom: 0.2em;
-  font-size: 20rem;
-  font-weight: 700;
+  font-family: var(--ff-title);
+  font-size: 8rem;
+  margin-bottom: 9rem;
   line-height: 1;
-  text-align: center;
 
   @media (max-width: $mobile-l) {
-    font-size: 10rem;
+    font-size: 3.2rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
   }
 }
 .section-error__desc {
   margin-bottom: 1rem;
   line-height: 1;
   text-align: center;
+}
+
+.section-error__button {
+  --fz-button: 3rem;
+  padding-left: 5.2rem;
+  padding-right: 5.2rem;
+
+  @media (max-width: $tablet) {
+    --fz-button: 1.8rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    width: 100%;
+  }
+}
+.section-error__button .button__icon {
+  min-width: 2.7rem;
+}
+
+.section-error__media {
+  max-width: 33.9rem;
+  margin-right: 4.4rem;
+
+  @media (max-width: $tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    max-width: 15.4rem;
+  }
 }
