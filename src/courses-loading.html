@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main page-courses">
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                  <li class="breadcrumbs__item">Курсы</li>
+                </ul>
+              </div>
+              <h1 class="section-title hero__title">Курсы</h1>
+            </div>
+            <div class="hero__content-media">
+              <picture class="hero__content-pic">
+                <img src="./img/courses/header-knight.png" alt="" class="hero__content-pic">
+              </picture>
+              <a href="#" class="hero__contnet-link link"><span class="link__text">работа <br>Даниила <br>Постнова</span></a>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="courses">
+          <div class="container courses__container">
+            <div class="search">
+              <form action="" class="search__form">
+                <div class="search__row">
+                  <label class="search__input">
+                    <svg class="search__input-icon">
+                      <use xlink:href="./img/common/search-icon.svg#search" />
+                    </svg>
+                    <input type="text" name="s" class="search__field" placeholder="Введите курс" value="Unreal">
+                  </label>
+                  <button class="search__button-reset">×</button>
+                </div>
+                <div class="search__scroller">
+                  <fieldset class="search__filters">
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро стат'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггинг'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '2д-анимация'})
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+            <div class="courses__gallery">
+              @@include('tpls/cards/courses-card-skeleton.html', {})
+              @@include('tpls/cards/courses-card-skeleton.html', {})
+              @@include('tpls/cards/courses-card-skeleton.html', {})
+            </div>
+          </div>
+        </section>
+
+
+        @@include('tpls/sections/doubt-bottom.html', {})
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
