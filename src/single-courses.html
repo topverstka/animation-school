@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница курса</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main">
+        <section class="hero hero-course">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                  <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Курсы</a></li>
+                  <li class="breadcrumbs__item">Классическая 2D анимация 1 класс — Основы</li>
+                </ul>
+              </div>
+              <h1 class="section-title hero__title">Классическая 2D анимация. 1&nbsp;класс&nbsp;— Основы</h1>
+              <p class="hero__desc">
+                Цель курса&nbsp;— передать студенту самые базовые знания о&nbsp;2D анимации и&nbsp;дать представление о&nsbp;профессии. Вы&nbsp;познкомитесь с&nbsp;инструментами, базовыми принципами и&nbsp;сделаете анимацию простого персонажа.
+              </p>
+              <div class="hero__bullets">
+                <div class="hero__bullet">
+                  <div class="hero__bullet-title">Старт курса</div>
+                  <div class="hero__bullet-value">13 октября</div>
+                </div>
+                <div class="hero__bullet">
+                  <div class="hero__bullet-title">Длительность</div>
+                  <div class="hero__bullet-value">4 месяца</div>
+                </div>
+                <div class="hero__bullet">
+                  <div class="hero__bullet-title">Стоимость</div>
+                  <div class="hero__bullet-value">18 000/мес</div>
+                </div>
+              </div>
+              <a class="button-primary hero__button" href="#">
+                <svg class="button__icon">
+                  <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+                </svg>
+                <span class="button__text">Записаться на&nbsp;курс</span>
+              </a>
+            </div>
+            <div class="hero-course__content-media">
+              <picture class="hero-course__content-pic">
+                <img src="./img/course/course-hero.jpg" alt="" class="hero-course__content-pic">
+              </picture>
+            </div>
+            <div class="hero-course__meta">
+              <article class="hero-course__meta-card">
+                <div class="hero-course__meta-card-media">
+                  <picture class="hero-course__meta-card-pic">
+                    <img src="./img/course/course-tutor.jpg" alt="" class="hero-course__meta-card-img">
+                  </picture>
+                </div>
+                <div class="hero-course__meta-card-info">
+                  <p class="hero-course__meta-card-suptitle">Преподаватель</p>
+                  <h3 class="hero-course__meta-card-title">Даниил Постнов</h3>
+                  <p class="hero-course__meta-card-subtitle">12 лет опыта</p>
+                </div>
+              </article>
+              <article class="hero-course__meta-card">
+                <div class="hero-course__meta-card-media">
+                  <picture class="hero-course__meta-card-pic">
+                    <img src="./img/course/course-profession.jpg" alt="" class="hero-course__meta-card-img">
+                  </picture>
+                </div>
+                <div class="hero-course__meta-card-info">
+                  <p class="hero-course__meta-card-suptitle">есть в профессии</p>
+                  <h3 class="hero-course__meta-card-title">«2D-аниматор»</h3>
+                  <p class="hero-course__meta-card-subtitle">16 курсов</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section page-nav">
+          <div class="container page-nav__container">
+            <div class="page-nav__links">
+              <a href="#" class="link page-nav__link"><span class="link__text">О преподавателе</span></a>
+              <a href="#" class="link page-nav__link"><span class="link__text">Программа</span></a>
+              <a href="#" class="link page-nav__link"><span class="link__text">Результаты</span></a>
+              <a href="#" class="link page-nav__link"><span class="link__text">Отзывы</span></a>
+              <a href="#" class="link page-nav__link"><span class="link__text">Трудоустройство</span></a>
+              <a href="#" class="link page-nav__link"><span class="link__text">Демо урока</span></a>
+              <a href="#" class="link page-nav__link"><span class="link__text">Софт</span></a>
+              <a href="#" class="link page-nav__link"><span class="link__text">Стоимость</span></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section for-who">
+          <div class="container for-who__container">
+            <h2 class="section-title for-who__title">Кому подойдёт курс</h2>
+            <ul class="for-who__bullets">
+              <li class="for-who__bullet">
+                <h3 class="for-who__bullet-title">Новичкам</h3>
+                <p class="for-who__bullet-desc">Которые пока не работали в геймдеве, но интересуются играми и рисованием и хотели бы сделать это своей профессией.</p>
+              </li>
+              <li class="for-who__bullet">
+                <h3 class="for-who__bullet-title">Начинающим иллюстраторам</h3>
+                <p class="for-who__bullet-desc">Графическим и веб-дизайнерам, которые хотят выбрать себе узкую специализацию.</p>
+              </li>
+              <li class="for-who__bullet">
+                <h3 class="for-who__bullet-title">Начинающим специалистам в 3D</h3>
+                <p class="for-who__bullet-desc">Обучение поможет структурировать и углубить имеющиеся знания.</p>
+              </li>
+              <li class="for-who__bullet">
+                <h3 class="for-who__bullet-title">Дизайнерам интерьеров и другим модельерам</h3>
+                <p class="for-who__bullet-desc">Которые хотят сменить вектор профессионального развития и попробовать что-то новое.</p>
+              </li>
+            </ul>
+            <div class="for-who__media">
+              <picture class="for-who__pic"><img src="./img/course/who-is-client.png" alt="" class="for-who__img"></picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="section course-programm">
+          <div class="container course-programm__container">
+            <h2 class="section-title course-programm__title">Программа курса</h2>
+            <div class="course-programm__modules">
+              <article class="course-programm-module">
+                <div class="course-programm-module__info">
+                  <div class="course-programm-module__summary">
+                    <h3 class="course-programm-module__title">Анимация во&nbsp;флипбуке</h3>
+                    <p class="course-programm-module__desc">1 урок</p>
+                  </div>
+                  <ol class="course-programm-moudle__lessons">
+                    <li class="course-programm-module__lesson">Создаем анимацию прыгающей собачки в обычном блокноте.</li>
+                  </ol>
+                  <ul class="crourse-programm-module__bullets">
+                    <li class="course-programm-module__bullet">
+                      <picture class="course-programm-module__bullet-pic">
+                        <img src="./img/common/time-icon.svg" alt="" class="course-programm-module__bullet-img">
+                      </picture>
+                      <p class="course-progrmam-module__bullet-desc">1-3 часа на просмотр и задание</p>
+                    </li>
+                    <li class="course-programm-module__bullet">
+                      <picture class="course-programm-module__bullet-pic">
+                        <img src="./img/common/lightning-icon.svg" alt="" class="course-programm-module__bullet-img">
+                      </picture>
+                      <p class="course-progrmam-module__bullet-desc">Попрактикуете навык рисования</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="course-programm-module__media">
+                  <picture class="course-programm-module__pic"><img src="./img/course/course-program-1.gif" alt="" class="course-programm-module__img"></picture>
+                </div>
+              </article>
+              <article class="course-programm-module">
+                <div class="course-programm-module__info">
+                  <div class="course-programm-module__summary">
+                    <h3 class="course-programm-module__title">Анимация в Adobe Photoshop</h3>
+                    <p class="course-programm-module__desc">3 урока</p>
+                  </div>
+                  <ol class="course-programm-moudle__lessons">
+                    <li class="course-programm-module__lesson">Изучаем интерфейс, необходимый для покадровой анимации в Photoshop и создаем прыгающий мячик.</li>
+                    <li class="course-programm-module__lesson">Превращаем мячик в персонажа.</li>
+                    <li class="course-programm-module__lesson">Завершаем работу над анимацией: раскрасим персонажа и экспортируем полученный результат.</li>
+                  </ol>
+                  <ul class="crourse-programm-module__bullets">
+                    <li class="course-programm-module__bullet">
+                      <picture class="course-programm-module__bullet-pic">
+                        <img src="./img/common/time-icon.svg" alt="" class="course-programm-module__bullet-img">
+                      </picture>
+                      <p class="course-progrmam-module__bullet-desc">5-6 часов на просмотр и задания</p>
+                    </li>
+                    <li class="course-programm-module__bullet">
+                      <picture class="course-programm-module__bullet-pic">
+                        <img src="./img/common/lightning-icon.svg" alt="" class="course-programm-module__bullet-img">
+                      </picture>
+                      <p class="course-progrmam-module__bullet-desc">Изучите интерфейс Phoshop</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="course-programm-module__media">
+                  <picture class="course-programm-module__pic">
+                    <img src="./img/course/course-program-2.gif" alt="" class="course-programm-module__img">
+                  </picture>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section will-learn">
+          <div class="container will-learn__container">
+            <h2 class="section-title will-learn__title">
+              Вы научитесь
+              <span class="section-text--color"> делать</span>
+            </h2>
+            <div class="will-learn-gallery">
+              <article class="will-learn-card">
+                <div class="will-learn-card__media">
+                  <picture class="will-learn-card__pic">
+                    <img src="./img/course/will-make-img-1.jpg" alt="" class="will-learn-card__img">
+                  </picture>
+                </div>
+                <h3 class="will-learn-card__title">Статику персонажа</h3>
+                <p class="will-learn-card__desc">2 урок курса</p>
+              </article>
+              <article class="will-learn-card">
+                <div class="will-learn-card__media">
+                  <picture class="will-learn-card__pic">
+                    <img src="./img/course/will-make-img-2.jpg" alt="" class="will-learn-card__img">
+                  </picture>
+                </div>
+                <h3 class="will-learn-card__title">Базовую анимацию</h3>
+                <p class="will-learn-card__desc">3 урок курса</p>
+              </article>
+              <article class="will-learn-card">
+                <div class="will-learn-card__media">
+                  <picture class="will-learn-card__pic">
+                    <img src="./img/course/will-make-img-3.jpg" alt="" class="will-learn-card__img">
+                  </picture>
+                </div>
+                <h3 class="will-learn-card__title">Освещение</h3>
+                <p class="will-learn-card__desc">7 урок курса</p>
+              </article>
+            </div>
+            <div class="section-buttons will-learn__buttons">
+              <a class="button-primary will-learn_button" href="#">
+                <span class="button__text">7 урок курса</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reviews">
+          <div class="container reviews__container">
+            <div class="reviews__top">
+              <div class="reviews__gallery">
+                <div class="reviews__heading">
+                  <div class="reviews__hearth">
+                    <h2 class="section-title reviews__title">Отзывы <br>учеников</h2>
+                    <p class="reviews__desc">курса «Классическая 2D анимация. 1&nbsp;класс&nbsp;— Основы»</p>
+                  </div>
+                </div>
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Понравилась структура курса и как 
+                    <span class="section-text--color">грамотно была распределена нагрузка</span>,
+                    что удалось все успеть и даже больше
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-2.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Анна Курбатова</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="#" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Понимаешь, что этому человеку 
+                    <span class="section-text--color">точно есть, чему научить!</span> <br>
+                    Работать с ней было невероятно комфортно!
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name"></h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="#" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                    </div>
+                  </div>
+                </article>
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Курс мне помог понять, что у меня есть все 
+                    <span class="section-text--color">шансы стать хорошим аниматором</span>
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="#" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Курс мне помог понять, что у меня есть все 
+                    <span class="section-text--color">шансы стать хорошим аниматором</span>
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                  </div>
+                  </div>
+                </article>
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Курс мне помог понять, что у меня есть все 
+                    <span class="section-text--color">шансы стать хорошим аниматором</span>
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                  </div>
+                  </div>
+                </article>
+
+                <article class="reviews-card reviews-card--has-video">
+                  <div class="reviews-card__video">
+                    <picture class="reviews-card__video-cover-pic">
+                      <img src="./img/students/student-3.jpg" alt="" class="reviews-card__video-cover-img">
+                    </picture>
+                    <a href="#fancy" data-fancybox class="reviews-card__video-play">
+                      <span class="button-play reviews-card__video-play-button">
+                        <svg class="section__icon">
+                          <use xlink:href="./img/common/play-icon.svg#play" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-3.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                    </div>
+                  </div>
+                </article>
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Курс мне помог понять, что у меня есть все 
+                    <span class="section-text--color">шансы стать хорошим аниматором</span>
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                    </div>
+                  </div>
+                </article>
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Курс мне помог понять, что у меня есть все 
+                    <span class="section-text--color">шансы стать хорошим аниматором</span>
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                  </div>
+                  </div>
+                </article>
+              </div>
+              <div class="reviews__gallery">
+                <article class="reviews-card reviews-card--has-video">
+                  <div class="reviews-card__video">
+                    <picture class="reviews-card__video-cover-pic">
+                      <img src="./img/students/student-3.jpg" alt="" class="reviews-card__video-cover-img">
+                    </picture>
+                    <a href="#fancy" data-fancybox class="reviews-card__video-play">
+                      <span class="button-play reviews-card__video-play-button">
+                        <svg class="section__icon">
+                          <use xlink:href="./img/common/play-icon.svg#play" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-3.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                    </div>
+                  </div>
+                </article>
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Понравилась структура курса и как 
+                    <span class="section-text--color">грамотно была распределена нагрузка</span>,
+                    что удалось все успеть и даже больше
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-2.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Анна Курбатова</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="#" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Понимаешь, что этому человеку 
+                    <span class="section-text--color">точно есть, чему научить!</span> <br>
+                    Работать с ней было невероятно комфортно!
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name"></h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="#" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                    </div>
+                  </div>
+                </article>
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Курс мне помог понять, что у меня есть все 
+                    <span class="section-text--color">шансы стать хорошим аниматором</span>
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="#" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Курс мне помог понять, что у меня есть все 
+                    <span class="section-text--color">шансы стать хорошим аниматором</span>
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                  </div>
+                  </div>
+                </article>
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Курс мне помог понять, что у меня есть все 
+                    <span class="section-text--color">шансы стать хорошим аниматором</span>
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                  </div>
+                  </div>
+                </article>
+
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Курс мне помог понять, что у меня есть все 
+                    <span class="section-text--color">шансы стать хорошим аниматором</span>
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                    </div>
+                  </div>
+                </article>
+                <article class="reviews-card">
+                  <h3 class="reviews-card__highlight">
+                    Курс мне помог понять, что у меня есть все 
+                    <span class="section-text--color">шансы стать хорошим аниматором</span>
+                  </h3>
+                  <button class="reviews-card__button-full link"><span class="link__text">Показать полный отзыв</span></button>
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__profile-media">
+                      <picture class="reviews-card__profile-pic">
+                        <img src="./img/students/student-1.jpg" alt="" class="reviews-card__profile-img">
+                      </picture>
+                      <div class="reviews-card__socials socials">
+                        <a href="#" class="socials__link">
+                          <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="reviews-card__profile-info">
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
+                      <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                      <a href="" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                  </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="reviews__bottom">
+              <div class="section-buttons section-buttons--vertical reviews__buttons">
+                <button class="button-primary button-primary--invert reviews__button-more">
+                  <svg class="button__icon">
+                    <use xlink:href="./img/common/button-arrow-down.svg#arrow" />
+                  </svg>
+                  <span class="button__text">Загрузить еще отзывы</span>
+                </button>
+                <button class="link reviews__pop-link">Оставить отзыв</button>
+              </div>
+            </div>
+          </div>
+          
+          <div id="modal-full-review" class="b_modal modal__content review-modal" data-closer-type="inner">
+            <div class="modal__info">
+              <div class="reviews-card__profile">
+                <div class="reviews-card__profile-media">
+                  <picture class="reviews-card__profile-pic">
+                    <img src="./img/students/student-2.jpg" alt="" class="reviews-card__profile-img">
+                  </picture>
+                  <div class="reviews-card__socials socials">
+                    <a href="#" class="socials__link">
+                      <img src="./img/common/vk-icon.svg#vk" alt="" class="socials__icon">
+                    </a>
+                  </div>
+                </div>
+                <div class="reviews-card__profile-info">
+                  <h4 class="reviews-card__profile-name">Анна Курбатова</h4>
+                  <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
+                  <a href="#" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
+                </div>
+              </div>
+              <div class="wysiwyg">
+                <p>
+                  С другой стороны, определение содержания в почве железа по Тамму показало, что глобализация регрессийно ускоряет водоупор, хотя это довольно часто напоминает песни Джима Моррисона и Патти Смит. Морена, следовательно, изящно означает антропологический доминантсептаккорд. Как было показано выше, форма политического сознания иллюстрирует серийный прибор Качинского.
+                </p>
+                <p>
+                  Правовое государство иллюстрирует миксолидийский шурф. Ревер, вследствие пространственной неоднородности почвенного покрова, формирует теоретический англо-американский тип политической культуры. Поверхность раздела фаз, как того требуют законы термодинамики, приводит к появлению звукосниматель, хотя этот факт нуждается в дальнейшей тщательной экспериментальной проверке. Ощущение мономерности ритмического движения возникает, как правило, в условиях темповой стабильности, тем не менее легато дает феномен толпы.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section big-video">
+          <div class="container big-video__container">
+            <div class="big-video__media">
+              <picture class="big-video__cover-pic">
+                <img src="./img/course/video-cover.jpg" alt="" class="big-video__cover-img">
+              </picture>
+              <a href="https://www.youtube.com/watch?v=qd3mfYS_Xow" data-fancybox class="big-video__fancy">
+                <span class="big-video__play button-play">
+                  <svg class="section__icon">
+                    <use xlink:href="./img/common/play-icon.svg#play" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <h2 class="section-title big-video__title section-text--center">Работы выпускников курса</h2>
+          </div>
+        </section>
+
+        <section class="section shifter">
+          <div class="container shifter__container">
+            <div class="shifter__card">
+              <h2 class="section-title shifter__title">
+                Запишись на следующий поток, 
+                <span class="section-text--color">осталось всего 13 мест</span>
+              </h2>
+              <a class="button-primary hero__button" href="#">
+                <svg class="button__icon">
+                  <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+                </svg>
+                <span class="button__text">Оставить заявку на курс</span>
+              </a>
+            </div>
+            <div class="shifter__media">
+              <picture class="shifter__pic">
+                <img src="./img/article/article-cta.png" alt="" class="shifter__img">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="section features">
+          <div class="container features__container">
+            <h2 class="section-title features__title">Как будет проходить обучение?</h2>
+
+            <div class="features-gallery">
+              <article class="features-card">
+                <div class="larning-conditions-card__media">
+                  <picture class="features-card__pic">
+                    <img src="./img/course/features-img-1.jpg" alt="" class="features-card__img">
+                  </picture>
+                </div>
+                <p class="features-desc">
+                  <span class="section-text--color">Платформа GetCourse</span>
+                   с проверкой домашних заданий кураторов 
+                </p>
+              </article>
+              <article class="features-card">
+                <div class="larning-conditions-card__media">
+                  <picture class="features-card__pic">
+                    <img src="./img/course/features-img-2.jpg" alt="" class="features-card__img">
+                  </picture>
+                </div>
+                <p class="features-desc">
+                  <span class="section-text--color">Общий чат в Discord</span>
+                   с сокурсниками и преподавателями
+                </p>
+              </article>
+              <article class="features-card">
+                <div class="larning-conditions-card__media">
+                  <picture class="features-card__pic">
+                    <img src="./img/course/features-img-3.jpg" alt="" class="features-card__img">
+                  </picture>
+                </div>
+                <p class="features-desc">
+                  Еженедельная обратная связь от 
+                  <span class="section-text--color">преподавателя — практика</span>
+                </p>
+              </article>
+            </div>
+            
+          </div>
+        </section>
+
+        <section class="section bullets-list">
+          <div class="container bullets-list__container">
+            <h2 class="section-title bullets-list__title">
+              Какой 
+              <span class="section-text--color"> софт </span>
+              нужен для курса?
+            </h2>
+
+            <div class="bullets-list-gallery">
+              <article class="bullets-list-card">
+                <div class="bullets-list-card__media">
+                  <picture class="bullets-list-card__pic">
+                    <img src="./img/course/photoshop.png" alt="" class="bullets-list-card__img">
+                  </picture>
+                </div>
+                <div class="bullets-list-card__info">
+                  <h3 class="bullets-list-card__title">Adobe Photoshop</h3>
+                  <p class="bullets-list-card__desc">Делаем дизайн декораций для фона.</p>
+                </div>
+              </article>
+              <article class="bullets-list-card">
+                <div class="bullets-list-card__media">
+                  <picture class="bullets-list-card__pic">
+                    <img src="./img/course/figma.png" alt="" class="bullets-list-card__img">
+                  </picture>
+                </div>
+                <div class="bullets-list-card__info">
+                  <h3 class="bullets-list-card__title">Figma</h3>
+                  <p class="bullets-list-card__desc">Делаем дизайн веб-страниц для презентации</p>
+                </div>
+              </article>
+              <article class="bullets-list-card">
+                <div class="bullets-list-card__media">
+                  <picture class="bullets-list-card__pic">
+                    <img src="./img/course/chrome.png" alt="" class="bullets-list-card__img">
+                  </picture>
+                </div>
+                <div class="bullets-list-card__info">
+                  <h3 class="bullets-list-card__title">Google Chrome</h3>
+                  <p class="bullets-list-card__desc">Ищем информацию о теме анимационного проекта</p>
+                </div>
+              </article>
+              <article class="bullets-list-card">
+                <div class="bullets-list-card__media">
+                  <picture class="bullets-list-card__pic">
+                    <img src="./img/course/notion.png" alt="" class="bullets-list-card__img">
+                  </picture>
+                </div>
+                <div class="bullets-list-card__info">
+                  <h3 class="bullets-list-card__title">Notion</h3>
+                  <p class="bullets-list-card__desc">Ведем весь текстовый оборот проекта: технические задания, брифы.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section big-video big-videos--dark">
+          <div class="container big-video__container">
+            <div class="big-video__media">
+              <picture class="big-video__cover-pic">
+                <img src="./img/course/video-cover.jpg" alt="" class="big-video__cover-img">
+              </picture>
+              <a href="https://www.youtube.com/watch?v=qd3mfYS_Xow" data-fancybox class="big-video__fancy">
+                <span class="big-video__play button-play">
+                  <svg class="section__icon">
+                    <use xlink:href="./img/common/play-icon.svg#play" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <h2 class="section-title big-video__title">
+              Преподаватель <span class="section-text--color">сам расскажет</span> о своем курсе и покажет нюансы обучения
+            </h2>
+            <div class="big-videos__caption">
+              <h3 class="big-videos__caption-title">3:25</h3>
+              <p class="big-videos__caption-desc">Видео идет всего 3 минуты. За это время вы можете оценить дикцию, подачу материала, звучание голоса, внешний вид. То, что важно в преподавателе.</p>
+            </div>
+            <div class="section-buttons big-videos__buttons">
+              <a class="button-primary big-video__button" href="#">
+                <svg class="button__icon">
+                  <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+                </svg>
+                <span class="button__text">Записаться на&nbsp;курс</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section resume">
+          <div class="container resume__container">
+            <h2 class="section-title resume__title">
+              Как будет выглядеть
+              <span class="section-text--color"> ваше резюме после обучения</span>
+            </h2>
+
+            <article class="resume-card">
+              <div class="resume-card__inner">
+                <header class="resume-card__header">
+                  <div class="resume-card__media">
+                    <picture class="resume-card__pic">
+                      <img src="./img/course/resume-img.jpg" alt="" class="resume-card__img">
+                    </picture>
+                  </div>
+                  <div class="resume-card__profession">
+                    <h3 class="resume-card__profession-title">Junior 2d-аниматор</h3>
+                    <p class="resume-card__profession-desc">Завершил 11 модулей и 2 дипломных проекта</p>
+                  </div>
+                  <div class="resume-card__status">
+                    <p class="resume-card__status-title">от 59 000₽</p>
+                    <p class="resume-card__status-desc">Ожидаемая зарплата</p>
+                  </div>
+                </header>
+                <div class="resume-card__body">
+                  <div class="resume-card__content">
+                    <h4>Навыки</h4>
+                    <ul>
+                      <li>Знаю основы 3d анимации </li>
+                      <li> Умею создавать свет для персонажей </li>
+                      <li> Смогу нарисовать декорации для 2d-сцены </li>
+                      <li> Знаю, как подбирать цвета для создания персонажа </li>
+                      <li> Понимаю структуру работы над проектом и роли команды </li>
+                      <li> Умею работать: в Photoshop, Unity </li>
+                      <li> Умею настро </li>
+                      <li>Знаю основы 3d анимации </li>
+                      <li> Умею создавать свет для персонажей </li>
+                      <li> Смогу нарисовать декорации для 2d-сцены </li>
+                      <li> Знаю, как подбирать цвета для создания персонажа </li>
+                      <li> Понимаю структуру работы над проектом и роли команды </li>
+                      <li> Умею работать: в Photoshop, Unity </li>
+                      <li> Умею настро </li>
+                    </ul>
+                    <h4>Проекты</h4>
+                    <ul>
+                      <li>Анимация персонажа для 2d-игры </li>
+                      <li> Анимация графиков для видео-клипа </li>
+                      <li> Концепт-рисунки для своей будущей игры
+                      </li>
+                    </ul>
+                    <div class="resume-card__recommend">
+                      <svg class="resume-card__recommend-logo">
+                        <use xlink:href="./img/common/icon.svg#icon" />
+                      </svg>
+                      <p class="resume-card__recommend-text">рекомендует этого специалиста</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-card__media">
+                <picture class="resume-card__pic">
+                  <img src="./img/course/resume-img-1.png" alt="" class="resume-card__img">
+                </picture>
+              </div>
+              <div class="resume-card__media">
+                <picture class="resume-card__pic">
+                  <img src="./img/course/resume-img-2.png" alt="" class="resume-card__img">
+                </picture>
+              </div>
+            </article>
+            
+          </div>
+        </section>
+
+        <section class="section help-labor">
+          <div class="container help-labor__container">
+            <h2 class="section-title help-labor__title">
+              Помогаем нашим ученикам 
+              <span class="section-text--color">трудоустроиться </span>
+            </h2>
+            <p class="help-labor__desc section-desc">Мониторим рынок вакансий, собираем релевантные вакансии под навыки наших учеников и консультируем, как получить по ним работу.</p>
+
+            <div class="help-labor__bullets">
+
+              <div class="help-labor-bullet">
+                <div class="help-labor-bullet-particles">
+                  <div class="help-labor-bullet-particles__media">
+                    <picture class="help-labor-bullet-particles__pic">
+                      <img src="./img/course/help-student-1.png" alt="" class="help-labor-bullet-particles__img">
+                    </picture>
+                  </div>
+                  <div class="help-labor-bullet-particles__media">
+                    <picture class="help-labor-bullet-particles__pic">
+                      <img src="./img/course/help-student-2.png" alt="" class="help-labor-bullet-particles__img">
+                    </picture>
+                  </div>
+                  <div class="help-labor-bullet-particles__media">
+                    <picture class="help-labor-bullet-particles__pic">
+                      <img src="./img/course/help-student-3.png" alt="" class="help-labor-bullet-particles__img">
+                    </picture>
+                  </div>
+                  <div class="help-labor-bullet-particles__media">
+                    <picture class="help-labor-bullet-particles__pic">
+                      <img src="./img/course/help-student-4.png" alt="" class="help-labor-bullet-particles__img">
+                    </picture>
+                  </div>
+                </div>
+                <article class="help-labor-bullet-card">
+                  <div class="help-labor-bullet-card__media">
+                    <picture class="help-labor-bullet-card__pic">
+                        <img src="./img/course/help-students-like.svg" alt="" class="help-labor-bullet-card__img">
+                    </picture>
+                  </div>
+                  <p class="help-labor-bullet-card__desc">Лучших студентов мы рекомендуем  в студии-партнеры</p>
+                </article>
+              </div>
+
+              <div class="help-labor-bullet">
+                <div class="help-labor-bullet-particles">
+                  <p class="help-labor-bullets-particles__desc">Художник</p>
+                  <p class="help-labor-bullets-particles__desc">2д-аниматор</p>
+                  <p class="help-labor-bullets-particles__desc">3д-аниматор</p>
+                  <p class="help-labor-bullets-particles__desc">Иллюстратор</p>
+                  <p class="help-labor-bullets-particles__desc">Тестировщик</p>
+                  <p class="help-labor-bullets-particles__desc">Инди-разработчик</p>
+                  <p class="help-labor-bullets-particles__desc">Сценарист</p>
+                  <p class="help-labor-bullets-particles__desc">Концепт-художник</p>
+                </div>
+                <article class="help-labor-bullet-card">
+                  <div class="help-labor-bullet-card__media">
+                    <picture class="help-labor-bullet-card__pic">
+                        <img src="./img/course/robot-icon.svg" alt="" class="help-labor-bullet-card__img">
+                    </picture>
+                  </div>
+                  <p class="help-labor-bullet-card__desc">Создали бота, который собирает релевантные вакансии на <a href="" class="link"><span class="link__text">отдельной странице</span></a></p>
+                </article>
+              </div>
+            </div>            
+          </div>
+        </section>
+
+        <section class="section students-studios">
+          <div class="container students-studios__container">
+            <h2 class="section-title students-studios__title">
+              Студии, где 
+              <span class="section-text--color">работают </span>
+              наши ученики после курса
+            </h2>
+            
+            <div class="students-studios__gallery">
+              <article class="students-studios-card">
+                <div class="students-studios-card__media">
+                  <picture class="students-studios-card__pic">
+                    <img src="./img/course/sony.jpg" alt="sony" class="students-studios-card__img">
+                  </picture>
+                </div>
+                <div class="students-studios-card__info">
+                  <h3 class="students-studio-card__title">
+                    <a href="#" class="students-studio-card__link">Sony</a>
+                  </h3>
+                  <p class="students-studio-card__desc">Студия разрабатывает AAA игры и анимирует персонажей для топовых сериалов</p>
+                  <div class="students-studio-card__stats">
+                    <div class="students-studios-card__stat">
+                      <p class="students-studios-card__stat-title">$1500</p>
+                      <p class="students-studios-card__desc">средняя зарплата junior-аниматора</p>
+                    </div>
+                    <div class="students-studios-card__stat">
+                      <div class="students-studios-card__stat-students">
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-1.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-2.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-3.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-4.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-5.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-6.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-7.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-8.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <p class="students-studios-card__stat-students-count">16</p>
+                      </div>
+                      <p class="students-studios-card__desc">учеников работают в студии Sony</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="students-studios-card">
+                <div class="students-studios-card__media">
+                  <picture class="students-studios-card__pic">
+                    <img src="./img/course/bethesda.jpg" alt="sony" class="students-studios-card__img">
+                  </picture>
+                </div>
+                <div class="students-studios-card__info">
+                  <h3 class="students-studio-card__title">
+                    <a href="#" class="students-studio-card__link">Bethesda</a>
+                  </h3>
+                  <p class="students-studio-card__desc">Американский издатель компьютерных игр. Основана в 1986 году Кристофером Уивером в Бетесде, штат Мэриленд.</p>
+                  <div class="students-studio-card__stats">
+                    <div class="students-studios-card__stat">
+                      <p class="students-studios-card__stat-title">$2800</p>
+                      <p class="students-studios-card__desc">средняя зарплата junior-аниматора</p>
+                    </div>
+                    <div class="students-studios-card__stat">
+                      <div class="students-studios-card__stat-students">
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-1.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-2.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-3.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-4.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-5.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-6.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-7.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <picture class="students-studio-card__stat-students-pic"><img src="./img/course/students-studio-8.jpg" alt="" class="students-studio-card__stat-students-img"></picture>
+                        <p class="students-studios-card__stat-students-count">16</p>
+                      </div>
+                      <p class="students-studios-card__desc">учеников работают в студии Sony</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section course-order">
+          <div class="container course-order__container">
+            <div class="course-order__info">
+              <div class="course-order__media">
+                <picture class="course-order__pic"><img src="./img/course/course-hero.jpg" alt="" class="course-order__img"></picture>
+              </div>
+              <h2 class="course-order__title">Классическая 2D анимация. 1 класс – Основы</h2>
+              <div class="course-order__meta">
+                <article class="course-order__meta-card">
+                  <div class="course-order__meta-card-media">
+                    <picture class="course-order__meta-card-pic">
+                      <img src="./img/course/course-tutor.jpg" alt="" class="course-order__meta-card-img">
+                    </picture>
+                  </div>
+                  <div class="course-order__meta-card-info">
+                    <p class="course-order__meta-card-suptitle">Преподаватель</p>
+                    <h3 class="course-order__meta-card-title">Даниил Постнов</h3>
+                    <p class="course-order__meta-card-subtitle">12 лет опыта</p>
+                  </div>
+                </article>
+                <article class="course-order__meta-card">
+                  <div class="course-oredr__meta-card-media">
+                    <picture class="course-order__meta-card-pic">
+                      <img src="./img/course/course-profession.jpg" alt="" class="course-order__meta-card-img">
+                    </picture>
+                  </div>
+                  <div class="course-order__meta-card-info">
+                    <p class="course-order__meta-card-suptitle">есть в профессии</p>
+                    <h3 class="course-order__meta-card-title">«2D-аниматор»</h3>
+                    <p class="course-order__meta-card-subtitle">16 курсов</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="course-order__stats">
+              <div class="course-order__stat">
+                <h3 class="course-order__stat-title">Стоимость курса</h3>
+                <p class="course-order__stat-desc">18 000₽/мес</p>
+              </div>
+              <div class="course-order__stat">
+                <h3 class="course-order__stat-title">Старт</h3>
+                <p class="course-order__stat-desc">13 декабря</p>
+              </div>
+              <div class="course-order__stat">
+                <h3 class="course-order__stat-title">Осталось</h3>
+                <p class="course-order__stat-desc">15 мест</p>
+              </div>
+            </div>
+            <div class="course-order__form">
+              <form action="table" id="course-form" class="form">
+                <div class="form__hidden">
+                  <input type="text" name="page" hidden />
+                  <input type="text" name="formname" hidden />
+                  <input type="text" name="additional" hidden />
+
+                  <input type="hidden" name="utm_source" value="">
+                  <input type="hidden" name="utm_medium" value="">
+                  <input type="hidden" name="utm_campaign" value=""><br>
+                  <input type="hidden" name="utm_content" value=""><br>
+                  <input type="hidden" name="utm_term" value=""><br>
+                  <input type="hidden" name="referer" value="">
+                  <input type="hidden" name="requestTime" value="">
+                  <input type="hidden" name="requestSimpleSign" value="">
+                </div>
+                <fieldset class="form__fieldset">
+                  @@include('../inputs/name.html')
+                  @@include('../inputs/email.html')
+                  @@include('../inputs/tel.html')
+                  @@include('../inputs/checkbox.html')
+                  @@include('../inputs/checkbox.html')
+                </fieldset>
+                <button class="button-primary button-primary--invert modal__button">
+                  <span class="button__text">Записаться на курс</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="section faq">
+          <div class="container faq__container">
+            <h2 class="section-title faq__title">
+              Часто-задаваемые вопросы 
+              <span class="section-text--color">по курсу</span>
+            </h2>
+
+            <div class="faq__gallery">
+              <article class="faq-card bayan">
+                <div class="bayan__top">
+                  <h3 class="faq-card__title">Нужно ли мне иметь опыт до начала курса?</h3>
+                  <span class="bayan__close">×</span>
+                </div>
+                <div class="bayan__bottom">
+                  <div class="faq-card__contnet">
+                    <p>Требуется только опыт начальной работы с компьютером. Всему остальному мы научим ❤️</p>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card bayan">
+                <div class="bayan__top">
+                  <h3 class="faq-card__title">На какую должность я смогу претендовать после курса?</h3>
+                  <span class="bayan__close">×</span>
+                </div>
+                <div class="bayan__bottom">
+                  <div class="faq-card__contnet">
+                    <p>Требуется только опыт начальной работы с компьютером. Всему остальному мы научим ❤️</p>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card bayan">
+                <div class="bayan__top">
+                  <h3 class="faq-card__title">Сколько нужно тратить времени на курс?</h3>
+                  <span class="bayan__close">×</span>
+                </div>
+                <div class="bayan__bottom">
+                  <div class="faq-card__contnet">
+                    <p>Требуется только опыт начальной работы с компьютером. Всему остальному мы научим ❤️</p>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card bayan">
+                <div class="bayan__top">
+                  <h3 class="faq-card__title">Есть ли у вас рассрочка?</h3>
+                  <span class="bayan__close">×</span>
+                </div>
+                <div class="bayan__bottom">
+                  <div class="faq-card__contnet">
+                    <p>Требуется только опыт начальной работы с компьютером. Всему остальному мы научим ❤️</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+          </div>
+        </section>
+
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
