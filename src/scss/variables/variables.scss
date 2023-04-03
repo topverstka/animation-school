@@ -17,6 +17,10 @@ $w-burger: $tablet;
   --tr: 0.3s;
   --tr-regular: all var(--tr) ease;
 
+  --regular-column-left: 93.3rem;
+  --regular-column-right: 64.4rem;
+  --regular-columns: var(--regular-column-left) var(--regular-column-right);
+
   // Fonts
   --ff-regular: "Inter", sans-serif;
   --ff-title: "Craftwork", sans-serif;

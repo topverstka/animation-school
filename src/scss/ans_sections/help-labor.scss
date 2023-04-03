@@ -1,0 +1,178 @@
+.help-labor {
+	background-color: #222;
+	color: #fff;
+}
+
+.help-labor__title {
+	letter-spacing: 0;
+	line-height: initial;
+}
+.help-labor__desc {
+	max-width: 74.4rem;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2rem;
+	margin-bottom: 11.9rem;
+}
+
+
+.help-labor__bullets {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.help-labor-bullet {
+	position: relative;
+}
+
+.help-labor-bullet-particles {
+	position: absolute;
+	width: 41rem;
+	height: 35rem;
+	pointer-events: none;
+}
+.help-labor-bullet-particles__media {
+	position: absolute;
+  width: 20rem;
+  height: 10rem;
+}
+
+.help-labor-bullet:nth-child(odd) .help-labor-bullet-particles {
+	left: -40rem;
+	top: -20rem;
+}
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles {
+	right: -40rem;
+	top: -20rem;
+}
+
+.help-labor-bullet:nth-child(odd) .help-labor-bullet-particles .help-labor-bullet-particles__media:nth-of-type(1) {
+  top: 3.4rem;
+  left: 2rem;
+}
+.help-labor-bullet:nth-child(odd) .help-labor-bullet-particles .help-labor-bullet-particles__media:nth-of-type(2) {
+  top: 7rem;
+  right: 1rem;
+  width: 10rem;
+}
+
+.help-labor-bullet:nth-child(odd) .help-labor-bullet-particles .help-labor-bullet-particles__media:nth-of-type(3) {
+  top: 23.2rem;
+  left: -7.4rem;
+}
+.help-labor-bullet:nth-child(odd) .help-labor-bullet-particles .help-labor-bullet-particles__media:nth-of-type(4) {
+  top: 23.4rem;
+  left: 19rem;
+  width: 14rem;
+}
+
+.help-labor-bullet-particles__desc {
+	position: relative;
+	font-size: 2.43rem;
+	color: #a9a9a9;
+	line-height: 1.3;
+}
+.help-labor-bullet-particles__desc:before {
+	content: "";
+	display: block;
+	width: 16rem;
+	height: 0.1rem;
+	background-color: #525252;
+}
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(1) {
+	transform: translate(19.5rem, 16rem) rotate(50.78deg);
+}
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(1):before {
+	// transform: translate(1rem, 1rem) rotate(1deg);
+	display: none;
+}
+
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(2) {
+	transform: translate(16.6rem, 22rem) rotate(42.21deg);
+}
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(2):before {
+	transform: translate(-1.9rem, 25.3rem) rotate(111deg);
+}
+
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(3) {
+	transform: translate(8.5rem, 22.5rem) rotate(51.66deg);
+}
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(3):before {
+	transform: translate(-3rem, 13rem) rotate(90deg);
+}
+
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(4) {
+	transform: translate(6.6rem, 0rem) rotate(36.81deg);
+}
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(4):before {
+	transform: translate(-3rem, 24rem) rotate(-83deg);
+	width: 20rem;
+}
+
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(5) {
+	transform: translate(15rem, 35rem) rotate(65deg);
+}
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(5):before {
+	transform: translate(-3rem, 16rem) rotate(99deg);
+}
+
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(6) {
+	transform: translate(24rem, 17rem) rotate(66.18deg);
+}
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(6):before {
+	// transform: translate(6rem, 6rem) rotate(6deg);
+	display: none;
+}
+
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(7) {
+	transform: translate(19.5rem, 24rem) rotate(65.36deg);
+}
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(7):before {
+	// transform: translate(7rem, 7rem) rotate(7deg);
+	display: none;
+}
+
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(8) {
+	transform: translate(-3rem, -13rem) rotate(27.18deg);
+}
+.help-labor-bullet:nth-child(even) .help-labor-bullet-particles .help-labor-bullet-particles__desc:nth-of-type(8):before {
+	transform: translate(-2rem, 15rem) rotate(-78deg);
+}
+
+.help-labor-bullet-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 40.7rem;
+	width: 100%;
+	text-align: center;
+	margin-left: 2.15rem;
+	margin-right: 2.15rem;
+	// padding-left: 3.8rem;
+	// padding-right: 3.8rem;
+}
+.help-labor-bullet-card .link {
+	font-size: inherit;
+}
+
+.help-labor-bullet-card__media {
+	height: 8.1rem;
+	margin-bottom: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.help-labor-bullet-card__pic {
+	height: 100%;
+	width: 100%;
+}
+.help-labor-bullet-card__img {
+	width: 100%;
+	height: 100%;
+}
+
+.help-labor-bullet-card__desc {
+	font-size: 2.5rem;
+	line-height: 1.3;
+}
+

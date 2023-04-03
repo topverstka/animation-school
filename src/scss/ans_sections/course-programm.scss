@@ -1,0 +1,106 @@
+.course-programm {
+	background-color: #f8f8f8;
+}
+
+.course-programm-module {
+	display: grid;
+	grid-template-columns: 88rem auto;
+	column-gap: 6.3rem;
+	padding-bottom: 5rem;
+	border-bottom: 1px solid #d8d8d8;
+	margin-bottom: 5rem;
+}
+
+.course-programm-module:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+.course-programm-module__info {
+	padding-top: 1.3rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.course-programm-module__summary {
+	flex-basis: 35%;
+}
+.course-programm-module__title {
+	font-family: var(--ff-regular);
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: initial;
+	margin-bottom: 0.9rem;
+	color: #222;
+}
+.course-programm-module__desc {
+	font-size: 1.8rem;
+}
+
+
+.course-programm-moudle__lessons {
+	flex-basis: 54%;
+	list-style: none;
+	counter-reset: lessons;
+}
+.course-programm-module__lesson {
+	--pl: 7.2rem;
+	padding-left: var(--pl);
+	counter-increment: lessons;
+	position: relative;
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+.course-programm-module__lesson:only-child,
+.course-programm-module__lesson:last-child {
+	margin-bottom: 0;
+}
+.course-programm-module__lesson::before {
+	content: counter(lessons) " урок";
+	position: absolute;
+	left: -0.2rem;
+	font-weight: 700;
+}
+
+
+.crourse-programm-module__bullets {
+	flex-basis: 100%;
+	align-items: end;
+	display: flex;
+}
+
+.course-programm-module__bullet {
+	display: flex;
+	align-items: center;
+	padding-right: 3rem;
+	// max-width: 40.5rem;
+	flex-basis: 46.3%;
+	width: 100%;
+}
+.course-programm-module__bullet-pic {
+	--size: 3.5rem;
+	max-width: var(--size);
+	min-width: var(--size);
+	width: var(--size);
+	height: var(--size);
+	margin-right: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.course-programm-module__bullet-img {
+	width: 80%;
+	height: 80%;
+}
+.course-progrmam-module__bullet-desc {
+	font-size: 1.8rem;
+	letter-spacing: initial;
+}
+
+
+.course-programm-module__img {
+	width: 100%;
+}

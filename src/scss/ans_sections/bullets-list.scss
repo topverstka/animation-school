@@ -1,0 +1,32 @@
+.bullets-list {
+	background-color: #f8f8f8;
+}
+
+.bullets-list-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 3rem;
+}
+
+.bullets-list-card {
+	display: grid;
+	grid-template-columns: 12rem auto;
+	column-gap: 2rem;
+}
+.bullets-list-card__title {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: initial;
+	color: #000000;
+	margin-bottom: 1rem;
+}
+.bullets-list-card__desc {
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: initial;
+	color: #000000;
+}
+
+.bullets-list-card__img {
+	width: 100%;
+}

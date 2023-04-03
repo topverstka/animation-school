@@ -66,6 +66,13 @@
 		padding-top: 0;	
 	}
 }
+
+.reviews__heading {
+	@media (min-width: $tablet + 1) {
+		transform: rotate(-6deg) translate(1rem, -5rem);
+	}
+}
+
 .reviews-card {
 	break-inside: avoid;
 }

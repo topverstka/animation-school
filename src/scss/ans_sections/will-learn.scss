@@ -1,0 +1,46 @@
+.will-learn {
+	background-color: #222222;
+}
+
+.will-learn__title {
+	color: var(--c-text-on);
+}
+
+.will-learn-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 2.8rem;
+	row-gap: 2.8rem;
+	margin-top: -0.8rem;
+	margin-bottom: 7.7rem;
+}
+
+.will-learn-card {
+	color: #fff;
+}
+
+.will-learn-card__media {
+	margin-bottom: 3rem;
+}
+.will-learn-card__img {
+	width: 100%;
+}
+
+.will-learn-card__title {
+	font-size: 3rem;
+	letter-spacing: initial;
+	line-height: initial;
+	margin-bottom: 1rem;
+	font-weight: 400;
+}
+.will-learn-card__desc {
+	font-size: 1.8rem;
+	color: #757575;
+}
+
+.will-learn__button {
+	max-width: 50rem;
+	width: 100%;
+  --lh-button: 1.45;
+  margin-bottom: 0.4rem;
+}

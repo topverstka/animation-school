@@ -1,0 +1,18 @@
+.page-nav {
+	margin-top: -1px;
+	padding-top: 3.3rem;
+	padding-bottom: 3.9rem;
+	background-color: #191919;
+}
+
+.page-nav__links {
+	display: flex;
+	justify-content: space-between;
+}
+.page-nav__link {
+	font-size: 2.5rem;
+	--link-color: #FFFFFF;
+	--link-underline: #5e5e5e;
+	--link-color-hover: #E7AE44;
+	--link-underline-hover: #4f4125;
+}

@@ -1,0 +1,57 @@
+.for-who {
+	padding-bottom: 0;
+}
+.for-who__container {
+	display: grid;
+	grid-template-columns: var(--regular-columns);
+}
+
+.for-who__media {
+	max-width: 55.4rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -13.8rem;
+	transform: translateX(-5rem);
+}
+
+.for-who__bullet {
+	--bullet-pl: 8rem;
+	margin-bottom: 4rem;
+	padding-left: var(--bullet-pl);
+}
+
+.for-who__bullet-title {
+	position: relative;
+  grid-column-end: 3;
+  grid-column-start: 1;
+	font-weight: 500;
+	font-size: 3rem;
+	margin-bottom: 0.5em;
+	color: var(--c-accent);
+	letter-spacing: normal;
+}
+.for-who__bullet-title::before {
+	content: '';
+	left: #{'calc(0rem - var(--bullet-pl) + 1.2rem)'};
+	position: absolute;
+	display: block;
+	background-image: url("../img/course/trigangle-bullet.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 4.1rem;
+	height: 3.7rem;
+}
+
+.for-who__bullet-desc {
+	font-size: 18px;
+	line-height: 130%;
+	color: #222;
+	letter-spacing: -0.009em;
+}
+
+.for-who__bullets {
+  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
