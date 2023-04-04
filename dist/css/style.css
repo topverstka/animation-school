@@ -1701,6 +1701,9 @@
 }
 
 .page-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   margin-top: -1px;
   padding-top: 3.3rem;
   padding-bottom: 3.9rem;

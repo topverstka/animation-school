@@ -1,18 +1,8 @@
-// const anchors = document.querySelectorAll('a[href*="#"]');
-// for (let anchor of anchors) {
-//   anchor.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     if (anchor.getAttribute("href") === "#") return;
+function getTopOffset(percents = 100) {
+    return window.innerHeight / 100 * percents;
+}
 
-//     const blockID = anchor.getAttribute("href").substr(1);
-//     document.getElementById(blockID).scrollIntoView({
-//       behavior: "smooth",
-//       block: "start",
-//     });
-//   });
-// }
-
-function scrollToAnchor(distanceTop = 0) {
+function scrollToAnchor(percents = 9) {
     const linkElems = document.querySelectorAll('[href^="#"]')
     if (!linkElems) return;
     for (let i = 0; i < linkElems.length; i++) {
@@ -25,11 +15,11 @@ function scrollToAnchor(distanceTop = 0) {
             if (!anchor) return;
             if (anchor.classList.contains('poppa')) return
             window.scroll({
-                top: anchor.getBoundingClientRect().top + pageYOffset - distanceTop,
+                top: anchor.getBoundingClientRect().top + pageYOffset - getTopOffset(percents),
                 left: 0,
                 behavior: 'smooth'
             })
         })
     }
 }
-scrollToAnchor(80);
+scrollToAnchor();

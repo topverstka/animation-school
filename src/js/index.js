@@ -19,11 +19,11 @@ import "./b_components/spawners/b_modal.js";
  */
 // import "./b_timer.js";
 
-/**
- * Lazy Load
- */
 import "./libs/lazyload.min.js";
 let lazyLoadInstance = new LazyLoad();
+window.lazyload = lazyLoadInstance;
+
+import "./b_helpers/smooth-anchors.js";
 
 import "./ans_components/reivews.js";
 import "./ans_components/search.js";
