@@ -1,6 +1,11 @@
 .hero-course {
 	padding-top: 18rem;
 	padding-bottom: 7.1rem;
+
+	@media (max-width: $tablet) {
+		padding-top: 9rem;
+		padding-bottom: 3.4rem;
+	}
 }
 .hero-course .hero__container {
 	width: 100%;
@@ -21,6 +26,10 @@
 
 .hero-course .breadcrumbs {
 	margin-bottom: 2rem;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 3rem;
+	}
 }
 
 .hero-course__title {
@@ -28,6 +37,12 @@
 	margin-bottom: 2rem;
 	font-size: 8rem;
 	line-height: 1.2;
+
+	@media (max-width: $tablet) {
+		font-size: 3.2rem;
+		text-align: left;
+		margin-bottom: 1.8rem;
+	}
 }
 
 .hero-course__button {
@@ -35,6 +50,11 @@
 	width: 100%;
 }
 
+.hero-course__content {
+	@media (max-width: $tablet) {
+		margin-bottom: 3.3rem;
+	}
+}
 .hero-course__content-media {
 	grid-area: media;
 	transform: translateY(-6rem);
@@ -42,12 +62,24 @@
 	width: 100%;
 	position: relative;
 	z-index: 1;
+	border-radius: 1.7rem;
+
+	@media (max-width: $tablet) {
+		transform: none;
+		height: 22rem;
+		margin-bottom: 3rem;
+	}
 }
 .hero-course__content-pic,
 .hero-course__content-img {
 	width: inherit;
 	height: inherit;
 	object-fit: cover;
+	border-radius: inherit;
+
+	@media (max-width: $tablet) {
+		object-position: top;
+	}
 }
 
 .hero-course__meta {
@@ -58,7 +90,7 @@
 	display: grid;
 	justify-self: center;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 2rem;
+	gap: 2rem;
 	max-width: 61.3rem;
 	width: 100%;
 	padding: 2rem;
@@ -68,6 +100,7 @@
 	
 	@media (max-width: $tablet) {
 		grid-template-columns: 100%;
+		margin-top: unset;
 	}
 }
 
@@ -81,12 +114,30 @@
 	width: 100%;
 	border-radius: 1.5rem;
 }
+
+.hero-course__meta-card-suptitle {
+	color: #909090;
+	font-size: 1.4rem;
+}
+
+.hero-course__meta-card-title {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+
+	@media (max-width: $tablet) {
+		font-size: 1.8rem;
+	}
+}
+
 .hero-course__meta-card-link {
+	font-size: inherit;
 	transition: var(--tr-regular);
+	--link-color: #222;
+	--link-underline-color: #bdbdbd;
 }
 .hero-course__meta-card-link:hover {
 	@media (any-hover:hover) {
-		color: var(--c-accent);
+		--link-color: var(--c-accent);
 	}
 }
 .hero-course__meta-card-link:before {
@@ -97,4 +148,9 @@
 	display: block;
 	width: 100%;
 	height: 100%;
+}
+
+.hero-course__meta-card-subtitle {
+	color: #909090;
+	font-size: 1.4rem;
 }

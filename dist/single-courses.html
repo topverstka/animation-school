@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Страница курса</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230404162504" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230404231352" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -77,8 +77,8 @@
 
       <main class="main">
         <section class="hero hero-course">
-          <div class="container">
-             <div class="breadcrumbs">
+           <div class="breadcrumbs">
+            <div class="container breadcrumbs__container">
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
                 <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Курсы</a></li>
@@ -87,10 +87,10 @@
             </div>
           </div>
           <div class="container hero__container">
-            <div class="hero__content">
+            <div class="hero__content hero-course__content">
               <h1 class="section-title hero-course__title">Классическая 2D анимация. 1&nbsp;класс&nbsp;— Основы</h1>
               <p class="hero__desc">
-                Цель курса&nbsp;— передать студенту самые базовые знания о&nbsp;2D анимации и&nbsp;дать представление о&nsbp;профессии. Вы&nbsp;познкомитесь с&nbsp;инструментами, базовыми принципами и&nbsp;сделаете анимацию простого персонажа.
+                Цель курса&nbsp;— передать студенту самые базовые знания о&nbsp;2D анимации и&nbsp;дать представление о&nbsp;профессии. Вы&nbsp;познкомитесь с&nbsp;инструментами, базовыми принципами и&nbsp;сделаете анимацию простого персонажа.
               </p>
               <div class="hero__bullets">
                 <div class="hero__bullet">
@@ -128,7 +128,7 @@
                 <div class="hero-course__meta-card-info">
                   <p class="hero-course__meta-card-suptitle">Преподаватель</p>
                   <h3 class="hero-course__meta-card-title">
-                    <a href="#" class="hero-course__meta-card-link">Даниил Постнов</a>
+                    <a href="#" class="hero-course__meta-card-link link"><span class="link__text">Даниил Постнов</span></a>                  
                   </h3>
                   <p class="hero-course__meta-card-subtitle">12 лет опыта</p>
                 </div>
@@ -142,7 +142,7 @@
                 <div class="hero-course__meta-card-info">
                   <p class="hero-course__meta-card-suptitle">есть в профессии</p>
                   <h3 class="hero-course__meta-card-title">
-                    <a href="#" class="hero-course__meta-card-link">«2D-аниматор»</a>
+                    <a href="#" class="hero-course__meta-card-link link"><span class="link__text">«2D-аниматор»</span></a>                  
                   </h3>
                   <p class="hero-course__meta-card-subtitle">16 курсов</p>
                 </div>
@@ -297,7 +297,7 @@
               </article>
             </div>
             <div class="section-buttons will-learn__buttons">
-              <a class="button-primary will-learn__button" href="#">
+              <a class="button-primary will-learn__button" href="#course-order">
                 <span class="button__text">Хочу уметь также</span>
               </a>
             </div>
@@ -1148,7 +1148,7 @@
                         <picture class="students-studios-card__stat-students-pic"><img src="./img/course/student-studio-5.jpg" alt="" class="students-studios-card__stat-students-img"></picture>
                         <p class="students-studios-card__stat-students-count">5</p>
                       </div>
-                      <p class="students-studios-card__stat-desc">учеников работают в&nsbp;студии Sony</p>
+                      <p class="students-studios-card__stat-desc">учеников работают в&nbsp;студии Sony</p>
                     </div>
                   </div>
                 </div>
@@ -1174,7 +1174,7 @@
                   <div class="course-order__meta-card-info">
                     <p class="course-order__meta-card-suptitle">Преподаватель</p>
                     <h3 class="course-order__meta-card-title">
-                      <a href="#" class="course-order__meta-card-link">Даниил Постнов</a>                  
+                      <a href="#" class="course-order__meta-card-link link"><span class="link__text">Даниил Постнов</span></a>                  
                     </h3>
                     <p class="course-order__meta-card-subtitle">О преподвателе →</p>
                   </div>
@@ -1188,7 +1188,7 @@
                   <div class="course-order__meta-card-info">
                     <p class="course-order__meta-card-suptitle">есть в профессии</p>
                     <h3 class="course-order__meta-card-title">
-                      <a href="#" class="course-order__meta-card-link">«2D-аниматор»</a>                  
+                    <a href="#" class="course-order__meta-card-link link"><span class="link__text">«2D-аниматор»</span></a>                  
                     </h3>
                     <p class="course-order__meta-card-subtitle">16 курсов</p>
                   </div>
@@ -1244,7 +1244,6 @@
     name="user_email"
     type="email"
     placeholder="example@gmail.com"
-    autocorrect="off"
     autocomplete="email"
   />
 </label>
@@ -1530,6 +1529,6 @@
 
     </div>
 
-    <script src="./js/bundle.min.js?_v=20230404162504"></script>
+    <script src="./js/bundle.min.js?_v=20230404231352"></script>
   </body>
 </html>

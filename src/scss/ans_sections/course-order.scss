@@ -1,6 +1,10 @@
 .course-order {
 	color: #fff;
 	background-color: #222;
+
+	@media (max-width: $tablet) {
+		padding-bottom: 3.5rem;
+	}
 }
 
 .course-order__container {
@@ -19,12 +23,27 @@
 	align-items: flex-start;
 	flex-wrap: wrap;
 	margin-bottom: 23.9rem;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 3.6rem;
+	}
 }
+
 .course-order__media {
 	width: 18.8rem;
 	border-radius: 0.8rem;
 	margin-right: 3rem;
+
+	@media (max-width: $tablet) {
+		max-width: 100%;
+		width: 100%;
+		height: 22rem;
+		margin-right: 0;
+		border-radius: 1.7rem 1.7rem 0 0;
+		margin-bottom: 2rem;
+	}
 }
+
 .course-order__pic {
 	width: 100%;
 	height: 100%;
@@ -34,6 +53,11 @@
 	width: 100%;
 	height: 100%;
 	border-radius: inherit;
+
+	@media (max-width: $tablet) {
+		object-position: top;
+		object-fit: cover;
+	}
 }
 .course-order__title {
 	font-family: var(--ff-title);
@@ -46,6 +70,7 @@
 
 	@media (max-width: $tablet) {
 		font-size: 3rem;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -72,13 +97,27 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-wrap: wrap;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 3.5rem;
+	}
 }	
 
 .course-order__stat {
 	margin-right: 5rem;
+
+	@media (max-width: $tablet) {
+		margin-right: unset;
+		margin-bottom: 1.3rem;
+	}
 }
 .course-order__stat:first-child {
-	margin-bottom: 3rem;
+	@media (min-width: $tablet + 1) {
+		margin-bottom: 3rem;
+	}
+}
+.course-order__stat:last-child {
+	margin-bottom: 0;
 }
 
 .course-order__stat-title {
@@ -86,9 +125,17 @@
 	line-height: 130%;
 	margin-bottom: 0.5rem;
 	font-weight: 400;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 0.1rem;
+		letter-spacing: normal;
+	}
 }
+
 .course-order__stat:first-child .course-order__stat-title {
-	margin-bottom: 0;
+	@media (min-width: $tablet + 1) {
+		margin-bottom: 0;
+	}
 }
 
 .course-order__stat-desc {
@@ -96,6 +143,11 @@
 	font-weight: 700;
 	font-size: 6rem;
 	font-family: var(--ff-title);
+
+	@media (max-width: $tablet) {
+		font-size: 3rem;
+		letter-spacing: normal;
+	}
 }
 .course-order__stat:first-child .course-order__stat-desc {
 	@media (min-width: $tablet + 1) {
@@ -110,7 +162,7 @@
 	display: grid;
 	justify-self: center;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 2rem;
+	gap: 2rem;
 	max-width: 61.3rem;
 	width: 100%;
 	border-radius: 2rem;
@@ -124,21 +176,47 @@
 .course-order__meta-card {
 	display: grid;
 	grid-template-columns: 7.7rem auto;
-	column-gap: 1.7rem;
+	gap: 1.7rem;
 	position: relative;
 }
+
 .course-order__meta-card-img {
 	width: 100%;
 	border-radius: 1.5rem;
 }
+
+
+.course-order_meta-card-suptitle {
+	color: #909090;
+	font-size: 1.4rem;
+	letter-spacing: normal;
+}
+
+.course-order__meta-card-title {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+
+	@media (max-width: $tablet) {
+		font-size: 1.8rem;
+		letter-spacing: normal;
+	}
+}
+
 .course-order__meta-card-link {
 	transition: var(--tr-regular);
+	font-size: inherit;
+
+	@media (max-width: $tablet) {
+		letter-spacing: normal;
+	}
 }
+
 .course-order__meta-card-link:hover {
 	@media (any-hover:hover) {
 		color: var(--c-accent);
 	}
 }
+
 .course-order__meta-card-link:before {
 	content: "";
 	position: absolute;
@@ -149,27 +227,61 @@
 	height: 100%;
 }
 
+.course-order__meta-card-subtitle {
+	color: #909090;
+	font-size: 1.4rem;
+	letter-spacing: normal;
+}
+
 .course-order__form {
 	font-size: 1.4rem;
+
+	@media (max-width: $tablet) {
+		margin-left: -1.8rem;
+		margin-right: -1.8rem;
+		padding-top: 2.5rem;
+		padding-bottom: 2.4rem;
+	}
 }
+
 .course-order__form-fieldset {
 	row-gap: 2rem;
 	margin-bottom: 1.6rem;
 	color: #000;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 1.4rem;
+	}
 }
+
 .course-order__form-fieldset:last-of-type {
 	margin-bottom: 5rem;
+
+	@media (max-width: $tablet) {
+		row-gap: 1rem;
+		margin-bottom: 2.8rem;
+	}
 }
+
 .course-order__form-fieldset .link {
 	--link-color: inherit;
 	--link-underline-color: #000;
 }
+
+.course-order__form-fieldset .checkbox {
+	@media (max-width: $tablet) {
+		line-height: 1.3;
+		font-size: 1.4rem;
+	}
+}
+
 .course-order__form-fieldset .link:hover {
 	@media (any-hover:hover) {
 		--link-color: var(--c-accent);
 		--link-underline-color: var(--c-accent);
 	}
 }
+
 .course-order__form-button {
 	display: flex;
 	width: 100%;
@@ -177,4 +289,10 @@
 	line-height: initial;
 	padding: 2.5rem;
 	border-radius: 0.6rem;
+
+	@media (max-width: $tablet) {
+		font-size: 2rem;
+		padding: 1.8rem 3rem;
+		letter-spacing: normal;
+	}
 }

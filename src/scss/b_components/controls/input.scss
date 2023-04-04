@@ -22,6 +22,11 @@
   --fz: 2rem;
   --lh: initial;
   --brad: 0;
+
+  @media (max-width: $tablet) {
+    --padding: 1.55rem 1rem;
+    --fz: 1.6rem;
+  }
 }
 
 .input__field {
@@ -49,6 +54,11 @@
   font-size: 2rem;
   line-height: initial;
   color: #000000;
+
+  @media (max-width: $tablet) {
+    font-size: 1.4rem;
+    letter-spacing: normal;
+  }
 }
 
 .input:last-of-type {

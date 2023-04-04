@@ -1,8 +1,21 @@
 .students-studios {
+	@media (max-width: $tablet) {
+		overflow: hidden;
+	}
 }
-
 .students-studios__title {
 	line-height: initial;
+
+	@media (max-width: $tablet) {
+		text-align: left;
+		margin-bottom: 3.75rem;
+	}
+}
+
+.students-studios__title br {
+	@media (max-width: $tablet) {
+		display: none;
+	}
 }
 
 .students-studios-card {
@@ -14,8 +27,11 @@
 
 	@media (max-width: $tablet) {
 		grid-template-columns: 100%;
+		text-align: center;
+		margin-bottom: 5.3rem;
 	}
 }
+
 .students-studios-card:last-child {
 	margin-bottom: 0;
 }
@@ -23,10 +39,21 @@
 .students-studios-card__media {
 	position: relative;
 	height: 52.5rem;
+
+	@media (max-width: $tablet) {
+		height: 16.2rem;
+		margin-bottom: 1.8rem;
+	}
 }
+
 .students-studios-card:nth-child(odd) .students-studios-card__media {
 	transform: rotate(-3deg);
+
+	@media (max-width: $tablet) {
+		transform: none;
+	}
 }
+
 .students-studios-card__media:before {
 	content: "";
 	position: absolute;
@@ -36,19 +63,35 @@
 	display: block;
 	z-index: 1;
 }
+
 .students-studios-card:nth-child(odd) .students-studios-card__media:before {
   top: -4.7rem;
   right: -2.4rem;
 	background-image: url("../img/course/figure-circle.svg");
 	width: 12.5rem;
 	height: 14.5rem;
+
+	@media (max-width: $tablet) {
+    top: -3.4rem;
+    right: -4.4rem;
+    width: 9.5rem;
+    height: 9.7rem;
+	}
 }
+
 .students-studios-card:nth-child(even) .students-studios-card__media:before {
 	top: -6.3rem;
   left: -9.5rem;
 	background-image: url("../img/course/figure-triangle.svg");
 	width: 21.7rem;
 	height: 21.7rem;
+
+	@media (max-width: $tablet) {
+		top: -4.4rem;
+    left: -4.5rem;
+    width: 10.7rem;
+    height: 10.7rem;
+	}
 }
 
 .students-studios-card__pic {
@@ -61,15 +104,27 @@
 	height: 100%;
 	width: 100%;
 }
+
 .students-studios-card__title {
 	line-height: initial;
 	font-size: 6rem;
 	margin-bottom: 2rem;
+
+	@media (max-width: $tablet) {
+		font-size: 2.5rem;
+		line-height: initial;
+		margin-bottom: 1rem;
+	}
 }
 .students-studios-card__desc {
 	font-size: 3rem;
 	line-height: initial;
 	margin-bottom: 11.5rem;
+
+	@media (max-width: $tablet) {
+		font-size: 2rem;
+		margin-bottom: 3rem;
+	}
 }
 
 .students-studios-card__stats {
@@ -86,13 +141,23 @@
 	margin-bottom: 1.5rem;
 	font-weight: 700;
 	line-height: initial;
+
+	@media (max-width: $tablet) {
+		font-size: 4.5rem;
+		margin-bottom: 1.2rem;
+	}
 }
 
 .students-studios-card__stat-students {
 	display: flex;
 	align-items: center;
 	margin-bottom: 1.5rem;
+
+	@media (max-width: $tablet) {
+		justify-content: center;
+	}
 }
+
 .students-studios-card__stat-students-pic {
 	--size: 7.3rem;
 	max-width: var(--size);
@@ -102,12 +167,19 @@
 	border-radius: 99999px;
 	border: 1px solid #222;
 	margin-right: -5rem;
+
+	@media (max-width: $tablet) {
+		--size: 5rem;
+		margin-right: -2.7rem;
+	}
 }
+
 .students-studios-card__stat-students-img {
 	width: 100%;
 	height: 100%;
 	border-radius: inherit;
 }
+
 .students-studios-card__stat-students-count {
 	--size: 7.3rem;
 	max-width: var(--size);
@@ -123,10 +195,30 @@
 	justify-content: center;
 	align-items: center;
 	font-weight: 700;
+
+	@media (max-width: $tablet) {
+		--size: 5rem;
+		font-size: 2rem;
+	}
 }
 
 .students-studios-card__stat-desc {
 	font-size: 2rem;
 	line-height: initial;
 	max-width: 24rem;
+
+	@media (max-width: $tablet) {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2rem;
+		font-size: 1.6rem;
+		letter-spacing: normal;
+		max-width: 70%;
+	}
+}
+
+.students-studios-card:last-child  .students-studios-card__stat:last-of-type .students-studios-card__stat-desc {
+	@media (max-width: $tablet) {
+		margin-bottom: 0;
+	}
 }

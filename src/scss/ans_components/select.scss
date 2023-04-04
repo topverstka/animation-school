@@ -1,5 +1,4 @@
 .form-select {
-  // --c-text: #222;
   --c-text: #87909E;
   --c-selected: #222;
   --label-color: var(--bg-element);
@@ -8,12 +7,17 @@
   --bg-list: #F4F5F6;
   --padding: 2.8rem 4rem 2.8rem 2.2rem ;
   --fz: 2rem;
-  --fw: 500;
+  --fw: 400;
   --lh: initial;
   --brad: 0;
   position: relative;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $tablet) {
+    --padding: 1.55rem 3.2rem 1.55rem 1rem ;
+    --fz: 1.6rem;
+  }
 }
 
 .form-select--active .form-select__toggle::before {
@@ -55,8 +59,10 @@
   transition: var(--tr-regular);
   transform-origin: center;
   @media (max-width: $tablet) {
-    right: 1.9rem;
-    top: 2rem;
+    right: 1.6rem;
+    top: 2.2rem;
+    border-width: 0.97rem 0.45rem 0 0.45rem;
+    letter-spacing: normal;
   }
 }
 .form-select__toggle:focus {
@@ -83,14 +89,14 @@
     padding: 2rem 3rem 4rem;
     border-radius: var(--brad);
     background: var(--bg-list);
-    // border: 0.1rem solid rgba(255, 255, 255, 0.2);
     opacity: 0;
     visibility: hidden;
     transition: var(--tr-regular);
     transform: translateY(-2rem);
 
     @media (max-width: $tablet) {
-        padding: 2rem;
+      padding: 2rem;
+      gap: 2rem;
     }
 }
 .form-select--active .form-select__list {
@@ -108,6 +114,10 @@
     font-size: var(--fz);
     line-height: var(--lh);
     text-align: left;
+
+    @media (max-width: $tablet) {
+      padding-left: 3rem;
+    }
 }
 .form-select__button:hover {
 	@media (any-hover:hover) {
@@ -127,7 +137,9 @@
     border-radius: 50%;
 
     @media (max-width: $tablet) {
-        font-size: 1.4rem;
+      font-size: 1.4rem;
+      width: 2rem;
+      height: 2rem;
     }
 }
 

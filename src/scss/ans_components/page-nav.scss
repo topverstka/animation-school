@@ -6,17 +6,59 @@
 	padding-top: 3.3rem;
 	padding-bottom: 3.9rem;
 	background-color: #191919;
-	overflow: hidden;
+
+	@media (max-width: $tablet) {
+		padding-bottom: 5.6rem;
+	}
+}
+
+.page-nav__container {
+	@media (max-width: $tablet) {
+		overflow: hidden;
+		margin-bottom: -2rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .page-nav__links {
 	display: flex;
 	justify-content: space-between;
+	white-space: nowrap;
+	overflow: auto;
+	padding-left: 1.8rem;
+	padding-left: 1.8rem;
+	margin-bottom: -1.8rem;
+  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.25) 0.9rem, rgb(0, 0, 0) 1.8rem, rgb(0, 0, 0) calc(100% - 1.8rem), rgba(0, 0, 0, 0.25) calc(100% - 0.9rem), rgba(0, 0, 0, 0));
+  mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.25) 0.9rem, rgb(0, 0, 0) 1.8rem, rgb(0, 0, 0) calc(100% - 1.8rem), rgba(0, 0, 0, 0.25) calc(100% - 0.9rem), rgba(0, 0, 0, 0));
 }
 .page-nav__link {
-	font-size: 2.5rem;
+	font-size: 2.5rem	;
 	--link-color: #FFFFFF;
 	--link-underline: #5e5e5e;
 	--link-color-hover: #E7AE44;
 	--link-underline-hover: #4f4125;
+
+	@media (max-width: $tablet) {
+		font-size: 2rem;
+		margin-right: 1.5em;
+		margin-bottom: 2rem;
+		font-family: var(--ff-regular);
+	}
+
+	@media (max-width: 420px) {
+		font-size: 2.2rem;
+	}
+	@media (max-width: 412px) {
+		font-size: 2.1rem;
+	}
+	@media (max-width: 375px) {
+		font-size: 2.1rem;
+	}
+	@media (max-width: 360px) {
+		font-size: 2.2rem;
+	}
+	@media (max-width: 320px) {
+		font-size: 2rem;
+	}
 }

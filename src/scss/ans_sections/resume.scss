@@ -1,7 +1,15 @@
 .resume {
 	background-color: #f8f8f8;
+
+	@media (max-width: $tablet) {
+		padding-bottom: 4.75rem;
+	}
 }
 
 .resume__title {
 	line-height: 1.2;
+
+	@media (max-width: $tablet) {
+		text-align: left;
+	}
 }

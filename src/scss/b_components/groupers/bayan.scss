@@ -44,11 +44,19 @@
 .bayan__toggler {
   --line-width: 100%;
   --line-height: 0.4rem;
+  --closer-width: 3rem;
+  --closer-height: 3rem;
   position: relative;
   width: var(--closer-width, 3rem);
   height: var(--closer-height, 3rem);
   transition: var(--tr);
   transform-origin: center;
+
+  @media (max-width: $tablet) {
+	  --closer-width: 1.6rem;
+	  --closer-height: 1.6rem;
+	  --line-height: 0.2rem;
+  }
 }
 
 .bayan__toggler:before,
@@ -77,11 +85,4 @@
 
 .bayan__toggler:after {
   transform: translate(-50%, -60%);
-}
-
-.bayan--opened .bayan__toggler:before {
-  // transform: translate(-50%, calc(-50% - 0.4rem)) rotate(45deg);
-}
-.bayan--opened .bayan__toggler:after {
-  // transform: translate(-50%, calc(-50% - 0.3rem)) rotate(-45deg);
 }

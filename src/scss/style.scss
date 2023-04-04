@@ -4,6 +4,22 @@
 @import "./variables/variables";
 @import "./variables/colors";
 @import "./mixins";
+
+.container {
+  max-width: 159rem;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: $desktop-s) and (min-width: $tablet + 1) {
+    padding-left: 4.5rem; 
+    padding-right: 4.5rem; 
+  }
+  @media (max-width: $tablet) {
+    padding-left: 1.8rem; 
+    padding-right: 1.8rem; 
+  }
+}
+
+
 @import "./components";
 
 // Шрифты
@@ -63,19 +79,6 @@ body._lock {
   position: relative;
   z-index: 1;
   flex: 1 0 auto;
-}
-.container {
-  max-width: 159rem;
-  margin-left: auto;
-  margin-right: auto;
-  @media (max-width: $desktop-s) and (min-width: $tablet + 1) {
-    padding-left: 4.5rem; 
-    padding-right: 4.5rem; 
-  }
-  @media (max-width: $tablet) {
-    padding-left: 1.8rem; 
-    padding-right: 1.8rem; 
-  }
 }
 
 // Библиотеки

@@ -1,14 +1,38 @@
 .faq__title {
 	line-height: initial;
 	margin-bottom: 6rem;
+
+	@media (max-width: $tablet) {
+		margin-left: -0.1rem;
+    margin-right: -0.1rem;
+    margin-bottom: 3rem;
+	}
+}
+
+.faq__title br {
+	@media (max-width: $tablet) {
+		display: none;
+	}
 }
 
 .faq-card {
 	margin-bottom: 2rem;
+
+	@media (max-width: $tablet) {
+		// margin-bottom: 1.5rem;
+		margin-bottom: 2.1rem;
+	}
 }
+.faq-card:not(.bayan--opened) {
+	@media (max-width: $tablet) {
+		margin-bottom: 1.5rem;
+	}
+}
+
 .faq-card:last-child {
 	margin-bottom: 0;
 }
+
 .faq-card__head {
 	padding: 3.6rem 5rem;
 	background-color: #f4f5f6;
@@ -16,17 +40,40 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media (max-width: $tablet) {
+		padding: 1.4rem 2.7rem 1.4rem 1.5rem;
+		border-radius: 0.7rem;
+	}
 }
+
 .faq-card__title {
 	font-size: 3.5rem;
 	line-height: 1.2;
 	color: #000;
 	font-weight: 400;
 	max-width: 80%;
+
+	@media (max-width: $tablet) {
+		max-width: 84%;
+		font-size: 1.6rem;
+		line-height: 1.3;
+		letter-spacing: normal;
+	}
+}
+
+.faq-card__title br {
+	@media (max-width: $tablet) {
+		display: none;
+	}
 }
 
 .faq-card__body {
 	padding: 3.4rem 5rem 6.5rem;
+
+	@media (max-width: $tablet) {
+		padding: 1rem 0 0;
+	}
 }
 
 
@@ -34,6 +81,12 @@
 	font-size: 2.5rem;
 	line-height: 1.2;
 	margin-bottom: 1.5em;
+
+	@media (max-width: $tablet) {
+		font-size: 1.6rem;
+		line-height: 1.3;
+		letter-spacing: normal;
+	}
 }
 .faq-card__contnet *:last-child {
 	margin-bottom: 0;
