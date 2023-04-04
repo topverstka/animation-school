@@ -12,6 +12,10 @@
 	align-items: center;
 	margin-bottom: 4.3rem;
 
+	@media (max-width: $desktop-s) and (min-width: $tablet + 1) {
+		grid-template-columns: 81.7rem 64.4rem;
+	}
+	
 	@media (max-width: $tablet) {
 		grid-template-columns: 100%;
 		gap: 2rem;

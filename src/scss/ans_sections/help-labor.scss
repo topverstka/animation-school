@@ -71,10 +71,20 @@
 .help-labor-bullet:nth-child(odd) .help-labor-bullet-particles {
 	left: -40rem;
 	top: -20rem;
+
+	@media (max-width: $desktop-s) and (min-width: $tablet + 1) {
+		left: -28rem;
+    transform: scale(0.8);
+	}
 }
 .help-labor-bullet:nth-child(even) .help-labor-bullet-particles {
 	right: -40rem;
 	top: -20rem;
+
+	@media (max-width: $desktop-s) and (min-width: $tablet + 1) {
+		right: -33rem;
+    transform: scale(0.8);
+	}
 
 	@media (max-width: $tablet) {
 		height: 24.6rem;

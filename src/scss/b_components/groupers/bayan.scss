@@ -38,7 +38,7 @@
 }
 
 .bayan--opened .bayan__toggler {
-	transform: rotate(45deg);
+	// transform: rotate(45deg);
 }
 
 .bayan__toggler {
@@ -85,4 +85,12 @@
 
 .bayan__toggler:after {
   transform: translate(-50%, -60%);
+}
+
+.bayan--opened .bayan__toggler:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.bayan--opened .bayan__toggler:after {
+  transform: translate(-50%, -60%) rotate(45deg);
 }
