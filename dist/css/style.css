@@ -5592,6 +5592,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   margin-right: auto;
   margin-top: -13.8rem;
   transform: translateX(-5rem);
+  display: flex;
+  align-items: flex-end;
 }
 
 .for-who__bullet {
