@@ -181,6 +181,15 @@
 		font-size: 	1.4rem;
 	}
 }
+
+.footer__coder .link:hover,
+.footer__designer .link:hover {
+	@media (any-hover:hover) {
+		--link-color: var(--c-accent);
+	}
+}
+
+
 .footer__coder {
 	grid-area: coder;
 	display: flex;

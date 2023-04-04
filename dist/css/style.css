@@ -3820,6 +3820,13 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
 }
 
+@media (any-hover: hover) {
+  .footer__coder .link:hover,
+.footer__designer .link:hover {
+    --link-color: var(--c-accent);
+  }
+}
+
 .footer__coder {
   grid-area: coder;
   display: flex;
