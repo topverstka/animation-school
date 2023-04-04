@@ -9,6 +9,11 @@
 	grid-template-areas: "offer media" "offer meta";
 	column-gap: 1.5rem;
 	align-items: start;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+		grid-template-areas: 'media' 'offer' 'meta';
+	}
 }
 .hero-course .hero__content {
 	padding-bottom: 0;
@@ -32,9 +37,11 @@
 
 .hero-course__content-media {
 	grid-area: media;
-	margin-top: -1rem;
+	transform: translateY(-6rem);
 	height: 100%;
 	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 .hero-course__content-pic,
 .hero-course__content-img {
@@ -44,8 +51,10 @@
 }
 
 .hero-course__meta {
+	position: relative;
+	z-index: 2;
 	grid-area: meta;
-	margin-top: -7.4rem;
+	margin-top: -14.4rem;
 	display: grid;
 	justify-self: center;
 	grid-template-columns: 1fr 1fr;
@@ -56,6 +65,10 @@
 	border-radius: 2rem;
 	background-color: #fff;
 	color: #222222;
+	
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
 }
 
 .hero-course__meta-card {

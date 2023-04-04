@@ -11,6 +11,10 @@
 	column-gap: 4.3rem;
 	color: #222;
 	margin-bottom: 8.6rem;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
 }
 .students-studios-card:last-child {
 	margin-bottom: 0;
@@ -72,6 +76,10 @@
 	display: grid;
 	grid-template-columns: 21.5rem auto;
 	column-gap: 4.9rem;
+	
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
 }
 .students-studios-card__stat-title {
 	font-size: 6rem;

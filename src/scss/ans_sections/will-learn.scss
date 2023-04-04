@@ -13,6 +13,11 @@
 	row-gap: 2.8rem;
 	margin-top: -0.8rem;
 	margin-bottom: 7.7rem;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+		
+	}
 }
 
 .will-learn-card {

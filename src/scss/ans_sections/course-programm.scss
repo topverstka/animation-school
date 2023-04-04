@@ -9,6 +9,10 @@
 	padding-bottom: 5rem;
 	border-bottom: 1px solid #d8d8d8;
 	margin-bottom: 5rem;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
 }
 
 .course-programm-module:last-child {
@@ -70,6 +74,10 @@
 	flex-basis: 100%;
 	align-items: end;
 	display: flex;
+
+	@media (max-width: $tablet) {
+		flex-direction: column;
+	}
 }
 
 .course-programm-module__bullet {

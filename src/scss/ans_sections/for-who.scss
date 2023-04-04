@@ -4,6 +4,10 @@
 .for-who__container {
 	display: grid;
 	grid-template-columns: var(--regular-columns);
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
 }
 
 .for-who__media {
@@ -31,6 +35,11 @@
 	margin-bottom: 0.5em;
 	color: var(--c-accent);
 	letter-spacing: normal;
+
+	@media (max-width: $tablet) {
+		grid-column-end: initial;
+		grid-column-start: initial;
+	}
 }
 .for-who__bullet-title::before {
 	content: '';
@@ -56,4 +65,10 @@
   grid-row-end: 3;
   grid-row-start: 1;
   grid-column-start: 2;
+
+  @media (max-width: $tablet) {
+	  grid-row-end: initial;
+	  grid-row-start: initial;
+	  grid-column-start: initial;
+  }
 }

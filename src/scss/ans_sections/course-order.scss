@@ -7,6 +7,10 @@
 	display: grid;
 	grid-template-columns: var(--regular-columns);
 	column-gap: 1rem;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
 }
 
 .course-order__info {
@@ -39,6 +43,10 @@
 	letter-spacing: -0.03em;
 	flex-basis: 70%;
 	margin-bottom: 3rem;
+
+	@media (max-width: $tablet) {
+		font-size: 3rem;
+	}
 }
 
 .course-order__form {
@@ -50,6 +58,13 @@
 	background-color: #fff;
 	border-radius: 0.3rem;
 	padding: 4rem 3.4rem 4rem 3.7rem;
+
+	@media (max-width: $tablet) {
+		grid-row-start: initial;
+		grid-row-end: initial;
+		grid-column-start: initial;
+		grid-column-end: initial;
+	}
 }
 
 .course-order__stats {
@@ -83,7 +98,9 @@
 	font-family: var(--ff-title);
 }
 .course-order__stat:first-child .course-order__stat-desc {
-	font-size: 10rem;
+	@media (min-width: $tablet + 1) {
+		font-size: 10rem;
+	}
 }
 
 
@@ -98,6 +115,10 @@
 	width: 100%;
 	border-radius: 2rem;
 	color: #fff;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
 }
 
 .course-order__meta-card {

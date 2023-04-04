@@ -22,6 +22,11 @@
 	justify-content: flex-start;
 	align-items: center;
 	border-radius: 0.6rem;
+
+	@media (max-width: $tablet) {
+		flex-wrap: wrap;
+		
+	}
 }
 
 .resume-card__media {
@@ -101,8 +106,13 @@
 	columns: 2;
 	margin-bottom: 6rem;
 	line-height: 1.45;
+
+	@media (max-width: $tablet) {
+		columns: 1;
+	}
 }
 .resume-card__content li {
+	break-inside: avoid;
 	padding-left: 3rem;
 	position: relative;
   letter-spacing: -0.002em;
@@ -161,6 +171,10 @@
 .resume-card__decor-media {
 	position: absolute;
   z-index: 1;
+
+  @media (max-width: $tablet) {
+  	display: none;
+  }
 }
 .resume-card__decor-media:nth-of-type(2) {
 	--size: 47.6rem;
