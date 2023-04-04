@@ -1,0 +1,155 @@
+.form-select {
+  // --c-text: #222;
+  --c-text: #87909E;
+  --c-selected: #222;
+  --label-color: var(--bg-element);
+  --border-color: var(--c-text-regular);
+  --bg: #f8f8f8;
+  --bg-list: #F4F5F6;
+  --padding: 2.8rem 4rem 2.8rem 2.2rem ;
+  --fz: 2rem;
+  --fw: 500;
+  --lh: initial;
+  --brad: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-select--active .form-select__toggle::before {
+  transform: rotate(-180deg);
+}
+
+.form-select__input {
+  position: absolute;
+  transform: scale(0);
+}
+
+.form-select__toggle {
+  position: relative;
+  padding: var(--padding);
+  font-family: var(--ff-regular);
+  color: var(--c-text);
+  font-weight: var(--fw);
+  font-size: var(--fz);
+  line-height: var(--lh);
+  text-align: left;
+  background: var(--bg);
+  // border: 0.1rem solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--brad);
+  transition: var(--tr-regular);
+}
+
+.form-select__toggle::before {
+  content: "";
+  position: absolute;
+  right: 2.2rem;
+  top: 3rem;
+  display: block;
+  width: 0;
+  height: 0;
+  color: var(--c-text);
+  border-style: solid;
+  border-width: 2.17rem 1.25rem 0 1.25rem;
+  border-color: #d9d9d9 transparent transparent transparent;
+  transition: var(--tr-regular);
+  transform-origin: center;
+  @media (max-width: $tablet) {
+    right: 1.9rem;
+    top: 2rem;
+  }
+}
+.form-select__toggle:focus {
+    border-color: var(--c-accent);
+}
+.form-select__toggle:hover {
+	@media (any-hover:hover) {
+    border-color: var(--c-accent);
+	}
+}
+
+.form-select__toggle--selected {
+    color: var(--c-selected);
+}
+
+.form-select__list {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    right: 0;
+    z-index: 2;
+    display: grid;
+    gap: 3rem;
+    padding: 2rem 3rem 4rem;
+    border-radius: var(--brad);
+    background: var(--bg-list);
+    // border: 0.1rem solid rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--tr-regular);
+    transform: translateY(-2rem);
+
+    @media (max-width: $tablet) {
+        padding: 2rem;
+    }
+}
+.form-select--active .form-select__list {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.form-select__button {
+    position: relative;
+    padding-left: 4rem;
+    color: var(--c-text);
+    font-family: var(--ff-regular);
+    font-weight: var(--fw);
+    font-size: var(--fz);
+    line-height: var(--lh);
+    text-align: left;
+}
+.form-select__button:hover {
+	@media (any-hover:hover) {
+    opacity: 1;
+	}
+}
+
+.form-select__button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid var(--c-text);
+    border-radius: 50%;
+
+    @media (max-width: $tablet) {
+        font-size: 1.4rem;
+    }
+}
+
+.form-select__button::after {
+  content: '';
+  position: absolute;
+  left: 0.8rem;
+  top: 0.8rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: var(--c-accent);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  transition: var(--tr-regular);
+}
+
+.form-select__button--active {
+    opacity: 1;
+    color: var(--c-selected);
+}
+.form-select__button--active::after {
+  transform: scale(1);
+  opacity: 1;
+}

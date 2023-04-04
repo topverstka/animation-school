@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Страница курса</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230403193126" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230404140749" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -1223,49 +1223,67 @@
                   <input type="hidden" name="requestTime" value="">
                   <input type="hidden" name="requestSimpleSign" value="">
                 </div>
-                <fieldset class="form__fieldset">
-                  <label class="input input-name">
+                <fieldset class="form__fieldset course-order__form-fieldset">
+                  <label class="input input-name input--big">
+  <span class="input__label">Имя и фамилия</span>
   <input
     class="input__field"
     name="user_name"
     type="text"
-    placeholder="Имя"
+    placeholder="Иванов Иван"
     autocomplete="name"
   />
 </label>
 
-                  <label class="input input-email">
+                  <label class="input input-email input--big">
+  <span class="input__label">Электронная почта</span>
   <input
     class="input__field"
     name="user_email"
     type="email"
-    placeholder="Email"
+    placeholder="example@gmail.com"
     autocorrect="off"
     autocomplete="email"
   />
 </label>
 
-                  <label class="input input-tel">
+                  <label class="input input-tel input--big">
+  <span class="input__label">Телефон</span>
   <input
     class="input__field"
     required
     name="user_tel"
     type="tel"
-    placeholder="Телефон"
+    placeholder="+7 000 000 00 00"
     maxlength="25"
     minlength="10"
     autocomplete="tel"
   />
 </label>
 
+                  <div class="form-select">
+	<div class="input__label">Откуда вы узнали о нас?</div>
+	<select name="from_source" class="form-select__input">
+		<option value="Друзья">Друзья</option>
+		<option value="Реклама">Реклама</option>
+		<option value="Случайно">Случайно</option>
+	</select>
+	<button class="form-select__toggle input__field" type="button">Выберите вариант ответа</button>
+	<ul class="form-select__list">
+		<li><button class="form-select__button" type="button">Друзья</button></li>
+		<li><button class="form-select__button" type="button">Реклама</button></li>
+		<li><button class="form-select__button" type="button">Случайно</button></li>
+	</ul>
+</div>
+                </fieldset>
+                <fieldset class="form__fieldset course-order__form-fieldset">
                   <div class="checkbox">
 	<label class="checkbox__label">
 		<input type="checkbox" class="checkbox__input">
 		<span class="checkbox__box"></span>
 	</label>
 	<span class="checkbox__caption">
-		Нажимая на кнопку, вы даете 
-		<a href="https://animationschool.ru/files/animationschool.ru_personal_data_policy.pdf" class="checkbox__link link"><span class="link__text">согласие на обработку своих персональных данных</span></a>
+		Обучение на курсе доступно с 16 лет (при согласовании с преподавателем – с 14 лет). Подтверждаю, что мне исполнилось 16 лет.
 	</span>
 </div>
                   <div class="checkbox">
@@ -1279,7 +1297,7 @@
 	</span>
 </div>
                 </fieldset>
-                <button class="button-primary button-primary--invert modal__button">
+                <button class="button-primary button-primary--invert course-order__form-button">
                   <span class="button__text">Записаться на курс</span>
                 </button>
               </form>
@@ -1289,51 +1307,47 @@
 
         <section class="section faq">
           <div class="container faq__container">
-            <h2 class="section-title faq__title">
-              Часто-задаваемые вопросы 
+            <h2 class="section-title faq__title section-text--center">
+              Часто-задаваемые <br> вопросы 
               <span class="section-text--color">по курсу</span>
             </h2>
 
             <div class="faq__gallery">
               <article class="faq-card bayan">
-                <div class="bayan__top">
+                <div class="faq-card__head">
                   <h3 class="faq-card__title">Нужно ли мне иметь опыт до начала курса?</h3>
-                  <span class="bayan__close">×</span>
                 </div>
-                <div class="bayan__bottom">
+                <div class="faq-card__body">
                   <div class="faq-card__contnet">
                     <p>Требуется только опыт начальной работы с компьютером. Всему остальному мы научим ❤️</p>
                   </div>
                 </div>
               </article>
               <article class="faq-card bayan">
-                <div class="bayan__top">
+                <div class="faq-card__head">
                   <h3 class="faq-card__title">На какую должность я смогу претендовать после курса?</h3>
-                  <span class="bayan__close">×</span>
                 </div>
-                <div class="bayan__bottom">
+                <div class="faq-card__body">
                   <div class="faq-card__contnet">
                     <p>Требуется только опыт начальной работы с компьютером. Всему остальному мы научим ❤️</p>
                   </div>
                 </div>
               </article>
               <article class="faq-card bayan">
-                <div class="bayan__top">
+                <div class="faq-card__head">
                   <h3 class="faq-card__title">Сколько нужно тратить времени на курс?</h3>
-                  <span class="bayan__close">×</span>
                 </div>
-                <div class="bayan__bottom">
+                <div class="faq-card__body">
                   <div class="faq-card__contnet">
                     <p>Требуется только опыт начальной работы с компьютером. Всему остальному мы научим ❤️</p>
                   </div>
                 </div>
               </article>
               <article class="faq-card bayan">
-                <div class="bayan__top">
+                <div class="faq-card__head">
                   <h3 class="faq-card__title">Есть ли у вас рассрочка?</h3>
-                  <span class="bayan__close">×</span>
                 </div>
-                <div class="bayan__bottom">
+                <div class="faq-card__body">
                   <div class="faq-card__contnet">
                     <p>Требуется только опыт начальной работы с компьютером. Всему остальному мы научим ❤️</p>
                   </div>
@@ -1514,6 +1528,6 @@
 
     </div>
 
-    <script src="./js/bundle.min.js?_v=20230403193126"></script>
+    <script src="./js/bundle.min.js?_v=20230404140749"></script>
   </body>
 </html>

@@ -28,43 +28,6 @@ let lazyLoadInstance = new LazyLoad();
 import "./ans_components/reivews.js";
 import "./ans_components/search.js";
 
-/**
- * Dropdown Select
- */
-// import "./libs/custom-select.min.js";
-// if (document.querySelector(".input--dropdown")) {
-//   customSelect(".input--dropdown .input__select");
-// }
-// import "./unstable/tabs.js";
-
-/**
- * Smooth anchors
- */
-// import "./utils/smooth-anchors.js";
-
-// Аккордеон
-// const accordions = new DismalModules.Accordions()
-
-// Модальные окна
-// const modals = new DismalModules.Modals()
-
-// Табы
-// DismalModules.tabs()
-
-// Плейсхолдер текстовых полей
-// DismalModules.labelTextfield()
-
-// Списки выбора
-// DismalModules.select()
-
-// Кнопка "Наверх"
-// DismalModules.arrowUp()
-
-// Фиксация элемента с position: fixed над подвалом (чтобы не загораживал контент в подвале)
-// DismalModules.fixElemOverFooter()
-
-// Только цифры и точка в инпутах
-// DismalModules.onlyDigit()
 
 // function s() {
 //   var s = {};
@@ -105,6 +68,10 @@ Fancybox.bind('[data-fancybox]', {
     ],
   },
 });
+
+import './ans_components/select.js'; // import
+
+import './b_components/groupers/bayan.js'; // import
 
 /*
 import SliderBar from 'before-after-slider'; // import

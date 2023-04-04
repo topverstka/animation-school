@@ -5,34 +5,51 @@
   --input-bg: #f8f8f8;
   --fz: 1.6rem;
   --lh: 1;
+  --padding: 1.4rem 2rem;
+  --brad: 0.5rem;
 
-  padding: 1.4rem 2rem;
   position: relative;
   display: block;
   width: 100%;
   font-family: var(--ff-regular);
-  background-color: var(--input-bg);
   cursor: text;
-  border-radius: 0.5rem;
   z-index: 1;
   @media (max-width: $mobile-l) {
   }
+}
+.input--big {
+  --padding: 2.8rem 2.2rem;
+  --fz: 2rem;
+  --lh: initial;
+  --brad: 0;
 }
 
 .input__field {
   position: relative;
   z-index: 2;
   width: 100%;
+  padding: var(--padding);
   font-size: var(--fz);
+  font-family: inherit;
   line-height: var(--lh);
-  transition: all 0.3s ease;
-  background: transparent;
-
+  transition: var(--tr-regular);
+  background-color: var(--input-bg);
+  border-radius: var(--brad);
   color: var(--text-color);
 }
 .input__field::placeholder {
 }
 
+.input__label {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 1rem;
+  font-family: var(--ff-regular);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: initial;
+  color: #000000;
+}
 
 .input:last-of-type {
   margin-bottom: 0;

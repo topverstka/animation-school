@@ -127,3 +127,33 @@
 	width: 100%;
 	height: 100%;
 }
+
+.course-order__form {
+	font-size: 1.4rem;
+}
+.course-order__form-fieldset {
+	row-gap: 2rem;
+	margin-bottom: 1.6rem;
+	color: #000;
+}
+.course-order__form-fieldset:last-of-type {
+	margin-bottom: 5rem;
+}
+.course-order__form-fieldset .link {
+	--link-color: inherit;
+	--link-underline-color: #000;
+}
+.course-order__form-fieldset .link:hover {
+	@media (any-hover:hover) {
+		--link-color: var(--c-accent);
+		--link-underline-color: var(--c-accent);
+	}
+}
+.course-order__form-button {
+	display: flex;
+	width: 100%;
+	font-size: 3rem;
+	line-height: initial;
+	padding: 2.5rem;
+	border-radius: 0.6rem;
+}

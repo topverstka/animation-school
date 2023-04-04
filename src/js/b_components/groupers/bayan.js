@@ -7,11 +7,11 @@
  */
 const bayans = [...document.querySelectorAll(".bayan")];
 const bayanOpenedClass = "bayan--opened";
-const bayanHeight = 2000;
+// const bayanHeight = 2000;
 
 function openBayan(bayanObject) {
   // bayanObject.bottom.bayan.style.display = "block";
-  bayanObject.bottom.bayan.style.maxHeight = `${bayanHeight}px`;
+  // bayanObject.bottom.bayan.style.maxHeight = `${bayanHeight}px`;
   bayanObject.top.bayan.parentElement.classList.add(bayanOpenedClass);
   bayanObject.bottom.bayan.querySelectorAll("a").forEach((anchor) => {
     anchor.setAttribute("tabindex", "0");
@@ -21,7 +21,7 @@ function openBayan(bayanObject) {
 }
 
 function closeBayan(bayanObject) {
-  bayanObject.bottom.bayan.style.maxHeight = "0";
+  // bayanObject.bottom.bayan.style.maxHeight = "0";
   bayanObject.top.bayan.parentElement.classList.remove(bayanOpenedClass);
   bayanObject.bottom.bayan.querySelectorAll("a").forEach((anchor) => {
     anchor.setAttribute("tabindex", "-1");
