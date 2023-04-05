@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Профессии</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main page-professions">
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                  <li class="breadcrumbs__item">Профессии</li>
+                </ul>
+              </div>
+              <h1 class="section-title hero__title">Профессии</h1>
+            </div>
+            <div class="hero__content-media">
+              <picture class="hero__content-pic">
+                <img src="./img/professions/header-knight-2.png" alt="" class="hero__content-pic">
+              </picture>
+              <a href="#" class="hero__contnet-link link"><span class="link__text">работа <br>Даниила <br>Постнова</span></a>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section professions">
+          <div class="container professions__container">
+            <div class="search">
+              <form action="" class="search__form">
+                <div class="search__row">
+                  <label class="search__input">
+                    <svg class="search__input-icon">
+                      <use xlink:href="./img/common/search-icon.svg#search" />
+                    </svg>
+                    <input type="text" name="s" class="search__field" placeholder="Введите курс">
+                  </label>
+                  <button class="search__button-reset">×</button>
+                </div>
+                <div class="search__scroller">
+                  <fieldset class="search__filters">
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро стат'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггинг'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '2д-анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Режессура анимации'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '3д-анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Рисование'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Прикладные направления'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '3д-анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Режессура анимации'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '2д-анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггинг'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро старт'})
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+            <div class="professions__content">
+              <div class="professions__gallery">
+                @@include('tpls/cards/professions-card.html', {name: "2D аниматор в классическом стиле", img: "profession-img-1.jpg", desc: "Базовая программа включает в себя 4 класса классической 2D анимации разного уровня сложности. ", price: "15 000₽"})
+                @@include('tpls/cards/professions-card.html', {name: "2D аниматор в играх", img: "profession-img-2.jpg", desc: "Программа обучения включает в себя2 класса игровой 2D анимацииразного уровня сложности.", price: "12 000₽"})
+                @@include('tpls/cards/professions-card.html', {name: "3D аниматор в мультфильмах", img: "profession-img-3.jpg", desc: "Изучайте 3D анимацию с самых основили совершенствуйте свои навыкина продвинутых курсах направления!", price: "18 000₽"})
+                @@include('tpls/cards/professions-card.html', {name: "3D аниматор в играх", img: "profession-img-4.jpg", desc: "Программа обучения включает в себяизучение основ анимациии классы по игровому направлению. Также вы можете изучить основыриггинга, этот навык станет отличнымдополнением при устройстве на студию!", price: "28 000₽"})
+                @@include('tpls/cards/professions-card.html', {name: "2D аниматор в Toon Boom Harmony", img: "profession-img-5.jpg", desc: "Программа включает в себя 3 классаразного уровня сложности по обучению2D анимации, а также курс по риггингу в софте.", price: "55 000₽"})
+                @@include('tpls/cards/professions-card.html', {name: "Сценарист и режиссер мультсериалов и комиксов", img: "profession-img-6.jpg", desc: "Курс включает 6 блоков, затрагивающих все этапы разработки сценария и режиссирования проекта.", price: "22 000₽"})
+              </div>
+              <div class="section-buttons professions__content-buttons">
+                <button class="button-primary professions__content-more-button" href="#">
+                  <svg class="button__icon">
+                    <use xlink:href="./img/common/refresh-icon.svg#refresh" />
+                  </svg>
+                  <span class="button__text">Загрузить еще</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>

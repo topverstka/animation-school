@@ -1,0 +1,30 @@
+.professions {
+	padding-top: 6rem;
+	background-color: #f8f8f8;
+
+	@media (max-width: $tablet) {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+}
+
+.professions__gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 3rem;
+	row-gap: 3rem;
+	margin-bottom: 6.1rem;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+		row-gap: 2rem;
+	}
+}
+
+.professions__content-more-button {
+	max-width: 23.4rem;
+	width: 100%;
+	--button-icon-color: #222;
+	--button-icon-color-hover: #222;
+	--icon-gap: 1rem;
+}
