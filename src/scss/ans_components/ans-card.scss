@@ -74,6 +74,17 @@
 	}
 }
 
+.ans-card__author {
+	font-size: 1.8rem;
+	margin-bottom: 1.5rem;
+	letter-spacing: normal;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 1rem;
+		line-height: initial;
+	}
+}
+
 .ans-card__title {
 	font-size: 3rem;
 	line-height: initial;

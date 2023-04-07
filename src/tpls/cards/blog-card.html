@@ -1,0 +1,37 @@
+<article class="blog-card ans-card @@className">
+  <div class="blog-card__media ans-card__media">
+    <picture class="blog-card__pic ans-card__pic">
+    	@@if (context.mobile) {
+	  		<source srcset="./img/blog/@@mobile" media="(max-width: 992px)">
+  		}
+      <img src="./img/blog/@@img" alt="" class="blog-card__img ans-card__img">
+    </picture>
+  </div>
+  <div class="blog-card__info ans-card__info">
+  	<div class="blog-card__top">
+	  	<p class="ans-card__author">
+	  		<a href="#" class="ans-card__link">Ирина Голина</a>
+	  	</p>
+	    <h3 class="blog-card__title ans-card__title">
+	      <a href="#" class="blog-card__link ans-card__link">
+	      	@@title
+	      </a>
+	    </h3>
+	    <p class="blog-card__desc ans-card__desc">
+		    Многие примерно представляют себе, как создаются рисованные 2D мультфильмы. А что насчёт 3D?
+		  </p>
+	  </div>
+    <div class="blog-card__bottom">
+	    <a class="button-primary button-primary--invert blog-card__button" href="#">
+	      <svg class="button__icon">
+	        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+	      </svg>
+	      <span class="button__text">Читать статью</span>
+	    </a>
+	    <div class="blog-card__meta">
+	    	<img src="./img/common/time-icon.svg" alt="" class="blog-card__meta-img">
+	      <p class="blog-card__meta-desc">14 мин</p>
+	    </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Работы студентов</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body class="post-type-archive-students-works">
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main page-blog">
+        <section class="hero hero--image-right">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item">Блог</li>
+                  </ul>
+                </div>
+              </div>
+              <h1 class="section-title hero__title">Блог</h1>
+            </div>
+            <div class="hero__content-media">
+              <picture class="hero__content-pic">
+                <img src="./img/blog/blog-hero.png" alt="" class="hero__content-img">
+              </picture>
+              <p class="hero__content-media-desc">
+                Статьи, интервью
+                <br> и заметки об анимации
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section blog">
+          <div class="container blog__container">
+            <div class="search">
+              <form action="" class="search__form">
+                <div class="search__scroller">
+                  <fieldset class="search__filters">
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Все'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '2D анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '3D анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Туториал'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Интервью'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Стоп-моушн'})
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+            <div class="blog__content">
+              <div class="blog__gallery section-gallery-double">
+                @@include('tpls/cards/blog-card.html', {title: "Как создаются 3D мультфильмы", img: "blog-img-1.jpg"})
+                @@include('tpls/cards/blog-card.html', {title: "Создаем плащ в Maya", img: "blog-img-2.jpg"})
+                @@include('tpls/cards/blog-card.html', {title: "Ирландская мифология в мультфильмах Томма Мура", img: "blog-img-3.jpg", className: "blog-card--wide"})
+                @@include('tpls/cards/blog-card.html', {title: "Ирландская мифология в мультфильмах Томма Мура", img: "blog-img-4.jpg"})
+                @@include('tpls/cards/blog-card.html', {title: "Ирландская мифология в мультфильмах Томма Мура", img: "blog-img-5.jpg"})
+                @@include('tpls/cards/blog-card.html', {title: "Бесплатные мини-курсы по 3D и 2D анимации от AnimationSchool.ru", img: "blog-img-6.jpg"})
+                @@include('tpls/cards/blog-card.html', {title: "История дизайна классических героев Диснея", img: "blog-img-7.jpg"})
+                @@include('tpls/cards/blog-card.html', {title: "Как создаются 3D мультфильмы", img: "blog-img-8.jpg"})
+                @@include('tpls/cards/blog-card.html', {title: "Создаем плащ в Maya", img: "blog-img-9.jpg"})
+
+                @@include('tpls/cards/blog-card.html', {title: "Как создаются 3D мультфильмы", img: "blog-img-10.jpg", className: "blog-card--wide"})
+
+                @@include('tpls/cards/blog-card.html', {title: "Как создаются 3D мультфильмы", img: "blog-img-11.jpg"})
+                @@include('tpls/cards/blog-card.html', {title: "Создаем плащ в Maya", img: "blog-img-12.jpg"})
+
+                @@include('tpls/cards/blog-card.html', {title: "Как создаются 3D мультфильмы", img: "blog-img-1.jpg"})
+                @@include('tpls/cards/blog-card.html', {title: "Создаем плащ в Maya", img: "blog-img-2.jpg"})
+                @@include('tpls/cards/blog-card.html', {title: "Бесплатные мини-курсы по 3D и 2D анимации от AnimationSchool.ru", img: "blog-img-6.jpg"})
+
+                @@include('tpls/cards/blog-card.html', {title: "История дизайна классических героев Диснея", img: "blog-img-14.jpg", className: "blog-card--tall"})
+                @@include('tpls/cards/blog-card.html', {title: "Как создаются 3D мультфильмы", img: "blog-img-13.jpg"})
+
+                @@include('tpls/cards/blog-card.html', {title: "Как создаются 3D персонажи", img: "blog-img-15.jpg", mobile: "blog-img-15-mobile.jpg", className: "blog-card--wide"})
+              </div>
+              <div class="section-buttons blog__content-buttons">
+                <button class="button-primary section-gallery-more blog__content-more-button" href="#">
+                  <svg class="button__icon">
+                    <use xlink:href="./img/common/refresh-icon.svg#refresh" />
+                  </svg>
+                  <span class="button__text">Загрузить еще</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
