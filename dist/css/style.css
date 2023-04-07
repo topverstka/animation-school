@@ -1127,6 +1127,7 @@
   font-size: 1.8rem;
   line-height: 120%;
   overflow: hidden;
+  width: 100%;
 }
 @media (max-width: 992px) {
   .breadcrumbs {
@@ -4625,6 +4626,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   overflow: hidden;
   min-height: 59.3rem;
   display: flex;
+  flex-direction: column;
   align-items: start;
 }
 @media (max-width: 992px) {
@@ -6339,6 +6341,13 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (max-width: 992px) {
   .hero-course .breadcrumbs {
     margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-course .breadcrumbs__list {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

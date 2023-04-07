@@ -31,6 +31,12 @@
 		margin-bottom: 3rem;
 	}
 }
+.hero-course .breadcrumbs__list {
+	@media (max-width: $tablet) {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
 
 .hero-course__title {
 	margin-top: 0;
