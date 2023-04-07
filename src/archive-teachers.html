@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Преподаватели</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body class="post-type-archive-students-works">
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main page-teachers">
+        <section class="hero hero--image-right">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item">Преподаватели</li>
+                  </ul>
+                </div>
+              </div>
+              <h1 class="section-title hero__title">Преподаватели</h1>
+            </div>
+            <div class="hero__content-media">
+              <picture class="hero__content-pic">
+                <img src="./img/teachers-2/header-star.png" alt="" class="hero__content-img">
+              </picture>
+              <p class="hero__content-media-desc">
+                Действующие <br> специалисты из <br> индустрии
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section teachers">
+          <div class="container teachers__container">
+            <div class="search">
+              <form action="" class="search__form">
+                <div class="search__scroller">
+                  <fieldset class="search__filters">
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Все'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Sound designer'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Художник'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Моделер'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '3D Generalist'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'VFX Artist'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '3D Аниматор'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '2D Аниматор'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Режиссёр'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Сценарист'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггер'})
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+            <div class="teachers__content">
+              <div class="teachers__gallery section-gallery-double">
+                @@include('tpls/cards/teachers-card.html', {img: "teacher-img-1.jpg"})
+                @@include('tpls/cards/teachers-card.html', {img: "teacher-img-2.jpg"})
+                @@include('tpls/cards/teachers-card.html', {img: "teacher-img-3.jpg"})
+                @@include('tpls/cards/teachers-card.html', {img: "teacher-img-4.jpg"})
+                @@include('tpls/cards/teachers-card.html', {img: "teacher-img-5.jpg"})
+                @@include('tpls/cards/teachers-card.html', {img: "teacher-img-6.jpg"})
+                @@include('tpls/cards/teachers-card.html', {img: "teacher-img-7.jpg"})
+                @@include('tpls/cards/teachers-card.html', {img: "teacher-img-8.jpg"})
+              </div>
+              <div class="section-buttons teachers__content-buttons">
+                <button class="button-primary section-gallery-more teachers__content-more-button" href="#">
+                  <svg class="button__icon">
+                    <use xlink:href="./img/common/refresh-icon.svg#refresh" />
+                  </svg>
+                  <span class="button__text">Загрузить еще</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>

@@ -135,3 +135,75 @@
   max-width: 50rem;
   width: 100%;
 }
+
+
+.page-teachers .hero__title {
+	letter-spacing: normal;
+}
+.page-teachers .hero__content {
+	@media (min-width: $tablet + 1) {
+		padding-bottom: 12rem;
+	}
+}
+.page-teachers .hero__title {
+	@media (min-width: $tablet + 1) {
+		font-size: 8rem;
+	}
+}
+
+.page-teachers .hero__content-media {
+	@media (min-width: $tablet + 1) {
+		right: 4rem;
+	}
+}
+.page-teachers .hero__content-pic {
+	@media (max-width: $tablet) {
+		--mask: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.25) 0.3rem, rgb(0, 0, 0) 1.8rem, rgb(0, 0, 0) calc(100% - 0.1rem), rgba(0, 0, 0, 0.25) calc(100% - 1.3rem), rgba(0, 0, 0, 0));
+		transform-origin: bottom;
+		margin-bottom: 0;
+	}
+}
+.page-teachers .hero__content-media-desc {
+	font-size: 3.5rem;
+	text-align: right;
+	font-family: var(--ff-title);
+	letter-spacing: -0.03em;
+  right: 12.9rem;
+  bottom: 10rem;
+  font-weight: 600;
+
+  @media (max-width: $tablet) {
+  	display: none;
+  }
+}
+
+.page-teachers .search {
+	@media (max-width: $tablet) {
+    margin-bottom: -0.1rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -1.8rem;
+    margin-right: -1.8rem;
+    border-radius: 0;
+		--mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.25) 0.9rem, rgb(0, 0, 0) 1.8rem, rgb(0, 0, 0) calc(100% - 1.8rem), rgba(0, 0, 0, 0.25) calc(100% - 0.9rem), rgba(0, 0, 0, 0));
+	  -webkit-mask-image: var(--mask);
+	  mask: var(--mask);
+
+		background-color: transparent;
+		padding: 0;
+		margin-bottom: 2.5rem;
+	}
+}
+
+.page-teachers .search__scroller {
+	@media (max-width: $tablet) {
+    padding-left: 3.8rem;
+    padding-right: 3.8rem;
+	}
+}
+
+.page-teachers .search__filters {
+	@media (max-width: $tablet) {
+		padding-right: 2.8rem;
+	}
+}

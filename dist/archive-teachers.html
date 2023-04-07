@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Профессии</title>
+    <title>Преподаватели</title>
     <link rel="stylesheet" href="./css/style.css?_v=20230407181202" />
 
     <!-- Отключить автодетект телефонов -->
@@ -14,7 +14,7 @@
     <meta http-equiv="Cache-Control" content="no-cache" />
     <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
   </head>
-  <body>
+  <body class="post-type-archive-students-works">
     <div class="wrapper">
       <header class="header">
   <div class="container header__container">
@@ -75,50 +75,43 @@
 </header>
 
 
-      <main class="main page-professions">
-        <section class="hero">
+      <main class="main page-teachers">
+        <section class="hero hero--image-right">
           <div class="container hero__container">
             <div class="hero__content">
               <div class="breadcrumbs">
-                <ul class="breadcrumbs__list">
-                  <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-                  <li class="breadcrumbs__item">Профессии</li>
-                </ul>
+                <div class="breadcrumbs__container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item">Преподаватели</li>
+                  </ul>
+                </div>
               </div>
-              <h1 class="section-title hero__title">Профессии</h1>
+              <h1 class="section-title hero__title">Преподаватели</h1>
             </div>
             <div class="hero__content-media">
               <picture class="hero__content-pic">
-                <img src="./img/professions/header-knight-2.png" alt="" class="hero__content-img">
+                <img src="./img/teachers-2/header-star.png" alt="" class="hero__content-img">
               </picture>
               <p class="hero__content-media-desc">
-                <a href="#" class="hero__content-link link"><span class="link__text">работа <br>Даниила <br>Постнова</span></a>
+                Действующие <br> специалисты из <br> индустрии
               </p>
             </div>
           </div>
         </section>
 
 
-        <section class="section professions">
-          <div class="container professions__container">
+        <section class="section teachers">
+          <div class="container teachers__container">
             <div class="search">
               <form action="" class="search__form">
-                <div class="search__row">
-                  <label class="search__input">
-                    <svg class="search__input-icon">
-                      <use xlink:href="./img/common/search-icon.svg#search" />
-                    </svg>
-                    <input type="text" name="s" class="search__field" placeholder="Введите курс">
-                  </label>
-                  <button class="search__button-reset">×</button>
-                </div>
                 <div class="search__scroller">
                   <fieldset class="search__filters">
                     <div class="chips-checkbox">
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">Скоро стат</span>
+			<span class="chips-checkbox__caption">Все</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -127,7 +120,7 @@
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">Риггинг</span>
+			<span class="chips-checkbox__caption">Sound designer</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -136,7 +129,7 @@
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">2д-анимация</span>
+			<span class="chips-checkbox__caption">Художник</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -145,7 +138,7 @@
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">Режессура анимации</span>
+			<span class="chips-checkbox__caption">Моделер</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -154,7 +147,7 @@
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">3д-анимация</span>
+			<span class="chips-checkbox__caption">3D Generalist</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -163,7 +156,7 @@
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">Рисование</span>
+			<span class="chips-checkbox__caption">VFX Artist</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -172,7 +165,7 @@
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">Прикладные направления</span>
+			<span class="chips-checkbox__caption">3D Аниматор</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -181,7 +174,7 @@
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">3д-анимация</span>
+			<span class="chips-checkbox__caption">2D Аниматор</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -190,7 +183,7 @@
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">Режессура анимации</span>
+			<span class="chips-checkbox__caption">Режиссёр</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -199,7 +192,7 @@
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">2д-анимация</span>
+			<span class="chips-checkbox__caption">Сценарист</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -208,16 +201,7 @@
 	<label class="chips-checkbox__label">
 		<input type="checkbox" class="chips-checkbox__input">
 		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">Риггинг</span>
-			<span class="chips-checkbox__count">13</span>
-		</span>
-	</label>
-</div>
-                    <div class="chips-checkbox">
-	<label class="chips-checkbox__label">
-		<input type="checkbox" class="chips-checkbox__input">
-		<span class="chips-checkbox__box">
-			<span class="chips-checkbox__caption">Скоро старт</span>
+			<span class="chips-checkbox__caption">Риггер</span>
 			<span class="chips-checkbox__count">13</span>
 		</span>
 	</label>
@@ -226,215 +210,307 @@
                 </div>
               </form>
             </div>
-            <div class="professions__content">
-              <div class="professions__gallery">
-                <article class="professions-card">
-  <div class="professions-card__media">
-    <picture class="professions-card__pic">
-      <img src="./img/professions/profession-img-1.jpg" alt="2D аниматор в классическом стиле" class="professions-card__img">
+            <div class="teachers__content">
+              <div class="teachers__gallery section-gallery-double">
+                <article class="teachers-card">
+  <div class="teachers-card__media">
+    <picture class="teachers-card__pic">
+      <img src="./img/teachers-2/teacher-img-1.jpg" alt="" class="teachers-card__img">
     </picture>
-  </div>
-  <h3 class="professions-card__title">
-    <a href="#" class="professions-card__link">2D аниматор в классическом стиле</a>
-  </h3>
-  <p class="professions-card__desc">Базовая программа включает в себя 4 класса классической 2D анимации разного уровня сложности. </p>
-  <ul class="ans-card__chips">
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/lightning-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">6 курсов</span>
-    </li>
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/time-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">34 ч. обучения</span>
-    </li>
-  </ul>
-  <div class="professions-card__bullets">
-    <div class="professions-card__bullet">
-    	<span class="professions-card__bullet-title">Стоимость</span>
-    	<span class="professions-card__bullet-value">15 000₽</span>
+    <div class="teachers-card__socials socials">
+      <a href="#" class="socials__link">
+        <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+      </a>
     </div>
-    <a class="button-primary button-primary--invert professions-card__button" href="#">
+  </div>
+  <div class="teachers-card__info">
+    <h3 class="teachers-card__name">
+      <a href="#" class="teachers-card__link">
+      	Ирина Голина-Сагателиан
+      </a>
+    </h3>
+    <p class="teachers-card__desc">Работает в Netflix главным аниматором. Преподает на 3 курсах.</p>
+    <ul class="teachers-card__bullets">
+      <li class="teachers-card__bullet">Опыт работы — 12 лет</li>
+      <li class="teachers-card__bullet">Работала в Sony, Ubisoft, Microsoft, Bethesda</li>
+    </ul>
+    <a class="button-primary button-primary--invert teachers-card__button" href="#">
       <svg class="button__icon">
         <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
       </svg>
-      <span class="button__text">Подробнее</span>
+      <span class="button__text">О преподавателе</span>
     </a>
   </div>
 </article>
 
-                <article class="professions-card">
-  <div class="professions-card__media">
-    <picture class="professions-card__pic">
-      <img src="./img/professions/profession-img-2.jpg" alt="2D аниматор в играх" class="professions-card__img">
+                <article class="teachers-card">
+  <div class="teachers-card__media">
+    <picture class="teachers-card__pic">
+      <img src="./img/teachers-2/teacher-img-2.jpg" alt="" class="teachers-card__img">
     </picture>
-  </div>
-  <h3 class="professions-card__title">
-    <a href="#" class="professions-card__link">2D аниматор в играх</a>
-  </h3>
-  <p class="professions-card__desc">Программа обучения включает в себя2 класса игровой 2D анимацииразного уровня сложности.</p>
-  <ul class="ans-card__chips">
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/lightning-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">6 курсов</span>
-    </li>
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/time-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">34 ч. обучения</span>
-    </li>
-  </ul>
-  <div class="professions-card__bullets">
-    <div class="professions-card__bullet">
-    	<span class="professions-card__bullet-title">Стоимость</span>
-    	<span class="professions-card__bullet-value">12 000₽</span>
+    <div class="teachers-card__socials socials">
+      <a href="#" class="socials__link">
+        <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+      </a>
     </div>
-    <a class="button-primary button-primary--invert professions-card__button" href="#">
+  </div>
+  <div class="teachers-card__info">
+    <h3 class="teachers-card__name">
+      <a href="#" class="teachers-card__link">
+      	Ирина Голина-Сагателиан
+      </a>
+    </h3>
+    <p class="teachers-card__desc">Работает в Netflix главным аниматором. Преподает на 3 курсах.</p>
+    <ul class="teachers-card__bullets">
+      <li class="teachers-card__bullet">Опыт работы — 12 лет</li>
+      <li class="teachers-card__bullet">Работала в Sony, Ubisoft, Microsoft, Bethesda</li>
+    </ul>
+    <a class="button-primary button-primary--invert teachers-card__button" href="#">
       <svg class="button__icon">
         <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
       </svg>
-      <span class="button__text">Подробнее</span>
+      <span class="button__text">О преподавателе</span>
     </a>
   </div>
 </article>
 
-                <article class="professions-card">
-  <div class="professions-card__media">
-    <picture class="professions-card__pic">
-      <img src="./img/professions/profession-img-3.jpg" alt="3D аниматор в мультфильмах" class="professions-card__img">
+                <article class="teachers-card">
+  <div class="teachers-card__media">
+    <picture class="teachers-card__pic">
+      <img src="./img/teachers-2/teacher-img-3.jpg" alt="" class="teachers-card__img">
     </picture>
-  </div>
-  <h3 class="professions-card__title">
-    <a href="#" class="professions-card__link">3D аниматор в мультфильмах</a>
-  </h3>
-  <p class="professions-card__desc">Изучайте 3D анимацию с самых основили совершенствуйте свои навыкина продвинутых курсах направления!</p>
-  <ul class="ans-card__chips">
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/lightning-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">6 курсов</span>
-    </li>
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/time-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">34 ч. обучения</span>
-    </li>
-  </ul>
-  <div class="professions-card__bullets">
-    <div class="professions-card__bullet">
-    	<span class="professions-card__bullet-title">Стоимость</span>
-    	<span class="professions-card__bullet-value">18 000₽</span>
+    <div class="teachers-card__socials socials">
+      <a href="#" class="socials__link">
+        <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+      </a>
     </div>
-    <a class="button-primary button-primary--invert professions-card__button" href="#">
+  </div>
+  <div class="teachers-card__info">
+    <h3 class="teachers-card__name">
+      <a href="#" class="teachers-card__link">
+      	Ирина Голина-Сагателиан
+      </a>
+    </h3>
+    <p class="teachers-card__desc">Работает в Netflix главным аниматором. Преподает на 3 курсах.</p>
+    <ul class="teachers-card__bullets">
+      <li class="teachers-card__bullet">Опыт работы — 12 лет</li>
+      <li class="teachers-card__bullet">Работала в Sony, Ubisoft, Microsoft, Bethesda</li>
+    </ul>
+    <a class="button-primary button-primary--invert teachers-card__button" href="#">
       <svg class="button__icon">
         <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
       </svg>
-      <span class="button__text">Подробнее</span>
+      <span class="button__text">О преподавателе</span>
     </a>
   </div>
 </article>
 
-                <article class="professions-card">
-  <div class="professions-card__media">
-    <picture class="professions-card__pic">
-      <img src="./img/professions/profession-img-4.jpg" alt="3D аниматор в играх" class="professions-card__img">
+                <article class="teachers-card">
+  <div class="teachers-card__media">
+    <picture class="teachers-card__pic">
+      <img src="./img/teachers-2/teacher-img-4.jpg" alt="" class="teachers-card__img">
     </picture>
-  </div>
-  <h3 class="professions-card__title">
-    <a href="#" class="professions-card__link">3D аниматор в играх</a>
-  </h3>
-  <p class="professions-card__desc">Программа обучения включает в себяизучение основ анимациии классы по игровому направлению. Также вы можете изучить основыриггинга, этот навык станет отличнымдополнением при устройстве на студию!</p>
-  <ul class="ans-card__chips">
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/lightning-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">6 курсов</span>
-    </li>
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/time-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">34 ч. обучения</span>
-    </li>
-  </ul>
-  <div class="professions-card__bullets">
-    <div class="professions-card__bullet">
-    	<span class="professions-card__bullet-title">Стоимость</span>
-    	<span class="professions-card__bullet-value">28 000₽</span>
+    <div class="teachers-card__socials socials">
+      <a href="#" class="socials__link">
+        <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+      </a>
     </div>
-    <a class="button-primary button-primary--invert professions-card__button" href="#">
+  </div>
+  <div class="teachers-card__info">
+    <h3 class="teachers-card__name">
+      <a href="#" class="teachers-card__link">
+      	Ирина Голина-Сагателиан
+      </a>
+    </h3>
+    <p class="teachers-card__desc">Работает в Netflix главным аниматором. Преподает на 3 курсах.</p>
+    <ul class="teachers-card__bullets">
+      <li class="teachers-card__bullet">Опыт работы — 12 лет</li>
+      <li class="teachers-card__bullet">Работала в Sony, Ubisoft, Microsoft, Bethesda</li>
+    </ul>
+    <a class="button-primary button-primary--invert teachers-card__button" href="#">
       <svg class="button__icon">
         <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
       </svg>
-      <span class="button__text">Подробнее</span>
+      <span class="button__text">О преподавателе</span>
     </a>
   </div>
 </article>
 
-                <article class="professions-card">
-  <div class="professions-card__media">
-    <picture class="professions-card__pic">
-      <img src="./img/professions/profession-img-5.jpg" alt="2D аниматор в Toon Boom Harmony" class="professions-card__img">
+                <article class="teachers-card">
+  <div class="teachers-card__media">
+    <picture class="teachers-card__pic">
+      <img src="./img/teachers-2/teacher-img-5.jpg" alt="" class="teachers-card__img">
     </picture>
-  </div>
-  <h3 class="professions-card__title">
-    <a href="#" class="professions-card__link">2D аниматор в Toon Boom Harmony</a>
-  </h3>
-  <p class="professions-card__desc">Программа включает в себя 3 классаразного уровня сложности по обучению2D анимации, а также курс по риггингу в софте.</p>
-  <ul class="ans-card__chips">
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/lightning-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">6 курсов</span>
-    </li>
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/time-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">34 ч. обучения</span>
-    </li>
-  </ul>
-  <div class="professions-card__bullets">
-    <div class="professions-card__bullet">
-    	<span class="professions-card__bullet-title">Стоимость</span>
-    	<span class="professions-card__bullet-value">55 000₽</span>
+    <div class="teachers-card__socials socials">
+      <a href="#" class="socials__link">
+        <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+      </a>
     </div>
-    <a class="button-primary button-primary--invert professions-card__button" href="#">
+  </div>
+  <div class="teachers-card__info">
+    <h3 class="teachers-card__name">
+      <a href="#" class="teachers-card__link">
+      	Ирина Голина-Сагателиан
+      </a>
+    </h3>
+    <p class="teachers-card__desc">Работает в Netflix главным аниматором. Преподает на 3 курсах.</p>
+    <ul class="teachers-card__bullets">
+      <li class="teachers-card__bullet">Опыт работы — 12 лет</li>
+      <li class="teachers-card__bullet">Работала в Sony, Ubisoft, Microsoft, Bethesda</li>
+    </ul>
+    <a class="button-primary button-primary--invert teachers-card__button" href="#">
       <svg class="button__icon">
         <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
       </svg>
-      <span class="button__text">Подробнее</span>
+      <span class="button__text">О преподавателе</span>
     </a>
   </div>
 </article>
 
-                <article class="professions-card">
-  <div class="professions-card__media">
-    <picture class="professions-card__pic">
-      <img src="./img/professions/profession-img-6.jpg" alt="Сценарист и режиссер мультсериалов и комиксов" class="professions-card__img">
+                <article class="teachers-card">
+  <div class="teachers-card__media">
+    <picture class="teachers-card__pic">
+      <img src="./img/teachers-2/teacher-img-6.jpg" alt="" class="teachers-card__img">
     </picture>
-  </div>
-  <h3 class="professions-card__title">
-    <a href="#" class="professions-card__link">Сценарист и режиссер мультсериалов и комиксов</a>
-  </h3>
-  <p class="professions-card__desc">Курс включает 6 блоков, затрагивающих все этапы разработки сценария и режиссирования проекта.</p>
-  <ul class="ans-card__chips">
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/lightning-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">6 курсов</span>
-    </li>
-    <li class="ans-card__chips-bullet">
-      <img src="./img/common/time-icon.svg" alt="" class="ans-card__chips-bullet-icon">
-      <span class="ans-card__chips-bullet-caption">34 ч. обучения</span>
-    </li>
-  </ul>
-  <div class="professions-card__bullets">
-    <div class="professions-card__bullet">
-    	<span class="professions-card__bullet-title">Стоимость</span>
-    	<span class="professions-card__bullet-value">22 000₽</span>
+    <div class="teachers-card__socials socials">
+      <a href="#" class="socials__link">
+        <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+      </a>
     </div>
-    <a class="button-primary button-primary--invert professions-card__button" href="#">
+  </div>
+  <div class="teachers-card__info">
+    <h3 class="teachers-card__name">
+      <a href="#" class="teachers-card__link">
+      	Ирина Голина-Сагателиан
+      </a>
+    </h3>
+    <p class="teachers-card__desc">Работает в Netflix главным аниматором. Преподает на 3 курсах.</p>
+    <ul class="teachers-card__bullets">
+      <li class="teachers-card__bullet">Опыт работы — 12 лет</li>
+      <li class="teachers-card__bullet">Работала в Sony, Ubisoft, Microsoft, Bethesda</li>
+    </ul>
+    <a class="button-primary button-primary--invert teachers-card__button" href="#">
       <svg class="button__icon">
         <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
       </svg>
-      <span class="button__text">Подробнее</span>
+      <span class="button__text">О преподавателе</span>
+    </a>
+  </div>
+</article>
+
+                <article class="teachers-card">
+  <div class="teachers-card__media">
+    <picture class="teachers-card__pic">
+      <img src="./img/teachers-2/teacher-img-7.jpg" alt="" class="teachers-card__img">
+    </picture>
+    <div class="teachers-card__socials socials">
+      <a href="#" class="socials__link">
+        <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+      </a>
+    </div>
+  </div>
+  <div class="teachers-card__info">
+    <h3 class="teachers-card__name">
+      <a href="#" class="teachers-card__link">
+      	Ирина Голина-Сагателиан
+      </a>
+    </h3>
+    <p class="teachers-card__desc">Работает в Netflix главным аниматором. Преподает на 3 курсах.</p>
+    <ul class="teachers-card__bullets">
+      <li class="teachers-card__bullet">Опыт работы — 12 лет</li>
+      <li class="teachers-card__bullet">Работала в Sony, Ubisoft, Microsoft, Bethesda</li>
+    </ul>
+    <a class="button-primary button-primary--invert teachers-card__button" href="#">
+      <svg class="button__icon">
+        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+      </svg>
+      <span class="button__text">О преподавателе</span>
+    </a>
+  </div>
+</article>
+
+                <article class="teachers-card">
+  <div class="teachers-card__media">
+    <picture class="teachers-card__pic">
+      <img src="./img/teachers-2/teacher-img-8.jpg" alt="" class="teachers-card__img">
+    </picture>
+    <div class="teachers-card__socials socials">
+      <a href="#" class="socials__link">
+        <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
+      </a>
+      <a href="#" class="socials__link">
+        <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+      </a>
+    </div>
+  </div>
+  <div class="teachers-card__info">
+    <h3 class="teachers-card__name">
+      <a href="#" class="teachers-card__link">
+      	Ирина Голина-Сагателиан
+      </a>
+    </h3>
+    <p class="teachers-card__desc">Работает в Netflix главным аниматором. Преподает на 3 курсах.</p>
+    <ul class="teachers-card__bullets">
+      <li class="teachers-card__bullet">Опыт работы — 12 лет</li>
+      <li class="teachers-card__bullet">Работала в Sony, Ubisoft, Microsoft, Bethesda</li>
+    </ul>
+    <a class="button-primary button-primary--invert teachers-card__button" href="#">
+      <svg class="button__icon">
+        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+      </svg>
+      <span class="button__text">О преподавателе</span>
     </a>
   </div>
 </article>
 
               </div>
-              <div class="section-buttons professions__content-buttons">
-                <button class="button-primary section-gallery-more professions__content-more-button" href="#">
+              <div class="section-buttons teachers__content-buttons">
+                <button class="button-primary section-gallery-more teachers__content-more-button" href="#">
                   <svg class="button__icon">
                     <use xlink:href="./img/common/refresh-icon.svg#refresh" />
                   </svg>
