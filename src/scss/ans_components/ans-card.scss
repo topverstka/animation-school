@@ -9,6 +9,12 @@
 	flex-wrap: wrap;
 	// margin-bottom: 2.6rem;
 	margin-bottom: 4.5rem;
+
+	@media (max-width: $tablet) {
+		justify-content: space-between;
+		margin-right: -1.4rem;
+		margin-bottom: 0.7rem;
+	}
 }
 
 .ans-card__chips-bullet {
@@ -23,10 +29,22 @@
 	columns: #222;
 	margin-right: 1rem;
 	margin-bottom: 1rem;
+
+	@media (max-width: $tablet) {
+		font-size: 1.4rem;
+		padding: 0.85rem 1.09rem;
+		margin-right: 0;
+		letter-spacing: initial;
+	}
 }
 
 .ans-card__chips-bullet-icon {
 	min-width: 1.62rem;
 	height: 1.8rem;
 	margin-right: 1rem;
+	@media (max-width: $tablet) {
+		min-width: 1.4rem;
+		max-width: 1.4rem;
+		margin-right: 0.5rem;
+	}
 }
