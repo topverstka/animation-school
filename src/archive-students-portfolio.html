@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Работы студентов</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body class="post-type-archive-students-works">
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main page-students-portfolio">
+        <section class="hero hero--image-right">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item">Работы студентов</li>
+                  </ul>
+                </div>
+              </div>
+              <h1 class="section-title hero__title">Работы студентов</h1>
+            </div>
+            <div class="hero__content-media">
+              <picture class="hero__content-pic">
+                <img src="./img/students-works/header-ninja.png" alt="" class="hero__content-img">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section students-portfolio">
+          <div class="container students-portfolio__container">
+            <div class="search">
+              <form action="" class="search__form">
+                <div class="search__scroller">
+                  <fieldset class="search__filters">
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро стат'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Риггинг'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '2д-анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Режессура анимации'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '3д-анимация'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Рисование'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Прикладные направления'})
+                    @@include('tpls/inputs/chips-checkbox.html',{'caption': '3д-анимация'})
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+            <div class="students-portfolio__content">
+              <div class="students-portfolio__gallery section-gallery-double">
+                @@include('tpls/cards/students-portfolio-card.html', {name: "Ирина Цветова", img: "page-students-work-1.jpg", desc: "Основы анимационного рисунка"})
+                @@include('tpls/cards/students-portfolio-card.html', {name: "Анатолий Смирнов", img: "page-students-work-2.jpg", desc: "Основы визуальной разработки для анимационных фильмов"})
+                @@include('tpls/cards/students-portfolio-card.html', {name: "Алексей Медведев", img: "page-students-work-3.jpg", desc: "Курс «Классическая 2D анимация» июнь 2022 год"})
+                @@include('tpls/cards/students-portfolio-card.html', {name: "Яна Порошенко", img: "page-students-work-4.jpg", desc: "Основы визуальной разработки для анимационных фильмов"})
+                @@include('tpls/cards/students-portfolio-card.html', {name: "Султан Магомедов", img: "page-students-work-5.jpg", desc: "Курс «3D анимация. Инсценировка» 2019 год"})
+                @@include('tpls/cards/students-portfolio-card.html', {name: "Игорь Плехов", img: "page-students-work-6.jpg", desc: "Курс «3D анимация. Инсценировка» 2020 год"})
+              </div>
+              <div class="section-buttons students-portfolio__content-buttons">
+                <button class="button-primary section-gallery-more students-portfolio__content-more-button" href="#">
+                  <svg class="button__icon">
+                    <use xlink:href="./img/common/refresh-icon.svg#refresh" />
+                  </svg>
+                  <span class="button__text">Загрузить еще</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
