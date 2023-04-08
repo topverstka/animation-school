@@ -1,13 +1,20 @@
 .regalia {
-	@media (min-width: $tablet + 1) {
-		padding-top: 8rem;
-		padding-bottom: 6rem;
+	padding-top: 8rem;
+	padding-bottom: 6rem;
+
+	@media (max-width: $tablet) {
+		padding-top: 6.4rem;
+		padding-bottom: 3.9rem;
 	}
 }
 .regalia__container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 3rem;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
 }
 
 .regalia__title {
@@ -15,6 +22,13 @@
 	line-height: 1.1;
 	letter-spacing: -2px;
 	color: #0F172A;
+
+	@media (max-width: $tablet) {
+		font-size: 2.5rem;
+		line-height: 1.2;
+		text-align: left;
+		margin-bottom: 1.5rem;
+	}
 }
 
 .regalia__desc {
@@ -22,11 +36,19 @@
 	line-height: 1.4;
 	color: #000000;
 	margin-bottom: 6rem;
+
+	@media (max-width: $tablet) {
+		font-size: 1.6rem;
+		margin-bottom: 3rem;
+	}
 }
 
 .regalia__title + .section-desc {
 	@media (min-width: $tablet + 1) {
     margin-top: -6.4rem;
+	}
+	@media (max-width: $tablet) {
+		margin-top: -0.1rem;
 	}
 }
 
@@ -36,9 +58,12 @@
 	column-gap: 5rem;
 	row-gap: 3.8rem;
 	max-width: 94%;
-}
 
-.regalia__bullet {
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+		row-gap: 1rem;
+		margin-bottom: 1.5rem;
+	}
 }
 
 .regalia__bullet-value {
@@ -47,15 +72,30 @@
 	line-height: 1.1;
 	letter-spacing: -0.03em;
 	color: var(--c-accent);
+
+	@media (max-width: $tablet) {
+		font-size: 4rem;
+		line-height: 120%;
+	}
 }
 
 .regalia__bullet-name {
 	font-size: 1.8rem;
 	line-height: 1.67;
 	color: #222222;
+
+	@media (max-width: $tablet) {
+		letter-spacing: normal;
+	}
 }
 
 .regalia__media-content {
 	margin-top: -5.7rem;
 	margin-bottom: -5.7rem;
+
+	@media (max-width: $tablet) {
+		margin-top: -3.2rem;
+		// margin-bottom: -3.2rem;
+		margin-bottom: 0;
+	}
 }

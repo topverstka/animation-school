@@ -16,6 +16,7 @@
 
 	@media (max-width: $tablet) {
 		grid-template-columns: 100%;
+		padding: 3rem 2rem;
 	}
 }
 
@@ -26,6 +27,14 @@
 	line-height: 1.2;
 	color: var(--card-fg);
   margin-top: 0.75em;
+
+  @media (max-width: $tablet) {
+  	font-family: var(--ff-regular);
+  	font-size: 1.8rem;
+  	margin-top: 0;
+  	font-weight: 400;
+  	margin-bottom: 2rem;
+  }
 }
 
 .period-history-card__heading-suptitle {
@@ -40,6 +49,11 @@
 	font-size: 3rem;
 	line-height: 1.2;
 	color: var(--card-fg);
+
+	@media (max-width: $tablet) {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
 }
 
 .period-history-card__body-suptitle {
@@ -54,6 +68,12 @@
 	font-size: 3rem;
 	line-height: 1.2;
 	color: var(--card-fg);
+
+	@media (max-width: $tablet) {
+		font-size: 1.8rem;
+		font-weight: 400;
+		font-family: var(--ff-regular);
+	}
 }
 
 

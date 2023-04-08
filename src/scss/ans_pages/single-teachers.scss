@@ -1,7 +1,19 @@
+.single-teachers .hero {
+	@media (max-width: $tablet) {
+		padding-bottom: 4rem;
+	}
+}
 .single-teachers .hero__content {
 	max-width: 78.1rem;
 	padding-bottom: 6rem;
+
+	@media (max-width: $tablet) {
+		padding-bottom: 0;
+		margin-bottom: 1.7rem;
+		width: 100%;
+	}
 }
+
 .single-teachers .hero__title {
 	letter-spacing: normal;
 	@media (min-width: $tablet + 1) {
@@ -12,10 +24,34 @@
 .single-teachers .hero__content-media {
 	padding-right: 15.1rem;
 	height: auto;
-	transform: translateY(13rem) rotate(13.3deg);
+
+	@media (min-width: $tablet + 1) {
+		transform: translateY(13rem) rotate(13.3deg);
+	}
+
+	@media (max-width: $tablet) {
+		padding-right: 0;
+		margin-top: 0;
+		width: 100%;
+	}
+}
+
+.single-teachers .hero__content-pic {
+	@media (max-width: $tablet) {
+		margin-bottom: 0;
+		transform: none;
+		width: 100%;
+	}
 }
 .single-teachers .hero__content-img {
 	border-radius: 9999rem;
 	width: 50rem;
 	height: 50rem;
+
+	@media (max-width: $tablet) {
+		width: 100%;
+		height: 23rem;
+		border-radius: 1.5rem;
+		object-fit: cover;
+	}
 }

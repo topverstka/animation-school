@@ -1,12 +1,33 @@
 .shelf {
 
 }
+.shelf + .shelf {
+	@media (max-width: $tablet) {
+		padding-top: 1.5rem;
+	}
+}
 
 .shelf-gallery  {
 	margin-bottom: 0;
+
+	@media (max-width: $tablet) {
+		row-gap: 1.5rem;
+	}
 }
 .shelf__title  {
 	font-size: 6rem;
 	margin-bottom: 1em;
 	line-height: 1.2;
+
+	@media (max-width: $tablet) {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+		text-align: left;
+		letter-spacing: -0.08em;
+	}
+}
+.shelf + .shelf .shelf__title {
+	@media (max-width: $tablet) {
+		margin-bottom: 3rem;
+	}
 }
