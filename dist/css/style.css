@@ -603,6 +603,7 @@
   font-size: 1.8rem;
   font-family: var(--ff-controls);
   transition: all 0.1s ease;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .link {
@@ -3276,13 +3277,16 @@
 }
 
 .period-history-card {
-  padding: 4rem;
+  --card-fg: #222;
+  --card-fg-caption: #87909E;
+  padding: 3.8rem 4rem 4.5rem;
   display: grid;
   grid-template-columns: 7.36% 45.89% 38.24%;
   column-gap: 5rem;
   align-items: center;
   background: #F4F5F6;
   border-radius: 1.7rem;
+  letter-spacing: initial;
 }
 @media (max-width: 992px) {
   .period-history-card {
@@ -3295,13 +3299,14 @@
   font-weight: 700;
   font-size: 3rem;
   line-height: 1.2;
-  color: #222222;
+  color: var(--card-fg);
+  margin-top: 0.75em;
 }
 
 .period-history-card__heading-suptitle {
   font-size: 1.6rem;
   line-height: 1.3;
-  color: #87909E;
+  color: var(--card-fg-caption);
 }
 
 .period-history-card__heading-title {
@@ -3309,13 +3314,13 @@
   font-weight: 700;
   font-size: 3rem;
   line-height: 1.2;
-  color: #222222;
+  color: var(--card-fg);
 }
 
 .period-history-card__body-suptitle {
   font-size: 1.6rem;
   line-height: 1.3;
-  color: #87909E;
+  color: var(--card-fg-caption);
 }
 
 .period-history-card__body-title {
@@ -3323,17 +3328,19 @@
   font-weight: 700;
   font-size: 3rem;
   line-height: 1.2;
-  color: #222222;
+  color: var(--card-fg);
 }
 
 .period-history-card .link {
+  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: inherit;
+  letter-spacing: inherit;
 }
 
-.period-history-card .link__text {
-  border-color: initial;
+.period-history-card .link:not(:hover) {
+  --link-color: var(--card-fg);
+  --link-underline-color: var(--card-fg);
 }
 
 @font-face {
@@ -9231,7 +9238,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .single-teachers .hero__content-media {
   padding-right: 15.1rem;
   height: auto;
-  transform: translateY(13rem);
+  transform: translateY(13rem) rotate(13.3deg);
 }
 
 .single-teachers .hero__content-img {
