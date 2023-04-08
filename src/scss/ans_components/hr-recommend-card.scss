@@ -1,0 +1,35 @@
+.hr-recommend-card {
+	background-color: #fff;
+	padding: 1.836rem;
+	padding-right: 1.917rem;
+	border: 1px solid #EAECF0;
+	border-radius: 0.88rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.hr-recommend-card__media {
+	--brad: 9999rem;
+	border-radius: var(--brad);
+	margin-right: 1.4rem;
+	--size: 5.3rem;
+	max-width: var(--size);
+	min-width: var(--size);
+	width: var(--size);
+	height: var(--size);
+}
+
+.hr-recommend-card__pic {
+	border-radius: var(--brad);
+}
+
+.hr-recommend-card__img {
+	border-radius: var(--brad);
+}
+
+.hr-recommend-card__profile {
+}
+
+.hr-recommend-card__profile {
+}

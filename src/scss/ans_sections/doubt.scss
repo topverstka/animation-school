@@ -50,7 +50,13 @@
 		padding-left: 4.6rem;
 		padding-right: 4.6rem;
 		text-align: left;
+		max-width: 100%;
+		width: 100%;
 	}
+}
+
+.doubt__button .button__text {
+	width: min-content;
 }
 
 .doubt__media {
