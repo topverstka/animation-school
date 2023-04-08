@@ -7,6 +7,10 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
+
+	@media (max-width: $tablet) {
+		padding: 1.04rem;
+	}
 }
 
 .hr-recommend-card__media {
@@ -18,6 +22,11 @@
 	min-width: var(--size);
 	width: var(--size);
 	height: var(--size);
+
+	@media (max-width: $tablet) {
+		--size: 3rem;
+		margin-right: 0.78rem;
+	}
 }
 
 .hr-recommend-card__pic {
@@ -31,5 +40,24 @@
 .hr-recommend-card__profile {
 }
 
-.hr-recommend-card__profile {
+.hr-recommend-card__name {
+	font-size: 1.769rem;
+	line-height: 1.3;
+	color: #344054;
+
+	@media (max-width: $tablet) {
+		font-size: 1rem;
+		margin-bottom: 0.15rem;
+	}
 }
+.hr-recommend-card__message {
+	font-size: 1.768rem;
+	line-height: 1.3;
+	color: #344054;
+
+	@media (max-width: $tablet) {
+		font-size: 1rem;
+		line-height: 1.2;
+	}
+}
+

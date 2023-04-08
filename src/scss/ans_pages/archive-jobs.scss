@@ -1,5 +1,9 @@
 .post-type-archive-jobs .hero__title {
 	font-size: 8rem;
+	@media (max-width: $tablet) {
+		font-size: 3.2rem;
+		letter-spacing: -0.03em;
+	}
 }
 .post-type-archive-jobs .hero__content {
 	@media (min-width: $tablet + 1) {
