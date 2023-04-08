@@ -3258,6 +3258,84 @@
   width: 100%;
 }
 
+.card-regular {
+  --padding-horizontal: 0rem;
+  padding-bottom: 0;
+}
+
+.card-regular__media:only-child {
+  margin-bottom: 0;
+}
+
+.card-regular__img {
+  border-radius: var(--brad);
+}
+
+.period-history-gallery {
+  row-gap: 1.5rem;
+}
+
+.period-history-card {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 7.36% 45.89% 38.24%;
+  column-gap: 5rem;
+  align-items: center;
+  background: #F4F5F6;
+  border-radius: 1.7rem;
+}
+@media (max-width: 992px) {
+  .period-history-card {
+    grid-template-columns: 100%;
+  }
+}
+
+.period-history-card__date {
+  font-family: var(--ff-title);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #222222;
+}
+
+.period-history-card__heading-suptitle {
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #87909E;
+}
+
+.period-history-card__heading-title {
+  font-family: var(--ff-title);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #222222;
+}
+
+.period-history-card__body-suptitle {
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #87909E;
+}
+
+.period-history-card__body-title {
+  font-family: var(--ff-title);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #222222;
+}
+
+.period-history-card .link {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.period-history-card .link__text {
+  border-color: initial;
+}
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -8981,6 +9059,76 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
 }
 
+@media (min-width: 993px) {
+  .regalia {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.regalia__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.regalia__title {
+  font-size: 6rem;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  color: #0F172A;
+}
+
+.regalia__desc {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #000000;
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 993px) {
+  .regalia__title + .section-desc {
+    margin-top: -6.4rem;
+  }
+}
+
+.regalia__bullets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  column-gap: 5rem;
+  row-gap: 3.8rem;
+  max-width: 94%;
+}
+
+.regalia__bullet-value {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--c-accent);
+}
+
+.regalia__bullet-name {
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #222222;
+}
+
+.regalia__media-content {
+  margin-top: -5.7rem;
+  margin-bottom: -5.7rem;
+}
+
+.shelf-gallery {
+  margin-bottom: 0;
+}
+
+.shelf__title {
+  font-size: 6rem;
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+
 .page-error {
   padding-top: 30rem;
   padding-bottom: 10rem;
@@ -9064,5 +9212,31 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .page-courses {
   background-color: #f4f5f6;
+}
+
+.single-teachers .hero__content {
+  max-width: 78.1rem;
+  padding-bottom: 6rem;
+}
+
+.single-teachers .hero__title {
+  letter-spacing: normal;
+}
+@media (min-width: 993px) {
+  .single-teachers .hero__title {
+    font-size: 8rem;
+  }
+}
+
+.single-teachers .hero__content-media {
+  padding-right: 15.1rem;
+  height: auto;
+  transform: translateY(13rem);
+}
+
+.single-teachers .hero__content-img {
+  border-radius: 9999rem;
+  width: 50rem;
+  height: 50rem;
 }
 /*# sourceMappingURL=../maps/style.css.map */

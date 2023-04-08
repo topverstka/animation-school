@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ирина Голина-Сагателиан</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body class="single-teachers">
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main">
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Преподаватели</a></li>
+                    <li class="breadcrumbs__item">Ирина Голина-Сагателиан</li>
+                  </ul>
+                </div>
+              </div>
+              <h1 class="section-title hero__title">Ирина Голина-Сагателиан</h1>
+            </div>
+            <div class="hero__content-media">
+              <picture class="hero__content-pic">
+                <img src="./img/teacher/teacher-hero.jpg" alt="" class="hero__content-img">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="section regalia">
+          <div class="container regalia__container">
+            <div class="regalia__info">
+              <h2 class="section-title regalia__title">15 лет опыта в топовых студиях</h2>
+              <p class="section-desc regalia__desc">Союзмультфильм является одной из главных анимационных студий России, которая создает множество культурных и образовательных проектов для детей и взрослых. Компания продолжает развиваться и совершенствоваться, сохраняя свою лидирующую позицию в индустрии анимации.</p>
+              <ul class="regalia__bullets">
+                <li class="regalia__bullet">
+                  <p class="regalia__bullet-value">515</p>
+                  <p class="regalia__bullet-name">проектов</p>
+                </li>
+                <li class="regalia__bullet">
+                  <p class="regalia__bullet-value">15</p>
+                  <p class="regalia__bullet-name">наград CSSDA</p>
+                </li>
+              </ul>
+            </div>
+            <div class="regalia__media">
+              <div class="regalia__media-content">
+                <picture class="regalia__media-pic">
+                  <img src="./img/teacher/teacher-stats-media.png" alt="" class="regalia__media-img">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section shelf">
+          <div class="container shelf__container">
+            <h2 class="section-title shelf__title">Работы преподавателя</h2>
+            <div class="shelf-gallery section-gallery-triple">
+              @@include('tpls/cards/card-regular.html',{img: "teacher/teacher-works-img-1.jpg", title2: "", desc: ""})
+              @@include('tpls/cards/card-regular.html',{img: "teacher/teacher-works-img-2.jpg", title: "", desc: ""})
+              @@include('tpls/cards/card-regular.html',{img: "teacher/teacher-works-img-3.jpg", title: "", desc: ""})
+              @@include('tpls/cards/card-regular.html',{img: "teacher/teacher-works-img-4.jpg", title: "", desc: ""})
+              @@include('tpls/cards/card-regular.html',{img: "teacher/teacher-works-img-5.jpg", title: "", desc: ""})
+              @@include('tpls/cards/card-regular.html',{img: "teacher/teacher-works-img-6.jpg", title: "", desc: ""})
+            </div>
+          </div>
+        </section>
+
+        <section class="section shelf">
+          <div class="container shelf__container">
+            <h2 class="section-title shelf__title">Курсы преподавателя</h2>
+            <div class="shelf-gallery section-gallery-triple">
+              @@include('tpls/cards/courses-card.html', {name: "Классическая 2D анимация. 1 класс — Основы", img: "course-img-4.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Основы визуальной разработки для анимационных фильмов", img: "course-img-5.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Композитинг анимации в Adobe After Effects", img: "course-img-6.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+            </div>
+          </div>
+        </section>
+
+        <section class="section shelf">
+          <div class="container shelf__container">
+            <h2 class="section-title shelf__title">Резюме преподавателя</h2>
+            <div class="shelf-gallery section-gallery period-history-gallery">
+              <article class="period-history-card">
+                <p class="period-history-card__date">2022</p>
+                <div class="period-history-card__heading">
+                  <p class="period-history-card__heading-suptitle">Проект/Студия</p>
+                  <h3 class="period-history-card__heading-title">«Black Adam» Dubai promo</h3>
+                </div>
+                <div class="period-history-card__body">
+                  <p class="period-history-card__body-suptitle">Должность</p>
+                  <h3 class="period-history-card__body-title">Саунд-дизайнер, композитор</h3>
+                </div>
+              </article>
+              <article class="period-history-card">
+                <p class="period-history-card__date">2022</p>
+                <div class="period-history-card__heading">
+                  <p class="period-history-card__heading-suptitle">Проект/Студия</p>
+                  <h3 class="period-history-card__heading-title">Международный фестиваль медиаискусства «Intervals»</h3>
+                </div>
+                <div class="period-history-card__body">
+                  <p class="period-history-card__body-suptitle">Должность</p>
+                  <h3 class="period-history-card__body-title">Саунд-дизайнер, композитор</h3>
+                </div>
+              </article>
+              <article class="period-history-card">
+                <p class="period-history-card__date">2022</p>
+                <div class="period-history-card__heading">
+                  <p class="period-history-card__heading-suptitle">Проект/Студия</p>
+                  <h3 class="period-history-card__heading-title">
+                    <a class="period-history-card__heading-link link" data-fancybox href="https://www.youtube.com/watch?v=IvVDhJhnwUY"><span class="link__text">IGN 25th Anniversary Game</span></a>
+                  </h3>
+                </div>
+                <div class="period-history-card__body">
+                  <p class="period-history-card__body-suptitle">Должность</p>
+                  <h3 class="period-history-card__body-title">Саунд-дизайнер, композитор</h3>
+                </div>
+              </article>
+
+              <article class="period-history-card">
+                <p class="period-history-card__date">2022</p>
+                <div class="period-history-card__heading">
+                  <p class="period-history-card__heading-suptitle">Проект/Студия</p>
+                  <h3 class="period-history-card__heading-title">PHDays 2021 – ежегодный международный форум по кибербезопасности</h3>
+                </div>
+                <div class="period-history-card__body">
+                  <p class="period-history-card__body-suptitle">Должность</p>
+                  <h3 class="period-history-card__body-title">Саунд-дизайнер, композитор</h3>
+                </div>
+              </article>
+              <article class="period-history-card">
+                <p class="period-history-card__date">2020</p>
+                <div class="period-history-card__heading">
+                  <p class="period-history-card__heading-suptitle">Проект/Студия</p>
+                  <h3 class="period-history-card__heading-title">
+                    <a class="period-history-card__heading-link link" herf="https://store.steampowered.com/app/1021070/Spaceland/" target="_blank"><span class="link__text">Spaceland</span></a>
+                  </h3>
+                </div>
+                <div class="period-history-card__body">
+                  <p class="period-history-card__body-suptitle">Должность</p>
+                  <h3 class="period-history-card__body-title">Саунд-дизайнер, композитор</h3>
+                </div>
+              </article>
+              <article class="period-history-card">
+                <p class="period-history-card__date">2019</p>
+                <div class="period-history-card__heading">
+                  <p class="period-history-card__heading-suptitle">Проект/Студия</p>
+                  <h3 class="period-history-card__heading-title">
+                    <a class="period-history-card__heading-link link" href="https://store.steampowered.com/app/611020/CityBattle__Virtual_Earth/" target="_blank"><span class="link__text">CityBattle Virtual Earth</span></a>
+                  </h3>
+                </div>
+                <div class="period-history-card__body">
+                  <p class="period-history-card__body-suptitle">Должность</p>
+                  <h3 class="period-history-card__body-title">Саунд-дизайнер, композитор</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>

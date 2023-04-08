@@ -1,0 +1,61 @@
+.regalia {
+	@media (min-width: $tablet + 1) {
+		padding-top: 8rem;
+		padding-bottom: 6rem;
+	}
+}
+.regalia__container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+}
+
+.regalia__title {
+	font-size: 6rem;
+	line-height: 1.1;
+	letter-spacing: -2px;
+	color: #0F172A;
+}
+
+.regalia__desc {
+	font-size: 1.8rem;
+	line-height: 1.4;
+	color: #000000;
+	margin-bottom: 6rem;
+}
+
+.regalia__title + .section-desc {
+	@media (min-width: $tablet + 1) {
+    margin-top: -6.4rem;
+	}
+}
+
+.regalia__bullets {
+	display: grid;
+	grid-template-columns: repeat( auto-fill, minmax(14rem, 1fr) );
+	column-gap: 5rem;
+	row-gap: 3.8rem;
+	max-width: 94%;
+}
+
+.regalia__bullet {
+}
+
+.regalia__bullet-value {
+	font-weight: 700;
+	font-size: 6rem;
+	line-height: 1.1;
+	letter-spacing: -0.03em;
+	color: var(--c-accent);
+}
+
+.regalia__bullet-name {
+	font-size: 1.8rem;
+	line-height: 1.67;
+	color: #222222;
+}
+
+.regalia__media-content {
+	margin-top: -5.7rem;
+	margin-bottom: -5.7rem;
+}

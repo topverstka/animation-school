@@ -1,0 +1,21 @@
+.single-teachers .hero__content {
+	max-width: 78.1rem;
+	padding-bottom: 6rem;
+}
+.single-teachers .hero__title {
+	letter-spacing: normal;
+	@media (min-width: $tablet + 1) {
+		font-size: 8rem;
+	}
+}
+
+.single-teachers .hero__content-media {
+	padding-right: 15.1rem;
+	height: auto;
+	transform: translateY(13rem);
+}
+.single-teachers .hero__content-img {
+	border-radius: 9999rem;
+	width: 50rem;
+	height: 50rem;
+}

@@ -1,0 +1,63 @@
+.period-history-gallery {
+	row-gap: 1.5rem;
+}
+.period-history-card {
+	padding: 4rem;
+	display: grid;
+	// grid-template-columns: 11.7rem 68.2rem 60.8rem;
+	grid-template-columns: 7.36% 45.89% 38.24%;
+	column-gap: 5rem;
+	align-items: center;
+	background: #F4F5F6;
+	border-radius: 1.7rem;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+	}
+}
+
+.period-history-card__date {
+	font-family: var(--ff-title);
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.2;
+	color: #222222;
+}
+
+.period-history-card__heading-suptitle {
+	font-size: 1.6rem;
+	line-height: 1.3;
+	color: #87909E;
+}
+
+.period-history-card__heading-title {
+	font-family: var(--ff-title);
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.2;
+	color: #222222;
+}
+
+.period-history-card__body-suptitle {
+	font-size: 1.6rem;
+	line-height: 1.3;
+	color: #87909E;
+}
+
+.period-history-card__body-title {
+	font-family: var(--ff-title);
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.2;
+	color: #222222;
+}
+
+
+.period-history-card .link {
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+}
+.period-history-card .link__text {
+	border-color: initial;
+}

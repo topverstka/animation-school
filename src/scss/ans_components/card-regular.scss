@@ -1,0 +1,12 @@
+.card-regular {
+  --padding-horizontal: 0rem;
+  padding-bottom: 0;
+}
+
+.card-regular__media:only-child {
+	margin-bottom: 0;
+}
+
+.card-regular__img {
+	border-radius: var(--brad);
+}

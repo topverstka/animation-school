@@ -1,0 +1,15 @@
+<article class="card-regular ans-card">
+  <div class="card-regular__media ans-card__media">
+    <picture class="card-regular__pic ans-card__pic">
+      <img  class="card-regular__img ans-card__img" src="./img/@@img" alt="@@name">
+    </picture>
+  </div>
+  @@if (context.title) {
+	  <h3 class="card-regular__title ans-card__title">
+	    <a href="#" class="card-regular__link">@@title</a>
+	  </h3>
+  }
+  @@if (context.desc) {
+	  <p class="card-regular__desc ans-card__desc">@@desc</p>
+	}
+</article>
