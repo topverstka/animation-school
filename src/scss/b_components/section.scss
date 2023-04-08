@@ -110,11 +110,7 @@
 }
 
 .section-gallery {
-
-}
-.section-gallery-double {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   margin-bottom: 4.7rem;
 
@@ -122,6 +118,20 @@
     grid-template-columns: 100%;
     row-gap: 2rem;
     margin-bottom: 3rem;
+  }
+}
+.section-gallery-double {
+  @extend .section-gallery;
+
+  @media (min-width: $tablet + 1) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.section-gallery-triple {
+  @extend .section-gallery;
+
+  @media (min-width: $tablet + 1) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .section-gallery-more {

@@ -1,0 +1,46 @@
+.studios {
+	background-color: #f4f5f6;
+
+	@media (max-width: $tablet) {
+		padding-top: 3rem;
+	}
+}
+
+.studios__gallery {
+	@media (max-width: $tablet) {
+		row-gap: 3.1rem;
+	}
+}
+
+.page-studios .hero__title {
+	letter-spacing: normal;
+	@media (min-width: $tablet + 1) {
+		font-size: 8rem;
+	}
+}
+
+.page-studios .hero__content {
+	@media (min-width: $tablet + 1) {
+		padding-bottom: 12rem;
+	}
+}
+.page-studios .hero__content-media {
+	@media (min-width: $tablet + 1) {
+	  height: 39rem;
+	  padding-right: 49rem;
+	}
+}
+
+.page-studios .hero__content-media-desc {
+	font-size: 3.5rem;
+	text-align: right;
+	font-family: var(--ff-title);
+	letter-spacing: -0.03em;
+	right: 2rem;
+  bottom: 10rem;
+	font-weight: 600;
+
+	@media (max-width: $tablet) {
+	  	display: none;
+	}
+}

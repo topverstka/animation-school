@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студии</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body class="post-type-archive-students-works">
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main page-studios">
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item">Студии</li>
+                  </ul>
+                </div>
+              </div>
+              <h1 class="section-title hero__title">Студии</h1>
+            </div>
+            <div class="hero__content-media">
+              <picture class="hero__content-pic">
+                <img src="./img/studios/header-studios.png" alt="" class="hero__content-img">
+              </picture>
+              <p class="hero__content-media-desc">
+                Студии в которые <br>
+                мы рекомендуем своих <br>
+                студентов
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section studios">
+          <div class="container studios__container">
+            <div class="studios__content">
+              <div class="studios__gallery section-gallery-triple">
+                @@include('tpls/cards/studios-card.html', {title: "Союзмультфильм", img: "studio-logo-1.png", desc: "Cоветская и российская государственная киностудия мультипликационных фильмов. Выпущено более 1,5 тысяч мультфильмов в разных жанрах и художественных техниках."})
+                @@include('tpls/cards/studios-card.html', {title: "ЯРКО", img: "studio-logo-2.png", desc: "Креативная команда мультибрендовой компании с уникальным подходом к созданию контента и полным циклом анимации от идеи до дистрибуции"})
+                @@include('tpls/cards/studios-card.html', {title: "Студия Пропеллерс", img: "studio-logo-3.png", desc: "Более 14 лет опыта в создании анимационных сериалов, короткометражных мультфильмов, обучающих видео и рекламы."})
+
+                @@include('tpls/cards/studios-card.html', {title: "Студия Компьютерной Анимации «Петербург»", img: "studio-logo-4.png", desc: "Cоветская и российская государственная киностудия мультипликационных фильмов. Выпущено более 1,5 тысяч мультфильмов в разных жанрах и художественных техниках."})
+                @@include('tpls/cards/studios-card.html', {title: "Продюсерская компания «Аэроплан»", img: "studio-logo-5.png", desc: "Креативная команда мультибрендовой компании с уникальным подходом к созданию контента и полным циклом анимации от идеи до дистрибуции"})
+                @@include('tpls/cards/studios-card.html', {title: "Мечталет", img: "studio-logo-6.png", desc: "Более 14 лет опыта в создании анимационных сериалов, короткометражных мультфильмов, обучающих видео и рекламы."})
+
+                @@include('tpls/cards/studios-card.html', {title: "Мельница", img: "studio-logo-7.png", desc: "Более 14 лет опыта в создании анимационных сериалов, короткометражных мультфильмов, обучающих видео и рекламы."})
+                @@include('tpls/cards/studios-card.html', {title: "Анимационная студия Делай", img: "studio-logo-8.png", desc: "Cоветская и российская государственная киностудия мультипликационных фильмов. Выпущено более 1,5 тысяч мультфильмов в разных жанрах и художественных техниках."})
+                @@include('tpls/cards/studios-card.html', {title: "АНИМАККОРД", img: "studio-logo-9.png", desc: "Креативная команда мультибрендовой компании с уникальным подходом к созданию контента и полным циклом анимации от идеи до дистрибуции"})
+              </div>
+              <div class="section-buttons studios__content-buttons">
+                <button class="button-primary section-gallery-more studios__content-more-button" href="#">
+                  <svg class="button__icon">
+                    <use xlink:href="./img/common/refresh-icon.svg#refresh" />
+                  </svg>
+                  <span class="button__text">Загрузить еще</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>

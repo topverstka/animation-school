@@ -35,12 +35,12 @@
 	font-family: var(--ff-title);
 	letter-spacing: -0.03em;
 	right: 18.9rem;
-  bottom: 8rem;
-  font-weight: 600;
+	 bottom: 8rem;
+	 font-weight: 600;
 
-  @media (max-width: $tablet) {
-  	display: none;
-  }
+	@media (max-width: $tablet) {
+	  	display: none;
+	}
 }
 
 
