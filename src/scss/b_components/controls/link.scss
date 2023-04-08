@@ -31,3 +31,15 @@
   border-bottom: 0.1rem solid var(--link-underline-color);
   transition: var(--tr-regular);
 }
+
+[class*="title"] > .link {
+  letter-spacing: initial;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+[class*="title"] > .link:not(:hover) {
+  --link-color: var(--link-fg);
+  --link-underline-color: var(--link-fg);
+}

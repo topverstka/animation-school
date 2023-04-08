@@ -54,7 +54,7 @@
 
 .regalia__bullets {
 	display: grid;
-	grid-template-columns: repeat( auto-fill, minmax(14rem, 1fr) );
+	grid-template-columns: repeat( auto-fill, minmax(14rem, max-content) );
 	column-gap: 5rem;
 	row-gap: 3.8rem;
 	max-width: 94%;
@@ -84,6 +84,10 @@
 	line-height: 1.67;
 	color: #222222;
 
+	@media (min-width: $tablet + 1) {
+		white-space: nowrap;
+	}
+
 	@media (max-width: $tablet) {
 		letter-spacing: normal;
 	}
@@ -95,7 +99,6 @@
 
 	@media (max-width: $tablet) {
 		margin-top: -3.2rem;
-		// margin-bottom: -3.2rem;
 		margin-bottom: 0;
 	}
 }

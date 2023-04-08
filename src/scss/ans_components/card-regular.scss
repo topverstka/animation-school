@@ -1,16 +1,46 @@
 .card-regular {
   --padding-horizontal: 0rem;
   padding-bottom: 0;
+  justify-content: flex-start;
 
   @media (max-width: $tablet) {
     --image-height: 28rem;
   }
 }
 
+.card-regular__media {
+  margin-bottom: 4rem;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 1.5rem; //Специально сделал, чтобы визуально не рушить правило близости
+  }
+}
 .card-regular__media:only-child {
 	margin-bottom: 0;
 }
 
 .card-regular__img {
 	border-radius: var(--brad);
+}
+
+.card-regular__title {
+  margin-bottom: 1.6rem;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 1rem;
+  }
+}
+
+.card-regular__desc {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  letter-spacing: normal;
+
+  @media (min-width: $tablet + 1) {
+    padding-right: 6.8rem;
+  }
+}
+
+.card-regular__desc:last-of-type {
+  margin-bottom: 0;
 }

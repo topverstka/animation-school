@@ -626,6 +626,18 @@
   transition: var(--tr-regular);
 }
 
+[class*=title] > .link {
+  letter-spacing: initial;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+[class*=title] > .link:not(:hover) {
+  --link-color: var(--link-fg);
+  --link-underline-color: var(--link-fg);
+}
+
 .input {
   --text-color: #87909E;
   --label-color: var(--bg-element);
@@ -3262,10 +3274,20 @@
 .card-regular {
   --padding-horizontal: 0rem;
   padding-bottom: 0;
+  justify-content: flex-start;
 }
 @media (max-width: 992px) {
   .card-regular {
     --image-height: 28rem;
+  }
+}
+
+.card-regular__media {
+  margin-bottom: 4rem;
+}
+@media (max-width: 992px) {
+  .card-regular__media {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -3275,6 +3297,30 @@
 
 .card-regular__img {
   border-radius: var(--brad);
+}
+
+.card-regular__title {
+  margin-bottom: 1.6rem;
+}
+@media (max-width: 992px) {
+  .card-regular__title {
+    margin-bottom: 1rem;
+  }
+}
+
+.card-regular__desc {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+@media (min-width: 993px) {
+  .card-regular__desc {
+    padding-right: 6.8rem;
+  }
+}
+
+.card-regular__desc:last-of-type {
+  margin-bottom: 0;
 }
 
 .period-history-gallery {
@@ -3369,6 +3415,112 @@
 .period-history-card .link:not(:hover) {
   --link-color: var(--card-fg);
   --link-underline-color: var(--card-fg);
+}
+
+@media (max-width: 992px) {
+  .shelf .job-gallery.shelf-gallery {
+    row-gap: 3rem;
+  }
+}
+
+.job-card {
+  --card-fg: #222;
+  padding: 4rem;
+  background-color: #fff;
+  background: #F4F5F6;
+  border-radius: 1.7rem;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 53.46% 20.79% 15.73%;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .job-card {
+    grid-template-columns: 100%;
+    justify-content: start;
+    padding: 3rem 2rem;
+  }
+}
+
+@media (any-hover: hover) {
+  .job-card:hover {
+    background-color: var(--c-accent);
+  }
+}
+
+@media (max-width: 992px) {
+  .job-card__head {
+    margin-bottom: 3rem;
+  }
+}
+
+.job-card__title {
+  font-family: var(--ff-title);
+  font-size: 3rem;
+  line-height: 120%;
+  color: var(--card-fg);
+}
+
+.job-card__title .job-card__link:not(:hover) {
+  --link-underline-color: transparent;
+  --link-underline-color-hover: transparent;
+}
+
+@media (any-hover: hover) {
+  .job-card__link:hover {
+    --link-color-hover: var(--card-fg);
+    --link-underline-color: transparent;
+    --link-underline-color-hover: transparent;
+  }
+}
+
+.job-card__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.job-card__location {
+  display: flex;
+  justify-content: flex-end;
+  color: #87909E;
+}
+@media (max-width: 992px) {
+  .job-card__location {
+    order: -1;
+    justify-content: flex-start;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.job-card__location-icon {
+  --size: 2.1rem;
+  max-width: var(--size);
+  min-width: var(--size);
+  width: var(--size);
+  height: var(--size);
+  margin-right: 0.5rem;
+}
+
+.job-card__offer-salary {
+  font-family: var(--ff-title);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+  text-align: right;
+  color: #222222;
+  letter-spacing: normal;
+}
+@media (max-width: 992px) {
+  .job-card__offer-salary {
+    text-align: left;
+    font-size: 2.5rem;
+  }
 }
 
 @font-face {
@@ -9157,7 +9309,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .regalia__bullets {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(14rem, max-content));
   column-gap: 5rem;
   row-gap: 3.8rem;
   max-width: 94%;
@@ -9188,6 +9340,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   font-size: 1.8rem;
   line-height: 1.67;
   color: #222222;
+}
+@media (min-width: 993px) {
+  .regalia__bullet-name {
+    white-space: nowrap;
+  }
 }
 @media (max-width: 992px) {
   .regalia__bullet-name {
@@ -9370,6 +9527,10 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
 }
 
+.single-teachers .hero__content-pic {
+  border-radius: 9999rem;
+  background-color: #f4f5f6;
+}
 @media (max-width: 992px) {
   .single-teachers .hero__content-pic {
     margin-bottom: 0;
@@ -9379,7 +9540,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 
 .single-teachers .hero__content-img {
-  border-radius: 9999rem;
+  border-radius: inherit;
   width: 50rem;
   height: 50rem;
 }
@@ -9389,6 +9550,102 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     height: 23rem;
     border-radius: 1.5rem;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  .single-studios .hero {
+    padding-bottom: 4rem;
+  }
+}
+
+.single-studios .hero__content {
+  max-width: 78.1rem;
+  padding-bottom: 12rem;
+}
+@media (max-width: 992px) {
+  .single-studios .hero__content {
+    padding-bottom: 0;
+    margin-bottom: 1.7rem;
+    width: 100%;
+  }
+}
+
+.single-studios .hero__title {
+  letter-spacing: normal;
+}
+@media (min-width: 993px) {
+  .single-studios .hero__title {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 992px) {
+  .single-studios .hero__title {
+    max-width: 90%;
+    letter-spacing: -0.03em;
+    font-size: 3.2rem;
+  }
+}
+
+.single-studios .hero__content-media {
+  padding-right: 15.1rem;
+  height: auto;
+  --brad: 9999rem;
+}
+@media (min-width: 993px) {
+  .single-studios .hero__content-media {
+    transform: translateY(13rem) rotate(13.3deg);
+  }
+}
+@media (max-width: 992px) {
+  .single-studios .hero__content-media {
+    --brad: 1.5rem;
+    padding-right: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.single-studios .hero__content-pic {
+  border-radius: var(--brad);
+  background-color: #f4f5f6;
+}
+@media (max-width: 992px) {
+  .single-studios .hero__content-pic {
+    margin-bottom: 0;
+    transform: none;
+    width: 100%;
+  }
+}
+
+.single-studios .hero__content-img {
+  border-radius: inherit;
+  width: 50rem;
+  height: 50rem;
+}
+@media (max-width: 992px) {
+  .single-studios .hero__content-img {
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  .single-studios .card-regular {
+    --image-height: 26rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .single-studios .shelf-gallery {
+    row-gap: 1.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-gallery-triple.shelf-gallery {
+    row-gap: 3rem;
   }
 }
 /*# sourceMappingURL=../maps/style.css.map */

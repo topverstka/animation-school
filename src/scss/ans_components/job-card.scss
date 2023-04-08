@@ -1,0 +1,101 @@
+.shelf .job-gallery.shelf-gallery {
+	@media (max-width: $tablet) {
+		row-gap: 3rem;
+	}
+}
+
+.job-card {
+	--card-fg: #222;
+	padding: 4rem;
+	background-color: #fff;
+	background: #F4F5F6;
+	border-radius: 1.7rem;
+	display: grid;
+	justify-content: space-between;
+	align-items: center;
+	grid-template-columns: 53.46% 20.79% 15.73%;
+	position: relative;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+		justify-content: start;
+		padding: 3rem 2rem;
+	}
+}
+.job-card:hover {
+	@media (any-hover:hover) {
+		background-color: var(--c-accent);
+	}
+}
+
+.job-card__head {
+	@media (max-width: $tablet) {
+		margin-bottom: 3rem;
+	}
+}
+
+.job-card__title {
+	font-family: var(--ff-title);
+	font-size: 3rem;
+	line-height: 120%;
+	color: var(--card-fg);
+}
+
+.job-card__title .job-card__link:not(:hover) {
+	  --link-underline-color: transparent;
+	  --link-underline-color-hover: transparent;
+}
+
+.job-card__link:hover {
+	@media (any-hover:hover) {
+	  --link-color-hover: var(--card-fg);
+	  --link-underline-color: transparent;
+	  --link-underline-color-hover: transparent;
+	}
+}
+
+.job-card__link::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.job-card__location {
+	display: flex;
+	justify-content: flex-end;
+	color: #87909E;
+
+	@media (max-width: $tablet) {
+		order: -1;
+		justify-content: flex-start;
+		margin-bottom: 0.4rem;
+	}
+}
+
+.job-card__location-icon {
+	--size: 2.1rem;
+	max-width: var(--size);
+	min-width: var(--size);
+	width: var(--size);
+	height: var(--size);
+	margin-right: 0.5rem;
+}
+
+.job-card__offer-salary {
+	font-family: var(--ff-title);
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.2;
+	text-align: right;
+	color: #222222;
+	letter-spacing: normal;
+
+	@media (max-width: $tablet) {
+		text-align: left;
+		font-size: 2.5rem;
+	}
+}
