@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оформляем 3D анимацию. Гайд для новичка</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230410160007" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230410223224" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -187,153 +187,259 @@
 
               </article>
             </div>
-            <article class="vacancy-owner" href="#">
-              <a class="vacancy-owner__title">Автор статьи</a>
-              <div class="vacancy-owner__media">
-                <picture class="vacancy-owner__pic">
-                  <img src="./img/studios/studio-logo-1.png" alt="" class="vacancy-owner__img">
-                </picture>
+            <aside class="blog-article__sidebar">
+              <article class="vacancy-owner">
+                <a class="vacancy-owner__title link" href="#">
+                  <span class="link__text">Автор статьи</span>
+                </a>
+                <div class="vacancy-owner__media">
+                  <picture class="vacancy-owner__pic">
+                    <img src="./img/studios/studio-logo-1.png" alt="" class="vacancy-owner__img">
+                  </picture>
+                </div>
+                <h3 class="vacancy-owner__name">Ирина Голина</h3>
+                <p class="vacancy-owner__desc">Главный аниматор в компании Netflix</p>
+                <div class="socials vacancy-owner__socials">
+                  <a href="#" class="socials__link">
+                    <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+                  </a>
+                  <a href="#" class="socials__link">
+                    <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
+                  </a>
+                  <a href="#" class="socials__link">
+                    <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+                  </a>
+                </div>
+              </article>
+              <div class="sidebar-related">
+                <h2 class="sidebar-related__title">Может быть интересно</h2>
+                <div class="sidebar-related__gallery">
+                  <article class="sidebar-related-card">
+                    <div class="sidebar-related-card__media">
+                      <picture class="sidebar-related-card__pic">
+                        <img src="./img/blog/blog-img-4.jpg" alt="" class="sidebar-related-card__img">
+                      </picture>
+                    </div>
+                    <h3 class="sidebar-related-card__title">
+                      <a href="#" class="sidebar-related-card__link link">
+                        <span class="link__text">Как создаются 3D мультфильмы</span>
+                      </a>
+                    </h3>
+                  </article>
+                  <article class="sidebar-related-card">
+                    <div class="sidebar-related-card__media">
+                      <picture class="sidebar-related-card__pic">
+                        <img src="./img/blog/blog-img-2.jpg" alt="" class="sidebar-related-card__img">
+                      </picture>
+                    </div>
+                    <h3 class="sidebar-related-card__title">
+                      <a href="#" class="sidebar-related-card__link link">
+                        <span class="link__text">Создаем плащ в Maya</span>
+                      </a>
+                    </h3>
+                  </article>
+                  <article class="sidebar-related-card">
+                    <div class="sidebar-related-card__media">
+                      <picture class="sidebar-related-card__pic">
+                        <img src="./img/blog/blog-img-6.jpg" alt="" class="sidebar-related-card__img">
+                      </picture>
+                    </div>
+                    <h3 class="sidebar-related-card__title">
+                      <a href="#" class="sidebar-related-card__link link">
+                        <span class="link__text">Бесплатные мини-курсы по 3D и 2D анимации от AnimationSchool.ru</span>
+                      </a>
+                    </h3>
+                  </article>
+                </div>
               </div>
-              <h3 class="vacancy-owner__name">Ирина Голина</h3>
-              <p class="vacancy-owner__desc">Главный аниматор в компании Netflix</p>
-              <div class="socials">
-                <a href="#" class="socials__link">
-                  <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
-                </a>
-                <a href="#" class="socials__link">
-                  <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
-                </a>
-                <a href="#" class="socials__link">
-                  <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
-                </a>
-              </div>
-            </article>
+            </aside>
           </div>
         </section>
 
-        <section class="section shelf vacancy-shelf">
+        <section class="section shifter">
+          <div class="container shifter__container">
+            <div class="shifter__card">
+              <h2 class="section-title shifter__title">
+                Запишись на курс 2д анимации, 
+                <span class="section-text--color">осталось всего 13 мест</span>
+              </h2>
+              <a class="button-primary shifter__button" href="#course-order">
+                <svg class="button__icon">
+                  <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+                </svg>
+                <span class="button__text">Оставить заявку на курс</span>
+              </a>
+            </div>
+            <div class="shifter__media">
+              <picture class="shifter__pic">
+                <img src="./img/article/article-cta.png" alt="" class="shifter__img">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="section shelf">
           <div class="container shelf__container">
-            <h2 class="section-title shelf__title">
-              <span class="section-text--color">Какие курсы</span> нужны, чтобы&nbsp;попасть в&nbsp;компанию
+            <h2 class="section-title shelf__title shelf__title--big">
+              Статьи, которые <br>
+              могут вам <span class="section-text--color">понравится</span>
+            </h2>
+            <div class="shelf-gallery section-gallery-double">
+                <article class="blog-card ans-card @@className">
+  <div class="blog-card__media ans-card__media">
+    <picture class="blog-card__pic ans-card__pic">
+    	
+      <img src="./img/blog/blog-img-4.jpg" alt="" class="blog-card__img ans-card__img">
+    </picture>
+  </div>
+  <div class="blog-card__info ans-card__info">
+  	<div class="blog-card__top">
+	  	<p class="ans-card__author">
+	  		<a href="#" class="ans-card__link">Ирина Голина</a>
+	  	</p>
+	    <h3 class="blog-card__title ans-card__title">
+	      <a href="#" class="blog-card__link ans-card__link">
+	      	Как создаются 3D мультфильмы
+	      </a>
+	    </h3>
+	    <p class="blog-card__desc ans-card__desc">
+		    Многие примерно представляют себе, как создаются рисованные 2D мультфильмы. А что насчёт 3D?
+		  </p>
+	  </div>
+    <div class="blog-card__bottom">
+	    <a class="button-primary button-primary--invert blog-card__button" href="#">
+	      <svg class="button__icon">
+	        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+	      </svg>
+	      <span class="button__text">Читать статью</span>
+	    </a>
+	    <div class="blog-card__meta">
+	    	<img src="./img/common/time-icon.svg" alt="" class="blog-card__meta-img">
+	      <p class="blog-card__meta-desc">14 мин</p>
+	    </div>
+    </div>
+  </div>
+</article>
+
+                <article class="blog-card ans-card @@className">
+  <div class="blog-card__media ans-card__media">
+    <picture class="blog-card__pic ans-card__pic">
+    	
+      <img src="./img/blog/blog-img-5.jpg" alt="" class="blog-card__img ans-card__img">
+    </picture>
+  </div>
+  <div class="blog-card__info ans-card__info">
+  	<div class="blog-card__top">
+	  	<p class="ans-card__author">
+	  		<a href="#" class="ans-card__link">Ирина Голина</a>
+	  	</p>
+	    <h3 class="blog-card__title ans-card__title">
+	      <a href="#" class="blog-card__link ans-card__link">
+	      	Ирландская мифология в мультфильмах Томма Мура
+	      </a>
+	    </h3>
+	    <p class="blog-card__desc ans-card__desc">
+		    Многие примерно представляют себе, как создаются рисованные 2D мультфильмы. А что насчёт 3D?
+		  </p>
+	  </div>
+    <div class="blog-card__bottom">
+	    <a class="button-primary button-primary--invert blog-card__button" href="#">
+	      <svg class="button__icon">
+	        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+	      </svg>
+	      <span class="button__text">Читать статью</span>
+	    </a>
+	    <div class="blog-card__meta">
+	    	<img src="./img/common/time-icon.svg" alt="" class="blog-card__meta-img">
+	      <p class="blog-card__meta-desc">14 мин</p>
+	    </div>
+    </div>
+  </div>
+</article>
+
+                <article class="blog-card ans-card @@className">
+  <div class="blog-card__media ans-card__media">
+    <picture class="blog-card__pic ans-card__pic">
+    	
+      <img src="./img/blog/blog-img-6.jpg" alt="" class="blog-card__img ans-card__img">
+    </picture>
+  </div>
+  <div class="blog-card__info ans-card__info">
+  	<div class="blog-card__top">
+	  	<p class="ans-card__author">
+	  		<a href="#" class="ans-card__link">Ирина Голина</a>
+	  	</p>
+	    <h3 class="blog-card__title ans-card__title">
+	      <a href="#" class="blog-card__link ans-card__link">
+	      	Бесплатные мини-курсы по 3D и 2D анимации от AnimationSchool.ru
+	      </a>
+	    </h3>
+	    <p class="blog-card__desc ans-card__desc">
+		    Многие примерно представляют себе, как создаются рисованные 2D мультфильмы. А что насчёт 3D?
+		  </p>
+	  </div>
+    <div class="blog-card__bottom">
+	    <a class="button-primary button-primary--invert blog-card__button" href="#">
+	      <svg class="button__icon">
+	        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+	      </svg>
+	      <span class="button__text">Читать статью</span>
+	    </a>
+	    <div class="blog-card__meta">
+	    	<img src="./img/common/time-icon.svg" alt="" class="blog-card__meta-img">
+	      <p class="blog-card__meta-desc">14 мин</p>
+	    </div>
+    </div>
+  </div>
+</article>
+
+                <article class="blog-card ans-card @@className">
+  <div class="blog-card__media ans-card__media">
+    <picture class="blog-card__pic ans-card__pic">
+    	
+      <img src="./img/blog/blog-img-7.jpg" alt="" class="blog-card__img ans-card__img">
+    </picture>
+  </div>
+  <div class="blog-card__info ans-card__info">
+  	<div class="blog-card__top">
+	  	<p class="ans-card__author">
+	  		<a href="#" class="ans-card__link">Ирина Голина</a>
+	  	</p>
+	    <h3 class="blog-card__title ans-card__title">
+	      <a href="#" class="blog-card__link ans-card__link">
+	      	История дизайна классических героев Диснея
+	      </a>
+	    </h3>
+	    <p class="blog-card__desc ans-card__desc">
+		    Многие примерно представляют себе, как создаются рисованные 2D мультфильмы. А что насчёт 3D?
+		  </p>
+	  </div>
+    <div class="blog-card__bottom">
+	    <a class="button-primary button-primary--invert blog-card__button" href="#">
+	      <svg class="button__icon">
+	        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+	      </svg>
+	      <span class="button__text">Читать статью</span>
+	    </a>
+	    <div class="blog-card__meta">
+	    	<img src="./img/common/time-icon.svg" alt="" class="blog-card__meta-img">
+	      <p class="blog-card__meta-desc">14 мин</p>
+	    </div>
+    </div>
+  </div>
+</article>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="section shelf">
+          <div class="container shelf__container">
+            <h2 class="section-title shelf__title shelf__title--big">
+              Больше мы разбираем <br>
+              эту тему <span class="section-text--color">на курсах</span>
             </h2>
             <div class="shelf-gallery section-gallery-triple">
-              <article class="courses-card">
-  <div class="courses-card__media">
-    <picture class="courses-card__pic">
-      <img src="./img/courses/course-img-4.jpg" alt="Классическая 2D анимация. 1 класс — Основы" class="courses-card__img">
-    </picture>
-  </div>
-  <div class="courses-card__categories">
-    <a href="#" class="courses-card__category link">Риггинг</a>
-  </div>
-  <h3 class="courses-card__title">
-    <a href="#" class="courses-card__link">Классическая 2D анимация. 1 класс — Основы</a>
-  </h3>
-  <p class="courses-card__desc">Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков.</p>
-  <div class="courses-card__bullets">
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Старт</span>
-    	<span class="courses-card__bullet-value">3&nbsp;ноября 2023</span>
-    </div>
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Осталось</span>
-    	<span class="courses-card__bullet-value">16 мест</span>
-    </div>
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Цена</span>
-    	<span class="courses-card__bullet-value">17 900/мес</span>
-    </div>
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Длительность</span>
-    	<span class="courses-card__bullet-value">3 месяца</span>
-    </div>
-  </div>
-  <a class="button-primary button-primary--invert courses-card__button" href="#">
-    <svg class="button__icon">
-      <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
-    </svg>
-    <span class="button__text">Перейти на страницу курса</span>
-  </a>
-</article>
-
-              <article class="courses-card">
-  <div class="courses-card__media">
-    <picture class="courses-card__pic">
-      <img src="./img/courses/course-img-5.jpg" alt="Основы визуальной разработки для анимационных фильмов" class="courses-card__img">
-    </picture>
-  </div>
-  <div class="courses-card__categories">
-    <a href="#" class="courses-card__category link">Риггинг</a>
-  </div>
-  <h3 class="courses-card__title">
-    <a href="#" class="courses-card__link">Основы визуальной разработки для анимационных фильмов</a>
-  </h3>
-  <p class="courses-card__desc">Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков.</p>
-  <div class="courses-card__bullets">
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Старт</span>
-    	<span class="courses-card__bullet-value">3&nbsp;ноября 2023</span>
-    </div>
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Осталось</span>
-    	<span class="courses-card__bullet-value">16 мест</span>
-    </div>
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Цена</span>
-    	<span class="courses-card__bullet-value">17 900/мес</span>
-    </div>
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Длительность</span>
-    	<span class="courses-card__bullet-value">3 месяца</span>
-    </div>
-  </div>
-  <a class="button-primary button-primary--invert courses-card__button" href="#">
-    <svg class="button__icon">
-      <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
-    </svg>
-    <span class="button__text">Перейти на страницу курса</span>
-  </a>
-</article>
-
-              <article class="courses-card">
-  <div class="courses-card__media">
-    <picture class="courses-card__pic">
-      <img src="./img/courses/course-img-6.jpg" alt="Композитинг анимации в Adobe After Effects" class="courses-card__img">
-    </picture>
-  </div>
-  <div class="courses-card__categories">
-    <a href="#" class="courses-card__category link">Риггинг</a>
-  </div>
-  <h3 class="courses-card__title">
-    <a href="#" class="courses-card__link">Композитинг анимации в Adobe After Effects</a>
-  </h3>
-  <p class="courses-card__desc">Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков.</p>
-  <div class="courses-card__bullets">
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Старт</span>
-    	<span class="courses-card__bullet-value">3&nbsp;ноября 2023</span>
-    </div>
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Осталось</span>
-    	<span class="courses-card__bullet-value">16 мест</span>
-    </div>
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Цена</span>
-    	<span class="courses-card__bullet-value">17 900/мес</span>
-    </div>
-    <div class="courses-card__bullet">
-    	<span class="courses-card__bullet-title">Длительность</span>
-    	<span class="courses-card__bullet-value">3 месяца</span>
-    </div>
-  </div>
-  <a class="button-primary button-primary--invert courses-card__button" href="#">
-    <svg class="button__icon">
-      <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
-    </svg>
-    <span class="button__text">Перейти на страницу курса</span>
-  </a>
-</article>
-
               <article class="courses-card">
   <div class="courses-card__media">
     <picture class="courses-card__pic">
@@ -625,6 +731,6 @@
 
     </div>
 
-    <script src="./js/bundle.min.js?_v=20230410160007"></script>
+    <script src="./js/bundle.min.js?_v=20230410223224"></script>
   </body>
 </html>

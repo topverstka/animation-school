@@ -1,6 +1,10 @@
 .blog-article {
 	padding-top: 6rem;
-	padding-bottom: 6rem;
+	padding-bottom: 0;
+}
+
+.blog-article__container {
+	margin-bottom: 0;
 }
 
 .blog-article__content {

@@ -1,0 +1,33 @@
+.sidebar-related-card {
+	--image-height: 21rem;
+	--image-brad: 1rem;
+}
+
+.sidebar-related-card__media {
+	height: var(--image-height);
+	width: 100%;
+	border-radius: var(--image-brad);
+	margin-bottom: 1rem;
+}
+
+.sidebar-related-card__pic {
+	height: 100%;
+	width: 100%;
+	border-radius: inherit;
+}
+
+.sidebar-related-card__img {
+	border-radius: inherit;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.sidebar-related-card__title {
+	font-family: var(--ff-title);
+	font-weight: 400;
+	color: #000;
+	font-size: 1.8rem;
+	line-height: 1.4;
+}

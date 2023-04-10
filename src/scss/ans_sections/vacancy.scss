@@ -143,31 +143,37 @@
 		color: var(--c-accent);
 	}
 }
+
 .vacancy-owner { 
 	background-color: #fff;
 	border-radius: 1.7rem;
-	position: sticky;
 	top: 3rem;
 	padding: 3.5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 2rem;
 
 	@media (max-width: $tablet) {
+		margin-bottom: 0;
 		padding: 3rem 2rem;
 		position: static;
 		order: -1;
 	}
 }
 
-.vacancy-owner__button {
-	width: 100%;
+.vacancy-owner__title {
+	--link-underline-color: transparent;
+	color: var(--c-accent);
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 130%;
+	margin-bottom: 3rem;
+	letter-spacing: normal;
 
 	@media (max-width: $tablet) {
-		--fz-button: 1.6rem;
-		padding-left: 2.1rem;
-		padding-right: 2.1rem;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -200,13 +206,41 @@
 .vacancy-owner__name {
 	font-size: 2.5rem;
 	line-height: 1.2;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 	font-family: var(--ff-title);
+	letter-spacing: normal;
 
 	@media (max-width: $tablet) {
 		font-size: 2.4rem;
+	}
+}
+
+.vacancy-owner__desc {
+	font-size: 1.6rem;
+	line-height: 120%;
+	text-align: center;
+	color: #222222;
+	margin-bottom: 3rem;
+	letter-spacing: normal;
+
+	@media (max-width: $tablet) {
 		margin-bottom: 2rem;
 	}
+}
+
+.vacancy-owner__button {
+	width: 100%;
+	margin-top: 2rem;
+
+	@media (max-width: $tablet) {
+		margin-top: 1rem;
+		--fz-button: 1.6rem;
+		padding-left: 2.1rem;
+		padding-right: 2.1rem;
+	}
+}
+.vacancy-owner__socials {
+	--icons-size: 3rem;
 }
 
 .vacancy__content-card-row {

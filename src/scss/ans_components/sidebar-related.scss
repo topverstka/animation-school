@@ -1,0 +1,21 @@
+.sidebar-related {
+	padding: 4rem 3rem;
+	background-color: #fff;
+	border-radius: 1.7rem;
+}
+
+.sidebar-related__title {
+	font-family: var(--ff-title);
+	margin-bottom: 3rem;
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 1.2;
+	letter-spacing: -0.03em;
+	color: #222222;
+}
+
+.sidebar-related__gallery {
+	display: grid;
+	grid-template-columns: 100%;
+	row-gap: 4rem
+}
