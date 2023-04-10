@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Режиссёр 2D аниматиков </title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body class="single-jobs">
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main">
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Трудоустройство</a></li>
+                    <li class="breadcrumbs__item">Режиссёр 2D аниматиков</li>
+                  </ul>
+                </div>
+              </div>
+              <h1 class="section-title hero__title">Режиссёр 2D аниматиков</h1>
+              <div class="hero__meta">
+                <div class="hero__meta-bullet">
+                  <img src="./img/common/city.svg" alt="" class="hero__meta-bullet-icon">
+                  <span class="hero__meta-bullet-desc">г. Москва</span>
+                </div>
+                <div class="hero__meta-bullet">
+                  <span class="hero__meta-bullet-desc">Уровень: Middle</span>
+                </div>
+              </div>
+            </div>
+<!--             <div class="hero__content-media">
+              <picture class="hero__content-pic">
+                <img src="./img/teacher/teacher-hero.jpg" alt="" class="hero__content-img">
+              </picture>
+            </div>
+ -->          </div>
+        </section>
+
+        <section class="section vacancy">
+          <div class="container vacancy__container">
+            <div class="vacancy__content">
+              <article class="vacancy__content-card">
+                <h3>Описание вакансии</h3>
+                <p>Анимационная студия «Паровоз» с радостью приглашает в свою команду талантливого <br> и профессионального 2D- художника для замещения вакантной должности на <br> существующем сериальном проекте.</p>
+              </article>
+              <article class="vacancy__content-card">
+                <h3>Требования</h3>
+                <ul>
+                  <li>Отличное владение Photoshop</li>
+                  <li>Владение Shotgun – приветствуется</li>
+                  <li>Опыт работы от 1 года в анимации/gamedev</li>
+                  <li>Увлеченность своим делом, интерес к мультфильмам</li>
+                  <li>Приветствуется художественное образование</li>
+                  <li>Обязательно наличие портфолио</li>
+                  <li>Внимательность к деталям, четкое соблюдение стилистики</li>
+                  <li>Умение чувствовать пропорции, читать концепт</li>
+                  <li>Исполнительность, самоорганизация, ответственность, обучаемость</li>
+                </ul>
+              </article>
+              <article class="vacancy__content-card">
+                <h3>Условия</h3>
+                <ul>
+                  <li>Занятость фуллтайм, 5/2</li>
+                  <li>Современная студия в <a href="#">шаговой доступности от метро</a> «Ленинский проспект»</li>
+                  <li>Опыт работы от 1 года в анимации/gamedev</li>
+                  <li>Увлеченность своим делом, интерес к мультфильмам</li>
+                  <li>Приветствуется художественное образование</li>
+                  <li>Обязательно наличие портфолио</li>
+                  <li>Внимательность к деталям, четкое соблюдение стилистики</li>
+                  <li>Умение чувствовать пропорции, читать концепт</li>
+                  <li>Исполнительность, самоорганизация, ответственность, обучаемость</li>
+                </ul>
+              </article>
+              <article class="vacancy__content-card">
+                <div class="vacancy__content-card-row">
+                  <h3 class="vacancy__content-card-title">Зарплата</h3>
+                  <p class="vacancy__content-card-value">по результатам собеседования</p>
+                </div>
+              </article>
+
+              <button class="button-primary vacancy-response" type="button">
+                <svg class="button__icon">
+                  <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+                </svg>
+                <span class="button__text">Откликнуться</span>
+              </button>
+
+            </div>
+            <article class="vacancy-owner">
+              <div class="vacancy-owner__media">
+                <picture class="vacancy-owner__pic">
+                  <img src="./img/studios/studio-logo-1.png" alt="" class="vacancy-owner__img">
+                </picture>
+              </div>
+              <h3 class="vacancy-owner__name">Союзмультфильм</h3>
+              <a class="button-primary button-primary--invert vacancy-owner__button" href="#">
+                <svg class="button__icon">
+                  <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+                </svg>
+                <span class="button__text">Смотреть профиль</span>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section shelf vacancy-shelf">
+          <div class="container shelf__container">
+            <h2 class="section-title shelf__title">
+              <span class="section-text--color">Какие курсы</span> нужны, чтобы&nbsp;попасть в&nbsp;компанию
+            </h2>
+            <div class="shelf-gallery section-gallery-triple">
+              @@include('tpls/cards/courses-card.html', {name: "Классическая 2D анимация. 1 класс — Основы", img: "course-img-4.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Основы визуальной разработки для анимационных фильмов", img: "course-img-5.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Композитинг анимации в Adobe After Effects", img: "course-img-6.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Классическая 2D анимация. 1 класс — Основы", img: "course-img-4.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Основы визуальной разработки для анимационных фильмов", img: "course-img-5.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Композитинг анимации в Adobe After Effects", img: "course-img-6.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>

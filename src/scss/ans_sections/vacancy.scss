@@ -1,0 +1,244 @@
+.vacancy {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+
+	@media (max-width: $tablet) {
+		padding-top: 3rem;
+		padding-bottom: 0.6rem;
+	}
+}
+.vacancy__container {
+	display: grid;
+	justify-content: space-between;
+	align-items: start;
+	grid-template-columns: 3.15fr 1fr;
+	gap: 3rem;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 100%;
+		gap: 2rem;
+	}
+}
+
+.vacancy__content {
+	display: grid;
+	grid-template-columns: 100%;
+	row-gap: 3rem;
+
+	@media (max-width: $tablet) {
+		row-gap: 2rem;
+	}
+}
+.vacancy__content-card {
+	background-color: #fff;
+	border-radius: 1.7rem;
+	padding: 7rem;
+
+	@media (max-width: $tablet) {
+		padding: 3rem 2rem;
+	}
+}
+
+.vacancy__content-card h1,
+.vacancy__content-card h2,
+.vacancy__content-card h3,
+.vacancy__content-card h4,
+.vacancy__content-card h5,
+.vacancy__content-card h6 {
+	font-family: var(--ff-title);
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #D7DEE1;
+	margin-bottom: 3.5rem;
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+
+	@media (max-width: $tablet) {
+		font-size: 2.4rem;
+		padding-bottom: 1.5rem;
+		margin-bottom: 2rem;
+		line-height: initial;
+	}
+}
+
+.vacancy__content-card p {
+	font-size: 1.8rem;
+	line-height: 1.35; // для пп. по макету 1.4
+	margin-bottom: 1.8em;
+	letter-spacing: normal;
+
+	@media (max-width: $tablet) {
+		// line-height: 1.4;
+		letter-spacing: normal;
+		font-size: 1.6rem;
+	}
+}
+
+.vacancy__content-card p br {
+	@media (max-width: $tablet) {
+		display: none;
+	}
+}
+
+.vacancy__content-card p:last-child {
+	margin-bottom: 0;
+}
+.vacancy__content-card ul {
+	font-size: 1.8rem;
+	line-height: 1.4;
+	margin-bottom: 3.5rem;
+	letter-spacing: normal;
+
+	@media (max-width: $tablet) {
+		font-size: 1.6rem;
+	}
+}
+
+.vacancy__content-card ul:last-child {
+	margin-bottom: 0;
+}
+.vacancy__content-card li {
+	padding-left: 2.3rem;
+	margin-bottom: 1.5rem;
+	position: relative;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 1rem;
+		padding-left: 2rem;
+	}
+}
+
+.vacancy__content-card li::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0.5rem;
+	--size: 0.8rem;
+	max-width: var(--size);
+	min-width: var(--size);
+	width: var(--size);
+	height: var(--size);
+	background-color: var(--c-accent);
+	border-radius: 99999rem;
+
+	@media (max-width: $tablet) {
+    left: 0.2rem;
+    top: 0.9rem;
+	}
+}
+
+.vacancy__content-card li:last-child {
+	margin-bottom: 0;
+}
+
+
+.vacancy__content-card a {
+	border-bottom: 1px solid;
+	transition: var(--tr-regular);
+}
+.vacancy__content-card a:hover {
+	@media (any-hover:hover) {
+		color: var(--c-accent);
+	}
+}
+.vacancy-owner { 
+	background-color: #fff;
+	border-radius: 1.7rem;
+	position: sticky;
+	top: 3rem;
+	padding: 3.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@media (max-width: $tablet) {
+		padding: 3rem 2rem;
+		position: static;
+		order: -1;
+	}
+}
+
+.vacancy-owner__button {
+	width: 100%;
+
+	@media (max-width: $tablet) {
+		--fz-button: 1.6rem;
+		padding-left: 2.1rem;
+		padding-right: 2.1rem;
+	}
+}
+
+.vacancy-owner__media {
+	--size: 10rem;
+	max-width: var(--size);
+	min-width: var(--size);
+	width: var(--size);
+	height: var(--size);
+	margin-bottom: 1rem;
+	border-radius: 9999rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (max-width: $tablet) {
+		--size: 8rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
+.vacancy-owner__pic {
+	background-color: #F4F5F6;
+	border-radius: inherit;
+}
+
+.vacancy-owner__img {
+	border-radius: inherit;
+}
+
+.vacancy-owner__name {
+	font-size: 2.5rem;
+	line-height: 1.2;
+	margin-bottom: 3rem;
+	font-family: var(--ff-title);
+
+	@media (max-width: $tablet) {
+		font-size: 2.4rem;
+		margin-bottom: 2rem;
+	}
+}
+
+.vacancy__content-card-row {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 3rem;
+	font-weight: 700;
+	font-size: 3rem;
+	font-family: var(--ff-title);
+
+	@media (max-width: $tablet) {
+		font-size: 2.4rem;
+		grid-template-columns: 100%;
+	}
+}
+.vacancy__content-card-row h3 {
+	@media (min-width: $tablet + 1) {
+		border-bottom: 0;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	@media (max-width: $tablet) {
+		margin-bottom: 1rem;
+	}
+}
+.vacancy__content-card-row p {
+	font-size: inherit;
+}
+
+.vacancy-shelf .shelf__title {
+	@media (max-width: $tablet) {
+		font-size: 3rem;
+	}
+
+}
