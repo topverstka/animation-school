@@ -126,6 +126,10 @@
   @extend .section-gallery;
   grid-template-columns: 3.15fr 1fr;
   align-items: start;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 100%;
+  }
 }
 
 .section-gallery-double {

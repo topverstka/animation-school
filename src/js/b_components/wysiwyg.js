@@ -15,11 +15,16 @@ function getSwiperConfig(swpierClasses) {
 	  // autoHeight: true,
 	  spaceBetween: 30,
 	  // slidesPerView: 2.5,
-	  slidesPerView: "auto",
+	  slidesPerView: 1,
 	  effect: 'fade',
 	    fadeEffect: {
 	    crossFade: true
 	  },
+	  breakpoints: {
+	  	992: {
+			  slidesPerView: "auto",
+	  	}
+	  }
 	}
 
 	if (nextButtonClass || prevButtonClass) {
