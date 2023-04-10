@@ -228,6 +228,7 @@
 	width: var(--size);
 	height: var(--size);
 	margin-right: 0.5rem;
+	--icon-color: #fff;
 }
 .hero__meta-bullet-desc {
 	font-size: 1.6rem;
@@ -237,4 +238,7 @@
 		font-size: 1.4rem;
 		letter-spacing: normal;
 	}
+}
+.hero__meta-bullet-desc + .hero__meta-bullet-icon {
+	margin-left: 1rem;
 }

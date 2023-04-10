@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оформляем 3D анимацию. Гайд для новичка</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Отключить автодетект телефонов -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Отключить кэширование. Нужен только при разработке, чтобы все было свежим -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  </head>
+  <body class="single-blog">
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main">
+        <section class="hero hero--image-right">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <div class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Блог</a></li>
+                    <li class="breadcrumbs__item">Оформляем 3D анимацию. Гайд для новичка</li>
+                  </ul>
+                </div>
+              </div>
+              <h1 class="section-title hero__title">Оформляем 3D анимацию. Гайд для&nbsp;новичка</h1>
+              <div class="hero__meta">
+                <div class="hero__meta-bullet">
+                  <img src="./img/common/calendar.svg" alt="" class="hero__meta-bullet-icon">
+                  <span class="hero__meta-bullet-desc">07.05.2020</span>
+                </div>
+                <div class="hero__meta-bullet">
+                  <span class="hero__meta-bullet-desc">Время чтения:</span>
+                  <svg class="hero__meta-bullet-icon">
+                    <use xlink:href="./img/blog/time-icon.svg#time" />
+                  </svg>
+                  <span class="hero__meta-bullet-desc">14 мин</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero__content-media">
+              <picture class="hero__content-pic">
+                <!-- <img src="./img/blog/blog-img-1.jpg" alt="" class="hero__content-img"> -->
+                <img src="./img/article/article-hero.png" alt="" class="hero__content-img">
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="section blog-article">
+          <div class="container blog-article__container section-gallery-9-3">
+            <div class="blog-article__content">
+              <article class="blog-article__content-card">
+                <h2>Заголовок 2</h2>
+                <p>
+                  Хоть в обязанности аниматоров не входит рендер готовой сцены, нам часто хочется добавить цвета в скучный серый фон вьюпорта, особенно если речь идет о личных шотах, созданных специально для портфолио. К счастью, для того, чтобы сделать работу визуально приятнее, не нужно погружаться в дебри Арнольда и часами ждать просчета изображения. Viewport 2.0, который с 2015 года установлен в Maya по умолчанию, позволяет настроить цвет и свет прямо в сцене. Потом вы просто записываете плейбласт — и вуаля, ваши персонажи выглядят намного симпатичнее.
+                </p>
+                <p>
+                  Для примера я возьму Алису, персонажа AnimationSchool. В моей сцене нет никакого фона и я хочу это исправить. Для этого подойдёт plane, который нужно сильно увеличить в размерах. Я хочу изогнуть его как циклораму, а потому увеличиваю ещё и количество полигонов до 50 в высоту и в ширину:
+                </p>
+                <p>
+                  Для того, чтобы сделать плавный изгиб, нужно перейти в режим выделения компонентов (F8), выделить примерно треть плоскости и активировать soft selection, нажав клавишу B. Радиус выделения легко изменить: для этого нужно перемещать мышку влево-вправо, одновременно зажав B и левую кнопку мыши.
+                </p>
+                <p>
+                  Выделенную область поворачиваем на 90 градусов, при необходимости подтягиваем вверх — циклорама готова.
+                </p>
+
+                <figure>
+                  <img src="./img/article/article-img-1.jpg" alt="">
+                </figure>
+
+                <h3>Заголовок 3</h3>
+
+                <p>
+                  Какой бы вариант вы не выбрали, фон все еще серый и грустный. Пора добавить ему красок! Это можно сделать несколькими способами, я использую Hypershade. В открывшемся окне нужно выбрать материал. Мне достаточно стандартного Lambert, тем более что он матовый, а значит, не будет бликовать. Справа можно увидеть, как будет смотреться выбранный материал на объемной фигуре. Под окошком с этой фигурой есть настройки материала — вот они-то нам и нужны. Для моих целей достаточно просто поменять цвет, кликнув на серое окошко, но при желании можно поиграться и с прозрачностью, и с рефлексами, и с другими настройками.
+                </p>
+                <p>
+                  Когда нужный эффект достигнут, самое время перенести материал на подготовленный plane. Для этого выбираем наш lambert в окошке со всеми материалами, зажимаем среднюю кнопку мыши (колесико) и перетаскиваем материал прямо на нужный объект во вьюпорте.
+                </p>
+                <p>Теперь самое интересное — источники освещения. Я питаю слабость к направленному свету, потому буду использовать именно его. Переходим в меню Create — Lights — Directional Light.</p>
+
+                <figure>
+                  <img src="./img/article/article-img-1.jpg" alt="">
+                </figure>
+
+                <ul>
+                  <li>Какой бы вариант вы не выбрали, фон все еще серый и грустный. Пора добавить ему красок! Это можно сделать несколькими способами, я использую Hypershade.</li>
+                  <li>В открывшемся окне нужно выбрать материал. </li>
+                  <li>Мне достаточно стандартного Lambert, тем более что он матовый, а значит, не будет бликовать. Справа можно увидеть, как будет смотреться выбранный материал на объемной фигуре. </li>
+                  <li>Под окошком с этой фигурой есть настройки материала — вот они-то нам и нужны. Для моих целей достаточно просто поменять цвет, кликнув на серое окошко, но при желании можно поиграться и с прозрачностью, и с рефлексами, и с другими настройками.</li>
+                </ul>
+
+                <h4>Заголовок 4</h4>
+                <p>Когда нужный эффект достигнут, самое время перенести материал на подготовленный plane. Для этого выбираем наш lambert в окошке со всеми материалами, зажимаем среднюю кнопку мыши (колесико) и перетаскиваем материал прямо на нужный объект во вьюпорте. Теперь самое интересное — источники освещения. Я питаю слабость к направленному свету, потому буду использовать именно его. Переходим в меню Create — Lights — Directional Light.</p>
+
+                <figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex">
+                  <figure>
+                    <img src="./img/article/article-carousel-1.jpg" alt="">
+                    <figcaption class="wp-element-caption">Сцена 3D</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="./img/article/article-carousel-2.jpg" alt="">
+                    <figcaption class="wp-element-caption">Настройки обьемности фигур</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="./img/article/article-carousel-3.jpg" alt="">
+                    <figcaption class="wp-element-caption">Настройка цвета</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="./img/article/article-carousel-1.jpg" alt="">
+                    <figcaption class="wp-element-caption">Настройка цвета</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="./img/article/article-carousel-2.jpg" alt="">
+                    <figcaption class="wp-element-caption">Настройка цвета</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="./img/article/article-carousel-3.jpg" alt="">
+                    <figcaption class="wp-element-caption">Настройка цвета</figcaption>
+                  </figure>
+                </figure>
+
+              </article>
+            </div>
+            <article class="vacancy-owner" href="#">
+              <a class="vacancy-owner__title">Автор статьи</a>
+              <div class="vacancy-owner__media">
+                <picture class="vacancy-owner__pic">
+                  <img src="./img/studios/studio-logo-1.png" alt="" class="vacancy-owner__img">
+                </picture>
+              </div>
+              <h3 class="vacancy-owner__name">Ирина Голина</h3>
+              <p class="vacancy-owner__desc">Главный аниматор в компании Netflix</p>
+              <div class="socials">
+                <a href="#" class="socials__link">
+                  <img src="./img/common/tg-icon.svg#tg" alt="" class="socials__icon">
+                </a>
+                <a href="#" class="socials__link">
+                  <img src="./img/common/facebook-icon.svg#fb" alt="" class="socials__icon">
+                </a>
+                <a href="#" class="socials__link">
+                  <img src="./img/common/youtube-icon.svg#yt" alt="" class="socials__icon">
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section shelf vacancy-shelf">
+          <div class="container shelf__container">
+            <h2 class="section-title shelf__title">
+              <span class="section-text--color">Какие курсы</span> нужны, чтобы&nbsp;попасть в&nbsp;компанию
+            </h2>
+            <div class="shelf-gallery section-gallery-triple">
+              @@include('tpls/cards/courses-card.html', {name: "Классическая 2D анимация. 1 класс — Основы", img: "course-img-4.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Основы визуальной разработки для анимационных фильмов", img: "course-img-5.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Композитинг анимации в Adobe After Effects", img: "course-img-6.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Классическая 2D анимация. 1 класс — Основы", img: "course-img-4.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Основы визуальной разработки для анимационных фильмов", img: "course-img-5.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+              @@include('tpls/cards/courses-card.html', {name: "Композитинг анимации в Adobe After Effects", img: "course-img-6.jpg", desc: "Учимся справляться с творческими блоками, изучаем разные подходы к рисованию, вводим практику ежедневных набросков."})
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>

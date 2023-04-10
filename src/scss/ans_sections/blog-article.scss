@@ -1,0 +1,221 @@
+.blog-article {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+.blog-article__content {
+	width: 100%;
+	max-width: 100%;
+}
+.blog-article__content-card {
+	padding: 8rem 7rem;
+	border-radius: 1.7rem;
+	background-color: #fff;
+	overflow: hidden;
+	max-width: 100%;
+	width: 100%;
+}
+
+.blog-article__content h2,
+.blog-article__content h3,
+.blog-article__content h4,
+.blog-article__content h5,
+.blog-article__content h6 {
+	font-family: var(--ff-title);
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 3rem;
+	letter-spacing: -0.03em;
+	margin-top: 5rem;
+}
+
+.blog-article__content h2:first-child {
+	margin-top: 0;
+}
+
+.blog-article__content h2 {
+	font-size: 6rem;
+}
+
+.blog-article__content h3 {
+	font-size: 5rem;
+}
+
+.blog-article__content h4 {
+	font-size: 4rem;
+}
+
+.blog-article__content p {
+	font-size: 1.6rem;
+	line-height: 1.4;
+	margin-bottom: 1.4rem;
+	max-width: 90rem;
+	letter-spacing: normal;
+}
+
+.blog-article__content figure {
+	margin-top: 4.8rem;
+	margin-bottom: 5rem;
+}
+.blog-article__content img {
+	border-radius: 1rem;
+}
+
+.blog-article__content ul {
+	font-size: 1.6rem;
+	line-height: 1.4;
+	margin-bottom: 3.5rem;
+	letter-spacing: normal;
+	max-width: 90rem;
+
+	@media (max-width: $tablet) {
+		font-size: 1.6rem;
+	}
+}
+.blog-article__content figure ~ ul  {
+	margin-top: -2rem;
+}
+
+.blog-article__content ul:last-child {
+	margin-bottom: 0;
+}
+
+.blog-article__content li {
+	padding-left: 2.3rem;
+	margin-bottom: 1rem;
+	position: relative;
+	line-height: inherit;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 1rem;
+		padding-left: 2rem;
+	}
+}
+
+.blog-article__content li::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0.5rem;
+	--size: 0.8rem;
+	max-width: var(--size);
+	min-width: var(--size);
+	width: var(--size);
+	height: var(--size);
+	background-color: var(--c-accent);
+	border-radius: 99999rem;
+
+	@media (max-width: $tablet) {
+    left: 0.2rem;
+    top: 0.9rem;
+	}
+}
+
+.blog-article__content li:last-child {
+	margin-bottom: 0;
+}
+
+
+.blog-article__content a {
+	border-bottom: 1px solid;
+	transition: var(--tr-regular);
+}
+.blog-article__content a:hover {
+	@media (any-hover:hover) {
+		color: var(--c-accent);
+	}
+}
+
+.blog-article__content .swiper {
+  max-width: 125rem;
+  width: 125rem;
+  margin-right: -10rem;
+  margin-left: -10rem;
+  overflow: visible;
+  margin-top: -1rem;
+  margin-bottom: -3rem;
+}
+
+.blog-article__content .swiper-wrapper {
+	overflow: visible;
+}
+
+.blog-article__content .swiper-slide {
+	max-width: 44rem;
+	width: 100%;
+}
+.blog-article__content .swiper-slide:first-child {
+	margin-left: 10rem;
+}
+.blog-article__content .swiper-slide img {
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+	height: 28.9rem;
+}
+.blog-article__content .swiper-slide:last-child {
+	margin-right: 10rem;
+}
+
+.blog-article__content .swiper-slide figcaption {
+	color: #4A565C;
+	font-size: 1.6rem;
+	text-align: center;
+	line-height: 1.4;
+	letter-spacing: normal;
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+.blog-article__content .swiper-button-prev,
+.blog-article__content .swiper-button-next {
+	content: "";
+	background-color: var(--c-accent);
+	display: block;
+	--size: 7rem;
+	max-width: var(--size);
+	min-width: var(--size);
+	width: var(--size);
+	height: var(--size);
+	border-radius: 9999rem;
+	padding: 2.17rem;
+	top: 41.4%;
+	transition: var(--tr-regular);
+}
+.blog-article__content .swiper-button-prev:hover,
+.blog-article__content .swiper-button-next:hover {
+	@media (any-hover:hover) {
+		background-color: var(--c-accent-active);
+	}
+}
+
+.blog-article__content .swiper-button-prev::after,
+.blog-article__content .swiper-button-next::after {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/common/carousel-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.blog-article__content .swiper-button-prev::after {
+	transform: scaleX(-1);
+}
+
+.blog-article__content .swiper-button-next::after {
+}
+
+.blog-article__content .swiper-button-prev {
+	left: 5rem;
+}
+
+.blog-article__content .swiper-button-next {
+	right: 17.6rem;
+}
+
+.blog-article__content .swiper-button-disabled {
+	opacity: 0;
+}
