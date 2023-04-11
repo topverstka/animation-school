@@ -26,9 +26,12 @@
 	flex-basis: 100%;
 
 	@media (max-width: $tablet) {
-		height: 15.9rem;
+		height: 30.9rem;
 		margin-bottom: 2rem;
 		border-radius: 1.7rem;
+	}
+	@media (max-width: $mobile-l) {
+		height: 15.9rem;
 	}
 }
 
@@ -134,8 +137,11 @@
 	@media (max-width: $tablet) {
 		order: 3;
 		padding-bottom: 0;
+		max-width: 100%;
+		width: 100%;
 	}
 }
+
 .big-video__button {
 	max-width: 100%;
 	width: 100%;

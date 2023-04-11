@@ -60,6 +60,11 @@
 		max-width: 41rem;
 		height: 22.2rem;
 		width: 100%;
+		margin-left: auto;
+		margin-right: 0;
+	}
+	@media (max-width: $mobile-l) {
+		margin-right: auto;
 	}
 }
 .help-labor-bullet-particles__media {

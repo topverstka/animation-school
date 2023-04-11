@@ -9,10 +9,17 @@
 		grid-template-columns: 100%;
 	}
 }
-.for-who__title {
+
+.for-who__title {	
 	@media (max-width: $tablet) {
 		text-align: left;	
 		line-height: initial;
+	}
+}
+
+.for-who__title br {
+	@media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+		display: none;
 	}
 }
 

@@ -54,6 +54,11 @@
 .hero-course__button {
 	max-width: 37.5rem;
 	width: 100%;
+
+	@media (max-width: $tablet) {
+		max-width: 100%;
+		width: 100%;
+	}
 }
 
 .hero-course__content {
@@ -71,10 +76,14 @@
 	border-radius: 2.7rem;
 
 	@media (max-width: $tablet) {
+		height: 32rem;
 		border-radius: 1.7rem;
 		transform: none;
-		height: 22rem;
 		margin-bottom: 3rem;
+	}
+
+	@media (max-width: $mobile-l) {
+		height: 22rem;
 	}
 }
 .hero-course__content-pic,
