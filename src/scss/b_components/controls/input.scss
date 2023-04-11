@@ -1,5 +1,6 @@
 .input {
-  --text-color: #87909E;
+  --text-color: #000;
+  --c-placeholder: #87909E;
   --label-color: var(--bg-element);
   --border-color: var(--c-text-regular);
   --input-bg: #f8f8f8;
@@ -43,6 +44,7 @@
   color: var(--text-color);
 }
 .input__field::placeholder {
+  color: var(--c-placeholder);
 }
 
 .input__label {

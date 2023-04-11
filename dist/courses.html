@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Курсы</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230411221453" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230411231844" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -645,7 +645,63 @@
   </form>
 </div>
 
-<div id="modal-thanks" class="b_modal modal__content" data-closer-type="inner">
+<div id="modal-review" class="b_modal modal__content" data-closer-type="inner">
+  <button class="b_modal__closer"></button>
+  <h3 class="modal__title">
+    Оставить отзыв
+  </h3>
+  <p class="modal__desc">
+    Напишите о том, как проходило обучение, помогали ли вам кураторы, получили ли вы пользу от уроков
+  </p>
+  <form action="table" id="form-consult" class="form">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+
+      <input type="hidden" name="utm_source" value="">
+      <input type="hidden" name="utm_medium" value="">
+      <input type="hidden" name="utm_campaign" value=""><br>
+      <input type="hidden" name="utm_content" value=""><br>
+      <input type="hidden" name="utm_term" value=""><br>
+      <input type="hidden" name="referer" value="">
+      <input type="hidden" name="requestTime" value="">
+      <input type="hidden" name="requestSimpleSign" value="">
+    </div>
+    <fieldset class="form__fieldset">
+      <label class="input input-name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Имя"
+    autocomplete="name"
+  />
+</label>
+
+      <label class="input">
+        <input
+          class="input__field"
+          name="user_course"
+          type="text"
+          placeholder="Курс"
+        />
+      </label>
+      <label class="textarea">
+  <textarea class="textarea__field" placeholder="Текстовое поле для рассказа подлиннее"></textarea>
+</label>
+
+    </fieldset>
+    <button class="button-primary button-primary--invert modal__button">
+      <svg class="button__icon">
+        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+      </svg>
+      <span class="button__text">Отправить</span>
+    </button>
+  </form>
+</div>
+
+<div id="modal-success-consult" class="b_modal modal__content" data-closer-type="inner">
   <svg class="modal__icon">
     <use xlink:href="./img/common/status-ok.svg#ok" />
   </svg>
@@ -657,6 +713,40 @@
       Отзыв на сайте покажется после предварительной модерации.
     </p>
   </div>
+  <button class="button-primary button-primary--invert modal__button"data-b_modal-close="modal-success-consult">
+    <span class="button__text">Закрыть</span>
+  </button>
+</div>
+ 
+<div id="modal-success-review" class="b_modal modal__content" data-closer-type="inner">
+  <svg class="modal__icon">
+    <use xlink:href="./img/common/status-ok.svg#ok" />
+  </svg>
+  <div class="modal__info">
+    <h3 class="modal__title">
+      Ваш отзыв на курс отправлен!
+    </h3>
+    <p class="modal__desc">
+      Отзыв на&nbsp;сайте покажется после&nbsp;предварительной модерации.
+    </p>
+  </div>
+  <button class="button-primary button-primary--invert modal__button" data-b_modal-close="modal-success-review">
+    <span class="button__text">Закрыть</span>
+  </button>
+</div>
+ 
+<div id="modal-error" class="b_modal modal__content" data-closer-type="inner">
+  <svg class="modal__icon">
+    <use xlink:href="./img/common/status-fail.svg#fail" />
+  </svg>
+  <div class="modal__info">
+    <h3 class="modal__title">
+      Что-то пошло не&nbsp;так
+    </h3>
+    <p class="modal__desc">
+      Извините, у&nbsp;нас&nbsp;какая-то ошибка на&nbsp;сайте. Пожалуйста, напишите нам в&nbsp;тех.поддержку
+    </p>
+  </div>
   <button class="button-primary button-primary--invert modal__button">
     <span class="button__text">Закрыть</span>
   </button>
@@ -666,6 +756,6 @@
 
     </div>
 
-    <script src="./js/bundle.min.js?_v=20230411221453"></script>
+    <script src="./js/bundle.min.js?_v=20230411231844"></script>
   </body>
 </html>

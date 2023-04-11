@@ -1,6 +1,10 @@
 .page-error {
   padding-top: 30rem;
   padding-bottom: 10rem;
+
+  @media (max-width: $tablet) {
+    padding-top: 10rem;
+  }
 }
 
 .section-error {
@@ -12,16 +16,20 @@
     margin-bottom: 2.2rem;
   }
 }
+
 .section-error__container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 0;
-  padding-right: 0;
 
   @media (max-width: $tablet) {
     flex-direction: column;    
   }
+}
+
+main:not(.page-error) .section-error__container {
+  padding-left: 0;
+  padding-right: 0;
 }
 .section-error__status {
   font-family: var(--ff-title);

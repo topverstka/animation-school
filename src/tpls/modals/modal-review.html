@@ -1,0 +1,43 @@
+<div id="modal-review" class="b_modal modal__content" data-closer-type="inner">
+  <button class="b_modal__closer"></button>
+  <h3 class="modal__title">
+    Оставить отзыв
+  </h3>
+  <p class="modal__desc">
+    Напишите о том, как проходило обучение, помогали ли вам кураторы, получили ли вы пользу от уроков
+  </p>
+  <form action="table" id="form-consult" class="form">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+
+      <input type="hidden" name="utm_source" value="">
+      <input type="hidden" name="utm_medium" value="">
+      <input type="hidden" name="utm_campaign" value=""><br>
+      <input type="hidden" name="utm_content" value=""><br>
+      <input type="hidden" name="utm_term" value=""><br>
+      <input type="hidden" name="referer" value="">
+      <input type="hidden" name="requestTime" value="">
+      <input type="hidden" name="requestSimpleSign" value="">
+    </div>
+    <fieldset class="form__fieldset">
+      @@include('../inputs/name.html')
+      <label class="input">
+        <input
+          class="input__field"
+          name="user_course"
+          type="text"
+          placeholder="Курс"
+        />
+      </label>
+      @@include('../inputs/textarea.html')
+    </fieldset>
+    <button class="button-primary button-primary--invert modal__button">
+      <svg class="button__icon">
+        <use xlink:href="./img/common/button-arrow-right.svg#arrow" />
+      </svg>
+      <span class="button__text">Отправить</span>
+    </button>
+  </form>
+</div>
