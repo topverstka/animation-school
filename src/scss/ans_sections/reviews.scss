@@ -378,8 +378,11 @@
 	height: 85.6rem;
 
 	@media (max-width: $tablet) {
-		height: 38.2rem;
+		height: 65.6rem;
 		margin-bottom: 	2.5rem;
+	}
+	@media (max-width: $mobile-l) {
+		height: 38.2rem;
 	}
 }
 .reviews-card__video-play {

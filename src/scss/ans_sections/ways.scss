@@ -56,8 +56,11 @@
 	height: 29.8rem;
 
 	@media (max-width: $tablet) {
-		height: 22.6rem;
 		margin-bottom: 	3.5rem;
+		height: 30.8rem;
+	}
+	@media (max-width: $mobile-l) {
+		height: 22.6rem;
 	}
 }
 

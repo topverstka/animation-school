@@ -61,6 +61,7 @@
 		z-index: -1;
 		// display: none;	
 		transform: translateY(-200%);
+		overflow: auto;
 	}
 }
 .header--opened .header__menu {
@@ -111,6 +112,7 @@
 
 	@media (max-width: $tablet) {
 		flex-wrap: wrap;
+		margin-top: 3rem;
 	}
 }
 .header__socials {
@@ -123,9 +125,13 @@
 }
 .header__button-consult {
 	flex-grow: 1;
-	margin-top: 1.4rem;
+
 	@media (min-width: $tablet+ 1) {
 		display: none;
+	}
+
+	@media (max-width: $mobile-l) {
+		margin-top: 1.4rem;
 	}
 }
 
@@ -136,7 +142,13 @@
 		--button-bg: #222222;
 		flex-grow: 1;
 		align-self: stretch;
+		display: flex;
 	}
+
+	@media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+		margin-right: 1rem;
+	}
+	
 }
 .header__button-phone .button__text {
 	@media (max-width: $tablet) {

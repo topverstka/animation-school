@@ -159,8 +159,12 @@
 
   @media (max-width: $tablet) {
   	transform: scale(1.1) translate(1.1rem, 2.2rem);
-  	height: 20.8rem;
   	overflow: hidden;
+  	height: 40.8rem;
+  }
+
+  @media (max-width: $mobile-l) {
+  	height: 20.8rem;
   }
 }
 
@@ -177,13 +181,17 @@
   right: 4.5rem;
 
   @media (max-width: $tablet) {
-  	top: 26.8rem;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     display: block;
     text-align: center;
+  	top: 46.8rem;
+  }
+
+  @media (max-width: $mobile-l) {
+  	top: 26.8rem;
   }
 }
 .doubt--bottom .doubt__link br:last-child{

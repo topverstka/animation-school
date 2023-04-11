@@ -5616,6 +5616,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     background-color: var(--bg-app);
     z-index: -1;
     transform: translateY(-200%);
+    overflow: auto;
   }
 }
 
@@ -5678,6 +5679,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (max-width: 992px) {
   .header__buttons {
     flex-wrap: wrap;
+    margin-top: 3rem;
   }
 }
 
@@ -5693,11 +5695,15 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .header__button-consult {
   flex-grow: 1;
-  margin-top: 1.4rem;
 }
 @media (min-width: 993px) {
   .header__button-consult {
     display: none;
+  }
+}
+@media (max-width: 450px) {
+  .header__button-consult {
+    margin-top: 1.4rem;
   }
 }
 
@@ -5710,6 +5716,12 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     --button-bg: #222222;
     flex-grow: 1;
     align-self: stretch;
+    display: flex;
+  }
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .header__button-phone {
+    margin-right: 1rem;
   }
 }
 
@@ -6273,6 +6285,9 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     font-size: 3.2rem;
     margin-bottom: 4.1rem;
     line-height: 1.2;
+    max-width: 50rem;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -6443,8 +6458,13 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .ways-card__media {
-    height: 22.6rem;
     margin-bottom: 3.5rem;
+    height: 30.8rem;
+  }
+}
+@media (max-width: 450px) {
+  .ways-card__media {
+    height: 22.6rem;
   }
 }
 
@@ -6948,8 +6968,13 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (max-width: 992px) {
   .doubt--bottom .doubt__pic {
     transform: scale(1.1) translate(1.1rem, 2.2rem);
-    height: 20.8rem;
     overflow: hidden;
+    height: 40.8rem;
+  }
+}
+@media (max-width: 450px) {
+  .doubt--bottom .doubt__pic {
+    height: 20.8rem;
   }
 }
 
@@ -6968,13 +6993,18 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .doubt--bottom .doubt__link {
-    top: 26.8rem;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     display: block;
     text-align: center;
+    top: 46.8rem;
+  }
+}
+@media (max-width: 450px) {
+  .doubt--bottom .doubt__link {
+    top: 26.8rem;
   }
 }
 
@@ -7035,6 +7065,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   justify-content: center;
 }
 @media (max-width: 992px) {
+  .teachers-card__media {
+    height: 49rem;
+  }
+}
+@media (max-width: 450px) {
   .teachers-card__media {
     height: 29rem;
   }
@@ -7835,8 +7870,13 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .reviews-card__video {
-    height: 38.2rem;
+    height: 65.6rem;
     margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .reviews-card__video {
+    height: 38.2rem;
   }
 }
 

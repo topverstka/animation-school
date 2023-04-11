@@ -44,6 +44,9 @@
 	justify-content: center;
 
 	@media (max-width: $tablet) {
+		height: 	49rem;
+	}
+	@media (max-width: $mobile-l) {
 		height: 	29rem;
 	}
 }
