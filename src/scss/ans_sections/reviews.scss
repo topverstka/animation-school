@@ -83,7 +83,7 @@
 	min-height: 53.9rem;
 	padding-top: 12rem;
 	margin-top: -3rem;
-	margin-bottom: 15.3rem;
+	margin-bottom: 12.3rem;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -171,6 +171,7 @@
 		align-items: center;	
 		text-align: 	left;
 		margin-bottom: 0;	
+		letter-spacing: normal;
 	}
 }
 .reviews__title:before {
@@ -190,7 +191,7 @@
 
 	@media (max-width: $tablet) {
 		position: static;	
-		margin-right: 1rem;	
+		margin-right: 1.4rem;	
 		--size: 5.5rem;
 		max-width: var(--size);
 		min-width: var(--size);
@@ -223,7 +224,7 @@
 	}
 }
 .reviews-card--second-half {
-	max-width: 83.4%;
+	max-width: 80.4%;
 	margin-left: auto;
 	margin-right: 0;
 
@@ -249,13 +250,15 @@
 	font-size: 5rem;
 	line-height: 1.1;
 	font-family: var(--ff-title);
+	font-weight: 500;
 	margin-bottom: 2rem;
-	letter-spacing: -0.06em;
+	letter-spacing: normal;
 
 	@media (max-width: $tablet) {
 		font-size: 	2rem;
 		line-height: 	initial;
 		font-weight: 500;	
+		margin-right: -0.1rem;
 		margin-bottom: 2rem;	
 	}
 }
@@ -319,10 +322,11 @@
 	}
 }
 .reviews-card__profile-info {
-	padding-top: 2rem;
+	padding-top: 2.8rem;
 
 	@media (max-width: $tablet) {
-		padding-top: 0.2rem;
+		padding-top: 0.4rem;
+		letter-spacing: normal;
 	}
 }
 .reviews-card__profile-name {
@@ -335,22 +339,31 @@
 }
 .reviews-card__profile-desc {
 	font-size: 1.6rem;
+  letter-spacing: normal;
+  margin-bottom: 0.7rem;
 
 	@media (max-width: $tablet) {
 		font-size: 	1.4rem;
 		margin-bottom: 2rem;	
+		padding-right: 1rem;
 	}
 }
+
 .reviews-card__profile-desc .link {
 	display: inline;
 	white-space: nowrap;
+	font-size: inherit;
+	letter-spacing: inherit;
+	line-height: inherit;
 }
+
 .reviews-card__socials {
 	position: absolute;
 	width: 100%;
 	bottom: -0.7rem;
 	right: -0.7rem;
 	justify-content: flex-end;
+	--icon-size: 4.5rem;
 }
 .reviews-card__socials .socials__link {
 	@media (max-width: $tablet) {
@@ -412,7 +425,7 @@
 
 .reviews__bottom {
   position: relative;
-  margin-top: -61rem;
+  margin-top: -64.4rem;
 	padding-top: 40rem;
 	background: linear-gradient(360deg, #FFFFFF 19.92%, rgba(255, 255, 255, 0) 100%);
 }
@@ -425,6 +438,13 @@
 	margin-bottom: 1.8rem;
 	max-width: 50rem;
 	width: 100%;
+  --button-icon-color: #222;
+  --button-icon-bg-color: var(--c-accent);
+
+  @media (min-width: $tablet + 1) {
+	  --fz-button: 2rem;
+	  --lh-button: 1.35;
+  }
 }
 .reviews__pop-link {
 	color: #222;

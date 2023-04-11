@@ -25,21 +25,22 @@
 											 ;
 	column-gap: 3rem;
 	row-gap: 3rem;
-	margin-bottom: 3.6rem;
+	margin-bottom: 6rem;
 
 	 @media (max-width: $tablet) {
 	 	display: flex;	
 	 	flex-direction: 	column;
 	 	column-gap: 0;
 	 	row-gap: 0;
-	 	margin-bottom: 	2.5rem;
+	 	margin-bottom: 	2.6rem;
 	 }
 }
+
 .students-works__heading {
 	grid-area: h;
-	padding-top: 6rem;
-  padding-left: 3rem;
-  padding-bottom: 1.7rem;
+  padding-top: 5.5rem;
+  padding-left: 2.4rem;
+  padding-bottom: 3rem;
 
   @media (max-width: $tablet) {
   	order: -1;
@@ -48,7 +49,25 @@
   	padding-bottom: 0;	
   }
 }
+
+.students-works__title {
+	margin-bottom: 6.9rem;
+
+	@media (max-width: $tablet) {
+		line-height: initial;
+		margin-bottom: 2.8rem;
+	}
+}
+
 .students-works__heading-button {
+  --lh-button: 1.7;
+  --fz-button: 1.8rem;
+  --button-icon-color: #222;
+  --button-icon-bg-color: var(--c-accent);
+  max-width: 50rem;
+  width: 100%;
+  letter-spacing: normal;
+
 	@media (max-width: $tablet) {
 		display: none;	
 	}
@@ -59,7 +78,7 @@
 
 	@media (max-width: $tablet) {
 		// height: 20rem;	
-		padding-bottom: 80%;
+		padding-bottom: 70.4%;//80%;
 		margin-bottom: 	1.5rem;
 	}
 }
@@ -86,7 +105,7 @@
 	}
 	@media (max-width: $tablet) {
 		// height: 27rem;
-		padding-bottom: 100%;
+		padding-bottom: 94.9%;//100%;
 	}
 }
 .stutents-works-card:nth-of-type(5) {
@@ -140,6 +159,13 @@
 }
 
 .students-works__button-more {
+  --button-icon-color: #222;
+  --button-icon-bg-color: var(--c-accent);
+  --lh-button: 1.45;
 	max-width: 50rem;
 	width: 100%;
+
+  @media (min-width: $tablet + 1) {
+		--fz-button: 2rem;
+  }
 }

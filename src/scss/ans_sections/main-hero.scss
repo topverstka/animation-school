@@ -1,20 +1,23 @@
 .main-hero {
 	position: relative;
 	padding-top: 21.1rem;
-	padding-bottom: 27.9rem;
+	padding-bottom: 28.1rem;
 	background-color: var(--bg-dark);
 	color: var(--c-text-on);
 	overflow: hidden;
+
 	@media (max-width: $tablet) {
 		padding-top: 18.7rem;	
-		padding-bottom: 13.4rem;
+		padding-bottom: 13rem;
 		// padding-bottom: 12.7rem;
 	}
 }
+
 .main-hero__container {
 	position: relative;
 	z-index: 2;
 }
+
 .main-hero__title {
 	margin-top: 0;
 	margin-bottom: 10rem;
@@ -23,6 +26,7 @@
 	font-weight: 700;
 	line-height: 1;
 	letter-spacing: -0.03em;
+
 	@media (max-width: $tablet) {
 		text-align: center;	
 		font-size: 3.2rem;	
@@ -41,20 +45,24 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+
 	@media (max-width: $tablet) {
 		justify-content: center;	
 		flex-direction: column;
 	}
 }
+
 .main-hero__button {
 	max-width: 29.5rem;
 	width: 100%;
 	margin-right: 2.6rem;
+
 	@media (max-width: $tablet) {
 		margin-right: unset;
-		margin-bottom: 	2.6rem;
+		margin-bottom: 	3rem;
 	}
 }
+
 .main-hero__bg {
 	position: absolute;
 	left: 0;
@@ -65,10 +73,12 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
+
 	@media (max-width: $tablet) {
 		display: none;	
 	}
 }
+
 .main-hero__bg-media {
 	position: absolute;
 	width: 94.1rem;
@@ -76,7 +86,8 @@
 	border-radius: 99999px;
 	object-fit: cover;
 	transition: var(--tr-regular);
-	transform: rotate(7.21deg) translate(8rem, 9.5rem);
+	transform: rotate(7.21deg) translate(7.1rem, 9.7rem);
+
 	@media (max-width: $desktop-s) {
 		width: 84.1rem;
     height: 55.7rem;
@@ -93,5 +104,10 @@
 
 .main-hero__link {
 	--link-color: var(--c-text-on);
-	font-size: 	1.6rem;
+	font-size: 	1.8rem;
+
+	@media (max-width: $tablet) {
+		font-size: 1.6rem;
+		letter-spacing: normal;
+	}
 }

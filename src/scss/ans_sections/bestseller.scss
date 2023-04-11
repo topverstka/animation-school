@@ -1,10 +1,10 @@
 .bestseller {
 	background-color: var(--c-accent);
-	// padding-top: 	10rem;
-	// padding-bottom: 10rem;
-	@media (max-width: $tablet) {
-		// padding-top: 3.5rem;	
-		// padding-bottom: 3.5rem;	
+}
+
+.bestseller__title {
+	@media (min-width: $tablet + 1) {
+		margin-bottom: 8.2rem;
 	}
 }
 
@@ -21,7 +21,7 @@
 }
 
 .bestseller-card {
-	padding: 5rem 5rem 4rem 5rem; 
+	padding: 5rem 5rem 3.7rem 5rem; 
 	background-color: #fff;
 	display: grid;
 	grid-template-columns: auto minmax(28.4rem, 57.1rem);
@@ -38,6 +38,7 @@
 		border-radius: 2rem;
 	}
 }
+
 .bestseller-card__media {
 	order: 1;
 	position: absolute;
@@ -60,6 +61,7 @@
 		-webkit-clip-path: ellipse(75% 95% at 50% 5%);
 	}
 }
+
 .bestseller-card__media:after {
 	content: "";
 	position: absolute;
@@ -87,6 +89,7 @@
 	width: 100%;
 	height: 100%;
 }
+
 .bestseller-card__img {
 	display: block;
 	width: 100%;
@@ -107,8 +110,10 @@
 		font-size: 	2.4rem;
 		line-height: initial;
 		margin-bottom: 1.5rem;	
+		letter-spacing: normal;
 	}
 }
+
 .bestseller-card__desc {
 	font-size: 2rem;
 	line-height: 1.45;
@@ -122,6 +127,7 @@
 		margin-bottom: 2rem;	
 	}
 }
+
 .bestseller__bottom {
 	display: flex;
 	align-items: flex-end;
@@ -131,18 +137,28 @@
 		flex-direction: column-reverse;
 	}
 }
+
 .bestseller-card__button {
 	margin-right: 9rem;
 	max-width: 24.9rem;
 	width: 100%;
 
+	@media (min-width: $tablet + 1) {
+		margin-bottom: 0.4rem;
+    margin-left: -0.4rem;
+	}
+
 	@media (max-width: $tablet) {
-		margin-right: 	0;
+		--fz-button: 1.6rem;
+		--lh-button: 1;
 		display: flex;
-		margin-left: auto;
-		margin-right: auto;
+    margin-left: -0.9rem;
+    margin-right: -0.9rem;
+    max-width: initial;
+    width: calc(100% + 1.8rem);
 	}
 }
+
 .bestseller-card__button .button__icon {
 	@media (max-width: $tablet) {
 		display: none;	
@@ -160,13 +176,14 @@
 		margin-top: 0;	
 		display: grid;	
 		grid-template-columns: 1fr 1fr;
-		column-gap: 1.5rem;
+		column-gap: 0.5rem;
 		row-gap: 1.5rem;
-		margin-bottom: 3rem;	
+		margin-bottom: 2.8rem;	
 		width: 100%;	
 		padding-top: 0;
 	}
 }
+
 .bestseller-card__stat {
 	margin-right: 5rem;
 
@@ -174,6 +191,7 @@
 		margin-right: 0;	
 	}
 }
+
 .bestseller-card__stat-title {
 	font-weight: 400;
 	font-size: 2rem;
@@ -185,6 +203,7 @@
 		font-size: 1.6rem;
 	}
 }
+
 .bestseller-card__stat-value {
 	font-family: var(--ff-title);
 	font-weight: 700;
@@ -202,10 +221,19 @@
 	max-width: 50rem;
 	width: 100%;
 
+	@media (min-width: $tablet + 1) {
+	  --fz-button: 2rem;
+	  --lh-button: 1.5;
+	}
+
   @media (max-width: $tablet) {
+    --fz-button: 1.8rem;
+    --lh-button: 1.55;
     padding-left:   2.25rem;
     padding-right:  2.25rem;
+    letter-spacing: normal;
   }
+
   @media (max-width: $mobile-l) {
     justify-content: space-between; 
   }

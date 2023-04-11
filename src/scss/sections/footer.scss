@@ -176,6 +176,9 @@
 	margin-left: 1ch;
 	font-family: var(--ff-regular);
 	--link-color: ;
+	font-size: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
 
 	@media (max-width: $tablet) {
 		font-size: 	1.4rem;

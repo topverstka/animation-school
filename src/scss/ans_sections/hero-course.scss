@@ -1,6 +1,6 @@
 .hero-course {
 	padding-top: 18rem;
-	padding-bottom: 7.1rem;
+	padding-bottom: 5.6rem;//7.1rem;
 
 	@media (max-width: $tablet) {
 		padding-top: 9rem;
@@ -63,14 +63,15 @@
 }
 .hero-course__content-media {
 	grid-area: media;
-	transform: translateY(-6rem);
+	transform: translateY(-5rem);
 	height: 100%;
 	width: 100%;
 	position: relative;
 	z-index: 1;
-	border-radius: 1.7rem;
+	border-radius: 2.7rem;
 
 	@media (max-width: $tablet) {
+		border-radius: 1.7rem;
 		transform: none;
 		height: 22rem;
 		margin-bottom: 3rem;
@@ -92,7 +93,7 @@
 	position: relative;
 	z-index: 2;
 	grid-area: meta;
-	margin-top: -14.4rem;
+	margin-top: -12.4rem;
 	display: grid;
 	justify-self: center;
 	grid-template-columns: 1fr 1fr;
@@ -116,9 +117,18 @@
 	column-gap: 1.7rem;
 	position: relative;
 }
+
+.hero-course__meta-card-media {
+	border-radius: 1.5rem;
+}
+
+.hero-course__meta-card-pic {
+	border-radius: inherit;
+}
+
 .hero-course__meta-card-img {
 	width: 100%;
-	border-radius: 1.5rem;
+	border-radius: inherit;
 }
 
 .hero-course__meta-card-suptitle {

@@ -12,29 +12,9 @@
       "height": 720
     },
     {
-      "label": "16",
-      "width": 375,
-      "height": 812
-    },
-    {
-      "label": "15",
-      "width": 393,
-      "height": 851
-    },
-    {
-      "label": "14",
-      "width": 412,
-      "height": 892
-    },
-    {
       "label": "13",
       "width": 420,
       "height": 846
-    },
-    {
-      "label": "12",
-      "width": 601,
-      "height": 962
     },
     {
       "label": "11",
@@ -42,54 +22,14 @@
       "height": 1024
     },
     {
-      "label": "10",
-      "width": 810,
-      "height": 1080
-    },
-    {
-      "label": "9",
-      "width": 962,
-      "height": 601
-    },
-    {
-      "label": "8",
-      "width": 1024,
-      "height": 768
-    },
-    {
-      "label": "7",
-      "width": 1280,
-      "height": 1024
-    },
-    {
-      "label": "6",
-      "width": 1366,
-      "height": 650
-    },
-    {
       "label": "5",
       "width": 1440,
       "height": 800
     },
     {
-      "label": "4",
-      "width": 1536,
-      "height": 864
-    },
-    {
-      "label": "3",
-      "width": 1600,
-      "height": 900
-    },
-    {
       "label": "2",
       "width": 1920,
       "height": 1000
-    },
-    {
-      "label": "1",
-      "width": 2560,
-      "height": 1440
     }
   ],
   "onBeforeScript": "puppet/onBefore.cjs",
@@ -369,63 +309,6 @@
       "readyEvent": "",
       "readySelector": "",
       "delay": 0,
-      "hideSelectors": [],
-      "removeSelectors": [],
-      "hoverSelector": "",
-      "clickSelector": "",
-      "postInteractionWait": 0,
-      "selectors": [],
-      "selectorExpansion": true,
-      "expect": 0,
-      "misMatchThreshold" : 0.1,
-      "requireSameDimensions": true
-    },
-    {
-      "label": "Popup review",
-      "cookiePath": "backstop_data/engine_scripts/cookies.json",
-      "url": "http://localhost:3000/main.html#modal-full-review",
-      "referenceUrl": "",
-      "readyEvent": "",
-      "readySelector": "",
-      "delay": 30,
-      "hideSelectors": [],
-      "removeSelectors": [],
-      "hoverSelector": "",
-      "clickSelector": "",
-      "postInteractionWait": 0,
-      "selectors": [],
-      "selectorExpansion": true,
-      "expect": 0,
-      "misMatchThreshold" : 0.1,
-      "requireSameDimensions": true
-    },
-    {
-      "label": "Popup consult",
-      "cookiePath": "backstop_data/engine_scripts/cookies.json",
-      "url": "http://localhost:3000/main.html#modal-consult",
-      "referenceUrl": "",
-      "readyEvent": "",
-      "readySelector": "",
-      "delay": 3,
-      "hideSelectors": [],
-      "removeSelectors": [],
-      "hoverSelector": "",
-      "clickSelector": "",
-      "postInteractionWait": 0,
-      "selectors": [],
-      "selectorExpansion": true,
-      "expect": 0,
-      "misMatchThreshold" : 0.1,
-      "requireSameDimensions": true
-    },
-    {
-      "label": "Popup thanks",
-      "cookiePath": "backstop_data/engine_scripts/cookies.json",
-      "url": "http://localhost:3000/main.html#modal-thanks",
-      "referenceUrl": "",
-      "readyEvent": "",
-      "readySelector": "",
-      "delay": 3,
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",

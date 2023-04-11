@@ -47,10 +47,8 @@
 }
 
 .students-studios-card:nth-child(odd) .students-studios-card__media {
-	transform: rotate(-3deg);
 
 	@media (max-width: $tablet) {
-		transform: none;
 	}
 }
 
@@ -99,6 +97,11 @@
 	width: 100%;
 	position: relative;
 	z-index: 2;
+	transform: rotate(-3deg);
+
+	@media (max-width: $tablet) {
+		transform: none;
+	}
 }
 .students-studios-card__img {
 	height: 100%;
