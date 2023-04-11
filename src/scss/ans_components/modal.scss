@@ -48,6 +48,13 @@
 		font-size: 1.4rem;
 		margin-bottom: 1.5rem;
 	}
+
+	
+	@media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 

@@ -15,8 +15,9 @@
   z-index: var(--z-b_modal);
   display: block;
   width: 100%;
-  height: calc(100 * 1vh);
-  max-height: 1000px;
+  // height: calc(100 * 1vh);
+  // max-height: 1000px;
+  height: 100%;
   pointer-events: none;
 }
 .b_modal__overlay {
@@ -24,8 +25,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100 * 1vh);
-  max-height: 1000px;
+  // height: calc(100 * 1vh);
+  // max-height: 1000px;
+  height: 100%;
   pointer-events: none;
   background-color: var(--bg-b_modal-overlay);
   opacity: 0;
