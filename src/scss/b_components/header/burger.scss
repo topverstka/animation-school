@@ -21,10 +21,6 @@
   background: var(--c-burger-line, var(--c-text-regular));
   transition: var(--tr);
   border-radius: 2rem;
-  // @media (min-width: 602px) and (max-width: 768px) {
-  //   width: 50%;
-  //   height: 4px;
-  // }
 }
 
 .burger span:nth-child(1) {
@@ -36,9 +32,8 @@
 }
 
 .burger span:nth-child(3) {
-  transform: translate(-75%, calc(-50% + 3px));
-  --line-width: 40%;
-  // transform: translate(-50%, calc(-50% + 3px));
+  transform: translate(-50%, calc(-50% + 3px)) scaleX(0.6);
+  transform-origin: left;
 }
 
 .burger.is-active span:nth-child(1) {
@@ -48,6 +43,6 @@
   width: 0;
 }
 .burger.is-active span:nth-child(3) {
-  transform: translate(-50%, calc(-50% - 3px)) rotate(-45deg);
-  --line-width: 61.5%;
+  transform: translate(-50%, calc(-50% - 4px)) rotate(-45deg);
+  transform-origin: unset;
 }

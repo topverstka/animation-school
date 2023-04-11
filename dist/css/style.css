@@ -894,8 +894,8 @@
 }
 
 .burger span:nth-child(3) {
-  transform: translate(-75%, calc(-50% + 3px));
-  --line-width: 40%;
+  transform: translate(-50%, calc(-50% + 3px)) scaleX(0.6);
+  transform-origin: left;
 }
 
 .burger.is-active span:nth-child(1) {
@@ -907,8 +907,8 @@
 }
 
 .burger.is-active span:nth-child(3) {
-  transform: translate(-50%, calc(-50% - 3px)) rotate(-45deg);
-  --line-width: 61.5%;
+  transform: translate(-50%, calc(-50% - 4px)) rotate(-45deg);
+  transform-origin: unset;
 }
 
 :root {
@@ -7262,6 +7262,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   align-items: center;
   width: 100%;
   height: 100%;
+  cursor: url("../img/common/zoom-cursor.png"), zoom-in;
 }
 
 .students-works-card__play {
