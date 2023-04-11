@@ -5,3 +5,4 @@ package-lock.json
 convert-images/
 desktop.txt
 # dist/
+backstop_data/
