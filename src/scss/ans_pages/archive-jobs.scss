@@ -10,3 +10,10 @@
 		padding-bottom: 12rem;
 	}
 }
+
+
+.post-type-archive-jobs .hero__content-pic {
+	@media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+		transform: scale(1.2) translate(11.7rem, 0.1rem);	
+	}
+}

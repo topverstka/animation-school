@@ -44,9 +44,12 @@
 .shifter__button:not(.button--no-mobile-icon) {
 	@media (max-width: $tablet) {
 		text-align: left;
-		padding: 0.8rem 4.5rem;
+		padding: 0.8rem 8.5rem;
 	  line-height: 1.3;
 	  letter-spacing: normal;
+	}
+	@media (max-width: $mobile-l) {
+		padding: 0.8rem 4.5rem;
 	}
 }
 

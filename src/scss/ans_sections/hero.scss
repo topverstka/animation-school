@@ -82,6 +82,13 @@
 		position: static;
 		z-index: initial;
 	}
+
+	@media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+	  height: 23rem;
+	  margin-left: auto;
+	  margin-top: -10rem;
+	  margin-bottom: -2rem;
+	}
 }
 
 .hero--image-right .hero__content-media {

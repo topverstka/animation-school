@@ -146,13 +146,15 @@
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
-	// margin-bottom: 2.6rem;
 	margin-bottom: 4.5rem;
 
 	@media (max-width: $tablet) {
-		justify-content: space-between;
 		margin-right: -1.4rem;
 		margin-bottom: 0.7rem;
+	}
+
+	@media (max-width: $mobile-l) {
+		justify-content: space-between;
 	}
 }
 
@@ -172,8 +174,11 @@
 	@media (max-width: $tablet) {
 		font-size: 1.4rem;
 		padding: 0.85rem 1.09rem;
-		margin-right: 0;
 		letter-spacing: initial;
+	}
+
+	@media (max-width: $mobile-l) {
+		margin-right: 0;
 	}
 }
 

@@ -2,6 +2,19 @@
 
 }
 
+.post-type-archive-teachers .hero__content-media {
+	@media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+    margin-top: -8rem;
+    margin-bottom: -7.2rem;
+	}
+}
+	
+.post-type-archive-teachers .hero__content-pic {
+	@media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+		transform: scale(1.5) translate(6.8rem, 0.1rem);
+	}
+}
+
 .teachers__title {
 	@media (max-width: $tablet) {
 		text-align: 	left;
@@ -45,6 +58,7 @@
 
 	@media (max-width: $tablet) {
 		height: 	49rem;
+		height: 	29rem;
 	}
 	@media (max-width: $mobile-l) {
 		height: 	29rem;

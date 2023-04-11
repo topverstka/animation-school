@@ -17,9 +17,12 @@
   justify-content: space-between;
 
 	@media (max-width: $tablet) {
-		--image-height: 22rem;
+		--image-height: 30rem;
 		--padding-horizontal: 2rem;
 		padding-bottom: 1.6rem;	
+	}
+	@media (max-width: $mobile-l) {
+		--image-height: 22rem;
 	}
 }
 .professions-card:last-child {

@@ -1,3 +1,10 @@
+.post-type-archive-blog .hero__content-media{
+	@media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+		height: 17rem;
+	    margin-top: -5rem;
+	}
+}
+
 .blog {
 	background-color: #f4f5f6;
 }

@@ -8,7 +8,11 @@
 	padding-bottom: 0;
 
 	@media (max-width: $tablet) {
+		--image-height: 34rem;
 		grid-template-columns: 100%;
+	}
+
+	@media (max-width: $mobile-l) {
 		--image-height: 24rem;
 	}
 }
@@ -39,6 +43,10 @@
 	padding-right: 4.8rem;
 
 	@media (max-width: $tablet) {
+		padding: 20rem 1rem;
+	}
+
+	@media (max-width: $mobile-l) {
 		padding: 13rem 1rem;
 	}
 }

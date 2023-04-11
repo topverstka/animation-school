@@ -1,3 +1,16 @@
+@keyframes cardloading {
+	0% {
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.2;
+	}
+}
+
+
 .courses-card-skeleton {
 	--image-height: 39.4rem;
 	--padding-horizontal: 3rem;
@@ -15,6 +28,7 @@
 	display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: cardloading 1.3s infinite;
 
 	@media (max-width: $tablet) {
 		--image-height: 22rem;
@@ -33,6 +47,7 @@
 	margin-bottom: 4rem;
 	height: var(--image-height);
 	background-color: #EBEBEB;
+	border-radius: var(--brad) var(--brad) 0 0;
 
 	@media (max-width: $tablet) {
 		margin-bottom: 	1.9rem;

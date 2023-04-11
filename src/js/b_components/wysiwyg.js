@@ -21,7 +21,7 @@ function getSwiperConfig(swpierClasses) {
 	    crossFade: true
 	  },
 	  breakpoints: {
-	  	992: {
+	  	993: {
 			  slidesPerView: "auto",
 	  	}
 	  }

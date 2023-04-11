@@ -5,8 +5,11 @@
 	--padding-horizontal: 0rem;
 
 	@media (max-width: $tablet) {
-		--image-height: 22rem;
+		--image-height: 32rem;
 		padding-bottom: 0;
+	}
+	@media (max-width: $mobile-l) {
+		--image-height: 22rem;
 	}
 }
 

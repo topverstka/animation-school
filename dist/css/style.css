@@ -1182,10 +1182,16 @@
   line-height: 120%;
   overflow: hidden;
   width: 100%;
+  --mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.25) 0.9rem, rgb(0, 0, 0) 1.8rem, rgb(0, 0, 0) calc(100% - 1.8rem), rgba(0, 0, 0, 0.25) calc(100% - 0.9rem), rgba(0, 0, 0, 0));
+  -webkit-mask-image: var(--mask);
+  mask: var(--mask);
 }
 @media (max-width: 992px) {
   .breadcrumbs {
     font-size: 1.4rem;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+    width: calc(100% + 3.2rem);
   }
 }
 
@@ -1202,13 +1208,14 @@
   justify-content: flex-start;
   overflow: auto;
   padding-bottom: 2rem;
-  --mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.25) 0.9rem, rgb(0, 0, 0) 1.8rem, rgb(0, 0, 0) calc(100% - 1.8rem), rgba(0, 0, 0, 0.25) calc(100% - 0.9rem), rgba(0, 0, 0, 0));
   -webkit-mask-image: var(--mask);
   mask: var(--mask);
   padding-left: 1.8rem;
   padding-right: 1.8rem;
   margin-left: -1.8rem;
   margin-right: -1.8rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .breadcrumbs__item {
@@ -1659,9 +1666,13 @@
 }
 @media (max-width: 992px) {
   .ans-card__chips {
-    justify-content: space-between;
     margin-right: -1.4rem;
     margin-bottom: 0.7rem;
+  }
+}
+@media (max-width: 450px) {
+  .ans-card__chips {
+    justify-content: space-between;
   }
 }
 
@@ -1682,8 +1693,12 @@
   .ans-card__chips-bullet {
     font-size: 1.4rem;
     padding: 0.85rem 1.09rem;
-    margin-right: 0;
     letter-spacing: initial;
+  }
+}
+@media (max-width: 450px) {
+  .ans-card__chips-bullet {
+    margin-right: 0;
   }
 }
 
@@ -1720,9 +1735,14 @@
 }
 @media (max-width: 992px) {
   .courses-card {
-    --image-height: 22rem;
+    --image-height: 32rem;
     --padding-horizontal: 2rem;
     padding-bottom: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .courses-card {
+    --image-height: 22rem;
   }
 }
 
@@ -1899,6 +1919,17 @@
   }
 }
 
+@keyframes cardloading {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
 .courses-card-skeleton {
   --image-height: 39.4rem;
   --padding-horizontal: 3rem;
@@ -1916,6 +1947,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: cardloading 1.3s infinite;
 }
 @media (max-width: 992px) {
   .courses-card-skeleton {
@@ -1937,6 +1969,7 @@
   margin-bottom: 4rem;
   height: var(--image-height);
   background-color: #EBEBEB;
+  border-radius: var(--brad) var(--brad) 0 0;
 }
 @media (max-width: 992px) {
   .courses-card-skeleton__media {
@@ -2661,9 +2694,14 @@
 }
 @media (max-width: 992px) {
   .professions-card {
-    --image-height: 22rem;
+    --image-height: 30rem;
     --padding-horizontal: 2rem;
     padding-bottom: 1.6rem;
+  }
+}
+@media (max-width: 450px) {
+  .professions-card {
+    --image-height: 22rem;
   }
 }
 
@@ -2849,8 +2887,13 @@
 }
 @media (max-width: 992px) {
   .students-portfolio-card {
-    --image-height: 22rem;
+    --image-height: 32rem;
     padding-bottom: 0;
+  }
+}
+@media (max-width: 450px) {
+  .students-portfolio-card {
+    --image-height: 22rem;
   }
 }
 
@@ -2959,7 +3002,12 @@
 }
 @media (max-width: 992px) {
   .blog-card {
+    --image-height: 34rem;
     grid-template-columns: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .blog-card {
     --image-height: 24rem;
   }
 }
@@ -2993,6 +3041,11 @@
   padding-right: 4.8rem;
 }
 @media (max-width: 992px) {
+  .blog-card--wide .blog-card__info {
+    padding: 20rem 1rem;
+  }
+}
+@media (max-width: 450px) {
   .blog-card--wide .blog-card__info {
     padding: 13rem 1rem;
   }
@@ -6086,6 +6139,14 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     z-index: initial;
   }
 }
+@media (min-width: 451px) and (max-width: 992px) {
+  .hero__content-media {
+    height: 23rem;
+    margin-left: auto;
+    margin-top: -10rem;
+    margin-bottom: -2rem;
+  }
+}
 
 @media (min-width: 993px) {
   .hero--image-right .hero__content-media {
@@ -7033,6 +7094,19 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
 }
 
+@media (min-width: 451px) and (max-width: 992px) {
+  .post-type-archive-teachers .hero__content-media {
+    margin-top: -8rem;
+    margin-bottom: -7.2rem;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 992px) {
+  .post-type-archive-teachers .hero__content-pic {
+    transform: scale(1.5) translate(6.8rem, 0.1rem);
+  }
+}
+
 @media (max-width: 992px) {
   .teachers__title {
     text-align: left;
@@ -7080,6 +7154,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (max-width: 992px) {
   .teachers-card__media {
     height: 49rem;
+    height: 29rem;
   }
 }
 @media (max-width: 450px) {
@@ -8014,6 +8089,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (max-width: 992px) {
   .hero-course .breadcrumbs {
     margin-bottom: 3rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 }
 
@@ -8789,9 +8866,14 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (max-width: 992px) {
   .shifter__button:not(.button--no-mobile-icon) {
     text-align: left;
-    padding: 0.8rem 4.5rem;
+    padding: 0.8rem 8.5rem;
     line-height: 1.3;
     letter-spacing: normal;
+  }
+}
+@media (max-width: 450px) {
+  .shifter__button:not(.button--no-mobile-icon) {
+    padding: 0.8rem 4.5rem;
   }
 }
 
@@ -9792,7 +9874,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   border-radius: 2rem;
   color: #fff;
 }
-@media (max-width: 450px) {
+@media (max-width: 992px) {
   .course-order__meta {
     grid-template-columns: 100%;
   }
@@ -10087,6 +10169,13 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (max-width: 992px) {
   .students-portfolio .search__filters {
     padding-right: 2.8rem;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 992px) {
+  .post-type-archive-blog .hero__content-media {
+    height: 17rem;
+    margin-top: -5rem;
   }
 }
 
@@ -11205,7 +11294,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   margin-bottom: 9rem;
   line-height: 1;
 }
-@media (max-width: 450px) {
+@media (max-width: 992px) {
   .section-error__status {
     font-size: 3.2rem;
     text-align: center;
@@ -11434,6 +11523,12 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (min-width: 993px) {
   .post-type-archive-jobs .hero__content {
     padding-bottom: 12rem;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 992px) {
+  .post-type-archive-jobs .hero__content-pic {
+    transform: scale(1.2) translate(11.7rem, 0.1rem);
   }
 }
 
