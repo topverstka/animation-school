@@ -246,7 +246,7 @@
 	}
 }
 
-.reviews-card.reviews-card--second-half .reviews-card--has-video {
+.reviews-card--second-half.reviews-card--has-video {
 	transform: rotate(3deg);
 	
 	@media (max-width: $tablet) {
@@ -407,7 +407,7 @@
 .reviews-card.reviews-card--second-half .reviews-card__video-play {
 	align-items: flex-end;
 	padding-bottom: 12.4rem;
-	
+
 	@media (max-width: $tablet) {
 		align-items: center;	
 		padding-bottom: 0;	

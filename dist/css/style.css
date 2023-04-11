@@ -7861,11 +7861,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
 }
 
-.reviews-card.reviews-card--second-half .reviews-card--has-video {
+.reviews-card--second-half.reviews-card--has-video {
   transform: rotate(3deg);
 }
 @media (max-width: 992px) {
-  .reviews-card.reviews-card--second-half .reviews-card--has-video {
+  .reviews-card--second-half.reviews-card--has-video {
     transform: none;
   }
 }
