@@ -45,10 +45,10 @@
         </section>
 
 
-        <section class="section blog">
+        <div class="section blog">
           <div class="container blog__container">
             <div class="search">
-              <form action="" class="search__form">
+              <form action="#" class="search__form">
                 <div class="search__scroller">
                   <fieldset class="search__filters">
                     @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Все'})
@@ -88,7 +88,7 @@
                 @@include('tpls/cards/blog-card.html', {title: "Как создаются 3D персонажи", img: "blog-img-15.jpg", mobile: "blog-img-15-mobile.jpg", className: "blog-card--wide"})
               </div>
               <div class="section-buttons blog__content-buttons">
-                <button class="button-primary section-gallery-more blog__content-more-button" href="#">
+                <button class="button-primary section-gallery-more blog__content-more-button" type="button">
                   <svg class="button__icon">
                     <use xlink:href="./img/common/refresh-icon.svg#refresh" />
                   </svg>
@@ -97,7 +97,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
       </main>
 

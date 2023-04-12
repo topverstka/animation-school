@@ -41,10 +41,10 @@
         </section>
 
 
-        <section class="section students-portfolio">
+        <div class="section students-portfolio">
           <div class="container students-portfolio__container">
             <div class="search">
-              <form action="" class="search__form">
+              <form action="#" class="search__form">
                 <div class="search__scroller">
                   <fieldset class="search__filters">
                     @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Скоро стат'})
@@ -69,7 +69,7 @@
                 @@include('tpls/cards/students-portfolio-card.html', {name: "Игорь Плехов", img: "page-students-work-6.jpg", desc: "Курс «3D анимация. Инсценировка» 2020 год"})
               </div>
               <div class="section-buttons students-portfolio__content-buttons">
-                <button class="button-primary section-gallery-more students-portfolio__content-more-button" href="#">
+                <button class="button-primary section-gallery-more students-portfolio__content-more-button" type="button">
                   <svg class="button__icon">
                     <use xlink:href="./img/common/refresh-icon.svg#refresh" />
                   </svg>
@@ -78,7 +78,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
       </main>
 

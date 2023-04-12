@@ -44,10 +44,10 @@
         </section>
 
 
-        <section class="section teachers">
+        <div class="section teachers">
           <div class="container teachers__container">
             <div class="search">
-              <form action="" class="search__form">
+              <form action="#" class="search__form">
                 <div class="search__scroller">
                   <fieldset class="search__filters">
                     @@include('tpls/inputs/chips-checkbox.html',{'caption': 'Все'})
@@ -77,7 +77,7 @@
                 @@include('tpls/cards/teachers-card.html', {img: "teacher-img-8.jpg"})
               </div>
               <div class="section-buttons teachers__content-buttons">
-                <button class="button-primary section-gallery-more teachers__content-more-button" href="#">
+                <button class="button-primary section-gallery-more teachers__content-more-button" type="button">
                   <svg class="button__icon">
                     <use xlink:href="./img/common/refresh-icon.svg#refresh" />
                   </svg>
@@ -86,7 +86,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
       </main>
 
