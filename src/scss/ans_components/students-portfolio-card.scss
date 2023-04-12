@@ -12,6 +12,11 @@
 		--image-height: 22rem;
 	}
 }
+.students-portfolio-card:hover .ans-card_video-play-button {
+	@media (any-hover:hover) {
+		background-color: var(--c-accent);
+	}
+}
 
 .students-portfolio-card__media {
 	margin-bottom: 2rem;
@@ -43,6 +48,15 @@
 .students-portfolio-card__category {
 	--link-color: var(--category-color);
 	--link-color-hover: var(--category-color-hover)
+}
+
+.students-portfolio-card__link {
+	transition: var(--tr-regular);
+}
+.students-portfolio-card__link:hover {
+	@media (any-hover:hover) {
+		color: var(--c-accent);
+	}
 }
 
 .students-portfolio-card__link:before {

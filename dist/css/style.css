@@ -2957,6 +2957,12 @@
   }
 }
 
+@media (any-hover: hover) {
+  .students-portfolio-card:hover .ans-card_video-play-button {
+    background-color: var(--c-accent);
+  }
+}
+
 .students-portfolio-card__media {
   margin-bottom: 2rem;
 }
@@ -2988,6 +2994,16 @@
 .students-portfolio-card__category {
   --link-color: var(--category-color);
   --link-color-hover: var(--category-color-hover) ;
+}
+
+.students-portfolio-card__link {
+  transition: var(--tr-regular);
+}
+
+@media (any-hover: hover) {
+  .students-portfolio-card__link:hover {
+    color: var(--c-accent);
+  }
 }
 
 .students-portfolio-card__link:before {
