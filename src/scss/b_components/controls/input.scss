@@ -66,8 +66,9 @@
 .input:last-of-type {
   margin-bottom: 0;
 }
-.input--invalid {
-  --border-color: #FF3B30 !important;
+.input--invalid:not(.input--focused) {
+  --text-color: var(--c-error);
+  // --border-color: #FF3B30 !important;
   // --label-color: var(--c-error);
   // --message-transform: scale(1);
   // --message-color: var(--c-error);

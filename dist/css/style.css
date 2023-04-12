@@ -45,6 +45,7 @@
   --c-text-bold: #000;
   --c-text-on: #fff;
   --c-text-button: #222222;
+  --c-error: #E5042C;
   --fancybox-accent-color: var(--c-accent);
   --bg-element: #F4F5F6;
   --bg-app: #fff;
@@ -737,8 +738,8 @@
   margin-bottom: 0;
 }
 
-.input--invalid {
-  --border-color: #FF3B30 !important;
+.input--invalid:not(.input--focused) {
+  --text-color: var(--c-error);
 }
 
 .input__icon {
@@ -2581,6 +2582,10 @@
 .form-select__input {
   position: absolute;
   transform: scale(0);
+}
+
+.form-select.input--invalid .form-select__toggle {
+  --c-text: var(--c-error);
 }
 
 .form-select__toggle {

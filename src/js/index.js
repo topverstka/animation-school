@@ -29,6 +29,7 @@ import "./ans_components/reivews.js";
 import "./ans_components/search.js";
 
 import "./b_components/wysiwyg.js";
+import "./b_components/controls/formich.js";
 
 
 // function s() {

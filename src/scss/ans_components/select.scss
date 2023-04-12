@@ -29,6 +29,10 @@
   transform: scale(0);
 }
 
+.form-select.input--invalid .form-select__toggle {
+  --c-text: var(--c-error);
+}
+
 .form-select__toggle {
   position: relative;
   padding: var(--padding);

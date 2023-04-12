@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Страница курса</title>
-    <link rel="stylesheet" href="./css/style.css?_v=20230411231844" />
+    <link rel="stylesheet" href="./css/style.css?_v=20230412121731" />
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no" />
@@ -1264,7 +1264,9 @@
 
                   <div class="form-select">
 	<div class="input__label">Откуда вы узнали о нас?</div>
-	<select name="from_source" class="form-select__input">
+	<select class="form-select__input"
+					name="from_source"
+					required>
 		<option value="Друзья">Друзья</option>
 		<option value="Реклама">Реклама</option>
 		<option value="Случайно">Случайно</option>
@@ -1289,7 +1291,7 @@
 </div>
                   <div class="checkbox">
 	<label class="checkbox__label">
-		<input type="checkbox" class="checkbox__input">
+		<input type="checkbox" class="checkbox__input" required>
 		<span class="checkbox__box"></span>
 	</label>
 	<span class="checkbox__caption">
@@ -1485,12 +1487,13 @@
     maxlength="25"
     minlength="10"
     autocomplete="tel"
+    required
   />
 </label>
 
       <div class="checkbox">
 	<label class="checkbox__label">
-		<input type="checkbox" class="checkbox__input">
+		<input type="checkbox" class="checkbox__input" required>
 		<span class="checkbox__box"></span>
 	</label>
 	<span class="checkbox__caption">
@@ -1551,7 +1554,10 @@
         />
       </label>
       <label class="textarea">
-  <textarea class="textarea__field" placeholder="Текстовое поле для рассказа подлиннее"></textarea>
+  <textarea
+    class="textarea__field"
+    placeholder="Текстовое поле для рассказа подлиннее"
+    required></textarea>
 </label>
 
     </fieldset>
@@ -1619,6 +1625,6 @@
 
     </div>
 
-    <script src="./js/bundle.min.js?_v=20230411231844"></script>
+    <script src="./js/bundle.min.js?_v=20230412121731"></script>
   </body>
 </html>
