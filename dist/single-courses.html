@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Страница курса</title>
-        <link rel="stylesheet" href="./css/style.css?_v=20230412125730">
+        <link rel="stylesheet" href="./css/style.css?_v=20230412130552">
 
     <!-- Отключить автодетект телефонов -->
     <meta name="format-detection" content="telephone=no">
@@ -151,7 +151,7 @@
           </div>
         </section>
 
-        <section class="section page-nav">
+        <div class="section page-nav">
           <div class="container page-nav__container">
             <div class="page-nav__links">
               <a href="#teacher" class="link page-nav__link"><span class="link__text">О преподавателе</span></a>
@@ -164,7 +164,7 @@
               <a href="#course-order" class="link page-nav__link"><span class="link__text">Стоимость</span></a>
             </div>
           </div>
-        </section>
+        </div>
 
         <section class="section for-who">
           <div class="container for-who__container">
@@ -359,7 +359,7 @@
                       </div>
                     </div>
                     <div class="reviews-card__profile-info">
-                      <h4 class="reviews-card__profile-name"></h4>
+                      <h4 class="reviews-card__profile-name">Вероника Хорева</h4>
                       <p class="reviews-card__profile-desc">Отучилась на 5 потоке курса <a href="#" class="link"><span class="link__text">2D моделирование</span></a></p>
                       <a href="#" class="reviews-card__profile-portfolio link"><span class="link__text">Работы ученицы</span></a>
                     </div>
@@ -815,7 +815,7 @@
             <h2 class="section-title features__title">Как будет проходить обучение?</h2>
 
             <div class="features-gallery">
-              <article class="features-card">
+              <figure class="features-card">
                 <div class="features-card__media">
                   <picture class="features-card__pic">
                     <img src="./img/course/features-img-1.jpg" alt="" class="features-card__img">
@@ -825,8 +825,8 @@
                   <span class="section-text--color">Платформа GetCourse</span>
                    с проверкой домашних заданий кураторов 
                 </p>
-              </article>
-              <article class="features-card">
+              </figure>
+              <figure class="features-card">
                 <div class="features-card__media">
                   <picture class="features-card__pic">
                     <img src="./img/course/features-img-2.jpg" alt="" class="features-card__img">
@@ -836,8 +836,8 @@
                   <span class="section-text--color">Общий чат в Discord</span>
                    с сокурсниками и преподавателями
                 </p>
-              </article>
-              <article class="features-card">
+              </figure>
+              <figure class="features-card">
                 <div class="features-card__media">
                   <picture class="features-card__pic">
                     <img src="./img/course/features-img-3.jpg" alt="" class="features-card__img">
@@ -847,7 +847,7 @@
                   Еженедельная обратная связь от 
                   <span class="section-text--color">преподавателя — практика</span>
                 </p>
-              </article>
+              </figure>
             </div>
             
           </div>
@@ -993,7 +993,7 @@
                       </li>
                     </ul>
                     <div class="resume-card__recommend">
-                      <img clas="resume-card__recommend-logo" src="./img/course/resume-logo.svg" alt="">
+                      <img class="resume-card__recommend-logo" src="./img/course/resume-logo.svg" alt="">
                       <p class="resume-card__recommend-text">рекомендует этого специалиста</p>
                     </div>
                   </div>
@@ -1047,14 +1047,14 @@
                     </picture>
                   </div>
                 </div>
-                <article class="help-labor-bullet-card">
+                <div class="help-labor-bullet-card">
                   <div class="help-labor-bullet-card__media">
                     <picture class="help-labor-bullet-card__pic">
                         <img src="./img/course/help-students-like.svg" alt="" class="help-labor-bullet-card__img">
                     </picture>
                   </div>
                   <p class="help-labor-bullet-card__desc">Лучших студентов мы&nbsp;рекомендуем <br> в&nbsp;студии-партнеры</p>
-                </article>
+                </div>
               </div>
 
               <div class="help-labor-bullet">
@@ -1068,14 +1068,14 @@
                   <p class="help-labor-bullet-particles__desc">Сценарист</p>
                   <p class="help-labor-bullet-particles__desc">Концепт-художник</p>
                 </div>
-                <article class="help-labor-bullet-card">
+                <div class="help-labor-bullet-card">
                   <div class="help-labor-bullet-card__media">
                     <picture class="help-labor-bullet-card__pic">
                         <img src="./img/course/robot-icon.svg" alt="" class="help-labor-bullet-card__img">
                     </picture>
                   </div>
                   <p class="help-labor-bullet-card__desc">Создали бота, который собирает&nbsp;релевантные вакансии на&nbsp;<a href="#" class="link"><span class="link__text">отдельной странице</span></a></p>
-                </article>
+                </div>
               </div>
             </div>            
           </div>
@@ -1212,15 +1212,15 @@
             <div class="course-order__form">
               <form action="table" id="course-form" class="form">
                 <div class="form__hidden">
-                  <input type="text" name="page" hidden />
-                  <input type="text" name="formname" hidden />
-                  <input type="text" name="additional" hidden />
+                  <input type="text" name="page" hidden>
+                  <input type="text" name="formname" hidden>
+                  <input type="text" name="additional" hidden>
 
                   <input type="hidden" name="utm_source" value="">
                   <input type="hidden" name="utm_medium" value="">
-                  <input type="hidden" name="utm_campaign" value=""><br>
-                  <input type="hidden" name="utm_content" value=""><br>
-                  <input type="hidden" name="utm_term" value=""><br>
+                  <input type="hidden" name="utm_campaign" value="">
+                  <input type="hidden" name="utm_content" value="">
+                  <input type="hidden" name="utm_term" value="">
                   <input type="hidden" name="referer" value="">
                   <input type="hidden" name="requestTime" value="">
                   <input type="hidden" name="requestSimpleSign" value="">
@@ -1267,6 +1267,7 @@
 	<select class="form-select__input"
 					name="from_source"
 					required>
+		<option value="" disabled>Откуда вы узнали о нас?</option>
 		<option value="Друзья">Друзья</option>
 		<option value="Реклама">Реклама</option>
 		<option value="Случайно">Случайно</option>
@@ -1625,6 +1626,6 @@
 
     </div>
 
-    <script src="./js/bundle.min.js?_v=20230412125730"></script>
+    <script src="./js/bundle.min.js?_v=20230412130552"></script>
   </body>
 </html>
