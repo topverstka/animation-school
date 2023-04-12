@@ -87,23 +87,31 @@ export function removeAllClasses(items, itemClass) {
 /**
  * Фиксирует скрол у body
  *  */
+
+function lockBody() {
+  const DEFAULT_SCROLLBAR_WIDTH = getScrollbarWidth();
+  document.body.classList.add("_lock");
+  document.body.style.paddingRight = `${DEFAULT_SCROLLBAR_WIDTH}px`;
+}
+function unlockBody() {
+  const DEFAULT_SCROLLBAR_WIDTH = getScrollbarWidth();
+  document.body.classList.remove("_lock");
+  document.body.style.paddingRight = '';
+}
+function getScrollbarWidth() {
+  return window.innerWidth - document.body.offsetWidth;
+}
 export function bodyLock(con) {
   let scrollFix = window.innerWidth - document.body.clientWidth;
-  // console.log(scrollFix)
-  const DEFAULT_SCROLLBAR_WIDTH = 17;
   if (con === true) {
-    // scrollFix предотвращает скачки верстки в строну при блокировке скролла
-    scrollFix =
-      scrollFix > DEFAULT_SCROLLBAR_WIDTH ? DEFAULT_SCROLLBAR_WIDTH : scrollFix;
-    document.body.style.paddingRight = `${scrollFix}px`;
-    document.body.classList.add("_lock");
+    lockBody();
   } else if (con === false) {
-    document.body.classList.remove("_lock");
+    unlockBody();
   } else if (con === undefined) {
     if (!document.body.classList.contains("_lock")) {
-      document.body.classList.add("_lock");
+      lockBody();
     } else {
-      document.body.classList.remove("_lock");
+      unlockBody();
     }
   } else {
     console.error("Неопределенный аргумент у функции bodyLock()");
