@@ -1,5 +1,9 @@
 .big-video {
 	background-color: var(--c-accent);
+
+	@media (min-width: $tablet + 1) {
+		padding-bottom: 8.6rem;
+	}
 }
 .big-video--dark {
 	background-color: #222;
@@ -32,6 +36,11 @@
 	}
 	@media (max-width: $mobile-l) {
 		height: 15.9rem;
+	}
+}
+.big-video--dark .big-video__media {
+	@media (min-width: $tablet + 1) {
+		margin-bottom: 4.8rem;
 	}
 }
 

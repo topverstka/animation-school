@@ -1,5 +1,9 @@
 .features__title {
 
+	@media (min-width: $tablet + 1) {
+		margin-bottom: 7.8rem;
+	}
+	
 	@media (max-width: $tablet) {
 		text-align: left;
 		line-height: 1.3;

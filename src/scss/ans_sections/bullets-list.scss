@@ -25,6 +25,10 @@
 	grid-template-columns: 12rem auto;
 	column-gap: 2rem;
 
+	@media (min-width: $tablet + 1) {
+		align-items: end;
+	}
+
 	@media (max-width: $tablet) {
 		grid-template-columns: 5rem auto;
 	}

@@ -288,7 +288,12 @@
   --link-color: var(--c-accent);
   --link-color-hover:  var(--c-accent-active);
   --link-underline-color: var(--c-accent);
-  --link-underline-color-hover: var(--c-accent-active);
+  --link-underline-color-hover: transparent;
+}
+.reviews .link:hover {
+	@media (any-hover:hover) {
+	  --link-underline-color: transparent;
+	}
 }
 
 .reviews-card__profile {

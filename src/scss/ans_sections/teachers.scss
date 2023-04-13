@@ -59,6 +59,7 @@
 	@media (max-width: $tablet) {
 		height: 	49rem;
 		height: 	29rem;
+		width: calc(100% - 0.4rem);
 	}
 	@media (max-width: $mobile-l) {
 		height: 	29rem;

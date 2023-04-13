@@ -1,6 +1,6 @@
 .doubt {
 	padding-top: 12rem;
-	background-color: var(--c-text-regular);
+	background-color: #222;
 	color: var(--c-text-on);
 	overflow: hidden;
 
@@ -134,9 +134,9 @@
 	}
 }
 
-.doubt--bototm .doubt__container {
+.doubt--bottom .doubt__container {
 	@media (min-width: $tablet + 1) {
-		column-gap: 5.8rem;
+		row-gap: 5.9rem
 	}
 	@media (max-width: $tablet) {
 		row-gap: 5.3rem;
@@ -173,6 +173,7 @@
 
 	@media (max-width: $tablet) {
 		--lh-button: 1.1;
+		--icon-gap: 2.5rem;
 	}
 }
 
@@ -191,7 +192,7 @@
   }
 
   @media (max-width: $mobile-l) {
-  	top: 26.8rem;
+  	top: 26.4rem;
   }
 }
 .doubt--bottom .doubt__link br:last-child{

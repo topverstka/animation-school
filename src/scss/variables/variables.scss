@@ -13,7 +13,7 @@ $mobile-s: 330px;
 $w-burger: $tablet;
 
 :root {
-  --base-size: #{"calc(1vw + 1vh)"};
+  --base-size: 1vw;//#{"calc(1vw + 1vh)"};
   --tr: 0.3s;
   --tr-regular: all var(--tr) ease;
 

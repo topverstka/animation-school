@@ -150,6 +150,13 @@
 	}
 	
 }
+
+.header__button-phone:hover .button__icon {
+	@media (any-hover:hover) {
+	  animation: polifillhover 0.4s forwards;
+	}
+}
+
 .header__button-phone .button__text {
 	@media (max-width: $tablet) {
 		display: none;

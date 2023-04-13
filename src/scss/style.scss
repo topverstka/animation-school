@@ -19,6 +19,19 @@
   }
 }
 
+@keyframes polifillhover {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    --icon-color: var(--button-icon-color-hover, #fff);
+    --icon-bg-color: var(--button-icon-bg-color-hover, #000);
+  }
+}
 
 @import "./components";
 
@@ -40,12 +53,16 @@
 @import "./normalize";
 
 html {
-  font-size: calc(0.342466 * var(--base-size)); //10px for 1920×1000 
+  font-size: #{'calc(0.520834 * var(--base-size))'};//calc(0.342466 * var(--base-size)); //10px for 1920×1000 
   @media (max-width: $tablet) {
-      font-size: calc(1.0582 * var(--base-size));
+      font-size: #{'calc(2 * 1.0395 * var(--base-size))'};//calc(1.0395 * var(--base-size));//calc(1.0582 * var(--base-size));
+  }
+  @media (max-width: $desktop-l) {
+      // font-size: #{'font-size: calc(0.570834 * var(--base-size));'};//calc(1.0395 * var(--base-size));//calc(1.0582 * var(--base-size));
+      font-size: #{'calc(0.570834 * var(--base-size))'};
   }
   @media (max-width: $mobile-l) {
-    font-size:  calc(0.980397 * var(--base-size)); // 10px for 320×700
+    font-size:  #{'calc(3.125 * var(--base-size))'};//calc(0.980397 * var(--base-size)); // 10px for 320×700
   }
   // @media (max-width: 1600px) {
   //   font-size: calc(0.343466 * var(--base-size)); //10px for 1600×900 

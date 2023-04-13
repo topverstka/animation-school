@@ -212,8 +212,23 @@
 
 	@media (max-width: $tablet) {
 		letter-spacing: -0.08rem;
-    padding-top: 1.8rem;
-    padding-bottom: 1.6rem;
-    margin-bottom: 1.1rem;
+    // padding-top: 1.8rem;
+    // padding-bottom: 1.6rem;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+
+    --icon-size: 2.1rem;
+    --icon-gap: 0.8rem;
+    padding: 1.4rem 1.5rem 1.4rem 1.5rem;
+    letter-spacing: -0.02em;
+	}
+}
+
+.footer__button-phone .button__icon {
+  animation: polifillhover 0.4s backwards;
+}
+.footer__button-phone:hover .button__icon {
+	@media (any-hover:hover) {
+	  animation: polifillhover 0.4s forwards;
 	}
 }
