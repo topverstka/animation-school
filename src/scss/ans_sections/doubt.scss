@@ -52,6 +52,7 @@
 	grid-row-end: 3;
 
 	@media (max-width: $tablet) {
+		--icon-gap: 2.5rem;
 		--fz-button: 1.8rem;
 		--lh-button: 1.1;
 		grid-row-end: unset;
@@ -173,7 +174,6 @@
 
 	@media (max-width: $tablet) {
 		--lh-button: 1.1;
-		--icon-gap: 2.5rem;
 	}
 }
 

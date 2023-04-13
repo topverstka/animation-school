@@ -43,6 +43,12 @@
 .help-labor-bullet {
 	position: relative;
 
+
+
+	@media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+		max-width: 50rem;
+	}
+	
 	@media (max-width: $tablet) {
 		margin-bottom: -3.5rem;
 	}

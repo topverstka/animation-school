@@ -12,6 +12,11 @@
   --ff-controls: "Gilroy", sans-serif;
   --w-container: 1440px;
 }
+@media (min-width: 451px) and (max-width: 992px) {
+  :root {
+    --base-size: calc(1vw + 1vh);
+  }
+}
 @media (max-width: 1280px) {
   :root {
     --regular-column-left: 83.3rem;
@@ -841,7 +846,7 @@
 
 .burger {
   --line-width: 61.5%;
-  --line-height: 3px;
+  --line-height: 2px;
   position: relative;
   width: var(--burger-width, 40px);
   height: var(--burger-height, 40px);
@@ -859,7 +864,7 @@
   left: 50%;
   display: block;
   width: var(--line-width, 40%);
-  height: var(--line-height, 2px);
+  height: var(--line-height, 0.2rem);
   background: var(--c-burger-line, var(--c-text-regular));
   transition: var(--tr);
   border-radius: 2rem;
@@ -5634,7 +5639,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 11;
   padding-top: 4rem;
   width: 100%;
   margin-left: auto;
@@ -6962,6 +6967,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .doubt__button {
+    --icon-gap: 2.5rem;
     --fz-button: 1.8rem;
     --lh-button: 1.1;
     grid-row-end: unset;
@@ -7092,7 +7098,6 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (max-width: 992px) {
   .doubt--bottom .doubt__button {
     --lh-button: 1.1;
-    --icon-gap: 2.5rem;
   }
 }
 
@@ -8110,7 +8115,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   padding-top: 18rem;
   padding-bottom: 5.6rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 450px) {
   .hero-course {
     padding-top: 9rem;
     padding-bottom: 3.4rem;
@@ -8201,7 +8206,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .hero-course__content-media {
-    height: 32rem;
+    height: 52rem;
     border-radius: 1.7rem;
     transform: none;
     margin-bottom: 3rem;
@@ -8245,8 +8250,12 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .hero-course__meta {
-    grid-template-columns: 100%;
     margin-top: unset;
+  }
+}
+@media (max-width: 450px) {
+  .hero-course__meta {
+    grid-template-columns: 100%;
   }
 }
 
@@ -9038,6 +9047,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .features-card__media {
+    height: 38.4rem;
+  }
+}
+@media (max-width: 450px) {
+  .features-card__media {
     height: 18.4rem;
   }
 }
@@ -9200,6 +9214,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .help-labor-bullet {
   position: relative;
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .help-labor-bullet {
+    max-width: 50rem;
+  }
 }
 @media (max-width: 992px) {
   .help-labor-bullet {
@@ -9563,7 +9582,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .students-studios-card__media {
-    height: 32.5rem;
+    height: 44.5rem;
     margin-bottom: 1.8rem;
   }
 }
@@ -9960,7 +9979,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   border-radius: 2rem;
   color: #fff;
 }
-@media (max-width: 992px) {
+@media (max-width: 450px) {
   .course-order__meta {
     grid-template-columns: 100%;
   }

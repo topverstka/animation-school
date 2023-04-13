@@ -3,6 +3,8 @@
 	padding-bottom: 5.6rem;//7.1rem;
 
 	@media (max-width: $tablet) {
+	}
+	@media (max-width: $mobile-l) {
 		padding-top: 9rem;
 		padding-bottom: 3.4rem;
 	}
@@ -81,7 +83,7 @@
 	border-radius: 2.7rem;
 
 	@media (max-width: $tablet) {
-		height: 32rem;
+		height: 52rem;
 		border-radius: 1.7rem;
 		transform: none;
 		margin-bottom: 3rem;
@@ -120,8 +122,10 @@
 	color: #222222;
 	
 	@media (max-width: $tablet) {
-		grid-template-columns: 100%;
 		margin-top: unset;
+	}
+	@media (max-width: $mobile-l) {
+		grid-template-columns: 100%;
 	}
 }
 

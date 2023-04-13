@@ -14,6 +14,9 @@ $w-burger: $tablet;
 
 :root {
   --base-size: 1vw;//#{"calc(1vw + 1vh)"};
+  @media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+    --base-size: #{"calc(1vw + 1vh)"};
+  }
   --tr: 0.3s;
   --tr-regular: all var(--tr) ease;
 

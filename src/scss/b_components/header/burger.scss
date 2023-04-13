@@ -1,6 +1,6 @@
 .burger {
   --line-width: 61.5%;
-  --line-height: 3px;
+  --line-height: 2px;
   position: relative;
   width: var(--burger-width, 40px);
   height: var(--burger-height, 40px);
@@ -17,7 +17,7 @@
   left: 50%;
   display: block;
   width: var(--line-width, 40%);
-  height: var(--line-height, 2px);
+  height: var(--line-height, 0.2rem);
   background: var(--c-burger-line, var(--c-text-regular));
   transition: var(--tr);
   border-radius: 2rem;

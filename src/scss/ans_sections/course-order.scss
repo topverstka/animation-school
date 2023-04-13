@@ -179,7 +179,7 @@
 	border-radius: 2rem;
 	color: #fff;
 
-	@media (max-width: $tablet) {
+	@media (max-width: $mobile-l) {
 		grid-template-columns: 100%;
 	}
 }
