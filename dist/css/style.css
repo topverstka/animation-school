@@ -6561,6 +6561,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .ways__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  .ways__gallery {
     display: block;
   }
 }
@@ -6580,8 +6585,12 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   .ways-card {
     --padding-horizontal: 3.2rem;
     --brad: 1.5rem;
-    margin-bottom: 2rem;
     padding-bottom: 3.4rem;
+  }
+}
+@media (max-width: 450px) {
+  .ways-card {
+    margin-bottom: 2rem;
   }
 }
 
@@ -6704,8 +6713,14 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .bestseller__gallery {
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     margin-bottom: 3rem;
+  }
+}
+@media (max-width: 450px) {
+  .bestseller__gallery {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -6746,10 +6761,15 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     margin-left: -2.9rem;
     margin-right: -2.9rem;
     margin-bottom: 2.4rem;
-    height: 14.7rem;
+    height: 34.7rem;
     width: auto;
     clip-path: ellipse(75% 95% at 50% 5%);
     -webkit-clip-path: ellipse(75% 95% at 50% 5%);
+  }
+}
+@media (max-width: 450px) {
+  .bestseller-card__media {
+    height: 14.7rem;
   }
 }
 
@@ -7201,9 +7221,13 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .teachers__gallery {
-    grid-template-columns: 100%;
     row-gap: 4rem;
     margin-bottom: 3rem;
+  }
+}
+@media (max-width: 450px) {
+  .teachers__gallery {
+    grid-template-columns: 100%;
   }
 }
 

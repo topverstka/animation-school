@@ -13,6 +13,9 @@
 	row-gap: 3rem;
 
 	@media (max-width: $tablet) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (max-width: $mobile-l) {
 		display: block;
 	}
 }
@@ -32,8 +35,10 @@
 	@media (max-width: $tablet) {
 		--padding-horizontal: 3.2rem;
 		--brad: 1.5rem;
-		margin-bottom: 2rem;
 		padding-bottom: 3.4rem;	
+	}
+	@media (max-width: $mobile-l) {
+		margin-bottom: 2rem;
 	}
 }
 

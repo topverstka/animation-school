@@ -15,8 +15,12 @@
 	margin-bottom: 6.2rem;
 
 	@media (max-width: $tablet) {
+		grid-template-columns: 1fr 1fr;
 		grid-gap: 	2rem;
 		margin-bottom: 3rem;	
+	}
+	@media (max-width: $mobile-l) {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -55,10 +59,13 @@
 		margin-left: -2.9rem;	
 		margin-right: -2.9rem;	
 		margin-bottom: 	2.4rem;
-    height: 14.7rem;
+    height: 34.7rem;
     width: auto;
 		clip-path: ellipse(75% 95% at 50% 5%);
 		-webkit-clip-path: ellipse(75% 95% at 50% 5%);
+	}
+	@media (max-width: $mobile-l) {
+    height: 14.7rem;
 	}
 }
 
