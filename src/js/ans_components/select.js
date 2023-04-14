@@ -1,3 +1,5 @@
+import {getClickedNotBeyondElement} from "../b_helpers/get-helpers.js"
+
 // Кастомный select
 const selectNodes = document.querySelectorAll('.form-select');
 
@@ -10,9 +12,6 @@ function initSelects(selectNodes) {
     const buttonNodes = [...selectNode.querySelectorAll('.form-select__button')];
 
     toggleNode.addEventListener('click', handleToggle);
-    toggleNode.addEventListener('focus', (e) => {
-      handleToggle(e)
-    });
 
 
     buttonNodes.forEach((buttonNode, index, arr) => {
@@ -23,17 +22,6 @@ function initSelects(selectNodes) {
         toggleNode.classList.add('form-select__toggle--selected');
         toggleNode.textContent = buttonNode.textContent;
       });
-      buttonNode.addEventListener('focus', () => {
-        buttonNodes.forEach(buttonNode => buttonNode.classList.remove('form-select__button--active'));
-        buttonNode.classList.add('form-select__button--active');
-        inputNode.selectedIndex = index + 1;
-        toggleNode.classList.add('form-select__toggle--selected');
-        toggleNode.textContent = buttonNode.textContent;
-      })
-      buttonNode.addEventListener('blur', (e) => {
-        if (index != arr.length - 1) return;
-        handleToggle(e);
-      })
     });
 
     function handleToggle(evt) {
@@ -46,7 +34,7 @@ function initSelects(selectNodes) {
       }
     }
 
-    function handleDocument() {
+    function handleDocument(e) {
       selectNode.classList.remove('form-select--active');
 
       document.removeEventListener('click', handleDocument);

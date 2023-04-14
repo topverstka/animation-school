@@ -165,6 +165,13 @@
   transform: scale(0);
   opacity: 0;
   transition: var(--tr-regular);
+
+  @media (max-width: $tablet) {
+    left: 0.5rem;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 .form-select__button--active {
