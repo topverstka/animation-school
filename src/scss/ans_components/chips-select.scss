@@ -1,4 +1,4 @@
-.chips-checkbox {
+.chips-select {
 	--c-text: #222;
 	--c-text-active: #fff;
 	--bg: transparent;
@@ -18,13 +18,13 @@
 		--fz: 1.4rem;
 	}
 }
-.chips-checkbox__input {
+.chips-select__input {
 	position: absolute;
 	opacity: 0;
 	visibility: hidden;
 	appearance: none;
 }
-.chips-checkbox__box {
+.chips-select__box {
 	border-radius: 9999px;
 	background-color: var(--brad);
 	padding: 0.7rem 1.5rem;
@@ -37,11 +37,11 @@
 		line-height: initial;
 	}
 }
-.chips-checkbox__input:checked ~ .chips-checkbox__box {
+.chips-select__input:checked ~ .chips-select__box {
 	background-color: var(--bg-active);
 	color: var(--c-text-active);
 }
 
-.chips-checkbox__count {
+.chips-select__count {
 	color: #a7a7a7;
 }
