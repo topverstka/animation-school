@@ -6,76 +6,56 @@
 
 import {setInputValid, setInputInvalid, validateInput} from "./input-validator.js"
 
-const buttonClasses = {
-  disabled: "button--disabled",
-};
-function disableButton(button) {
-  if (!button.innerText) return;
-  button.classList.add(buttonClasses.disabled);
-  button.disabled = true;
-}
-function enableButton(button) {
-  if (!button.innerText) return;
-  button.classList.remove(buttonClasses.disabled);
-  button.disabled = false;
-}
+// const buttonClasses = {
+//   disabled: "button--disabled",
+// };
+// function disableButton(button) {
+//   if (!button.innerText) return;
+//   button.classList.add(buttonClasses.disabled);
+//   button.disabled = true;
+// }
+// function enableButton(button) {
+//   if (!button.innerText) return;
+//   button.classList.remove(buttonClasses.disabled);
+//   button.disabled = false;
+// }
 
-// Обработчик форм
 const formsList = document.querySelectorAll(".form");
 formsList.forEach((form) => {
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const inputsToValidate = [
-      ...form.querySelectorAll('.form-select')
-    ]
+      ...form.querySelectorAll('.form-control')
+    ];
+
     inputsToValidate.forEach((input) => {
       validateInput(input);
     });
 
-    const formBody = new FormData(form);
-    let response = await fetch(form.action, {
-      method: "POST",
-      body: formBody,
-    });
+    // const formBody = new FormData(form);
+    // let response = await fetch(form.action, {
+    //   method: "POST",
+    //   body: formBody,
+    // });
+
     // try {
     // let result = await response.json();
     // console.log(result);
     // console.log(form);
     // console.log("thanks");
-    const submitButton = form.querySelector('button[type="submit"]');
-    if (submitButton) {
-      submitButton.dataset.buttonText = submitButton.innerHTML;
-      // submitButton.innerText = "Message envoyé"
-      // submitButton.innerHTML = "✓";
-      // disableButton(submitButton);
-
-      // setTimeout(() => {
-      //   submitButton.innerHTML = submitButton.dataset.buttonText;
-      //   enableButton(submitButton);
-      // }, 10000);
-    }
-    const sentEvent = new Event("form_sent", {
-      bubbles: true,
-      cancelable: false,
-    });
-    form.dispatchEvent(sentEvent);
-    // } catch {
-    // console.log("error");
+    // const submitButton = form.querySelector('button[type="submit"]');
+    // if (submitButton) {
+    //   submitButton.dataset.buttonText = submitButton.innerHTML;
     // }
-    setTimeout(() => {
-      // window.b_modal.closeCurrentPop()
-      form.reset();
-    }, 2500);
-
   });
 });
 
 // #region input-labels
-const inputs = document.querySelectorAll(".input");
+const inputs = document.querySelectorAll(".form .form-control");
 
 const inputClasses = {
-  invalid: "input--invalid",
+  invalid: "is-invalid",
   init: "input--init",
   active: "input--active",
   dropdown: "input--dropdown",
@@ -84,10 +64,10 @@ const inputClasses = {
 };
 
 function activateInput(input) {
-  input.classList.add(inputClasses.active);
+//   input.classList.add(inputClasses.active);
 }
 function deactivateInput(input) {
-  input.classList.remove(inputClasses.active);
+//   input.classList.remove(inputClasses.active);
 }
 
 function initInputs(inputs) {
@@ -95,7 +75,7 @@ function initInputs(inputs) {
     if (input.classList.contains(inputClasses.init)) return;
     input.classList.add(inputClasses.init);
 
-    const field = input.querySelector(".input__field");
+    const field = input.querySelector("[required]");
 
     input.addEventListener("click", (e) => {
       if (!e.target.classList.contains("input__field")) return;
@@ -110,7 +90,7 @@ function initInputs(inputs) {
 
     field.addEventListener("focus", () => {
       activateInput(input);
-      setInputValid(input);
+      // setInputValid(input);
     });
     field.addEventListener("blur", () => {
       deactivateInput(input);
@@ -120,10 +100,10 @@ function initInputs(inputs) {
     });
 
     field.addEventListener('input', () => {
-      input.classList.remove(inputClasses.invalid);
+      setInputValid(input);
     });
     field.addEventListener('change', () => {
-      input.classList.remove(inputClasses.invalid);
+      setInputValid(input);
     })
 
     if (field.type != "email" && field.type != "tel") {

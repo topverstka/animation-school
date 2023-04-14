@@ -1,12 +1,19 @@
 .checkbox {
+	--c-border: #222;
+	--c-text: #000;
 	display: grid;
 	align-items: start;
 	grid-template-columns: 2rem auto;
 	column-gap: 1.5rem;
+	color: var(--c-text);
 
 	@media (max-width: $tablet) {
 		font-size: 1.2rem;
 	}
+}
+.checkbox.is-invalid {
+	--c-border: var(--c-error);
+	--c-text: var(--c-error);
 }
 .checkbox__label {
 	padding-bottom: 100%;
@@ -34,7 +41,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	border: 1px solid #222222;
+	border: 1px solid var(--c-border);
 	border-radius: 0.3rem;
 }
 .checkbox__box::after {
@@ -60,6 +67,9 @@
 .checkbox__input:checked + .checkbox__box::after {
 	opacity: 1;
 	transform: scale(0.65);
+}
+.checkbox__input:focus {
+	--c-border: var(--c-accent);
 }
 
 .checkbox__link {

@@ -29,7 +29,7 @@
   transform: scale(0);
 }
 
-.form-select.input--invalid .form-select__toggle {
+.form-select.is-invalid .form-select__toggle {
   --c-text: var(--c-error);
 }
 
@@ -46,6 +46,9 @@
   // border: 0.1rem solid rgba(255, 255, 255, 0.2);
   border-radius: var(--brad);
   transition: var(--tr-regular);
+}
+.form-select__toggle:focus {
+  --border-color: var(--c-accent);
 }
 
 .form-select__toggle::before {
@@ -123,9 +126,12 @@
       padding-left: 3rem;
     }
 }
+.form-select__button:focus {
+  color: var(--c-selected);
+}
 .form-select__button:hover {
 	@media (any-hover:hover) {
-    opacity: 1;
+    color: var(--c-selected);
 	}
 }
 

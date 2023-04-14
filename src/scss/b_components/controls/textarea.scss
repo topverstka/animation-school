@@ -19,6 +19,11 @@
   min-height: 10rem;
 }
 
+.textarea.is-invalid:not(.input--focused) {
+  --c-placeholder: var(--c-error);
+  --text-color: var(--c-error);
+}
+
 .textarea__field {
   max-width: 100%;
   display: block;
