@@ -17,5 +17,10 @@
 .sidebar-related__gallery {
 	display: grid;
 	grid-template-columns: 100%;
-	row-gap: 4rem
+	row-gap: 4rem;
+
+	@media (min-width: $tablet-m) and (max-width: $tablet) {
+		gap: 4rem;
+		grid-template-columns: 1fr 1fr;
+	}
 }

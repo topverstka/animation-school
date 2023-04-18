@@ -135,7 +135,7 @@
 .section-gallery-double {
   @extend .section-gallery;
 
-  @media (min-width: $tablet-m + 1) {
+  @media (min-width: $tablet-m) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -143,9 +143,14 @@
 .section-gallery-triple {
   @extend .section-gallery;
 
+  @media (min-width: $tablet-m) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   @media (min-width: $tablet + 1) {
     grid-template-columns: repeat(3, 1fr);
   }
+
 }
 
 .section-gallery-more {

@@ -180,6 +180,10 @@
 		margin-left: 0;
 		margin-right: 0;
   }
+
+	@media (min-width: $tablet-m) and (max-width: $tablet) {
+		max-width: 100rem;
+	}
 }
 
 .blog-article__content .swiper-wrapper {

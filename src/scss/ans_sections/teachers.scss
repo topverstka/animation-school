@@ -3,9 +3,17 @@
 }
 
 .post-type-archive-teachers .hero__content-media {
-	@media (min-width: $mobile-l + 1) and (max-width: $tablet) {
+	@media (max-width: $tablet) {
     margin-top: -8rem;
-    margin-bottom: -7.2rem;
+    margin-bottom: -0.2rem;
+	}
+
+	@media (max-width: $tablet-m) {
+    margin-bottom: -1rem;
+	}
+
+	@media (max-width: $mobile-l) {
+    margin-top: 0;
 	}
 }
 	
@@ -180,6 +188,7 @@
 }
 .page-teachers .hero__content {
 	@media (min-width: $tablet + 1) {
+		z-index: 12;
 		padding-bottom: 12rem;
 	}
 }

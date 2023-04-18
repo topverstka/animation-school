@@ -43,6 +43,12 @@
 		margin-top: 0;
 		width: 100%;
 	}
+
+	@media (min-width: $tablet-m) and (max-width: $tablet) {
+		margin-left: 0;
+		margin-right: auto;
+		max-width: 32rem;
+	}
 }
 
 .single-studios .hero__content-pic {

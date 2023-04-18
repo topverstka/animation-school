@@ -178,7 +178,7 @@
 	grid-column-start: 1;
 	grid-column-end: span 2;
 
-	@media (max-width: $tablet) {
+	@media (max-width: $tablet-m - 1) {
 		grid-column-start: initial;
 		grid-column-end: initial;
 	}
@@ -247,6 +247,15 @@
 
 	@media (max-width: $tablet) {
 		--image-height: 22rem;
+	}
+
+
+	
+	@media (min-width: $tablet-m) and (max-width: $tablet - 1) {
+		grid-row-end: initial;
+	}
+
+	@media (max-width: $tablet-m - 1) {
 		grid-column-start: initial;
 		grid-column-end: initial;
 	}

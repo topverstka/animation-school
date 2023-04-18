@@ -23,6 +23,10 @@
 .shifter__card {
 	max-width: 100rem;
 	width: 100%;
+
+	@media (min-width: $tablet-m) and (max-width: $tablet) {
+		max-width: 40rem;
+	}
 }
 .shifter__title {
 	margin-bottom: 6.8rem;
@@ -70,6 +74,12 @@
     margin-top: 0;
     margin-bottom: 0;
 	}
+
+	@media (min-width: $tablet-m) and (max-width: $tablet) {
+		bottom: 0;
+		height: 84.4%;
+	}
+
 }
 
 .shifter--no-mobile-img .shifter__media {
