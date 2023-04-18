@@ -9098,6 +9098,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   flex-basis: 100%;
   line-height: initial;
   letter-spacing: -0.03em;
+  color: var(--c-text-on);
 }
 @media (max-width: 992px) {
   .big-video__title {
@@ -9214,6 +9215,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .shifter__title {
   margin-bottom: 6.8rem;
+  color: var(--c-text-on);
 }
 @media (max-width: 992px) {
   .shifter__title {
@@ -9539,6 +9541,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .help-labor__title {
   letter-spacing: 0;
   line-height: initial;
+  color: var(--c-text-on);
 }
 @media (max-width: 992px) {
   .help-labor__title {
@@ -9559,6 +9562,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   margin-right: auto;
   font-size: 2rem;
   margin-bottom: 11.9rem;
+  color: var(--c-text-on);
 }
 @media (min-width: 993px) {
   .help-labor__desc {

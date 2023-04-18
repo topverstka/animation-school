@@ -30,6 +30,7 @@
 }
 .shifter__title {
 	margin-bottom: 6.8rem;
+	color: var(--c-text-on);
 
 	@media (max-width: $tablet) {
 		max-width: 80%;

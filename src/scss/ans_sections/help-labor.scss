@@ -11,6 +11,7 @@
 .help-labor__title {
 	letter-spacing: 0;
 	line-height: initial;
+	color: var(--c-text-on);
 
 	@media (max-width: $tablet) {
 		margin-left: -0.8rem;
@@ -29,6 +30,7 @@
 	margin-right: auto;
 	font-size: 2rem;
 	margin-bottom: 11.9rem;
+	color: var(--c-text-on);
 
 	@media (min-width: $tablet + 1) {
 		letter-spacing: normal;
