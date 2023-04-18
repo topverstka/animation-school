@@ -170,6 +170,7 @@
 	columns: #222;
 	margin-right: 1rem;
 	margin-bottom: 1rem;
+	transition: var(--tr-regular);
 
 	@media (max-width: $tablet) {
 		font-size: 1.4rem;
@@ -179,6 +180,11 @@
 
 	@media (max-width: $mobile-l) {
 		margin-right: 0;
+	}
+}
+.ans-card:hover .ans-card__chips-bullet {
+	@media (any-hover:hover) {
+		border-color: #222;
 	}
 }
 

@@ -1734,6 +1734,7 @@
   columns: #222;
   margin-right: 1rem;
   margin-bottom: 1rem;
+  transition: var(--tr-regular);
 }
 @media (max-width: 992px) {
   .ans-card__chips-bullet {
@@ -1745,6 +1746,12 @@
 @media (max-width: 450px) {
   .ans-card__chips-bullet {
     margin-right: 0;
+  }
+}
+
+@media (any-hover: hover) {
+  .ans-card:hover .ans-card__chips-bullet {
+    border-color: #222;
   }
 }
 
@@ -2937,6 +2944,7 @@
   align-items: end;
   grid-template-columns: repeat(2, 1fr);
   margin-top: auto;
+  color: #000;
 }
 @media (max-width: 992px) {
   .professions-card__bullets {
@@ -2986,6 +2994,12 @@
     padding: 1.3rem 1rem;
     display: flex;
     margin-right: 0;
+  }
+}
+
+@media (any-hover: hover) {
+  .professions-card:hover .ans-card__chips-bullet {
+    border-color: #222;
   }
 }
 
@@ -3186,6 +3200,7 @@
   margin-right: auto;
   min-width: 26rem;
   margin-bottom: 0;
+  color: #000;
 }
 @media (max-width: 992px) {
   .blog-card--wide .blog-card__title {
@@ -11514,6 +11529,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   letter-spacing: -0.03em;
   margin-bottom: 3rem;
   margin-top: 5rem;
+  color: #222;
 }
 @media (max-width: 992px) {
   .blog-article__content h2,
@@ -11563,6 +11579,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   margin-bottom: 1.4rem;
   max-width: 90rem;
   letter-spacing: normal;
+  color: #222;
 }
 
 .blog-article__content figure {

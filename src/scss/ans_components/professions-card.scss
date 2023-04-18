@@ -136,6 +136,7 @@
 	align-items: end;
 	grid-template-columns: repeat(2, 1fr);
 	margin-top: auto;
+	color: #000;
 
 	@media (max-width: $tablet) {
 		grid-template-columns: 100%;
@@ -187,5 +188,11 @@
 .professions-card__button .button__icon {
 	@media (max-width: $tablet) {
 		// display: none;
+	}
+}
+
+.professions-card:hover .ans-card__chips-bullet {
+	@media (any-hover:hover) {
+		border-color: #222;
 	}
 }
