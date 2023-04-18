@@ -208,6 +208,7 @@
 
 .footer__button-phone {
   --button-icon-color: #222;
+  --button-icon-color-hover: #000;
 	margin-bottom: 3.1rem;
 
 	@media (max-width: $tablet) {
@@ -225,10 +226,11 @@
 }
 
 .footer__button-phone .button__icon {
-  animation: polifillhover 0.4s backwards;
+  // animation: polifillhover 0.4s backwards;
 }
 .footer__button-phone:hover .button__icon {
 	@media (any-hover:hover) {
-	  animation: polifillhover 0.4s forwards;
+	  // animation: polifillhover 0.4s forwards;
+	  filter: invert(1);
 	}
 }

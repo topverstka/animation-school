@@ -31,6 +31,7 @@
 	padding-right: var(--padding-horizontal);
 	padding-bottom: 3.1rem;
 	transition: var(--tr-regular);
+	color: #000;
 
 	@media (max-width: $tablet) {
 		--padding-horizontal: 3.2rem;

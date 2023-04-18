@@ -162,9 +162,10 @@
 	left: -2.3rem;
 }
 .teachers-card__button {
-	--icon-bg-color: #fff;
-	--icon-color-hover: #fff;
-	--icon-bg-color-hover: #000;
+  --button-icon-color: #222;
+  --button-icon-color-hover: #222;
+  --button-icon-bg-color: #fff;
+  --button-icon-bg-color-hover: #fff;
 	padding-left: 3.8rem;
 	padding-right: 3.8rem;
 

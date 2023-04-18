@@ -79,7 +79,7 @@
 	width: 130%;
 	height: 170%;
 	border-radius: 47%;
-	background-color: var(--c-text-regular);
+	background-color: #222;//var(--c-text-regular);
 
 	@media (max-width: $tablet) {
 		width: 100%;	
@@ -227,6 +227,12 @@
 .bestseller__button {
 	max-width: 50rem;
 	width: 100%;
+  // --button-icon-bg-color: var(--c-accent);
+  // --button-icon-color-hover: #fff;
+  // --button-icon-bg-color-hover: #000;
+  --button-icon-color: #222;
+  --button-icon-bg-color: var(--c-accent);
+
 
 	@media (min-width: $tablet + 1) {
 	  --fz-button: 2rem;

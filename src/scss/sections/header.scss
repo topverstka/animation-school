@@ -145,6 +145,8 @@
 
 .header__button-phone  {
   --button-icon-color: #222;
+  --button-icon-color-hover: #000;
+
 	@media (max-width: $tablet) {
 	  --button-icon-color: #fff;
 		--button-bg: #222222;
@@ -159,9 +161,13 @@
 	
 }
 
+.header__button-phone .button__icon {
+	transition: var(--tr-regular);
+}
 .header__button-phone:hover .button__icon {
 	@media (any-hover:hover) {
-	  animation: polifillhover 0.4s forwards;
+	  // animation: polifillhover 0.4s forwards;
+	  filter: invert(1);
 	}
 }
 
