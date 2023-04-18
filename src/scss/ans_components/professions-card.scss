@@ -49,7 +49,16 @@
 .professions-card__pic {
 	height: 100%;	
 	width: 100%;	
+	overflow: hidden;
+	transition: var(--tr-regular);
 }
+
+.professions-card:hover .professions-card__pic {
+	@media (any-hover:hover) {
+		border-radius: var(--brad) var(--brad) 10rem 10rem;
+	}
+}
+
 .professions-card__img {
 	border-radius: var(--brad) var(--brad) 0 0;
 	transition: var(--tr-regular);
@@ -59,7 +68,8 @@
 }
 .professions-card:hover .professions-card__img {
 	@media (any-hover:hover) {
-		border-radius: var(--brad) var(--brad) 10rem 10rem;
+		// border-radius: var(--brad) var(--brad) 10rem 10rem;
+		transform: scale(1.2);
 	}
 }
 

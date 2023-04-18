@@ -93,10 +93,11 @@
   transition: var(--tr-regular);
 }
 
-.button-primary:hover .button__icon{
+.button-primary:hover .button__icon {
   @media (any-hover:hover) {
     --icon-color: var(--button-icon-color-hover, #fff);
     --icon-bg-color: var(--button-icon-bg-color-hover, #000);
+    transform: translateX(0.7rem);
   }
 }
 

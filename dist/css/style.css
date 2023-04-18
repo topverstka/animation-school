@@ -487,6 +487,7 @@
   .button-primary:hover .button__icon {
     --icon-color: var(--button-icon-color-hover, #fff);
     --icon-bg-color: var(--button-icon-bg-color-hover, #000);
+    transform: translateX(0.7rem);
   }
 }
 
@@ -1827,6 +1828,14 @@
 .courses-card__pic {
   height: 100%;
   width: 100%;
+  transition: var(--tr-regular);
+  overflow: hidden;
+}
+
+@media (any-hover: hover) {
+  .courses-card:hover .courses-card__pic {
+    border-radius: var(--brad) var(--brad) 10rem 10rem;
+  }
 }
 
 .courses-card__img {
@@ -1839,7 +1848,7 @@
 
 @media (any-hover: hover) {
   .courses-card:hover .courses-card__img {
-    border-radius: var(--brad) var(--brad) 10rem 10rem;
+    transform: scale(1.2);
   }
 }
 
@@ -2849,6 +2858,14 @@
 .professions-card__pic {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  transition: var(--tr-regular);
+}
+
+@media (any-hover: hover) {
+  .professions-card:hover .professions-card__pic {
+    border-radius: var(--brad) var(--brad) 10rem 10rem;
+  }
 }
 
 .professions-card__img {
@@ -2861,7 +2878,7 @@
 
 @media (any-hover: hover) {
   .professions-card:hover .professions-card__img {
-    border-radius: var(--brad) var(--brad) 10rem 10rem;
+    transform: scale(1.2);
   }
 }
 
@@ -6753,6 +6770,14 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .ways-card__pic {
   height: 100%;
   width: 100%;
+  transition: var(--tr-regular);
+  overflow: hidden;
+}
+
+@media (any-hover: hover) {
+  .ways-card:hover .ways-card__pic {
+    border-radius: var(--brad) var(--brad) 10rem 10rem;
+  }
 }
 
 .ways-card__img {
@@ -6765,7 +6790,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 @media (any-hover: hover) {
   .ways-card:hover .ways-card__img {
-    border-radius: var(--brad) var(--brad) 10rem 10rem;
+    transform: scale(1.2);
   }
 }
 
