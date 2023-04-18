@@ -9,10 +9,12 @@
   max-width: 159rem;
   margin-left: auto;
   margin-right: auto;
+
   @media (max-width: $desktop-s) and (min-width: $tablet + 1) {
     padding-left: 4.5rem; 
     padding-right: 4.5rem; 
   }
+  
   @media (max-width: $tablet) {
     padding-left: 1.8rem; 
     padding-right: 1.8rem; 

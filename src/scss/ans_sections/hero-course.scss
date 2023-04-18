@@ -3,12 +3,13 @@
 	padding-bottom: 5.6rem;//7.1rem;
 
 	@media (max-width: $tablet) {
+		padding-top: 9rem;
 	}
 	@media (max-width: $mobile-l) {
-		padding-top: 9rem;
 		padding-bottom: 3.4rem;
 	}
 }
+
 .hero-course .hero__container {
 	width: 100%;
 	display: grid;
@@ -17,11 +18,12 @@
 	column-gap: 1.5rem;
 	align-items: start;
 
-	@media (max-width: $tablet) {
+	@media (max-width: 810px) {
 		grid-template-columns: 100%;
 		grid-template-areas: 'media' 'offer' 'meta';
 	}
 }
+
 .hero-course .hero__content {
 	padding-bottom: 0;
 }
@@ -73,6 +75,7 @@
 		margin-bottom: 3.3rem;
 	}
 }
+
 .hero-course__content-media {
 	grid-area: media;
 	transform: translateY(-5rem);
@@ -82,7 +85,7 @@
 	z-index: 1;
 	border-radius: 2.7rem;
 
-	@media (max-width: $tablet) {
+	@media (max-width: 810px) {
 		height: 52rem;
 		border-radius: 1.7rem;
 		transform: none;
@@ -93,6 +96,7 @@
 		height: 22rem;
 	}
 }
+
 .hero-course__content-pic,
 .hero-course__content-img {
 	width: inherit;
@@ -121,9 +125,10 @@
 	background-color: #fff;
 	color: #222222;
 	
-	@media (max-width: $tablet) {
+	@media (max-width: 810px) {
 		margin-top: unset;
 	}
+	
 	@media (max-width: $mobile-l) {
 		grid-template-columns: 100%;
 	}

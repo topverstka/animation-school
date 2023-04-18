@@ -57,6 +57,10 @@
   line-height: initial;
   color: #000000;
 
+  @media (min-width: $tablet + 1) {
+    letter-spacing: normal;
+  }
+
   @media (max-width: $tablet) {
     font-size: 1.4rem;
     letter-spacing: normal;

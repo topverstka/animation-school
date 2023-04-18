@@ -14,4 +14,8 @@
 	@media (max-width: $tablet) {
 		text-align: left;
 	}
+
+	@media (min-width: $tablet + 1) {
+		margin-bottom: 8rem;
+	}
 }

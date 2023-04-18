@@ -18,10 +18,13 @@
 }
 
 .breadcrumbs__container {
-	padding-left: 0;
-	padding-right: 0;
 	margin-bottom: -2rem;
 	overflow: hidden;
+
+	@media (max-width: $tablet) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .breadcrumbs__list {

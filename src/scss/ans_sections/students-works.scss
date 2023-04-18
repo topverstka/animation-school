@@ -68,6 +68,11 @@
   width: 100%;
   letter-spacing: normal;
 
+  @media (min-width: $tablet + 1) {
+  	--fz-button: 2rem;
+  	--icon-gap: 1.2rem;
+  }
+
 	@media (max-width: $tablet) {
 		display: none;	
 	}
@@ -167,5 +172,7 @@
 
   @media (min-width: $tablet + 1) {
 		--fz-button: 2rem;
+		--icon-gap: 1rem;
+		letter-spacing: normal;
   }
 }

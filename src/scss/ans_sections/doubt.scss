@@ -107,6 +107,7 @@
   color: var(--c-text-on);
   font-size: 1.8rem;
   line-height: 1.3;
+  transition: var(--tr-regular);
 
   @media (max-width: $desktop-l) {
 	  top: 46rem;
@@ -124,7 +125,7 @@
 .doubt__link:hover {
 	@media (min-width: $tablet + 1) {
 		@media (any-hover:hover) {
-			--link-color-hover: var(--c-text-regular);
+			color: var(--c-text-regular);
 		}
 	}
 }
@@ -164,6 +165,21 @@
   	height: 40.8rem;
   }
 
+  @media (max-width: 962px) {
+  	height: 70.8rem;
+  }
+
+  @media (max-width: 810px) {
+  	height: 46rem;
+  }
+
+  
+  @media (min-width: $mobile-l + 1) and (max-width: 810px) {
+    --mask: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.25) 0.3rem, rgb(0, 0, 0) 1.8rem, rgb(0, 0, 0) calc(100% - 1.8rem), rgba(0, 0, 0, 0.25) calc(100% - 0.9rem), rgba(0, 0, 0, 0));
+	  mask: var(--mask);
+	  -webkit-mask-image: var(--mask);
+  }
+
   @media (max-width: $mobile-l) {
   	height: 20.8rem;
   }
@@ -181,6 +197,8 @@
 	top: 48rem;
   right: 4.5rem;
 
+
+
   @media (max-width: $tablet) {
     left: 0;
     right: 0;
@@ -191,10 +209,17 @@
   	top: 46.8rem;
   }
 
+	@media (max-width: 962px) {
+		top: unset;
+    bottom: -11rem;
+    left: -5rem;
+	}
+
   @media (max-width: $mobile-l) {
   	top: 26.4rem;
   }
 }
+
 .doubt--bottom .doubt__link br:last-child{
 	@media (max-width: $tablet) {
 		display: none;
@@ -202,6 +227,6 @@
 }
 .doubt--bottom .doubt__link:hover {
 	@media (any-hover:hover) {
-		--link-color-hover: var(--c-accent);
+		color: var(--c-accent);
 	}
 }

@@ -1,6 +1,8 @@
 $laptop-l: 1500px;
 $laptop: 1100px;
 $tablet: 992px;
+$tablet-l: 962px;
+$tablet-m: 768px;
 
 $desktop-l: 1800px;
 $desktop-m: 1500px;
@@ -26,7 +28,11 @@ $w-burger: $tablet;
 
   @media (max-width: $desktop-s) {
     --regular-column-left: 83.3rem;
-    --regular-column-right: 54.4rem;
+    // --regular-column-right: 54.4rem;
+    --regular-column-right: 58.4rem;
+  }
+  @media (max-width: $tablet-l) {
+    --regular-column-left: 53.3rem;
   }
 
   // Fonts

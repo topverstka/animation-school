@@ -9,6 +9,7 @@
 		line-height: 1.3;
 	}
 }
+
 .features-card {
 	display: grid;
 	grid-template-columns: 91.7rem 64.4rem;
@@ -25,7 +26,11 @@
 		gap: 2rem;
 		margin-bottom: 3rem;
 	}
+	@media (max-width: $mobile-l) {
+		margin-bottom: 2.9rem;
+	}
 }
+
 .features-card:last-child {
 	margin-bottom: 0;
 }
@@ -34,6 +39,7 @@
 .features-card:nth-child(3n+1) .section-text--color {
 	color: #C1F03C;
 }
+
 .features-card:nth-child(3n+2) .section-text--color {
 	color: #747FF6;
 }
@@ -42,10 +48,14 @@
 	border-radius: 3rem;
 
 	@media (max-width: $tablet) {
+		height: 50.4rem;
+	}
+	@media (max-width: $tablet-m) {
 		height: 38.4rem;
 	}
 	@media (max-width: $mobile-l) {
 		height: 18.4rem;
+		border-radius: 1.5rem;
 	}
 }
 
@@ -59,6 +69,10 @@
 	border-radius: inherit;
 	width: 100%;
 	height: 100%;
+
+	@media (max-width: $tablet) {
+		object-fit: cover;
+	}
 }
 
 .features-card__desc {
@@ -68,5 +82,13 @@
 		font-size: 2.5rem;
 		letter-spacing: 0;
 		line-height: 1.25;
+	}
+
+	@media (min-width: $tablet + 1) {
+		letter-spacing: normal;
+	}
+
+	@media (max-width: $mobile-l) {
+		line-height: 1.3;
 	}
 }

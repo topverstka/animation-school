@@ -24,6 +24,10 @@
     --link-underline-color: var(--link-underline-color-hover);
   }
 }
+.link:visited {
+  --link-color: #FFEBC6;
+  --link-underline-color: #FFEBC6;
+}
 .link__text {
   display: inline;
   color: inherit;

@@ -99,6 +99,10 @@
 	@media (max-width: $tablet) {
 		font-size: 1.6rem;
 	}
+	
+	@media (max-width: $mobile-l) {
+		letter-spacing: normal;
+	}
 }
 
 .for-who__bullets {

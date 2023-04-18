@@ -104,6 +104,14 @@
 		color: var(--c-accent);
 	}
 }
+.header__nav-item {
+	transition: var(--tr-regular);
+}
+.header__nav-item:hover {
+	@media (any-hover:hover) {
+		color: var(--c-accent);
+	}
+}
 
 .header__buttons {
 	display: flex;

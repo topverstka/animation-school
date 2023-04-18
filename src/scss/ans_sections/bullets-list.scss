@@ -1,11 +1,29 @@
 .bullets-list {
 	background-color: #f8f8f8;
+
+	@media (min-width: $tablet + 1) {
+		padding-bottom: 10.2rem;
+	}
+	
+	@media (max-width: $mobile-l) {
+		padding-bottom: 3.7rem;
+		
+	}
 }
 
 .bullets-list__title {
 	@media (max-width: $tablet) {
 		text-align: left;
 		line-height: 1.25;
+	}
+
+	@media (min-width: $tablet + 1) {
+		margin-bottom: 7.4rem;
+		line-height: 1.2;
+	}
+
+	@media (max-width: $mobile-l) {
+		letter-spacing: normal;
 	}
 }
 
@@ -17,6 +35,10 @@
 	@media (max-width: $tablet) {
 		grid-template-columns: 100%;
 		gap: 1.6rem;
+	}
+
+	@media (max-width: $mobile-l) {
+		gap: 2.1rem;
 	}
 }
 
@@ -52,6 +74,10 @@
 
 	@media (max-width: $tablet) {
 		letter-spacing: 0;
+	}
+
+	@media (max-width: $mobile-l) {
+		line-height: 1.15;
 	}
 }
 

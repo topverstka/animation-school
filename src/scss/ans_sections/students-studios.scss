@@ -2,9 +2,13 @@
 	@media (max-width: $tablet) {
 		overflow: hidden;
 	}
+	@media (min-width: $tablet + 1) {
+		padding-bottom: 14.4rem;
+	}
 }
 .students-studios__title {
 	line-height: initial;
+	margin-bottom: 8rem;
 
 	@media (max-width: $tablet) {
 		text-align: left;
@@ -23,7 +27,7 @@
 	grid-template-columns: #{'calc(var(--regular-column-left) - 3rem)'} auto;
 	column-gap: 4.3rem;
 	color: #222;
-	margin-bottom: 8.6rem;
+	margin-bottom: 7rem;
 
 	@media (max-width: $tablet) {
 		grid-template-columns: 100%;
@@ -38,7 +42,13 @@
 
 .students-studios-card__media {
 	position: relative;
-	height: 52.5rem;
+	height: 48.6rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (min-width: $tablet + 1) {
+		margin-top: 3rem;
+	}
 
 	@media (max-width: $tablet) {
 		height: 44.5rem;
@@ -66,8 +76,8 @@
 }
 
 .students-studios-card:nth-child(odd) .students-studios-card__media:before {
-  top: -4.7rem;
-  right: -2.4rem;
+  top: -9.7rem;
+	right: -2.9rem;
 	background-image: url("../img/course/figure-circle.svg");
 	width: 12.5rem;
 	height: 14.5rem;
@@ -109,6 +119,12 @@
 .students-studios-card__img {
 	height: 100%;
 	width: 100%;
+}
+
+.students-studios-card__info {
+	@media (min-width: $tablet + 1) {
+		letter-spacing: normal;
+	}
 }
 
 .students-studios-card__title {

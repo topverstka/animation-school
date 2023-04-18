@@ -19,7 +19,7 @@
 	margin-top: -0.8rem;
 	margin-bottom: 7.7rem;
 
-	@media (max-width: $tablet) {
+	@media (max-width: 810px) {
 		grid-template-columns: 100%;
 		gap: 2.2rem;
 		margin-bottom: 3.3rem;
@@ -69,6 +69,11 @@
 	width: 100%;
   --lh-button: 1.45;
   margin-bottom: 0.4rem;
+
+	@media (min-width: $tablet + 1) {
+		--fz-button: 2rem;
+		letter-spacing: normal;
+	}
 
   @media (max-width: $tablet) {
 	  margin-bottom: 0.04rem;
