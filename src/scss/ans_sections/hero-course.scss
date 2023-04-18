@@ -85,10 +85,13 @@
 	z-index: 1;
 	border-radius: 2.7rem;
 
+	@media (max-width: $tablet) {
+		transform: none;
+	}
+	
 	@media (max-width: 810px) {
 		height: 52rem;
 		border-radius: 1.7rem;
-		transform: none;
 		margin-bottom: 3rem;
 	}
 

@@ -31,7 +31,10 @@ $w-burger: $tablet;
     // --regular-column-right: 54.4rem;
     --regular-column-right: 58.4rem;
   }
-  @media (max-width: $tablet-l) {
+  @media (max-width: $tablet) {
+    --regular-column-left: 43.3rem;
+  }
+  @media (max-width: $tablet-m) {
     --regular-column-left: 53.3rem;
   }
 

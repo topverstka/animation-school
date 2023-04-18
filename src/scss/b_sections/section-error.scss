@@ -14,15 +14,16 @@
   @media (max-width: $tablet) {
     padding-top: 1rem;
     margin-bottom: 2.2rem;
+    padding-bottom: 0.8rem;
   }
 }
 
 .section-error__container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 
-  @media (max-width: $tablet) {
+  @media (max-width: 810px) {
     flex-direction: column;    
   }
 }
@@ -31,19 +32,27 @@ main:not(.page-error) .section-error__container {
   padding-left: 0;
   padding-right: 0;
 }
+
 .section-error__status {
   font-family: var(--ff-title);
   font-size: 8rem;
-  margin-bottom: 9rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   line-height: 1;
 
   @media (max-width: $tablet) {
-    font-size: 3.2rem;
-    text-align: center;
+    font-size: 5.2rem;
     line-height: 1.2;
-    margin-bottom: 1.6rem;
+  }
+
+  @media (max-width: 810px) {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    text-align: center;
+    font-size: 3.2rem;
   }
 }
+
 .section-error__desc {
   margin-bottom: 1rem;
   line-height: 1;
@@ -57,8 +66,11 @@ main:not(.page-error) .section-error__container {
 
   @media (max-width: $tablet) {
     --fz-button: 1.8rem;
+    --lh-button: 1;
     padding-left: 2.2rem;
     padding-right: 2.2rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
     width: 100%;
   }
 }
