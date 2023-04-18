@@ -135,7 +135,7 @@
 .section-gallery-double {
   @extend .section-gallery;
 
-  @media (min-width: $tablet + 1) {
+  @media (min-width: $tablet-m + 1) {
     grid-template-columns: repeat(2, 1fr);
   }
 }

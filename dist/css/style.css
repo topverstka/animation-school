@@ -282,7 +282,7 @@
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 769px) {
   .section-gallery-double {
     grid-template-columns: repeat(2, 1fr);
   }
