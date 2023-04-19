@@ -75,6 +75,8 @@
 	width: 100%;	
 	transition: var(--tr-regular);
 	overflow: hidden;
+	border-radius: var(--brad) var(--brad) 0 0;
+	transform: translateZ(0);
 }
 
 .ways-card:hover .ways-card__pic {

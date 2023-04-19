@@ -56,6 +56,8 @@
 	width: 100%;	
 	transition: var(--tr-regular);
 	overflow: hidden;
+	transform: translateZ(0);
+	border-radius: var(--brad) var(--brad) 0 0;
 }
 
 .courses-card:hover .courses-card__pic {

@@ -51,6 +51,8 @@
 	width: 100%;	
 	overflow: hidden;
 	transition: var(--tr-regular);
+	border-radius: var(--brad) var(--brad) 0 0;
+	transform: translateZ(0);
 }
 
 .professions-card:hover .professions-card__pic {

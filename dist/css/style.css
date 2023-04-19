@@ -1830,6 +1830,8 @@
   width: 100%;
   transition: var(--tr-regular);
   overflow: hidden;
+  transform: translateZ(0);
+  border-radius: var(--brad) var(--brad) 0 0;
 }
 
 @media (any-hover: hover) {
@@ -2860,6 +2862,8 @@
   width: 100%;
   overflow: hidden;
   transition: var(--tr-regular);
+  border-radius: var(--brad) var(--brad) 0 0;
+  transform: translateZ(0);
 }
 
 @media (any-hover: hover) {
@@ -5986,6 +5990,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (any-hover: hover) {
   .header__button-phone:hover .button__icon {
     filter: invert(1);
+    transform: none;
   }
 }
 
@@ -6248,6 +6253,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (any-hover: hover) {
   .footer__button-phone:hover .button__icon {
     filter: invert(1);
+    transform: none;
   }
 }
 
@@ -6772,6 +6778,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   width: 100%;
   transition: var(--tr-regular);
   overflow: hidden;
+  border-radius: var(--brad) var(--brad) 0 0;
+  transform: translateZ(0);
 }
 
 @media (any-hover: hover) {
