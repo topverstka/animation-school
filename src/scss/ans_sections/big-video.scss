@@ -100,7 +100,6 @@
 	flex-basis: 100%;
 	line-height: initial;
 	letter-spacing: -0.03em;
-	color: var(--c-text-on);
 
 	@media (max-width: $tablet) {
 		text-align: left;
@@ -113,6 +112,7 @@
 }
 
 .big-video--dark .big-video__title {
+	color: var(--c-text-on);
 	@media (max-width: $tablet) {
 		line-height: 1.3;
 	}

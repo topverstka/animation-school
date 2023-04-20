@@ -240,7 +240,9 @@
 	}
 }
 .reviews-card--has-video:not(.reviews-card--second-half) {
-	margin-right: 10%;
+	@media (min-width: $tablet + 1) {
+		margin-right: 10%;
+	}
 }
 
 .reviews-card--has-video {

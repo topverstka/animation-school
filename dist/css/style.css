@@ -2159,7 +2159,7 @@
 }
 
 .page-nav {
-  position: sticky;
+  position: static;
   top: -1px;
   z-index: 10;
   margin-top: -1px;
@@ -2264,6 +2264,11 @@
 
 .page-nav__link:last-child {
   margin-right: 0;
+}
+@media (max-width: 992px) {
+  .page-nav__link:last-child {
+    margin-right: 5rem;
+  }
 }
 
 .resume-card {
@@ -7253,6 +7258,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     font-size: 1.4rem;
     line-height: 1.3;
     letter-spacing: normal;
+    color: var(--c-text-on);
   }
 }
 
@@ -8103,8 +8109,10 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
 }
 
-.reviews-card--has-video:not(.reviews-card--second-half) {
-  margin-right: 10%;
+@media (min-width: 993px) {
+  .reviews-card--has-video:not(.reviews-card--second-half) {
+    margin-right: 10%;
+  }
 }
 
 .reviews-card--has-video {
@@ -9146,7 +9154,6 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   flex-basis: 100%;
   line-height: initial;
   letter-spacing: -0.03em;
-  color: var(--c-text-on);
 }
 @media (max-width: 992px) {
   .big-video__title {
@@ -9160,6 +9167,9 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
 }
 
+.big-video--dark .big-video__title {
+  color: var(--c-text-on);
+}
 @media (max-width: 992px) {
   .big-video--dark .big-video__title {
     line-height: 1.3;

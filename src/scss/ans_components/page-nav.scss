@@ -1,5 +1,5 @@
 .page-nav {
-	position: sticky;
+	position: static;
 	top: -1px;
 	z-index: 10;
 	margin-top: -1px;
@@ -92,4 +92,8 @@
 
 .page-nav__link:last-child {
 	margin-right: 0;
+
+	@media (max-width: $tablet) {
+		margin-right: 5rem;
+	}
 }
