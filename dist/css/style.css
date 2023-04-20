@@ -2267,7 +2267,7 @@
 }
 @media (max-width: 992px) {
   .page-nav__link:last-child {
-    margin-right: 5rem;
+    padding-right: 5rem;
   }
 }
 
@@ -2626,7 +2626,7 @@
 }
 @media (max-width: 992px) {
   .form-select {
-    --padding: 1.55rem 3.2rem 1.55rem 1rem ;
+    --padding: 1.55rem 3.1rem 1.55rem 1rem ;
     --fz: 1.6rem;
   }
 }
@@ -10531,10 +10531,10 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media (max-width: 992px) {
   .course-order__form {
-    margin-left: -1.8rem;
-    margin-right: -1.8rem;
     padding-top: 2.5rem;
     padding-bottom: 2.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -10589,7 +10589,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 @media (max-width: 992px) {
   .course-order__form-button {
     font-size: 2rem;
-    padding: 1.8rem 3rem;
+    padding: 1.8rem 2rem;
     letter-spacing: normal;
   }
 }
